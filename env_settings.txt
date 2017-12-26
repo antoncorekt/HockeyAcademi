@@ -6,7 +6,9 @@ https://www.npmjs.com/get-npm
 -> install GULP
 npm install --save gulp-install
 npm install --save-dev gulp-install
+npm install --save-dev gulp-watch-sass
 command for compine .scss to .css >gulp styles
+command for auto generate css from scss >gulp sass:watch
 
 !! important
 git repo without ./node_modules

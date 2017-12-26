@@ -1,9 +1,97 @@
-@import "bootstrap";
 
 $font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$font-color: #FFFFFF;
+$background-color: #001128;
+$background-image-logo: url(../design/first_page/res/logo.gif); 
+$background-image-desctop: url(../design/first_page/res/main_with_snow.gif); 
+
+$phone : '(max-width: 480px)';
+$tablet-portrait: '(max-width: 767px)';
+$tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
+$large-desktop: '(min-width: 1200px)';
+$non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
+$retina: '(min--moz-device-pixel-ratio: 1.5), 
+                    (-o-min-device-pixel-ratio: 3/2), 
+                    (-webkit-min-device-pixel-ratio: 1.5), 
+                    (min-device-pixel-ratio: 1.5), 
+                    (min-resolution: 144dpi), 
+                    (min-resolution: 1.5dppx)';
+
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
+
+@mixin background-img($img) {
+  background-image: $img;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  @content;
+}
+
 
 body {
   font: 100% $font-stack;
-  color: $primary-color;
+  color: $font-color;
+  //background-image: $background-image-desctop;
+  background-color:  $background-color;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+
+
+  @include background-img($background-image-desctop);
+
+  @include respond-to($phone) {
+    //background-image: none;
+    background-color: rgba(#2ecc71, .5);
+
+    .menu-logo {
+      background-color: black;
+      background-image: none;
+      height: 0px;
+    }
+  }
+  @include respond-to($tablet-portrait) {
+    //background-image: none;
+    background-color: rgba(#3498db, .5);
+  }
+  @include respond-to($tablet-landscape) {
+    //background-image: none;
+    background-color: rgba(#9b59b6, .5);
+
+  }
+
+  @include  respond-to($large-desktop){
+    .menu-logo {
+      @include background-img($background-image-logo){
+        background-attachment: initial;
+      }
+      width: 100px;
+    }
+  }
+  
 }
+
+.nav-el{
+  width: 250px;
+  height: 100px;
+}
+
+.navbar-default{
+  color: white;
+  background-color: transparent;
+}
+
+@media (min-width: 768px){
+  .navbar-nav{
+      float:none;
+      margin: 0 auto;
+      display: table;
+      table-layout: fixed;
+      color: white;
+      font: 25px $font-stack;
+  }
+}
+
