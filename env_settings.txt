@@ -1,0 +1,12 @@
+How config for develop frontend part
+
+-> need install npm
+https://www.npmjs.com/get-npm
+
+-> install GULP
+npm install --save gulp-install
+npm install --save-dev gulp-install
+command for compine .scss to .css >gulp styles
+
+!! important
+git repo without ./node_modules
