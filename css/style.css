@@ -5,9 +5,11 @@ body {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   background-image: url(../design/first_page/res/main_with_snow.gif);
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: center; 
+}
   @media only screen and (max-width: 480px) {
     body {
       background-color: rgba(46, 204, 113, 0.5); }
@@ -46,3 +48,13 @@ body {
     table-layout: fixed;
     color: white;
     font: 25px Helvetica, sans-serif; } }
+
+.navbar{
+    border: none;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #fff;
+    font-family:  Geometria; 
+}
