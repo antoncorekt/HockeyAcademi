@@ -83,6 +83,19 @@ body {
   color: white;
   background-color: transparent;
 }
+.navbar{
+  border: none;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: #fff;
+  font-family:  Geometria; 
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  color: #BEBEBE;
+  font-size: 20px;
+}
 
 @media (min-width: 768px){
   .navbar-nav{
@@ -92,6 +105,7 @@ body {
       table-layout: fixed;
       color: white;
       font: 25px $font-stack;
+      text-align:center;
   }
 }
 

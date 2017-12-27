@@ -5,11 +5,9 @@ body {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   background-image: url(../design/first_page/res/main_with_snow.gif);
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; 
-}
+  background-position: center; }
   @media only screen and (max-width: 480px) {
     body {
       background-color: rgba(46, 204, 113, 0.5); }
@@ -40,6 +38,17 @@ body {
   color: white;
   background-color: transparent; }
 
+.navbar {
+  border: none; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-family: Geometria; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #BEBEBE;
+  font-size: 20px; }
+
 @media (min-width: 768px) {
   .navbar-nav {
     float: none;
@@ -47,14 +56,5 @@ body {
     display: table;
     table-layout: fixed;
     color: white;
-    font: 25px Helvetica, sans-serif; } }
-
-.navbar{
-    border: none;
-    color: #fff;
-}
-
-.navbar-default .navbar-nav>li>a{
-    color: #fff;
-    font-family:  Geometria; 
-}
+    font: 25px Helvetica, sans-serif;
+    text-align: center; } }
