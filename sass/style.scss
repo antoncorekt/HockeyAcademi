@@ -28,6 +28,7 @@ $retina: '(min--moz-device-pixel-ratio: 1.5),
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   @content;
 }
 
