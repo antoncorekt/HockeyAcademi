@@ -1,5 +1,5 @@
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% Montserrat;
   color: #FFFFFF;
   background-color: #001128;
   margin: 0px 0px 0px 0px;
@@ -7,7 +7,8 @@ body {
   background-image: url(../design/first_page/res/main_with_snow.gif);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  background-size: cover; }
   @media only screen and (max-width: 480px) {
     body {
       background-color: rgba(46, 204, 113, 0.5); }
@@ -27,27 +28,45 @@ body {
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
+      background-size: cover;
       background-attachment: initial;
       width: 100px; } }
 
 .nav-el {
-  width: 250px;
-  height: 100px; }
+  white-space: nowrap;
+  border: 1px solid sandybrown;
+  margin: 0px 20px 20px 0px;
+  font-weight: bold; }
+
+.menu-logo {
+  margin-top: 13px;
+  margin-right: 90px;
+  padding-right: 50px;
+  height: 75px; }
+
+.nav-el:not(.menu-logo) {
+  margin-top: 16px; }
+
+.men-contacts {
+  margin-left: 8px; }
+
+.men-blog {
+  margin-left: -38px; }
 
 .navbar-default {
   color: white;
   background-color: transparent; }
 
 .navbar {
-  border: none; }
+  border: 1px solid sandybrown; }
 
 .navbar-default .navbar-nav > li > a {
   color: #fff;
-  font-family: Geometria; }
+  font-size: 16px;
+  font-family: Montserrat; }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #BEBEBE;
-  font-size: 20px; }
+  color: #BEBEBE; }
 
 @media (min-width: 768px) {
   .navbar-nav {
@@ -56,5 +75,5 @@ body {
     display: table;
     table-layout: fixed;
     color: white;
-    font: 25px Helvetica, sans-serif;
+    font: 25px Montserrat;
     text-align: center; } }
