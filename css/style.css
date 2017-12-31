@@ -7,7 +7,8 @@ body {
   background-image: url(../design/first_page/res/main_with_snow.gif);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  background-size: cover; }
   @media only screen and (max-width: 480px) {
     body {
       background-color: rgba(46, 204, 113, 0.5); }
@@ -27,6 +28,7 @@ body {
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
+      background-size: cover;
       background-attachment: initial;
       width: 100px; } }
 
