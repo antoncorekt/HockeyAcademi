@@ -77,3 +77,24 @@ body {
     color: white;
     font: 25px Montserrat;
     text-align: center; } }
+
+#h1-main-page {
+  font-weight: 900; }
+  @media only screen and (max-width: 480px) {
+    #h1-main-page {
+      font-size: 28px; } }
+
+@media only screen and (min-width: 1200px) {
+  #main-text-p {
+    font-size: 16px; } }
+
+@media only screen and (max-width: 480px) {
+  #main-text-p {
+    font-size: 14px; } }
+
+#main-text {
+  margin: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 5%; }

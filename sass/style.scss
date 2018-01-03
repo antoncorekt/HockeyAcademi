@@ -142,3 +142,27 @@ body {
   }
 }
 
+#h1-main-page{
+  font-weight: 900;
+  @include respond-to($phone) {
+    font-size: 28px;
+  }
+}
+
+#main-text-p{
+  @include  respond-to($large-desktop){
+    font-size: 16px;
+  }
+  @include respond-to($phone) {
+    font-size: 14px;
+  }
+}
+
+#main-text{
+  margin: 0;
+  transform: translateY(-50%);
+  position: absolute; 
+  top: 50%; 
+  left: 5%;
+}
+
