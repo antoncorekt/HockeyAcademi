@@ -11,6 +11,18 @@
 |
 */
 
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
-    return view('index');
+    return redirect('/'. App\Http\Middleware\LocaleMiddleware::$mainLanguage);
 });
+
+Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function() {
+    Route::get('/', function () {
+        return view('index');
+    });
+});
+
+

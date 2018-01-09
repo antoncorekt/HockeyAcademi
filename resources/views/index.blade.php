@@ -26,22 +26,35 @@
 
         <div class="collapse navbar-collapse navbar-default navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                <li class="nav-el men-main"><a href="#">ГЛАВНАЯ</a></li>
-                <li class="nav-el"><a class=" men-about" href="#">ОБ АКАДЕМИИ</a></li>
+                <li class="nav-el men-main"><a href="#">{{ trans('messages.main') }}</a></li>
+                <li class="nav-el"><a class=" men-about" href="#">{{ trans('messages.about') }}</a></li>
                 <li class="nav-el menu-logo"><a href="#"></a></li>
-                <li class="nav-el men-blog"><a href="#">БЛОГ</a></li>
-                <li class="nav-el men-contacts"><a href="#">КОНТАКТЫ</a></li>
+                <li class="nav-el men-blog"><a href="#">{{ trans('messages.blog') }}</a></li>
+                <li class="nav-el men-contacts"><a href="#">{{ trans('messages.cont') }}</a></li>
+                <li class="nav-el men-lang">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{@getLangURI('en')}}">English</a></li>
+                            <li><a href="{{@getLangURI('ru')}}">Русский</a></li>
+                            <li><a href="{{@getLangURI('pl')}}">Polski</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    </li>
             </ul>
         </div>
     </nav>
     <div id="main-text">
-        <h1 id="h1-main-page">ОСУЩЕСТВИ МЕЧТУ -</h1>
-        <h1 id="h1-main-page">СТАНЬ ХОККЕИСТОМ</h1>
+        <h1 id="h1-main-page">{{ trans('messages.dream') }} -</h1>
+        <h1 id="h1-main-page">{{ trans('messages.dream1') }}</h1>
         <p id="main-text-p">
-            Лучшая академия с квалифицированными
-            <br>тренерами поможет тебе на пути к твоей мечте
+            {{ trans('messages.dream2') }}
+            <br>{{ trans('messages.dream3') }}
         </p>
-        <button class="btn btn-success">Узнать больше</button>
+        <button class="btn btn-success">{{ trans('messages.know_more') }}</button>
     </div>
 </div>
 
