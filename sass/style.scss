@@ -166,3 +166,54 @@ body {
   left: 5%;
 }
 
+.lang{
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+
+.dropdown-menu{
+  background-color: transparent;
+}
+.dropdown-menu > li > a{
+  color: white;
+  font-size: 16px;
+  padding: 3px 7px;
+}
+
+.flag-ico{
+  vertical-align: unset;
+  @include  respond-to($large-desktop){
+    width: 20px;
+  }
+  @include respond-to($tablet-portrait) {
+    width: 15px;
+  }
+  @include respond-to($tablet-landscape) {
+    width: 20px;
+  }
+  @include respond-to($phone) {
+    width: 15px;
+  }
+
+}
+
+.flag{
+  margin-right: 1px;
+  vertical-align: middle;
+}
+
+.dropdown-menu{
+  border-radius: 0px;
+  min-width: 140px;
+}
+
+.drop-text {
+  vertical-align: top;
+}
+
+.navbar-right{
+  @include  respond-to($large-desktop) {
+    margin-top: -90px;
+  }
+}

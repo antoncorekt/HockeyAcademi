@@ -7,12 +7,18 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{asset('js/getLang.js')}}"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>Hockey Academy</title>
 </head>
 
 <body>
+<script>
+    $(document).ready(function () {
+        getLang();
+    });
 
+</script>
 <div class="container-fluid" id="body-main">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
@@ -31,20 +37,44 @@
                 <li class="nav-el menu-logo"><a href="#"></a></li>
                 <li class="nav-el men-blog"><a href="#">{{ trans('messages.blog') }}</a></li>
                 <li class="nav-el men-contacts"><a href="#">{{ trans('messages.cont') }}</a></li>
+            </ul>
+                <ul class="nav navbar-nav navbar-right">
                 <li class="nav-el men-lang">
                     <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                            <span class="caret"></span></button>
+                        <button class="dropdown-toggle lang" type="button" data-toggle="dropdown">
+                            <span class="flag"><img src="" class="flag-ico" id="flag"></span>
+                            <span class="drop-text"><span id="selected"></span>
+                            <span class="caret"></span></span>
+                        </button>
                         <ul class="dropdown-menu">
-                            <li><a href="{{@getLangURI('en')}}">English</a></li>
-                            <li><a href="{{@getLangURI('ru')}}">Русский</a></li>
-                            <li><a href="{{@getLangURI('pl')}}">Polski</a>
+                            <li>
+                                <a href="{{@getLangURI('ru')}}">
+                                    <span class="flag">
+                                        <img src="../public/images/ru.png" class="flag-ico">
+                                    </span>
+                                    <span class="drop-text">РУССКИЙ</span></a>
+                            </li>
+                            <li>
+                                <a href="{{@getLangURI('en')}}">
+                                     <span class="flag">
+                                        <img src="../public/images/en.ico" class="flag-ico">
+                                    </span>
+                                    <span class="drop-text">ENGLISH</span></a>
+                            </li>
+                            <li>
+                                <a href="{{@getLangURI('pl')}}">
+                                    <span class="flag">
+                                        <img src="../public/images/pl.ico" class="flag-ico">
+                                    </span>
+                                    <span class="drop-text">POLSKI</span></a>
                             </li>
                         </ul>
+
                     </div>
 
                     </li>
-            </ul>
+                </ul>
+
         </div>
     </nav>
     <div id="main-text">

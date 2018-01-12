@@ -98,3 +98,46 @@ body {
   position: absolute;
   top: 50%;
   left: 5%; }
+
+.lang {
+  background-color: transparent;
+  border: none;
+  font-size: 16px; }
+
+.dropdown-menu {
+  background-color: transparent; }
+
+.dropdown-menu > li > a {
+  color: white;
+  font-size: 16px;
+  padding: 3px 7px; }
+
+.flag-ico {
+  vertical-align: unset; }
+  @media only screen and (min-width: 1200px) {
+    .flag-ico {
+      width: 20px; } }
+  @media only screen and (max-width: 767px) {
+    .flag-ico {
+      width: 15px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .flag-ico {
+      width: 20px; } }
+  @media only screen and (max-width: 480px) {
+    .flag-ico {
+      width: 15px; } }
+
+.flag {
+  margin-right: 1px;
+  vertical-align: middle; }
+
+.dropdown-menu {
+  border-radius: 0px;
+  min-width: 140px; }
+
+.drop-text {
+  vertical-align: top; }
+
+@media only screen and (min-width: 1200px) {
+  .navbar-right {
+    margin-top: -90px; } }
