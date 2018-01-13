@@ -22,7 +22,7 @@ body {
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     body {
       background-color: rgba(155, 89, 182, 0.5); } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1024px) {
     body .menu-logo {
       background-image: url(../design/first_page/res/logo.gif);
       background-repeat: no-repeat;
@@ -63,7 +63,7 @@ body {
 .navbar-default .navbar-nav > li > a {
   color: #fff;
   font-size: 16px;
-  font-family: Montserrat; }
+  font-family: "Montserrat-Medium", sans-serif; }
 
 .navbar-default .navbar-nav > li > a:hover {
   color: #BEBEBE; }
@@ -75,22 +75,30 @@ body {
     display: table;
     table-layout: fixed;
     color: white;
-    font: 25px Montserrat;
+    font: 25px "Montserrat-Medium", sans-serif;
     text-align: center; } }
 
-#h1-main-page {
-  font-weight: 900; }
+.h1-main-page {
+  font-weight: 900;
+  font-family: "MontserratBlack", sans-serif; }
   @media only screen and (max-width: 480px) {
-    #h1-main-page {
-      font-size: 28px; } }
+    .h1-main-page {
+      font-size: 22px; } }
+  @media only screen and (max-width: 767px) {
+    .h1-main-page {
+      font-size: 20px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .h1-main-page {
+      font-size: 30px; } }
 
-@media only screen and (min-width: 1200px) {
-  #main-text-p {
-    font-size: 16px; } }
-
-@media only screen and (max-width: 480px) {
-  #main-text-p {
-    font-size: 14px; } }
+#main-text-p {
+  font-family: "OpenSans-Regular", sans-serif; }
+  @media only screen and (min-width: 1024px) {
+    #main-text-p {
+      font-size: 16px; } }
+  @media only screen and (max-width: 480px) {
+    #main-text-p {
+      font-size: 12px; } }
 
 #main-text {
   margin: 0;
@@ -98,6 +106,13 @@ body {
   position: absolute;
   top: 50%;
   left: 5%; }
+  @media only screen and (max-width: 767px) {
+    #main-text {
+      left: 2%;
+      top: 45%; } }
+  @media only screen and (max-width: 480px) {
+    #main-text {
+      top: 45%; } }
 
 .lang {
   background-color: transparent;
@@ -114,7 +129,7 @@ body {
 
 .flag-ico {
   vertical-align: unset; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1024px) {
     .flag-ico {
       width: 20px; } }
   @media only screen and (max-width: 767px) {
@@ -138,6 +153,136 @@ body {
 .drop-text {
   vertical-align: top; }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   .navbar-right {
     margin-top: -90px; } }
+
+.btn-main {
+  background-color: #ffeb3c;
+  color: #10425c;
+  font-family: "MontserratBlack", sans-serif;
+  font-size: 12px; }
+  @media only screen and (max-width: 767px) {
+    .btn-main {
+      font-size: 8px;
+      padding: 5px 5px; } }
+
+.footer-main {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding-right: 20px;
+  padding-bottom: 20px; }
+  @media only screen and (min-width: 1024px) {
+    .footer-main {
+      text-align: right; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .footer-main {
+      text-align: right; } }
+  @media only screen and (max-width: 767px) {
+    .footer-main {
+      padding-left: 10px;
+      text-align: left; } }
+
+.h5-events {
+  font-family: "Montserrat-ExtraBold", sans-serif; }
+  @media only screen and (min-width: 1024px) {
+    .h5-events {
+      margin-right: 312px; } }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .h5-events {
+      margin-right: 218px; } }
+  @media only screen and (max-width: 767px) {
+    .h5-events {
+      padding-left: 15px;
+      font-size: 9px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .h5-events {
+      margin-right: 176px; } }
+  @media only screen and (max-width: 480px) {
+    .h5-events {
+      padding-left: 15px;
+      font-size: 10px; } }
+
+.text-events {
+  font-family: "Montserrat-Bold", sans-serif;
+  float: left;
+  text-align: left;
+  font-size: 11px;
+  padding-left: 10px; }
+  @media only screen and (max-width: 480px) {
+    .text-events {
+      font-size: 9px; } }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .text-events {
+      padding-left: 0px; } }
+
+.img-events {
+  float: left; }
+  @media only screen and (min-width: 1024px) {
+    .img-events {
+      width: 175px;
+      padding-bottom: 10px; } }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .img-events {
+      width: 160px; } }
+  @media only screen and (max-width: 767px) {
+    .img-events {
+      width: 60px;
+      padding-bottom: 0px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .img-events {
+      width: 140px;
+      padding-bottom: 5px; } }
+  @media only screen and (max-width: 480px) {
+    .img-events {
+      width: 90px;
+      padding-bottom: 10px; } }
+
+.div-events {
+  display: block; }
+  @media only screen and (min-width: 1024px) {
+    .div-events {
+      float: right; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .div-events {
+      float: right; } }
+  @media only screen and (max-width: 767px) {
+    .div-events {
+      float: left; } }
+
+@media only screen and (min-width: 979px) and (max-width: 1024px) {
+  #events {
+    padding-right: 30px; } }
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../public/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MontserratBlack";
+  src: url("../public/fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../public/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../public/fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../public/fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }

@@ -14,7 +14,8 @@ return [
     'dream1' => 'ZOSTAĆ HOKEISTĄ',
     'dream2' => 'Najlepsza akademia z kwalifikowani',
     'dream3' => 'trenerzy pomaga Ci w drodze do spełnienia marzenia.',
-    'know_more' => 'Wiedzieć więcej',
+    'know_more' => 'WIEDZIEĆ WIĘCEJ',
+    'events' => 'NASZE WYDARZENIA',
 
 ];
 ?>

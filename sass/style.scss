@@ -10,7 +10,8 @@ $background-image-desctop: url(../design/first_page/res/main_with_snow.gif);
 $phone : '(max-width: 480px)';
 $tablet-portrait: '(max-width: 767px)';
 $tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
-$large-desktop: '(min-width: 1200px)';
+$ipad: '(min-width: 979px) and (max-width: 1024px)';
+$large-desktop: '(min-width: 1024px)';
 $non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
 $retina: '(min--moz-device-pixel-ratio: 1.5), 
                     (-o-min-device-pixel-ratio: 3/2), 
@@ -122,7 +123,7 @@ body {
 .navbar-default .navbar-nav>li>a{
   color: #fff;
   font-size: 16px;
-  font-family:  Montserrat; 
+  font-family: "Montserrat-Medium", sans-serif;
 }
 
 .navbar-default .navbar-nav>li>a:hover{
@@ -137,24 +138,36 @@ body {
       display: table;
       table-layout: fixed;
       color: white;
-      font: 25px $font-stack;
+      font: 25px "Montserrat-Medium", sans-serif;
       text-align:center;
   }
 }
 
-#h1-main-page{
+.h1-main-page{
   font-weight: 900;
+  font-family: "MontserratBlack", sans-serif;
+
   @include respond-to($phone) {
-    font-size: 28px;
+    font-size: 22px;
   }
+
+  @include respond-to($tablet-portrait && $tablet-landscape) {
+    font-size: 20px;
+  }
+
+  @include respond-to($tablet-landscape) {
+    font-size: 30px;
+  }
+
 }
 
 #main-text-p{
+  font-family: "OpenSans-Regular", sans-serif;
   @include  respond-to($large-desktop){
     font-size: 16px;
   }
   @include respond-to($phone) {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -164,6 +177,15 @@ body {
   position: absolute; 
   top: 50%; 
   left: 5%;
+
+  @include respond-to($tablet-portrait && $tablet-landscape) {
+    left: 2%;
+    top: 45%;
+  }
+
+  @include respond-to($phone) {
+    top: 45%;
+  }
 }
 
 .lang{
@@ -216,4 +238,173 @@ body {
   @include  respond-to($large-desktop) {
     margin-top: -90px;
   }
+}
+
+.btn-main{
+  background-color: rgb(255, 235, 60);
+  color: #10425c;
+  font-family: "MontserratBlack", sans-serif;
+  font-size: 12px;
+
+  @include respond-to($tablet-portrait && $tablet-landscape) {
+    font-size: 8px;
+    padding: 5px 5px;
+  }
+}
+
+.footer-main {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+  @include  respond-to($large-desktop){
+    text-align: right;
+  }
+
+  @include respond-to($tablet-landscape) {
+    text-align: right;
+  }
+
+  @include respond-to($tablet-portrait  && $phone) {
+    padding-left: 10px;
+    text-align: left;
+  }
+
+}
+
+.h5-events{
+  font-family: "Montserrat-ExtraBold", sans-serif;
+
+  @include  respond-to($large-desktop){
+    margin-right: 312px;
+  }
+
+  @include  respond-to($ipad){
+    margin-right: 218px;
+  }
+
+  @include respond-to($tablet-portrait) {
+    padding-left: 15px;
+    font-size: 9px;
+  }
+
+  @include respond-to($tablet-landscape) {
+    margin-right: 176px;
+  }
+
+  @include  respond-to($phone){
+    padding-left: 15px;
+    font-size: 10px;
+  }
+
+
+}
+
+.text-events{
+  font-family: "Montserrat-Bold", sans-serif;
+  float: left;
+  text-align: left;
+  font-size: 11px;
+  padding-left: 10px;
+
+  @include  respond-to($phone){
+    font-size: 9px;
+  }
+
+  @include  respond-to($ipad){
+    padding-left: 0px;
+  }
+}
+
+.img-events{
+  float: left;
+
+  @include  respond-to($large-desktop){
+    width: 175px;
+    padding-bottom: 10px;
+  }
+
+  @include  respond-to($ipad){
+    width: 160px;
+  }
+
+  @include respond-to($tablet-portrait) {
+    width: 60px;
+    padding-bottom: 0px;
+  }
+
+  @include respond-to($tablet-landscape) {
+    width: 140px;
+    padding-bottom: 5px;
+  }
+
+  @include  respond-to($phone){
+    width: 90px;
+    padding-bottom: 10px;
+  }
+
+}
+
+.div-events {
+
+  display: block;
+  @include  respond-to($large-desktop){
+    float: right;
+  }
+
+  @include respond-to($tablet-landscape) {
+    float: right;
+  }
+
+  @include respond-to($tablet-portrait && $phone) {
+    float: left;
+  }
+}
+
+#events{
+  @include  respond-to($ipad){
+    padding-right: 30px;
+  }
+}
+
+
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../public/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MontserratBlack";
+  src: url("../public/fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../public/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../public/fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../public/fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }

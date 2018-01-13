@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Hockey Academy</title>
 </head>
-
-<body>
 <script>
     $(document).ready(function () {
         getLang();
     });
 
 </script>
+<body>
+
 <div class="container-fluid" id="body-main">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
@@ -77,17 +77,37 @@
 
         </div>
     </nav>
-    <div id="main-text">
-        <h1 id="h1-main-page">{{ trans('messages.dream') }} -</h1>
-        <h1 id="h1-main-page">{{ trans('messages.dream1') }}</h1>
+    <div class="row" id="main-text">
+        <h1 class="h1-main-page">{{ trans('messages.dream') }} -</h1>
+        <h1 class="h1-main-page">{{ trans('messages.dream1') }}</h1>
         <p id="main-text-p">
             {{ trans('messages.dream2') }}
             <br>{{ trans('messages.dream3') }}
         </p>
-        <button class="btn btn-success">{{ trans('messages.know_more') }}</button>
+        <button class="btn btn-main">{{ trans('messages.know_more') }}</button>
     </div>
-</div>
 
+
+    <div class="footer-main">
+        <div class="row">
+            <h5 class="h5-events">{{ trans('messages.events') }}</h5>
+        </div>
+        <div class="row" id="events">
+            <div class="col-sm-2 col-lg-2 col-md-2 div-events">
+                <img src="../public/images/news.jpg" class="img-events">
+                <p class="text-events">EUHL: pierwsze punkty<br> Academy 1929 KTH</p>
+            </div>
+            <div class="col-sm-2 col-lg-2 col-md-2 div-events">
+
+                <img src="../public/images/news.jpg" class="img-events">
+                <p class="text-events">EUHL: pierwsze punkty<br> Academy 1928 KTH</p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
 
 
 </body>

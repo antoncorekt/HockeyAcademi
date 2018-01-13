@@ -15,6 +15,7 @@ return [
     'dream1' => 'BECOME A HOCKEY PLAYER',
     'dream2' => 'The best academy with qualified',
     'dream3' => 'coaches helps you on the way to the dream',
-    'know_more' => 'Know more',
+    'know_more' => 'KNOW MORE',
+    'events' => 'OUR EVENTS',
 ];
 ?>
