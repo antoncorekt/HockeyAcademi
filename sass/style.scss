@@ -1,6 +1,8 @@
+@import "_snow";
 
-//$border-debug: none;
-$border-debug: 1px solid sandybrown;
+
+$border-debug: none;
+//$border-debug: 1px solid sandybrown;
 $font-stack: Montserrat;
 $font-color: #FFFFFF;
 $background-color: #001128;
@@ -35,7 +37,7 @@ $retina: '(min--moz-device-pixel-ratio: 1.5),
 }
 
 
-body {
+.main-page{
   font: 100% $font-stack;
   color: $font-color;
   //background-image: $background-image-desctop;
@@ -43,8 +45,14 @@ body {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 
+  position:fixed;
+  width:100%;
+  
 
   @include background-img($background-image-desctop);
+}
+
+nav {
 
   @include respond-to($phone) {
     //background-image: none;

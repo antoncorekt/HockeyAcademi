@@ -1,40 +1,192 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+.snow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; }
+
+.flake {
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transform: translateY(0) rotateX(0) rotateY(0);
+  -moz-transform: translateY(0) rotateX(0) rotateY(0);
+  -ms-transform: translateY(0) rotateX(0) rotateY(0);
+  -o-transform: translateY(0) rotateX(0) rotateY(0);
+  transform: translateY(0) rotateX(0) rotateY(0);
+  background-image: -owg-linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -owg-linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -owg-linear-gradient(45deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%), -owg-linear-gradient(135deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%);
+  background-image: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%), -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%);
+  background-image: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -moz-linear-gradient(45deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%), -moz-linear-gradient(135deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%);
+  background-image: -o-linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -o-linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -o-linear-gradient(45deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%), -o-linear-gradient(135deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(45deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%), linear-gradient(135deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%); }
+
+.flake:nth-child(1) {
+  -webkit-animation: xAxis-first 5.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+  animation: xAxis-first 5.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1); }
+
+.flake:nth-child(1)::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-animation: yAxis-first 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+  animation: yAxis-first 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64); }
+
+@keyframes yAxis-first {
+  50% {
+    -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    -webkit-transform: translateY(-200px);
+    transform: translateY(-200px); } }
+
+@keyframes xAxis-first {
+  50% {
+    -webkit-animation-timing-function: cubic-bezier(0, -0.15, 0.77, -0.6);
+    animation-timing-function: cubic-bezier(0, -0.15, 0.77, -0.6);
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px); } }
+
+.flake:nth-child(2) {
+  width: 12px;
+  height: 12px;
+  top: -316px;
+  left: 29%;
+  opacity: 0.94;
+  filter: blur(4px);
+  -webkit-animation: 10s flakes linear infinite;
+  -moz-animation: 10s flakes linear infinite;
+  -o-animation: 10s flakes linear infinite;
+  animation: 10s flakes linear infinite; }
+
+.flake:nth-child(3) {
+  width: 105px;
+  height: 105px;
+  top: -511px;
+  left: 68%;
+  opacity: 0.84;
+  filter: blur(7px);
+  -webkit-animation: 10s flakes linear infinite;
+  -moz-animation: 10s flakes linear infinite;
+  -o-animation: 10s flakes linear infinite;
+  animation: 10s flakes linear infinite; }
+
+.flake:nth-child(4) {
+  width: 27px;
+  height: 27px;
+  top: -28px;
+  left: 40%;
+  opacity: 0.55;
+  filter: blur(7px);
+  -webkit-animation: 10s flakes linear infinite;
+  -moz-animation: 10s flakes linear infinite;
+  -o-animation: 10s flakes linear infinite;
+  animation: 10s flakes linear infinite; }
+
+.flake:nth-child(5) {
+  width: 113px;
+  height: 113px;
+  top: -96px;
+  left: 63%;
+  opacity: 0.57;
+  filter: blur(5px);
+  -webkit-animation: 10s flakes linear infinite;
+  -moz-animation: 10s flakes linear infinite;
+  -o-animation: 10s flakes linear infinite;
+  animation: 10s flakes linear infinite; }
+
+@keyframes flakes {
+  100% {
+    -webkit-transform: translateY(1500px) rotateX(26deg) rotateY(12deg);
+    -moz-transform: translateY(1500px) rotateX(26deg) rotateY(12deg);
+    -ms-transform: translateY(1500px) rotateX(26deg) rotateY(12deg);
+    -o-transform: translateY(1500px) rotateX(26deg) rotateY(12deg);
+    transform: translateY(1500px) rotateX(26deg) rotateY(12deg);
+    opacity: 20; } }
+
+.demo-dot {
+  -webkit-animation: xAxis 4.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+  animation: xAxis 4.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+  border: 1px solid red; }
+
+.demo-dot::after {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -webkit-animation: yAxis 4.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+  animation: yAxis 4.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+  border: 1px solid red;
+  background-image: -owg-linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -owg-linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -owg-linear-gradient(45deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%), -owg-linear-gradient(135deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%);
+  background-image: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%), -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%);
+  background-image: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -moz-linear-gradient(45deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%), -moz-linear-gradient(135deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%);
+  background-image: -o-linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -o-linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), -o-linear-gradient(45deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%), -o-linear-gradient(135deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, #ffffff 50%, #ffffff 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(45deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%), linear-gradient(135deg, rgba(255, 255, 255, 0) 33%, #ffffff 53%, #ffffff 57%, rgba(255, 255, 255, 0) 65%); }
+
+@keyframes yAxis {
+  50% {
+    -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    transform: translateY(-500px); }
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    transform: translateY(500px); } }
+
+@keyframes xAxis {
+  50% {
+    -webkit-animation-timing-function: cubic-bezier(0, -0.15, 0.77, -0.6);
+    animation-timing-function: cubic-bezier(0, -0.15, 0.77, -0.6);
+    transform: translateX(500px); }
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0, -0.15, 0.77, -0.6);
+    animation-timing-function: cubic-bezier(0, -0.15, 0.77, -0.6);
+    transform: translateX(-500px); } }
+
+.main-page {
   font: 100% Montserrat;
   color: #FFFFFF;
   background-color: #001128;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
+  position: fixed;
+  width: 100%;
   background-image: url(../design/first_page/res/main_with_snow.gif);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover; }
-  @media only screen and (max-width: 480px) {
-    body {
-      background-color: rgba(46, 204, 113, 0.5); }
-      body .menu-logo {
-        background-color: black;
-        background-image: none;
-        height: 0px; } }
-  @media only screen and (max-width: 767px) {
-    body {
-      background-color: rgba(52, 152, 219, 0.5); } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    body {
-      background-color: rgba(155, 89, 182, 0.5); } }
-  @media only screen and (min-width: 1200px) {
-    body .menu-logo {
-      background-image: url(../design/first_page/res/logo.gif);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      background-size: cover;
-      background-attachment: initial;
-      width: 100px; } }
+
+@media only screen and (max-width: 480px) {
+  nav {
+    background-color: rgba(46, 204, 113, 0.5); }
+    nav .menu-logo {
+      background-color: black;
+      background-image: none;
+      height: 0px; } }
+
+@media only screen and (max-width: 767px) {
+  nav {
+    background-color: rgba(52, 152, 219, 0.5); } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  nav {
+    background-color: rgba(155, 89, 182, 0.5); } }
+
+@media only screen and (min-width: 1200px) {
+  nav .menu-logo {
+    background-image: url(../design/first_page/res/logo.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+    width: 100px; } }
 
 .nav-el {
   white-space: nowrap;
-  border: 1px solid sandybrown;
+  border: none;
   margin: 0px 20px 20px 0px;
   font-weight: bold; }
 
@@ -58,7 +210,7 @@ body {
   background-color: transparent; }
 
 .navbar {
-  border: 1px solid sandybrown; }
+  border: none; }
 
 .navbar-default .navbar-nav > li > a {
   color: #fff;

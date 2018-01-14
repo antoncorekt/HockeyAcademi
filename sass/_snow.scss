@@ -1,0 +1,213 @@
+@import "bower_components/compass-sass-mixins/lib/compass";
+// npm install -g bower
+// bower install compass-sass-mixins
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+// Snowflakes Config
+$flakes: 5; // match flakes in mark up
+$snowColor: #ffffff;
+
+// Colors
+$topGradient: #00A3EF;
+$bottomGradient: #B7E7FC;
+$textColor: #ffffff;
+
+// Mixins
+@mixin keyframes($name) {
+    @-webkit-keyframes $name { @content; }
+    @-moz-keyframes $name { @content; }
+    @-o-keyframes $name { @content; }
+    @keyframes $name { @content; }
+}
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+}
+
+
+.snow{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.flake{
+	position: absolute;
+	border-radius: 50%;
+	@include transform(translateY(0) rotateX(0) rotateY(0));
+	@include background-image(
+		linear-gradient(180deg,
+			rgba(255,255,255,0) 30%,
+			$snowColor 50%,
+			$snowColor 60%,
+			rgba(255,255,255,0) 60%),
+		linear-gradient(90deg,
+			rgba(255,255,255,0) 30%,
+			$snowColor 50%,
+			$snowColor 60%,
+			rgba(255,255,255,0) 60%),
+		linear-gradient(45deg,
+			rgba(255,255,255,0) 33%,
+			$snowColor 53%,
+			$snowColor 57%,
+			rgba(255,255,255,0) 65%),
+		linear-gradient(135deg,
+			rgba(255,255,255,0) 33%,
+			$snowColor 53%,
+			$snowColor 57%,
+			rgba(255,255,255,0) 65%)
+	);
+}
+
+@for $i from 1 through $flakes{
+	$flakeWidth: 5 + random(150); // Flake size
+	$flakeHeight: $flakeWidth;
+	$flakeVertical: -600 + random(600);
+	$flakeHorizontal: random(100);
+	$flakeBlur: 3 + random(5);
+	$flakeDelay: 10; // Flake speed
+
+	@if $i == 1 {
+		.flake:nth-child(1){
+	
+			// top: 400px;
+			// left: 130px;
+			// opacity: (50 + random(50)) * 0.01;
+		    // border: solid 10px red;
+			
+			-webkit-animation: xAxis-first 5.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+	        animation: xAxis-first 5.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+		}
+
+		.flake:nth-child(1)::after{
+			content: '';
+			display: block;
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+			background-color: #fff;
+			//filter: blur($flakeBlur + px );
+			-webkit-animation: yAxis-first 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+			animation: yAxis-first 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+		}
+
+		 
+		@keyframes yAxis-first {
+			50% {
+			  -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+			  animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+			  -webkit-transform: translateY(-200px);
+			  transform: translateY(-200px);
+			 // @include transform(translateY(400px) rotateX(10 + random(40) + deg) rotateY(10 + random(40) + deg));
+			}
+		  }
+		  
+		  
+		  @keyframes xAxis-first {
+			50% {
+			  -webkit-animation-timing-function: cubic-bezier(0,-0.15,.77,-0.6);
+			  animation-timing-function: cubic-bezier(0,-0.15,.77,-0.6);
+			  -webkit-transform: translateX(200px);
+			  transform: translateX(200px);
+			 // @include transform(translateY(900px) rotateX(10 + random(40) + deg) rotateY(10 + random(40) + deg));
+			}
+		  }
+	}
+
+
+	@if $i >= 2 {
+		.flake:nth-child(#{$i}){
+			width: $flakeWidth + px;
+			height: $flakeHeight + px;
+			top: $flakeVertical + px;
+			left: #{$flakeHorizontal + "%"};
+			opacity: (50 + random(50)) * 0.01;
+			filter: blur($flakeBlur + px );
+			@include animation(#{$flakeDelay + s} flakes linear infinite);
+		}
+	}	
+}
+
+@keyframes flakes {
+	100%{
+		@include transform(translateY(1500px) rotateX(10 + random(40) + deg) rotateY(10 + random(40) + deg));
+		opacity: 20;
+	}
+}
+
+.demo-dot {
+	-webkit-animation: xAxis 4.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+	animation: xAxis 4.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+	border: 1px solid red;
+
+	
+  }
+  
+  .demo-dot::after {
+	content: '';
+	display: block;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	//background-color: #fff;
+	-webkit-animation: yAxis 4.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+	animation: yAxis 4.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+	border: 1px solid red;
+
+	@include background-image(
+		linear-gradient(180deg,
+			rgba(255,255,255,0) 30%,
+			$snowColor 50%,
+			$snowColor 60%,
+			rgba(255,255,255,0) 60%),
+		linear-gradient(90deg,
+			rgba(255,255,255,0) 30%,
+			$snowColor 50%,
+			$snowColor 60%,
+			rgba(255,255,255,0) 60%),
+		linear-gradient(45deg,
+			rgba(255,255,255,0) 33%,
+			$snowColor 53%,
+			$snowColor 57%,
+			rgba(255,255,255,0) 65%),
+		linear-gradient(135deg,
+			rgba(255,255,255,0) 33%,
+			$snowColor 53%,
+			$snowColor 57%,
+			rgba(255,255,255,0) 65%)
+	);
+  }
+  
+  
+  @keyframes yAxis {
+	50% {
+	  -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+	  animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+	  transform: translateY(-500px);
+	}
+
+	100% {
+		-webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+		animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+		transform: translateY(500px);
+	  } 
+  }
+  
+  
+  @keyframes xAxis {
+	50% {
+	  -webkit-animation-timing-function: cubic-bezier(0,-0.15,.77,-0.6);
+	  animation-timing-function: cubic-bezier(0,-0.15,.77,-0.6);
+	  transform: translateX(500px);
+	}
+
+	100% {
+		-webkit-animation-timing-function: cubic-bezier(0,-0.15,.77,-0.6);
+		animation-timing-function: cubic-bezier(0,-0.15,.77,-0.6);
+		transform: translateX(-500px);
+	  }
+  }
