@@ -8,15 +8,15 @@
 function getLang(){
     let str = $(location).attr('href');
     if (str.search("ru") > -1){
-        $("#flag").attr("src","../public/images/ru.png");
+        $("#flag").attr("src","../../public/images/ru.png");
         $('#selected').text("РУССКИЙ");
     }
     else if (str.search("en") > -1){
-        $("#flag").attr("src","../public/images/en.ico");
+        $("#flag").attr("src","../../public/images/en.ico");
         $('#selected').text("ENGLISH");
     }
     else if (str.search("pl") > -1){
-        $("#flag").attr("src","../public/images/pl.ico");
+        $("#flag").attr("src","../../public/images/pl.ico");
         $('#selected').text("POLSKI");
     }
 }

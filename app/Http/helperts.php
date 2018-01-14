@@ -11,23 +11,23 @@ use Illuminate\Support\Facades\Request;
 if (! function_exists('getLangURI')) {
     function getLangURI($lang)
     {
-        $referer = Redirect::back()->getTargetUrl(); //URL предыдущей страницы
+     //   echo url()->current();
+        $referer = url()->current(); //URL предыдущей страницы
         $parse_url = parse_url($referer, PHP_URL_PATH); //URI предыдущей страницы
 
         //разбиваем на массив по разделителю
         $segments = explode('/', $parse_url);
 
+
         //Если URL (где нажали на переключение языка) содержал корректную метку языка
         if (in_array($segments[1], App\Http\Middleware\LocaleMiddleware::$languages)) {
-
             unset($segments[1]); //удаляем метку
         }
 
         //Добавляем метку языка в URL (если выбран не язык по-умолчанию)
        // if ($lang != App\Http\Middleware\LocaleMiddleware::$mainLanguage){
-            array_splice($segments, 1, count($segments), $lang);
+            array_splice($segments, 1, 2, $lang);
 //        }
-
 
         //формируем полный URL
         $url = Request::root().implode("/", $segments);

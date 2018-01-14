@@ -16,12 +16,19 @@ use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return redirect('/'. App\Http\Middleware\LocaleMiddleware::$mainLanguage);
+    return redirect('/'. App\Http\Middleware\LocaleMiddleware::getLocale());
 });
 
-Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function() {
+
+
+
+Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function () {
     Route::get('/', function () {
         return view('index');
+    });
+
+    Route::get('/about', function () {
+        return view('about');
     });
 });
 
