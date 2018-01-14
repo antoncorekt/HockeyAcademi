@@ -530,6 +530,27 @@ body {
 }
 
 
+/**
+ * Styles for Second Page
+**/
+
+#about-1 {
+
+  background-attachment: fixed;
+  position: relative;
+  z-index: -9;
+  margin-top: -10%;
+  padding: 0px;
+  @include respond-to($phone) {
+    margin-top: -20%;
+  }
+}
+
+#about-1 img {
+  width:100%;
+}
+
+
 
 @font-face {
   font-family: "Montserrat-Medium";

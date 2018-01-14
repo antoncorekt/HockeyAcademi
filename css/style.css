@@ -388,6 +388,22 @@ body {
   #events {
     padding-right: 30px; } }
 
+/**
+ * Styles for Second Page
+**/
+#about-1 {
+  background-attachment: fixed;
+  position: relative;
+  z-index: -9;
+  margin-top: -10%;
+  padding: 0px; }
+  @media only screen and (max-width: 480px) {
+    #about-1 {
+      margin-top: -20%; } }
+
+#about-1 img {
+  width: 100%; }
+
 @font-face {
   font-family: "Montserrat-Medium";
   src: url("../public/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
