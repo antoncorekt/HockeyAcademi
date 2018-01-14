@@ -90,15 +90,16 @@
 
     <div class="footer-main">
         <div class="row">
-            <h5 class="h5-events">{{ trans('messages.events') }}</h5>
+
         </div>
         <div class="row" id="events">
             <div class="col-sm-2 col-lg-2 col-md-2 div-events">
+                <h5 class="h5-events" id="h5-events-1">{{ trans('messages.events') }}</h5>
                 <img src="../public/images/news.jpg" class="img-events">
                 <p class="text-events">EUHL: pierwsze punkty<br> Academy 1929 KTH</p>
             </div>
             <div class="col-sm-2 col-lg-2 col-md-2 div-events">
-
+                <h5 class="h5-events" id="h5-events-2">{{ trans('messages.events') }}</h5>
                 <img src="../public/images/news.jpg" class="img-events">
                 <p class="text-events">EUHL: pierwsze punkty<br> Academy 1928 KTH</p>
             </div>

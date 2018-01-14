@@ -13,15 +13,17 @@ body {
     body {
       background-color: rgba(46, 204, 113, 0.5); }
       body .menu-logo {
-        background-color: black;
-        background-image: none;
-        height: 0px; } }
+        display: none; } }
   @media only screen and (max-width: 767px) {
     body {
-      background-color: rgba(52, 152, 219, 0.5); } }
+      background-color: rgba(52, 152, 219, 0.5); }
+      body .menu-logo {
+        display: none; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     body {
-      background-color: rgba(155, 89, 182, 0.5); } }
+      background-color: rgba(155, 89, 182, 0.5); }
+      body .menu-logo {
+        display: none; } }
   @media only screen and (min-width: 1024px) {
     body .menu-logo {
       background-image: url(../design/first_page/res/logo.gif);
@@ -34,13 +36,12 @@ body {
 
 .nav-el {
   white-space: nowrap;
-  border: 1px solid sandybrown;
   margin: 0px 20px 20px 0px;
   font-weight: bold; }
 
 .menu-logo {
   margin-top: 13px;
-  margin-right: 90px;
+  margin-right: 70px;
   padding-right: 50px;
   height: 75px; }
 
@@ -49,21 +50,62 @@ body {
 
 .men-contacts {
   margin-left: 8px; }
+  @media only screen and (max-width: 767px) {
+    .men-contacts {
+      margin-left: 0px; } }
 
 .men-blog {
   margin-left: -38px; }
+  @media only screen and (max-width: 767px) {
+    .men-blog {
+      margin-left: 0px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .men-blog {
+      margin-left: 0px; } }
 
 .navbar-default {
   color: white;
   background-color: transparent; }
 
+@media only screen and (max-width: 767px) {
+  .men-lang {
+    padding: 10px 5px;
+    background-color: rgba(88, 46, 99, 0.9); } }
+
 .navbar {
-  border: 1px solid sandybrown; }
+  border: none; }
+  @media only screen and (max-width: 767px) {
+    .navbar {
+      z-index: 10; } }
+  @media only screen and (max-width: 480px) {
+    .navbar {
+      z-index: 10; } }
 
 .navbar-default .navbar-nav > li > a {
   color: #fff;
-  font-size: 16px;
   font-family: "Montserrat-Medium", sans-serif; }
+  @media only screen and (min-width: 1024px) {
+    .navbar-default .navbar-nav > li > a {
+      font-size: 16px; } }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .navbar-default .navbar-nav > li > a {
+      font-size: 14px; } }
+  @media only screen and (max-width: 767px) {
+    .navbar-default .navbar-nav > li > a {
+      font-size: 12px;
+      background-color: rgba(88, 46, 99, 0.9); } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .navbar-default .navbar-nav > li > a {
+      font-size: 12px; } }
+  @media only screen and (max-width: 480px) {
+    .navbar-default .navbar-nav > li > a {
+      font-size: 12px;
+      background-color: rgba(88, 46, 99, 0.9); } }
+
+@media only screen and (max-width: 767px) {
+  .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > li > a:hover {
+    background-color: rgba(88, 46, 99, 0.9); } }
 
 .navbar-default .navbar-nav > li > a:hover {
   color: #BEBEBE; }
@@ -116,8 +158,25 @@ body {
 
 .lang {
   background-color: transparent;
-  border: none;
-  font-size: 16px; }
+  border: none; }
+  @media only screen and (min-width: 1024px) {
+    .lang {
+      font-size: 16px; } }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .lang {
+      font-size: 14px; } }
+  @media only screen and (max-width: 767px) {
+    .lang {
+      font-size: 12px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .lang {
+      font-size: 12px; } }
+  @media only screen and (max-width: 480px) {
+    .lang {
+      font-size: 12px; } }
+
+.lang:hover {
+  color: #333; }
 
 .dropdown-menu {
   background-color: transparent; }
@@ -152,10 +211,38 @@ body {
 
 .drop-text {
   vertical-align: top; }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .drop-text {
+      vertical-align: super; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .drop-text {
+      vertical-align: super; } }
 
 @media only screen and (min-width: 1024px) {
   .navbar-right {
-    margin-top: -90px; } }
+    margin-top: -95px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .navbar-right {
+    margin-top: -75px; } }
+
+@media only screen and (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+    font-size: 12px;
+    padding-left: 7px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+    font-size: 12px;
+    padding-left: 7px; } }
+
+@media only screen and (max-width: 480px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+    font-size: 12px;
+    padding-left: 7px; } }
 
 .btn-main {
   background-color: #ffeb3c;
@@ -190,28 +277,71 @@ body {
   font-family: "Montserrat-ExtraBold", sans-serif; }
   @media only screen and (min-width: 1024px) {
     .h5-events {
-      margin-right: 312px; } }
+      text-align: left; } }
   @media only screen and (min-width: 979px) and (max-width: 1024px) {
     .h5-events {
-      margin-right: 218px; } }
-  @media only screen and (max-width: 767px) {
-    .h5-events {
-      padding-left: 15px;
-      font-size: 9px; } }
+      text-align: left; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .h5-events {
-      margin-right: 176px; } }
+      text-align: left; } }
+  @media only screen and (max-width: 767px) {
+    .h5-events {
+      text-align: left;
+      font-size: 9px; } }
   @media only screen and (max-width: 480px) {
     .h5-events {
-      padding-left: 15px;
+      text-align: left;
       font-size: 10px; } }
+
+@media only screen and (min-width: 1024px) {
+  #h5-events-2 {
+    visibility: visible; } }
+
+@media only screen and (min-width: 979px) and (max-width: 1024px) {
+  #h5-events-2 {
+    visibility: visible; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  #h5-events-2 {
+    visibility: visible; } }
+
+@media only screen and (max-width: 767px) {
+  #h5-events-2 {
+    visibility: hidden; } }
+
+@media only screen and (max-width: 480px) {
+  #h5-events-2 {
+    display: none; } }
+
+@media only screen and (min-width: 1024px) {
+  #h5-events-1 {
+    visibility: hidden; } }
+
+@media only screen and (min-width: 979px) and (max-width: 1024px) {
+  #h5-events-1 {
+    visibility: hidden; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  #h5-events-1 {
+    visibility: hidden; } }
+
+@media only screen and (max-width: 767px) {
+  #h5-events-1 {
+    visibility: visible; } }
+
+@media only screen and (max-width: 480px) {
+  #h5-events-1 {
+    visibility: visible; } }
 
 .text-events {
   font-family: "Montserrat-Bold", sans-serif;
   float: left;
   text-align: left;
-  font-size: 11px;
-  padding-left: 10px; }
+  font-size: 11px; }
+  @media only screen and (max-width: 767px) {
+    .text-events {
+      padding-left: 10px;
+      font-size: 9px; } }
   @media only screen and (max-width: 480px) {
     .text-events {
       font-size: 9px; } }
@@ -234,8 +364,9 @@ body {
       padding-bottom: 0px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .img-events {
-      width: 140px;
-      padding-bottom: 5px; } }
+      width: 120px;
+      padding-bottom: 5px;
+      padding-right: 5px; } }
   @media only screen and (max-width: 480px) {
     .img-events {
       width: 90px;
