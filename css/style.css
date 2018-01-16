@@ -562,6 +562,9 @@ body {
 .page-footer {
   padding-bottom: 0px; }
 
+.row {
+  margin-right: 0px; }
+
 @font-face {
   font-family: "Montserrat-Medium";
   src: url("../public/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
