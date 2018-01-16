@@ -196,7 +196,7 @@ body {
   }
 }
 
-.h1-main-page{
+.h1-main-page, .h1-team-page{
   font-weight: 900;
   font-family: "MontserratBlack", sans-serif;
 
@@ -211,7 +211,6 @@ body {
   @include respond-to($tablet-landscape) {
     font-size: 30px;
   }
-
 }
 
 #main-text-p{
@@ -224,7 +223,7 @@ body {
   }
 }
 
-#main-text{
+#main-text, #form-text{
   margin: 0;
   transform: translateY(-50%);
   position: absolute; 
@@ -534,7 +533,7 @@ body {
  * Styles for Second Page
 **/
 
-#about-1 {
+#about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
 
   background-attachment: fixed;
   position: relative;
@@ -546,11 +545,214 @@ body {
   }
 }
 
-#about-1 img {
+#about-1 img,  #about-2 img, #about-3 img, #about-5 img{
   width:100%;
 }
 
+#about-2, #about-3, #about-4, #about-5, #about-6{
+  z-index: 1;
+}
 
+
+
+.h4-main-page{
+  font-family: "Montserrat-Medium", sans-serif;
+  color: #191d72;
+}
+
+.h1-team-page{
+  color: #2a2a2a;
+}
+
+#team-text-p{
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #191d72;
+}
+
+.sq-text{
+  background-image: url(../design/first_page/res/sq_topl.png);
+  margin: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 5%;
+  padding: 10px;
+}
+
+#sq-text h1{
+  font-family: "Montserrat-ExtraBold", sans-serif;
+  color:white;
+  text-align: center;
+}
+
+#sq-text p{
+  font-family: "MontserratBlack", sans-serif;
+  color:white;
+}
+
+#sq-text-1{
+  left: 50%;
+}
+
+#sq-text-2{
+  left: 67%;
+}
+
+#sq-text-3{
+  left: 77%;
+}
+
+#about-3{
+  position: relative;
+}
+
+.coach-text, .where-text{
+  margin: auto;
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 10%;
+  bottom: 0;
+  text-align: center;
+}
+
+.coach-text h5 {
+  font-family: "Montserrat-Medium", sans-serif;
+}
+
+.coach-text h3, .h3-where-text, #form-text h4 {
+  font-family: "MontserratBlack", sans-serif;
+}
+
+#coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1{
+  top: 35%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#where-photos, #where-photos1, #cost-photos1{
+  align-items: center;
+}
+
+#coach-photos h5{
+  font-family: "OpenSans-Bold", sans-serif;
+  color: #191d72;
+  font-size:15px;
+
+}
+#coach-photos p{
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #191d72;
+  font-size:13px;
+
+}
+
+#coach-btn{
+  top: 80%;
+}
+
+.coach{
+  background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#about-4, #about-6{
+  margin-top: 5%;
+  background-color: white;
+}
+
+.where-text-1{
+  margin-left: 10px;
+  margin-top: 5%;
+}
+
+#img-where{
+  width: 100%;
+}
+.h3-where-text{
+  color: #191d72;
+}
+
+.h1-team-page, #team-text-p{
+  text-align: left;
+}
+
+#about-5{
+  margin-top: 70%;
+}
+
+.form-control{
+  background-color: transparent;
+}
+
+.old-cost{
+  background-image: url(../design/first_page/res/old_cost.jpg);
+  margin-right: 10px;
+}
+
+.offer-cost{
+  background-image: url(../design/first_page/res/offer_cost.jpg);
+
+}
+
+#cost-text{
+  position: relative;
+}
+
+#cost-photos1 h3, p{
+   font-family: "MontserratBlack", sans-serif;
+   color:white;
+ }
+
+#cost-photos1 h3{
+  font-weight: 900;
+}
+
+#cost-btn{
+  margin-top: 3%;
+}
+
+#about-6{
+  margin-bottom: 5%;
+}
+
+
+/**
+  Footer
+ */
+
+
+#nav-footer{
+  margin-left: 10px;
+}
+
+#nav-footer > li > a{
+  font-family: "Geometria-Medium", sans-serif;
+
+  @include respond-to($large-desktop) {
+    font-size: 12px;
+  }
+
+  @include respond-to($tablet-portrait) {
+    font-size: 12px;
+  }
+
+  @include respond-to($tablet-landscape) {
+    font-size: 12px;
+  }
+}
+
+#logo-footer{
+  width: 60%;
+}
+
+.page-footer{
+  padding-bottom: 0px;
+}
 
 @font-face {
   font-family: "Montserrat-Medium";
@@ -583,6 +785,13 @@ body {
 @font-face {
   font-family: "OpenSans-Regular";
   src: url("../public/fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../public/fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
