@@ -4,7 +4,7 @@
     <div class="row" id="main-text">
         <h1 class="h1-main-page">{{ trans('messages.dream') }} -</h1>
         <h1 class="h1-main-page">{{ trans('messages.dream1') }}</h1>
-        <p id="main-text-p">
+        <p class="main-text-p">
             {{ trans('messages.dream2') }}
             <br>{{ trans('messages.dream3') }}
         </p>

@@ -120,41 +120,56 @@ body {
     font: 25px "Montserrat-Medium", sans-serif;
     text-align: center; } }
 
-.h1-main-page, .h1-team-page {
+.h1-main-page {
   font-weight: 900;
   font-family: "MontserratBlack", sans-serif; }
-  @media only screen and (max-width: 480px) {
-    .h1-main-page, .h1-team-page {
-      font-size: 22px; } }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .h1-main-page {
+      font-size: 30px; } }
   @media only screen and (max-width: 767px) {
-    .h1-main-page, .h1-team-page {
+    .h1-main-page {
       font-size: 20px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
-    .h1-main-page, .h1-team-page {
+    .h1-main-page {
       font-size: 30px; } }
+  @media only screen and (max-width: 480px) {
+    .h1-main-page {
+      font-size: 20px; } }
 
-#main-text-p {
+.main-text-p {
   font-family: "OpenSans-Regular", sans-serif; }
   @media only screen and (min-width: 1024px) {
-    #main-text-p {
+    .main-text-p {
       font-size: 16px; } }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .main-text-p {
+      font-size: 14px; } }
   @media only screen and (max-width: 480px) {
-    #main-text-p {
+    .main-text-p {
       font-size: 12px; } }
 
-#main-text, #form-text {
+#main-text, #form-text, #team-text {
   margin: 0;
   transform: translateY(-50%);
   position: absolute;
   top: 50%;
   left: 5%; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    #main-text, #form-text, #team-text {
+      left: 2%;
+      top: 45%; } }
   @media only screen and (max-width: 767px) {
-    #main-text, #form-text {
+    #main-text, #form-text, #team-text {
       left: 2%;
       top: 45%; } }
   @media only screen and (max-width: 480px) {
-    #main-text, #form-text {
+    #main-text, #form-text, #team-text {
       top: 45%; } }
+
+@media only screen and (max-width: 767px) {
+  #form-text {
+    left: 5%;
+    top: 50%; } }
 
 .lang {
   background-color: transparent;
@@ -251,7 +266,11 @@ body {
   font-size: 12px; }
   @media only screen and (max-width: 767px) {
     .btn-main {
-      font-size: 8px;
+      font-size: 7px;
+      padding: 4px 4px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .btn-main {
+      font-size: 9px;
       padding: 5px 5px; } }
 
 .footer-main {
@@ -395,11 +414,30 @@ body {
   background-attachment: fixed;
   position: relative;
   z-index: -9;
-  margin-top: -10%;
   padding: 0px; }
+  @media only screen and (min-width: 1024px) {
+    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
+      margin-top: -10%; } }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
+      margin-top: -13%; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
+      margin-top: -14%; } }
+  @media only screen and (max-width: 767px) {
+    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
+      margin-top: -12%; } }
   @media only screen and (max-width: 480px) {
     #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
       margin-top: -20%; } }
+
+@media only screen and (min-width: 979px) and (max-width: 1024px) {
+  #about-2 {
+    margin-top: -9%; } }
+
+@media only screen and (max-width: 480px) {
+  #about-2 {
+    margin-top: -9%; } }
 
 #about-1 img, #about-2 img, #about-3 img, #about-5 img {
   width: 100%; }
@@ -407,45 +445,207 @@ body {
 #about-2, #about-3, #about-4, #about-5, #about-6 {
   z-index: 1; }
 
+@media only screen and (max-width: 480px) {
+  .h1-about {
+    font-size: 12px;
+    margin-top: 5px; } }
+
+@media only screen and (max-width: 480px) {
+  #t-about {
+    font-size: 5px; } }
+
 .h4-main-page {
   font-family: "Montserrat-Medium", sans-serif;
   color: #191d72; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .h4-main-page {
+      font-size: 12px; } }
+  @media only screen and (max-width: 767px) {
+    .h4-main-page {
+      font-size: 9px; } }
+  @media only screen and (max-width: 480px) {
+    .h4-main-page {
+      font-size: 5px;
+      margin-bottom: 5px; } }
+
+@media only screen and (max-width: 480px) {
+  .btn-about {
+    font-size: 5px;
+    padding: 2px 2px; } }
 
 .h1-team-page {
-  color: #2a2a2a; }
+  font-weight: 900;
+  font-family: "MontserratBlack", sans-serif; }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .h1-team-page {
+      font-size: 20px; } }
+  @media only screen and (max-width: 767px) {
+    .h1-team-page {
+      font-size: 13px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .h1-team-page {
+      font-size: 20px; } }
+  @media only screen and (max-width: 480px) {
+    .h1-team-page {
+      font-size: 9px;
+      margin-bottom: 5px; } }
+
+.h1-team-page {
+  color: #2a2a2a;
+  margin-top: auto; }
 
 #team-text-p {
   font-family: "OpenSans-Regular", sans-serif;
-  color: #191d72; }
+  color: #191d72;
+  line-height: 2; }
+  @media only screen and (min-width: 1024px) {
+    #team-text-p {
+      font-size: 14px;
+      margin-top: 5%; } }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    #team-text-p {
+      font-size: 12px; } }
+  @media only screen and (max-width: 767px) {
+    #team-text-p {
+      font-size: 8px; } }
+  @media only screen and (max-width: 480px) {
+    #team-text-p {
+      font-size: 5px; } }
 
 .sq-text {
   background-image: url(../design/first_page/res/sq_topl.png);
   margin: 0;
-  transform: translateY(-50%);
+  transform: translateY(-45%);
   position: absolute;
-  top: 5%;
-  padding: 10px; }
+  top: 5%; }
+  @media only screen and (min-width: 1024px) {
+    .sq-text {
+      padding: 30px; } }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .sq-text {
+      padding: 5px 15px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .sq-text {
+      padding: 2px 10px;
+      transform: translateY(-35%); } }
+  @media only screen and (max-width: 767px) {
+    .sq-text {
+      padding: 1px 5px;
+      transform: translateY(-55%); } }
+  @media only screen and (max-width: 480px) {
+    .sq-text {
+      padding: 2px 5px;
+      transform: translateY(-55%); } }
 
 #sq-text h1 {
   font-family: "Montserrat-ExtraBold", sans-serif;
-  color: white;
-  text-align: center; }
+  color: white; }
+  @media only screen and (min-width: 1024px) {
+    #sq-text h1 {
+      font-size: 55px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    #sq-text h1 {
+      font-size: 25px;
+      margin-bottom: 5px; } }
+  @media only screen and (max-width: 767px) {
+    #sq-text h1 {
+      font-size: 16px;
+      margin-bottom: 3px; } }
+  @media only screen and (max-width: 480px) {
+    #sq-text h1 {
+      font-size: 11px;
+      margin-bottom: 3px; } }
 
 #sq-text p {
   font-family: "MontserratBlack", sans-serif;
   color: white; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    #sq-text p {
+      font-size: 9px; } }
+  @media only screen and (max-width: 767px) {
+    #sq-text p {
+      font-size: 7px; } }
+  @media only screen and (max-width: 480px) {
+    #sq-text p {
+      font-size: 5px; } }
 
-#sq-text-1 {
-  left: 50%; }
+@media only screen and (min-width: 1024px) {
+  #sq-text-1 {
+    left: 36%; } }
 
-#sq-text-2 {
-  left: 67%; }
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  #sq-text-1 {
+    left: 46%; } }
 
-#sq-text-3 {
-  left: 77%; }
+@media only screen and (max-width: 767px) {
+  #sq-text-1 {
+    left: 45%; } }
+
+@media only screen and (max-width: 480px) {
+  #sq-text-1 {
+    left: 37%; } }
+
+@media only screen and (min-width: 1024px) {
+  .sq-text {
+    height: 25%;
+    width: 19%; } }
+
+@media only screen and (min-width: 1024px) {
+  #sq-text-2 {
+    left: 56%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  #sq-text-2 {
+    left: 63%; } }
+
+@media only screen and (max-width: 767px) {
+  #sq-text-2 {
+    left: 61%; } }
+
+@media only screen and (max-width: 480px) {
+  #sq-text-2 {
+    left: 56%; } }
+
+@media only screen and (min-width: 1024px) {
+  #sq-text-3 {
+    left: 76%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  #sq-text-3 {
+    left: 79%; } }
+
+@media only screen and (max-width: 767px) {
+  #sq-text-3 {
+    left: 77%; } }
+
+@media only screen and (max-width: 480px) {
+  #sq-text-3 {
+    left: 75%; } }
+
+@media only screen and (min-width: 1024px) {
+  #team-text {
+    margin-top: 4%;
+    margin-left: 6%; } }
+
+@media only screen and (min-width: 979px) and (max-width: 1024px) {
+  #team-text {
+    margin-left: 6%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  #team-text {
+    margin-top: 4%; } }
+
+@media only screen and (max-width: 767px) {
+  #team-text {
+    margin-top: 5%; } }
+
+@media only screen and (max-width: 480px) {
+  #team-text {
+    margin-top: 8%; } }
 
 #about-3 {
-  position: relative; }
+  position: relative;
+  margin-top: auto; }
 
 .coach-text, .where-text {
   margin: auto;
@@ -455,12 +655,39 @@ body {
   top: 10%;
   bottom: 0;
   text-align: center; }
+  @media only screen and (max-width: 767px) {
+    .coach-text, .where-text {
+      top: 5%; } }
+  @media only screen and (max-width: 480px) {
+    .coach-text, .where-text {
+      top: 1%; } }
 
 .coach-text h5 {
   font-family: "Montserrat-Medium", sans-serif; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .coach-text h5 {
+      font-size: 12px; } }
+  @media only screen and (max-width: 767px) {
+    .coach-text h5 {
+      font-size: 10px; } }
+  @media only screen and (max-width: 480px) {
+    .coach-text h5 {
+      font-size: 7px;
+      margin-bottom: 2px; } }
 
 .coach-text h3, .h3-where-text, #form-text h4 {
   font-family: "MontserratBlack", sans-serif; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .coach-text h3, .h3-where-text, #form-text h4 {
+      font-size: 17px; } }
+  @media only screen and (max-width: 767px) {
+    .coach-text h3, .h3-where-text, #form-text h4 {
+      margin-top: 5px;
+      font-size: 12px; } }
+  @media only screen and (max-width: 480px) {
+    .coach-text h3, .h3-where-text, #form-text h4 {
+      font-size: 7px;
+      margin-bottom: 5px; } }
 
 #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1 {
   top: 35%;
@@ -468,6 +695,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: baseline; }
+  @media only screen and (max-width: 767px) {
+    #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1 {
+      top: 30%; } }
 
 #where-photos, #where-photos1, #cost-photos1 {
   align-items: center; }
@@ -476,11 +706,33 @@ body {
   font-family: "OpenSans-Bold", sans-serif;
   color: #191d72;
   font-size: 15px; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    #coach-photos h5 {
+      font-size: 10px; } }
+  @media only screen and (max-width: 767px) {
+    #coach-photos h5 {
+      font-size: 9px;
+      margin-bottom: 5px; } }
+  @media only screen and (max-width: 480px) {
+    #coach-photos h5 {
+      font-size: 7px;
+      margin-bottom: 2px;
+      margin-top: 2px; } }
 
 #coach-photos p {
   font-family: "OpenSans-Regular", sans-serif;
   color: #191d72;
   font-size: 13px; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    #coach-photos p {
+      font-size: 9px; } }
+  @media only screen and (max-width: 767px) {
+    #coach-photos p {
+      font-size: 7px; } }
+  @media only screen and (max-width: 480px) {
+    #coach-photos p {
+      font-size: 5px;
+      margin-bottom: 2px; } }
 
 #coach-btn {
   top: 80%; }
@@ -495,6 +747,9 @@ body {
 #about-4, #about-6 {
   margin-top: 5%;
   background-color: white; }
+  @media only screen and (max-width: 767px) {
+    #about-4, #about-6 {
+      margin-top: 3%; } }
 
 .where-text-1 {
   margin-left: 10px;
@@ -511,6 +766,12 @@ body {
 
 #about-5 {
   margin-top: 70%; }
+  @media only screen and (max-width: 767px) {
+    #about-5 {
+      margin-top: 80%; } }
+  @media only screen and (max-width: 480px) {
+    #about-5 {
+      margin-top: 88%; } }
 
 .form-control {
   background-color: transparent; }
@@ -518,19 +779,66 @@ body {
 .old-cost {
   background-image: url(../design/first_page/res/old_cost.jpg);
   margin-right: 10px; }
+  @media only screen and (min-width: 1024px) {
+    .old-cost {
+      width: 20%;
+      height: 150px;
+      padding-top: 20px; } }
+  @media only screen and (max-width: 767px) {
+    .old-cost {
+      width: 20%;
+      height: 80px;
+      padding-top: 0px; } }
+  @media only screen and (max-width: 480px) {
+    .old-cost {
+      height: 45px; } }
 
 .offer-cost {
   background-image: url(../design/first_page/res/offer_cost.jpg); }
+  @media only screen and (min-width: 1024px) {
+    .offer-cost {
+      width: 20%;
+      height: 150px;
+      padding-top: 20px; } }
+  @media only screen and (max-width: 767px) {
+    .offer-cost {
+      width: 20%;
+      height: 80px;
+      padding-top: 0px; } }
+  @media only screen and (max-width: 480px) {
+    .offer-cost {
+      height: 45px; } }
 
 #cost-text {
   position: relative; }
 
-#cost-photos1 h3, p {
+#cost-photos1 h2, p {
   font-family: "MontserratBlack", sans-serif;
   color: white; }
 
-#cost-photos1 h3 {
+#cost-photos1 h2 {
   font-weight: 900; }
+  @media only screen and (max-width: 767px) {
+    #cost-photos1 h2 {
+      font-size: 14px; } }
+  @media only screen and (max-width: 480px) {
+    #cost-photos1 h2 {
+      font-size: 10px;
+      margin-top: 10px;
+      margin-bottom: 5px; } }
+
+@media only screen and (min-width: 1024px) {
+  #cost-photos1 p {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 767px) {
+  #cost-photos1 p {
+    font-size: 9px; } }
+
+@media only screen and (max-width: 480px) {
+  #cost-photos1 p {
+    font-size: 5px;
+    margin-bottom: 5px; } }
 
 #cost-btn {
   margin-top: 3%; }
@@ -538,32 +846,88 @@ body {
 #about-6 {
   margin-bottom: 5%; }
 
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .form-control {
+    font-size: 10px;
+    height: 24px; } }
+
+@media only screen and (max-width: 767px) {
+  .form-control {
+    font-size: 9px;
+    height: 20px; } }
+
+@media only screen and (max-width: 480px) {
+  .form-control {
+    font-size: 5px;
+    height: 15px;
+    padding: 2px 6px; } }
+
+@media only screen and (max-width: 480px) {
+  .form-group {
+    margin-bottom: 5px; } }
+
 /**
   Footer
  */
-#nav-footer {
-  margin-left: 10px; }
+.page-footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
 
-#nav-footer > li > a {
+.page-footer li {
+  float: left; }
+
+.page-footer li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   font-family: "Geometria-Medium", sans-serif; }
   @media only screen and (min-width: 1024px) {
-    #nav-footer > li > a {
+    .page-footer li a {
       font-size: 12px; } }
   @media only screen and (max-width: 767px) {
-    #nav-footer > li > a {
-      font-size: 12px; } }
+    .page-footer li a {
+      font-size: 8px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
-    #nav-footer > li > a {
-      font-size: 12px; } }
+    .page-footer li a {
+      font-size: 11px; } }
+
+.page-footer ul {
+  padding-top: 10px; }
 
 #logo-footer {
   width: 60%; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    #logo-footer {
+      width: 50%; } }
+  @media only screen and (max-width: 767px) {
+    #logo-footer {
+      width: 25%; } }
+  @media only screen and (max-width: 480px) {
+    #logo-footer {
+      width: 15%; } }
+
+@media only screen and (max-width: 767px) {
+  .logo-el {
+    margin-left: 0px;
+    margin-right: -13%;
+    margin-top: 7px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .logo-el {
+    margin-left: -15px; } }
 
 .page-footer {
   padding-bottom: 0px; }
 
 .row {
   margin-right: 0px; }
+
+#nav-right-footer {
+  margin-top: -85px; }
 
 @font-face {
   font-family: "Montserrat-Medium";
