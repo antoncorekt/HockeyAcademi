@@ -894,9 +894,19 @@ body {
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .page-footer li a {
       font-size: 11px; } }
+  @media only screen and (max-width: 480px) {
+    .page-footer li a {
+      padding: 10px 5px;
+      font-size: 6px; } }
 
 .page-footer ul {
   padding-top: 10px; }
+  @media only screen and (max-width: 767px) {
+    .page-footer ul {
+      padding-top: 0px; } }
+  @media only screen and (max-width: 480px) {
+    .page-footer ul {
+      padding-top: 0px; } }
 
 #logo-footer {
   width: 60%; }
@@ -913,21 +923,40 @@ body {
 @media only screen and (max-width: 767px) {
   .logo-el {
     margin-left: 0px;
-    margin-right: -13%;
+    margin-right: -10%;
     margin-top: 7px; } }
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .logo-el {
     margin-left: -15px; } }
 
+@media only screen and (max-width: 480px) {
+  .logo-el {
+    margin-right: -23%; } }
+
 .page-footer {
   padding-bottom: 0px; }
 
+#company-el {
+  float: right;
+  font-family: "Geometria-Medium", sans-serif;
+  margin-top: 13px; }
+  @media only screen and (min-width: 1024px) {
+    #company-el {
+      font-size: 12px; } }
+  @media only screen and (max-width: 767px) {
+    #company-el {
+      font-size: 8px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    #company-el {
+      font-size: 11px; } }
+  @media only screen and (max-width: 480px) {
+    #company-el {
+      font-size: 6px;
+      margin-top: 10px; } }
+
 .row {
   margin-right: 0px; }
-
-#nav-right-footer {
-  margin-top: -85px; }
 
 @font-face {
   font-family: "Montserrat-Medium";

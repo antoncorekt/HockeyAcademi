@@ -1123,6 +1123,8 @@ body {
   Footer
  */
 
+
+
 .page-footer ul {
   list-style-type: none;
   margin: 0;
@@ -1153,10 +1155,24 @@ body {
   @include respond-to($tablet-landscape) {
     font-size: 11px;
   }
+
+  @include respond-to($phone) {
+    padding: 10px 5px;
+    font-size: 6px;
+  }
+
+
 }
 
 .page-footer ul{
   padding-top: 10px;
+  @include respond-to($tablet-portrait) {
+    padding-top: 0px;
+  }
+  @include respond-to($phone) {
+    padding-top: 0px;
+  }
+
 }
 
 
@@ -1178,12 +1194,19 @@ body {
 .logo-el{
   @include respond-to($tablet-portrait) {
     margin-left: 0px;
-    margin-right: -13%;
+    margin-right: -10%;
     margin-top: 7px;
   }
   @include respond-to($tablet-landscape) {
     margin-left: -15px;
   }
+
+
+
+  @include respond-to($phone) {
+    margin-right: -23%;
+  }
+
 
 }
 
@@ -1191,13 +1214,32 @@ body {
   padding-bottom: 0px;
 }
 
+#company-el{
+  float:right;
+  font-family: "Geometria-Medium", sans-serif;
+  margin-top: 13px;
+
+  @include respond-to($large-desktop) {
+    font-size: 12px;
+  }
+
+  @include respond-to($tablet-portrait) {
+    font-size: 8px;
+  }
+
+  @include respond-to($tablet-landscape) {
+    font-size: 11px;
+  }
+  @include respond-to($phone) {
+    font-size: 6px;
+    margin-top: 10px;
+  }
+}
+
 .row{
   margin-right: 0px;
 }
 
-#nav-right-footer{
-  margin-top: -85px;
-}
 
 
 @font-face {

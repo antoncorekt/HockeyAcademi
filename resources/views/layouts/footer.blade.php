@@ -5,7 +5,7 @@
         <li class="footer-el"><a class=" men-about" href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about")}}">{{ trans('messages.about') }}</a></li>
         <li class="footer-el"><a href="#">{{ trans('messages.blog') }}</a></li>
         <li class="footer-el"><a href="#">{{ trans('messages.cont') }}</a></li>
-        <li  class="footer-el">&copy; НАЗВАНИЕ АКАДЕМИИБ 2018</li>
+        <li class="footer-el" id="company-el">&copy; НАЗВАНИЕ АКАДЕМИИ, 2018</li>
     </ul>
 
 
