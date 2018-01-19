@@ -6,6 +6,7 @@
             background-color: white;
         }
     </style>
+    <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
     <div class="container-fluid bg-1" id="about-1">
         <img src="../../design/first_page/res/about_main.png"/>
         <div class="row" id="main-text">
@@ -175,9 +176,15 @@
             </div>
         </div>
         <div class="row" id="cost-btn">
-            <button class="btn btn-main btn-about">{{ trans('messages.write_learn') }}</button>
+            <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal') }}" data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about">{{ trans('messages.write_learn') }}</a>
         </div>
     </div>
     @include('layouts.footer')
+
+    <div class="modal fade" id="modalArt" tabindex="-1" role="dialog" aria-labelledby="modalArt" style="color:black">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content"> </div>
+        </div>
+    </div>
 
 @endsection

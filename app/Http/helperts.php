@@ -24,10 +24,12 @@ if (! function_exists('getLangURI')) {
             unset($segments[1]); //удаляем метку
         }
 
+
         //Добавляем метку языка в URL (если выбран не язык по-умолчанию)
        // if ($lang != App\Http\Middleware\LocaleMiddleware::$mainLanguage){
             array_splice($segments, 1, 2, $lang);
 //        }
+        //this adds 30 days to the current time
 
         //формируем полный URL
         $url = Request::root().implode("/", $segments);

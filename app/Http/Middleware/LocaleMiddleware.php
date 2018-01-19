@@ -23,6 +23,11 @@ class LocaleMiddleware
     {
         $uri = Request::path(); //получаем URI
 
+
+        if(isset($_COOKIE["userLang"]))
+        {var_dump($_COOKIE['userLang']);echo $_COOKIE["userLang"];}
+
+
         $segmentsURI = explode('/',$uri); //делим на части по разделителю "/"
 
         //Проверяем метку языка  - есть ли она среди доступных языков

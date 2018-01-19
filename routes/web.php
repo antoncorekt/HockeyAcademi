@@ -27,6 +27,12 @@ Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function
     Route::get('/about', function () {
         return view('about');
     });
+
+
+    Route::get('/modal', 'MainController@showModal')->name('modal');
+   // Route::resource('/modal', 'MainController@showModal');
+
 });
 
 
+//Route::get('/modal', 'MainController@showModal')->name('modal');
