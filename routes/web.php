@@ -19,9 +19,6 @@ Route::get('/', function () {
     return redirect('/'. App\Http\Middleware\LocaleMiddleware::getLocale());
 });
 
-
-
-
 Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function () {
     Route::get('/', function () {
         return view('index');

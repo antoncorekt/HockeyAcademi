@@ -67,8 +67,25 @@ body {
   color: white;
   background-color: transparent; }
 
-.navbar-collapse {
-  position: absolute; }
+@media only screen and (min-width: 1024px) {
+  .navbar-collapse {
+    position: relative; } }
+
+@media only screen and (min-width: 979px) and (max-width: 1024px) {
+  .navbar-collapse {
+    position: relative; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .navbar-collapse {
+    position: relative; } }
+
+@media only screen and (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute; } }
+
+@media only screen and (max-width: 480px) {
+  .navbar-collapse {
+    position: absolute; } }
 
 @media only screen and (max-width: 767px) {
   .men-lang {
@@ -562,6 +579,9 @@ body {
 #sq-text p {
   font-family: "MontserratBlack", sans-serif;
   color: white; }
+  @media only screen and (min-width: 1024px) {
+    #sq-text p {
+      font-size: 12px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     #sq-text p {
       font-size: 9px; } }
@@ -570,7 +590,8 @@ body {
       font-size: 7px; } }
   @media only screen and (max-width: 480px) {
     #sq-text p {
-      font-size: 5px; } }
+      font-size: 5px;
+      margin-bottom: 5px; } }
 
 @media only screen and (min-width: 1024px) {
   #sq-text-1 {
@@ -582,11 +603,13 @@ body {
 
 @media only screen and (max-width: 767px) {
   #sq-text-1 {
-    left: 45%; } }
+    left: 43%;
+    width: 16%; } }
 
 @media only screen and (max-width: 480px) {
   #sq-text-1 {
-    left: 37%; } }
+    left: 35%;
+    width: 20%; } }
 
 @media only screen and (min-width: 1024px) {
   .sq-text {
@@ -603,11 +626,13 @@ body {
 
 @media only screen and (max-width: 767px) {
   #sq-text-2 {
-    left: 61%; } }
+    left: 60%;
+    width: 16%; } }
 
 @media only screen and (max-width: 480px) {
   #sq-text-2 {
-    left: 56%; } }
+    left: 56%;
+    width: 20%; } }
 
 @media only screen and (min-width: 1024px) {
   #sq-text-3 {
@@ -619,11 +644,13 @@ body {
 
 @media only screen and (max-width: 767px) {
   #sq-text-3 {
-    left: 77%; } }
+    left: 77%;
+    width: 16%; } }
 
 @media only screen and (max-width: 480px) {
   #sq-text-3 {
-    left: 75%; } }
+    left: 77%;
+    width: 20%; } }
 
 @media only screen and (min-width: 1024px) {
   #team-text {

@@ -7,6 +7,4 @@
         <li class="footer-el"><a href="#">{{ trans('messages.cont') }}</a></li>
         <li class="footer-el" id="company-el">&copy; НАЗВАНИЕ АКАДЕМИИ, 2018</li>
     </ul>
-
-
 </div>

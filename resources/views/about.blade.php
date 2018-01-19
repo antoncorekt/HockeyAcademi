@@ -71,7 +71,7 @@
         <div class="row coach-text">
             <h5 class="h5-coach-text">{{ trans('messages.learn') }}?</h5>
             <h3 class="h3-coach-text">{{ trans('messages.coach') }}
-                <br>{{ trans('messages.coach1') }}
+                <br>{{ trans('messages.10text') }}
             </h3>
         </div>
         <div class="row coach-text" id="coach-photos">

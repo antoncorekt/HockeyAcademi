@@ -124,7 +124,23 @@ body {
 }
 
 .navbar-collapse{
-  position: absolute;
+  @include  respond-to($large-desktop){
+    position: relative;
+  }
+
+  @include respond-to($ipad) {
+    position: relative;
+  }
+  @include respond-to($tablet-landscape) {
+    position: relative;
+  }
+  @include respond-to($tablet-portrait) {
+    position: absolute;
+  }
+  @include respond-to($phone) {
+    position: absolute;
+  }
+
 }
 
 .men-about{
@@ -754,7 +770,9 @@ body {
 #sq-text p{
   font-family: "MontserratBlack", sans-serif;
   color:white;
-
+  @include  respond-to($large-desktop){
+    font-size: 12px;
+  }
   @include  respond-to($tablet-landscape){
     font-size: 9px;
   }
@@ -763,6 +781,7 @@ body {
   }
   @include  respond-to($phone){
     font-size: 5px;
+    margin-bottom: 5px;
   }
 
 }
@@ -777,10 +796,12 @@ body {
   }
 
   @include  respond-to($tablet-portrait){
-    left: 45%;
+    left: 43%;
+    width: 16%;
   }
   @include  respond-to($phone){
-    left: 37%
+    left: 35%;
+    width: 20%;
   }
 }
 
@@ -803,10 +824,12 @@ body {
   }
 
   @include  respond-to($tablet-portrait){
-    left: 61%;
+    left: 60%;
+    width: 16%;
   }
   @include  respond-to($phone){
-    left: 56%
+    left: 56%;
+    width: 20%;
   }
 
 }
@@ -821,9 +844,11 @@ body {
   }
   @include  respond-to($tablet-portrait){
     left: 77%;
+    width: 16%;
   }
   @include  respond-to($phone){
-    left: 75%
+    left: 77%;
+    width: 20%;
   }
 }
 
