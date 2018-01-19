@@ -67,6 +67,9 @@ body {
   color: white;
   background-color: transparent; }
 
+.navbar-collapse {
+  position: absolute; }
+
 @media only screen and (max-width: 767px) {
   .men-lang {
     padding: 10px 5px;
