@@ -1,2 +1,9 @@
 node_modules
 ./node_modules
+/public/hot
+/public/storage
+/vendor
+/.idea
+/.vagrant
+.env
+design/first_page/ob_akademii_final.psd
