@@ -277,8 +277,27 @@ body {
     left: 5%;
     top: 50%;
   }
-}
 
+  @include respond-to($phone) {
+    position: relative;
+    transform: translateY(-90%);
+    left:0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+#team-text{
+
+  @include respond-to($tablet-portrait) {
+    position: relative;
+  }
+
+  @include respond-to($phone) {
+    transform: translateY(-30%);
+    position: relative;
+
+  }
+}
 
 .lang{
   background-color: transparent;
@@ -393,14 +412,13 @@ body {
   font-family: "MontserratBlack", sans-serif;
   font-size: 12px;
 
-  @include respond-to($tablet-portrait) {
-    font-size: 7px;
-    padding: 4px 4px;
-  }
-
   @include respond-to($tablet-landscape) {
     font-size: 9px;
     padding: 5px 5px;
+  }
+  @include respond-to($tablet-portrait) {
+    font-size: 10px;
+    padding: 4px 4px;
   }
 
 }
@@ -636,7 +654,7 @@ body {
 
 #t-about{
   @include respond-to($phone) {
-    font-size: 5px;
+    font-size: 10px;
   }
 }
 
@@ -648,18 +666,19 @@ body {
     font-size: 12px;
   }
   @include respond-to($tablet-portrait) {
-    font-size: 9px;
+    font-size: 13px;
   }
   @include respond-to($phone) {
-    font-size: 5px;
+    font-size: 10px;
     margin-bottom: 5px;
   }
 }
 
 .btn-about{
   @include respond-to($phone) {
-    font-size: 5px;
-    padding: 2px 2px;
+    font-size: 9px;
+    padding: 2px 5px;
+    margin-bottom: 15px;
   }
 
 }
@@ -667,21 +686,23 @@ body {
 .h1-team-page{
   font-weight: 900;
   font-family: "MontserratBlack", sans-serif;
+  text-align: justify;
 
   @include respond-to($ipad) {
     font-size: 20px;
   }
 
-
-  @include respond-to($tablet-portrait) {
-    font-size: 13px;
-  }
-
   @include respond-to($tablet-landscape) {
     font-size: 20px;
   }
+
+  @include respond-to($tablet-portrait) {
+    font-size: 16px;
+  }
+
+
   @include respond-to($phone) {
-    font-size: 9px;
+    font-size: 14px;
     margin-bottom: 5px;
   }
 
@@ -707,11 +728,11 @@ body {
   }
 
   @include respond-to($tablet-portrait) {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   @include respond-to($phone) {
-    font-size: 5px;
+    font-size: 10px;
   }
 
 }
@@ -792,7 +813,8 @@ body {
   }
 
   @include  respond-to($tablet-landscape){
-    left: 46%;
+    left: 42%;
+    width: 18%;
   }
 
   @include  respond-to($tablet-portrait){
@@ -820,7 +842,8 @@ body {
   }
 
   @include  respond-to($tablet-landscape){
-    left: 63%;
+    left: 61%;
+    width: 18%;
   }
 
   @include  respond-to($tablet-portrait){
@@ -840,7 +863,8 @@ body {
   }
 
   @include  respond-to($tablet-landscape){
-    left: 79%;
+    left: 80%;
+    width: 18%;
   }
   @include  respond-to($tablet-portrait){
     left: 77%;
@@ -880,6 +904,15 @@ body {
 #about-3{
   position: relative;
   margin-top: auto;
+
+  @include  respond-to($tablet-portrait){
+    top: -200px;
+  }
+
+  @include  respond-to($phone){
+    top: -100px;
+  }
+
 }
 
 .coach-text, .where-text{
@@ -898,8 +931,15 @@ body {
   @include  respond-to($phone){
     top: 1%;
   }
+}
 
-
+.where-text{
+  @include  respond-to($tablet-portrait){
+    position: relative;
+  }
+  @include  respond-to($phone){
+    position: relative;
+  }
 }
 
 .coach-text h5 {
@@ -932,7 +972,7 @@ body {
   }
 
   @include  respond-to($phone){
-    font-size: 7px;
+    font-size: 9px;
     margin-bottom: 5px;
   }
 }
@@ -946,11 +986,15 @@ body {
   @include  respond-to($tablet-portrait){
     top: 30%;
   }
-
-
+}
+#where-photos, #where-photos1{
+  @include  respond-to($tablet-portrait){
+    display: block;
+  }
 }
 
-#where-photos, #where-photos1, #cost-photos1{
+
+#where-photos, #where-photos1, #cost-photos1, #team-text{
   align-items: center;
 }
 
@@ -964,7 +1008,7 @@ body {
   }
 
   @include  respond-to($tablet-portrait){
-    font-size: 9px;
+    font-size: 10px;
     margin-bottom: 5px;
   }
   @include  respond-to($phone){
@@ -984,7 +1028,7 @@ body {
   }
 
   @include  respond-to($tablet-portrait){
-    font-size: 7px;
+    font-size: 9px;
   }
 
   @include  respond-to($phone){
@@ -996,6 +1040,14 @@ body {
 
 #coach-btn{
   top: 80%;
+
+  @include  respond-to($tablet-portrait){
+    top: 89%;
+  }
+
+  @include  respond-to($phone){
+    top: 85%;
+  }
 }
 
 .coach{
@@ -1009,10 +1061,16 @@ body {
 #about-4, #about-6{
   margin-top: 5%;
   background-color: white;
-  @include  respond-to($tablet-portrait){
-    margin-top: 3%;
-  }
 
+  @include  respond-to($phone) {
+    margin-top: -25%;
+  }
+}
+
+#about-4{
+  @include  respond-to($tablet-portrait){
+    margin-top: -29%;
+  }
 }
 
 .where-text-1{
@@ -1035,10 +1093,10 @@ body {
   margin-top: 70%;
 
   @include  respond-to($tablet-portrait){
-    margin-top: 80%;
+    margin-top: 5%;
   }
   @include  respond-to($phone){
-    margin-top: 88%;
+    margin-top: 10%;
   }
 }
 
@@ -1095,7 +1153,7 @@ body {
 #cost-photos1 h2{
   font-weight: 900;
   @include respond-to($tablet-portrait) {
-    font-size: 14px;
+    font-size: 16px;
   }
   @include respond-to($phone) {
     font-size: 10px;
@@ -1109,10 +1167,10 @@ body {
    font-size: 14px;
   }
   @include respond-to($tablet-portrait) {
-    font-size: 9px;
+    font-size: 11px;
   }
   @include respond-to($phone) {
-    font-size: 5px;
+    font-size: 7px;
     margin-bottom: 5px;
   }
 }

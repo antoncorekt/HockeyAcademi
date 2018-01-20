@@ -191,6 +191,23 @@ body {
     left: 5%;
     top: 50%; } }
 
+@media only screen and (max-width: 480px) {
+  #form-text {
+    position: relative;
+    transform: translateY(-90%);
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+@media only screen and (max-width: 767px) {
+  #team-text {
+    position: relative; } }
+
+@media only screen and (max-width: 480px) {
+  #team-text {
+    transform: translateY(-30%);
+    position: relative; } }
+
 .lang {
   background-color: transparent;
   border: none; }
@@ -284,14 +301,14 @@ body {
   color: #10425c;
   font-family: "MontserratBlack", sans-serif;
   font-size: 12px; }
-  @media only screen and (max-width: 767px) {
-    .btn-main {
-      font-size: 7px;
-      padding: 4px 4px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .btn-main {
       font-size: 9px;
       padding: 5px 5px; } }
+  @media only screen and (max-width: 767px) {
+    .btn-main {
+      font-size: 10px;
+      padding: 4px 4px; } }
 
 .footer-main {
   position: fixed;
@@ -472,7 +489,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   #t-about {
-    font-size: 5px; } }
+    font-size: 10px; } }
 
 .h4-main-page {
   font-family: "Montserrat-Medium", sans-serif;
@@ -482,32 +499,34 @@ body {
       font-size: 12px; } }
   @media only screen and (max-width: 767px) {
     .h4-main-page {
-      font-size: 9px; } }
+      font-size: 13px; } }
   @media only screen and (max-width: 480px) {
     .h4-main-page {
-      font-size: 5px;
+      font-size: 10px;
       margin-bottom: 5px; } }
 
 @media only screen and (max-width: 480px) {
   .btn-about {
-    font-size: 5px;
-    padding: 2px 2px; } }
+    font-size: 9px;
+    padding: 2px 5px;
+    margin-bottom: 15px; } }
 
 .h1-team-page {
   font-weight: 900;
-  font-family: "MontserratBlack", sans-serif; }
+  font-family: "MontserratBlack", sans-serif;
+  text-align: justify; }
   @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .h1-team-page {
+      font-size: 20px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
     .h1-team-page {
       font-size: 20px; } }
   @media only screen and (max-width: 767px) {
     .h1-team-page {
-      font-size: 13px; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    .h1-team-page {
-      font-size: 20px; } }
+      font-size: 16px; } }
   @media only screen and (max-width: 480px) {
     .h1-team-page {
-      font-size: 9px;
+      font-size: 14px;
       margin-bottom: 5px; } }
 
 .h1-team-page {
@@ -527,10 +546,10 @@ body {
       font-size: 12px; } }
   @media only screen and (max-width: 767px) {
     #team-text-p {
-      font-size: 8px; } }
+      font-size: 12px; } }
   @media only screen and (max-width: 480px) {
     #team-text-p {
-      font-size: 5px; } }
+      font-size: 10px; } }
 
 .sq-text {
   background-image: url(../design/first_page/res/sq_topl.png);
@@ -599,7 +618,8 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   #sq-text-1 {
-    left: 46%; } }
+    left: 42%;
+    width: 18%; } }
 
 @media only screen and (max-width: 767px) {
   #sq-text-1 {
@@ -622,7 +642,8 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   #sq-text-2 {
-    left: 63%; } }
+    left: 61%;
+    width: 18%; } }
 
 @media only screen and (max-width: 767px) {
   #sq-text-2 {
@@ -640,7 +661,8 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   #sq-text-3 {
-    left: 79%; } }
+    left: 80%;
+    width: 18%; } }
 
 @media only screen and (max-width: 767px) {
   #sq-text-3 {
@@ -676,6 +698,12 @@ body {
 #about-3 {
   position: relative;
   margin-top: auto; }
+  @media only screen and (max-width: 767px) {
+    #about-3 {
+      top: -200px; } }
+  @media only screen and (max-width: 480px) {
+    #about-3 {
+      top: -100px; } }
 
 .coach-text, .where-text {
   margin: auto;
@@ -691,6 +719,14 @@ body {
   @media only screen and (max-width: 480px) {
     .coach-text, .where-text {
       top: 1%; } }
+
+@media only screen and (max-width: 767px) {
+  .where-text {
+    position: relative; } }
+
+@media only screen and (max-width: 480px) {
+  .where-text {
+    position: relative; } }
 
 .coach-text h5 {
   font-family: "Montserrat-Medium", sans-serif; }
@@ -716,7 +752,7 @@ body {
       font-size: 12px; } }
   @media only screen and (max-width: 480px) {
     .coach-text h3, .h3-where-text, #form-text h4 {
-      font-size: 7px;
+      font-size: 9px;
       margin-bottom: 5px; } }
 
 #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1 {
@@ -729,7 +765,11 @@ body {
     #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1 {
       top: 30%; } }
 
-#where-photos, #where-photos1, #cost-photos1 {
+@media only screen and (max-width: 767px) {
+  #where-photos, #where-photos1 {
+    display: block; } }
+
+#where-photos, #where-photos1, #cost-photos1, #team-text {
   align-items: center; }
 
 #coach-photos h5 {
@@ -741,7 +781,7 @@ body {
       font-size: 10px; } }
   @media only screen and (max-width: 767px) {
     #coach-photos h5 {
-      font-size: 9px;
+      font-size: 10px;
       margin-bottom: 5px; } }
   @media only screen and (max-width: 480px) {
     #coach-photos h5 {
@@ -758,7 +798,7 @@ body {
       font-size: 9px; } }
   @media only screen and (max-width: 767px) {
     #coach-photos p {
-      font-size: 7px; } }
+      font-size: 9px; } }
   @media only screen and (max-width: 480px) {
     #coach-photos p {
       font-size: 5px;
@@ -766,6 +806,12 @@ body {
 
 #coach-btn {
   top: 80%; }
+  @media only screen and (max-width: 767px) {
+    #coach-btn {
+      top: 89%; } }
+  @media only screen and (max-width: 480px) {
+    #coach-btn {
+      top: 85%; } }
 
 .coach {
   background-color: white;
@@ -777,9 +823,13 @@ body {
 #about-4, #about-6 {
   margin-top: 5%;
   background-color: white; }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 480px) {
     #about-4, #about-6 {
-      margin-top: 3%; } }
+      margin-top: -25%; } }
+
+@media only screen and (max-width: 767px) {
+  #about-4 {
+    margin-top: -29%; } }
 
 .where-text-1 {
   margin-left: 10px;
@@ -798,10 +848,10 @@ body {
   margin-top: 70%; }
   @media only screen and (max-width: 767px) {
     #about-5 {
-      margin-top: 80%; } }
+      margin-top: 5%; } }
   @media only screen and (max-width: 480px) {
     #about-5 {
-      margin-top: 88%; } }
+      margin-top: 10%; } }
 
 .form-control {
   background-color: transparent; }
@@ -850,7 +900,7 @@ body {
   font-weight: 900; }
   @media only screen and (max-width: 767px) {
     #cost-photos1 h2 {
-      font-size: 14px; } }
+      font-size: 16px; } }
   @media only screen and (max-width: 480px) {
     #cost-photos1 h2 {
       font-size: 10px;
@@ -863,11 +913,11 @@ body {
 
 @media only screen and (max-width: 767px) {
   #cost-photos1 p {
-    font-size: 9px; } }
+    font-size: 11px; } }
 
 @media only screen and (max-width: 480px) {
   #cost-photos1 p {
-    font-size: 5px;
+    font-size: 7px;
     margin-bottom: 5px; } }
 
 #cost-btn {
