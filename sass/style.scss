@@ -4,8 +4,11 @@ $border-debug: 1px solid sandybrown;
 $font-stack: Montserrat;
 $font-color: #FFFFFF;
 $background-color: #001128;
-$background-image-logo: url(../design/first_page/res/logo.gif); 
-$background-image-desctop: url(../design/first_page/res/main_with_snow.gif); 
+$background-image-logo: url(../images/main/logo.gif);
+$background-image-desctop: url(../images/main/main_with_snow.gif);
+$background-image-panels: url(../images/about/sq_topl.png);
+$background-image-old_cost: url(../images/about/old_cost.jpg);
+$background-image-offer_cost: url(../images/about/offer_cost.jpg);
 
 $phone : '(max-width: 480px)';
 $tablet-portrait: '(max-width: 767px)';
@@ -681,7 +684,7 @@ body {
   }
 
   @include respond-to($phone) {
-    margin-top: -20%;
+    margin-top: -19%;
   }
 
 }
@@ -802,7 +805,7 @@ body {
 }
 
 .sq-text{
-  background-image: url(../design/first_page/res/sq_topl.png);
+  background-image: $background-image-panels;
   margin: 0;
   transform: translateY(-45%);
   position: absolute;
@@ -1164,7 +1167,7 @@ body {
 }
 
 .old-cost{
-  background-image: url(../design/first_page/res/old_cost.jpg);
+  background-image: $background-image-old_cost;
   margin-right: 10px;
   @include  respond-to($large-desktop){
     width: 20%;
@@ -1185,7 +1188,7 @@ body {
 }
 
 .offer-cost{
-  background-image: url(../design/first_page/res/offer_cost.jpg);
+  background-image:$background-image-offer_cost;
   @include  respond-to($large-desktop){
     width: 20%;
     height: 150px;
@@ -1392,42 +1395,42 @@ body {
 
 @font-face {
   font-family: "Montserrat-Medium";
-  src: url("../public/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "MontserratBlack";
-  src: url("../public/fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+  src: url("../fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
-  src: url("../public/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Montserrat-ExtraBold";
-  src: url("../public/fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "OpenSans-Regular";
-  src: url("../public/fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "OpenSans-Bold";
-  src: url("../public/fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }

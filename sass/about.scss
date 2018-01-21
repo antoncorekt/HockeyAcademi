@@ -3,7 +3,18 @@
 
 $background-image-panels: url(../images/about/sq_topl.png);
 $background-image-old_cost: url(../images/about/old_cost.jpg);
-$background-image-offer_cost: url(../images/about/offer_cost.jpg);  
+$background-image-offer_cost: url(../images/about/offer_cost.jpg);
+
+.col-xs-9{
+  @include  respond-to($tablet-portrait){
+    width:100%;
+  }
+
+  @include respond-to($phone) {
+    width:100%;
+  }
+
+}
 
 #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
 
@@ -41,7 +52,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
     @include  respond-to($phone){
-      margin-top: -9%;
+      margin-top: -7%;
     }
   }
   
@@ -62,7 +73,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   
   #t-about{
     @include respond-to($phone) {
-      font-size: 5px;
+      font-size: 10px;
     }
   }
   
@@ -74,18 +85,19 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
       font-size: 12px;
     }
     @include respond-to($tablet-portrait) {
-      font-size: 9px;
+      font-size: 13px;
     }
     @include respond-to($phone) {
-      font-size: 5px;
+      font-size: 10px;
       margin-bottom: 5px;
     }
   }
   
   .btn-about{
     @include respond-to($phone) {
-      font-size: 5px;
-      padding: 2px 2px;
+      font-size: 9px;
+      padding: 2px 5px;
+      margin-bottom: 15px;
     }
   
   }
@@ -93,25 +105,31 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   .h1-team-page{
     font-weight: 900;
     font-family: "MontserratBlack", sans-serif;
+    text-align: justify;
   
     @include respond-to($ipad) {
       font-size: 20px;
     }
   
-  
-    @include respond-to($tablet-portrait) {
-      font-size: 13px;
-    }
-  
     @include respond-to($tablet-landscape) {
       font-size: 20px;
     }
+
+    @include respond-to($tablet-portrait) {
+      font-size: 16px;
+    }
+
     @include respond-to($phone) {
-      font-size: 9px;
+      font-size: 14px;
       margin-bottom: 5px;
     }
   
   }
+#h3-team{
+ @include respond-to($phone) {
+    margin-top: 15px;
+  }
+}
   
   .h1-team-page{
     color: #2a2a2a;
@@ -133,11 +151,11 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
     @include respond-to($tablet-portrait) {
-      font-size: 8px;
+      font-size: 12px;
     }
   
     @include respond-to($phone) {
-      font-size: 5px;
+      font-size: 9px;
     }
   
   }
@@ -165,7 +183,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
       transform: translateY(-55%);
     }
     @include  respond-to($phone){
-      padding: 2px 5px;;
+      padding: 3px 5px;;
       transform: translateY(-55%);
     }
   
@@ -188,7 +206,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
       margin-bottom: 3px;
     }
     @include  respond-to($phone){
-      font-size: 11px;
+      font-size: 12px;
       margin-bottom: 3px;
     }
   }
@@ -206,7 +224,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
       font-size: 7px;
     }
     @include  respond-to($phone){
-      font-size: 5px;
+      font-size: 7px;
       margin-bottom: 5px;
     }
   
@@ -222,12 +240,12 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
     @include  respond-to($tablet-portrait){
-      left: 43%;
-      width: 16%;
+      left: 42%;
+      width: 18%;
     }
     @include  respond-to($phone){
-      left: 35%;
-      width: 20%;
+      left: 6%;
+      width: 27%;
     }
   }
   
@@ -250,12 +268,12 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
     @include  respond-to($tablet-portrait){
-      left: 60%;
-      width: 16%;
+      left: 61%;
+      width: 18%;
     }
     @include  respond-to($phone){
-      left: 56%;
-      width: 20%;
+      left: 36%;
+      width: 27%;
     }
   
   }
@@ -269,12 +287,12 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
       left: 79%;
     }
     @include  respond-to($tablet-portrait){
-      left: 77%;
-      width: 16%;
+      left: 80%;
+      width: 18%;
     }
     @include  respond-to($phone){
-      left: 77%;
-      width: 20%;
+      left: 66%;
+      width: 27%;
     }
   }
   
@@ -293,11 +311,15 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
     @include  respond-to($tablet-portrait){
-      margin-top: 5%;
+      position: relative;
+      margin-top: 9%;
     }
   
     @include  respond-to($phone){
-      margin-top: 8%;
+      transform: translateY(-30%);
+      position: relative;
+      margin-right: 10px;
+      margin-top: 2%;
     }
   
   
@@ -306,6 +328,13 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   #about-3{
     position: relative;
     margin-top: auto;
+    @include  respond-to($tablet-portrait){
+      top: -200px;
+    }
+
+    @include  respond-to($phone){
+      top: -100px;
+    }
   }
   
   .coach-text, .where-text{
@@ -327,7 +356,16 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   
   
   }
-  
+
+.where-text{
+  @include  respond-to($tablet-portrait){
+    position: relative;
+  }
+  @include  respond-to($phone){
+    position: relative;
+  }
+}
+
   .coach-text h5 {
     font-family: "Montserrat-Medium", sans-serif;
   
@@ -358,10 +396,46 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
     @include  respond-to($phone){
-      font-size: 7px;
+      font-size: 9px;
       margin-bottom: 5px;
     }
   }
+
+ #form-text, #team-text  {
+  margin: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 5%;
+
+  @include respond-to($tablet-landscape) {
+    left: 2%;
+    top: 45%;
+  }
+
+  @include respond-to($tablet-portrait) {
+    left: 2%;
+    top: 45%;
+  }
+
+  @include respond-to($phone) {
+    top: 45%;
+  }
+}
+#form-text{
+  @include respond-to($tablet-portrait) {
+    left: 5%;
+    top: 50%;
+  }
+
+  @include respond-to($phone) {
+    position: relative;
+    transform: translateY(-90%);
+    left:0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
   
   #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1{
     top: 35%;
@@ -379,6 +453,12 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   #where-photos, #where-photos1, #cost-photos1{
     align-items: center;
   }
+
+#where-photos, #where-photos1{
+  @include  respond-to($tablet-portrait){
+    display: block;
+  }
+}
   
   #coach-photos h5{
     font-family: "OpenSans-Bold", sans-serif;
@@ -390,7 +470,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
     @include  respond-to($tablet-portrait){
-      font-size: 9px;
+      font-size: 10px;
       margin-bottom: 5px;
     }
     @include  respond-to($phone){
@@ -410,7 +490,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
     @include  respond-to($tablet-portrait){
-      font-size: 7px;
+      font-size: 9px;
     }
   
     @include  respond-to($phone){
@@ -422,6 +502,13 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   
   #coach-btn{
     top: 80%;
+    @include  respond-to($tablet-portrait){
+        top: 89%;
+      }
+
+    @include  respond-to($phone){
+      top: 85%;
+    }
   }
   
   .coach{
@@ -438,8 +525,16 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     @include  respond-to($tablet-portrait){
       margin-top: 3%;
     }
+    @include  respond-to($phone) {
+        margin-top: -25%;
+    }
   
   }
+#about-4{
+  @include  respond-to($tablet-portrait){
+    margin-top: -29%;
+  }
+}
   
   .where-text-1{
     margin-left: 10px;
@@ -461,10 +556,10 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     margin-top: 70%;
   
     @include  respond-to($tablet-portrait){
-      margin-top: 80%;
+      margin-top: 5%;
     }
     @include  respond-to($phone){
-      margin-top: 88%;
+      margin-top: 10%;
     }
   }
   
@@ -487,7 +582,8 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
       padding-top: 0px;
     }
     @include  respond-to($phone){
-      height: 45px;
+      height: 50px;
+      width: 23%;
     }
   
   }
@@ -505,7 +601,8 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
       padding-top: 0px;
     }
     @include  respond-to($phone){
-      height: 45px;
+      height: 50px;
+      width: 23%;
     }
   }
   
@@ -521,7 +618,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   #cost-photos1 h2{
     font-weight: 900;
     @include respond-to($tablet-portrait) {
-      font-size: 14px;
+      font-size: 16px;
     }
     @include respond-to($phone) {
       font-size: 10px;
@@ -535,10 +632,10 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
      font-size: 14px;
     }
     @include respond-to($tablet-portrait) {
-      font-size: 9px;
+      font-size: 11px;
     }
     @include respond-to($phone) {
-      font-size: 5px;
+      font-size: 7px;
       margin-bottom: 5px;
     }
   }
