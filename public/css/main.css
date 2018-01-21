@@ -373,7 +373,8 @@ body {
   width: 100%;
   color: white;
   padding-right: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  z-index: -1; }
   @media only screen and (min-width: 1024px) {
     .footer-main {
       text-align: right; } }
@@ -499,3 +500,6 @@ body {
 @media only screen and (min-width: 979px) and (max-width: 1024px) {
   #events {
     padding-right: 30px; } }
+
+.btn-main a {
+  z-index: 2; }

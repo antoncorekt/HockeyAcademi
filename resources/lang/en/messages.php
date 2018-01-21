@@ -39,7 +39,7 @@ return [
     '12text1' => 'CONTRACT',
     'learn' => 'WHO WILL BE TEACHING',
     'coach' => 'OUR PROFESSIONAL',
-   // 'coach1' => 'COACHES',
+    'coach1' => 'COACHES',
     'coaches' => 'SEE ALL COACHES',
     'where' => 'WHERE IS TRAINING DELIVERED?',
     'where1' =>'PAINTING MOUNTAINS',

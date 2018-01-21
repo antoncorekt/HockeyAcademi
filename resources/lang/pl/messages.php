@@ -38,7 +38,7 @@ return [
     '12text1' => 'KONTRAKT',
     'learn' => 'KTO BĘDZIE NAUCZAĆ',
     'coach' => 'NASI PROFESJONALNI',
-    // 'coach1' => 'COACHES',
+    'coach1' => 'TRENERZY',
     'coaches' => 'ZOBACZ WSZYSTKICH TRENERÓW',
     'where' => 'GDZIE JEST DOSTARCZANY TRENING?',
     'where1' =>'PIĘKNE GÓRY',

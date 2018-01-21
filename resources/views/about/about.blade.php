@@ -13,6 +13,7 @@
     <div class="container-fluid bg-1" id="about-1">
         <img src="../../design/first_page/res/about_main.png"/>
         <div class="row" id="main-text">
+            <h4 class="h1-main-page" style="color:red">БЛОК 1</h4>
             <h1 class="h1-main-page h1-about" >{{ trans('messages.grow') }} </h1>
             <h1 class="h1-main-page h1-about">{{ trans('messages.grow1') }}</h1>
             <p class="main-text-p" id="t-about">
@@ -50,10 +51,12 @@
             </div>
         </div>
         <div class="row team" id="team-text">
+            <h1 class="h1-team-page" style="color:red">БЛОК 2</h1>
             <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
                 <img src="../../design/first_page/res/photo-1.png"/>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
+
                 <h5 class="h4-main-page">{{ trans('messages.team') }}</h5>
                 <h3 class="h1-team-page">{{ trans('messages.team1') }}</h3>
                 <h3 class="h1-team-page">{{ trans('messages.team2') }}</h3>
@@ -73,9 +76,10 @@
     <div class="container-fluid bg-3" id="about-3">
         <img src="../../design/first_page/res/textur.png"/>
         <div class="row coach-text">
+            <h1 class="h1-team-page" style="color:red">БЛОК 3</h1>
             <h5 class="h5-coach-text">{{ trans('messages.learn') }}?</h5>
             <h3 class="h3-coach-text">{{ trans('messages.coach') }}
-                <br>{{ trans('messages.10text') }}
+                <br>{{ trans('messages.coach1') }}
             </h3>
         </div>
         <div class="row coach-text" id="coach-photos">
@@ -107,6 +111,7 @@
     </div>
     <div class="container-fluid bg-4" id="about-4">
         <div class="row where-text">
+            <h1 class="h1-team-page" style="color:red">БЛОК 4</h1>
             <h4 class="h4-main-page">{{ trans('messages.where') }}</h4>
             <h3 class="h3-where-text">{{ trans('messages.where1') }}
                 <br>{{ trans('messages.where2') }}
@@ -148,6 +153,7 @@
     <div class="container-fluid bg-5" id="about-5">
         <img src="../../design/first_page/res/writel.png"/>
         <div class="row"  id="form-text">
+            <h1 class="h1-team-page" style="color:red">БЛОК 5</h1>
             <h4>{{ trans('messages.form') }}
             <br> {{ trans('messages.form1') }}</h4>
             <form action="">
@@ -163,6 +169,7 @@
     </div>
     <div class="container-fluid bg-6" id="about-6">
         <div class="row where-text" id="cost-text">
+            <h1 class="h1-team-page" style="color:red">БЛОК 6</h1>
             <h4 class="h4-main-page">{{ trans('messages.cost') }}?</h4>
             <h3 class="h3-where-text">{{ trans('messages.cost1') }}
                 <br>{{ trans('messages.cost2') }}
