@@ -113,7 +113,7 @@
                     <img src="../../design/first_page/res/photo-2.jpg" id="img-where"/>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-9">
-                    <h3 class="h1-team-page">{{ trans('messages.school') }}</h3>
+                    <h3 class="h1-team-page" id="h3-team">{{ trans('messages.school') }}</h3>
                     <p id="team-text-p">
                         {{ trans('messages.school1') }}
                         <br>{{ trans('messages.school2') }}

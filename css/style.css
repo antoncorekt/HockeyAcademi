@@ -206,7 +206,8 @@ body {
 @media only screen and (max-width: 480px) {
   #team-text {
     transform: translateY(-30%);
-    position: relative; } }
+    position: relative;
+    margin-right: 10px; } }
 
 .lang {
   background-color: transparent;
@@ -447,6 +448,14 @@ body {
 /**
  * Styles for Second Page
 **/
+@media only screen and (max-width: 767px) {
+  .col-xs-9 {
+    width: 100%; } }
+
+@media only screen and (max-width: 480px) {
+  .col-xs-9 {
+    width: 100%; } }
+
 #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
   background-attachment: fixed;
   position: relative;
@@ -474,7 +483,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   #about-2 {
-    margin-top: -9%; } }
+    margin-top: -7%; } }
 
 #about-1 img, #about-2 img, #about-3 img, #about-5 img {
   width: 100%; }
@@ -510,6 +519,10 @@ body {
     font-size: 9px;
     padding: 2px 5px;
     margin-bottom: 15px; } }
+
+@media only screen and (max-width: 480px) {
+  #h3-team {
+    margin-top: 15px; } }
 
 .h1-team-page {
   font-weight: 900;
@@ -549,7 +562,7 @@ body {
       font-size: 12px; } }
   @media only screen and (max-width: 480px) {
     #team-text-p {
-      font-size: 10px; } }
+      font-size: 9px; } }
 
 .sq-text {
   background-image: url(../design/first_page/res/sq_topl.png);
@@ -573,7 +586,7 @@ body {
       transform: translateY(-55%); } }
   @media only screen and (max-width: 480px) {
     .sq-text {
-      padding: 2px 5px;
+      padding: 3px 5px;
       transform: translateY(-55%); } }
 
 #sq-text h1 {
@@ -592,7 +605,7 @@ body {
       margin-bottom: 3px; } }
   @media only screen and (max-width: 480px) {
     #sq-text h1 {
-      font-size: 11px;
+      font-size: 12px;
       margin-bottom: 3px; } }
 
 #sq-text p {
@@ -609,7 +622,7 @@ body {
       font-size: 7px; } }
   @media only screen and (max-width: 480px) {
     #sq-text p {
-      font-size: 5px;
+      font-size: 7px;
       margin-bottom: 5px; } }
 
 @media only screen and (min-width: 1024px) {
@@ -628,8 +641,8 @@ body {
 
 @media only screen and (max-width: 480px) {
   #sq-text-1 {
-    left: 35%;
-    width: 20%; } }
+    left: 6%;
+    width: 27%; } }
 
 @media only screen and (min-width: 1024px) {
   .sq-text {
@@ -652,8 +665,8 @@ body {
 
 @media only screen and (max-width: 480px) {
   #sq-text-2 {
-    left: 56%;
-    width: 20%; } }
+    left: 36%;
+    width: 27%; } }
 
 @media only screen and (min-width: 1024px) {
   #sq-text-3 {
@@ -671,8 +684,8 @@ body {
 
 @media only screen and (max-width: 480px) {
   #sq-text-3 {
-    left: 77%;
-    width: 20%; } }
+    left: 66%;
+    width: 27%; } }
 
 @media only screen and (min-width: 1024px) {
   #team-text {
@@ -689,11 +702,11 @@ body {
 
 @media only screen and (max-width: 767px) {
   #team-text {
-    margin-top: 5%; } }
+    margin-top: 9%; } }
 
 @media only screen and (max-width: 480px) {
   #team-text {
-    margin-top: 8%; } }
+    margin-top: 2%; } }
 
 #about-3 {
   position: relative;
@@ -871,7 +884,8 @@ body {
       padding-top: 0px; } }
   @media only screen and (max-width: 480px) {
     .old-cost {
-      height: 45px; } }
+      height: 50px;
+      width: 23%; } }
 
 .offer-cost {
   background-image: url(../design/first_page/res/offer_cost.jpg); }
@@ -887,7 +901,8 @@ body {
       padding-top: 0px; } }
   @media only screen and (max-width: 480px) {
     .offer-cost {
-      height: 45px; } }
+      height: 50px;
+      width: 23%; } }
 
 #cost-text {
   position: relative; }
