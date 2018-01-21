@@ -1,6 +1,9 @@
 @extends('layouts.main')
 @section('header')
-<link rel="stylesheet" href="{{asset('css/about.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+
+
+
 @endsection
 @section('content')
     <style>

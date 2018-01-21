@@ -309,14 +309,16 @@
     font-family: "MontserratBlack", sans-serif;
     font-size: 12px;
   
-    @include respond-to($tablet-portrait) {
-      font-size: 7px;
-      padding: 4px 4px;
-    }
+
   
     @include respond-to($tablet-landscape) {
       font-size: 9px;
       padding: 5px 5px;
+    }
+
+    @include respond-to($tablet-portrait) {
+      font-size: 10px;
+      padding: 4px 4px;
     }
   
   }

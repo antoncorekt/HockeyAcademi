@@ -320,14 +320,14 @@ body {
   color: #10425c;
   font-family: "MontserratBlack", sans-serif;
   font-size: 12px; }
-  @media only screen and (max-width: 767px) {
-    .btn-main {
-      font-size: 7px;
-      padding: 4px 4px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .btn-main {
       font-size: 9px;
       padding: 5px 5px; } }
+  @media only screen and (max-width: 767px) {
+    .btn-main {
+      font-size: 10px;
+      padding: 4px 4px; } }
 
 .cont {
   display: none; }
