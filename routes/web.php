@@ -21,15 +21,15 @@ Route::get('/', function () {
 
 Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function () {
     Route::get('/', function () {
-        return view('index');
+        return view('index/index');
     });
 
     Route::get('/about', function () {
-        return view('about');
+        return view('about/about');
     });
 
 
-    Route::get('/modal', 'MainController@showModal')->name('modal');
+    Route::get('/modal', 'MainController@showModal')->name('others/modal');
    // Route::resource('/modal', 'MainController@showModal');
 
 });

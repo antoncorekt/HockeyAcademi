@@ -4,7 +4,7 @@ body {
   background-color: #001128;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  background-image: url(../design/first_page/res/main_with_snow.gif);
+  background-image: url(../images/main/main_with_snow.gif);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -26,7 +26,7 @@ body {
         display: none; } }
   @media only screen and (min-width: 1024px) {
     body .menu-logo {
-      background-image: url(../design/first_page/res/logo.gif);
+      background-image: url(../images/main/logo.gif);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
@@ -34,42 +34,41 @@ body {
       background-attachment: initial;
       width: 100px; } }
 
-.cont {
-  display: none; }
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-#video {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 1; }
-  #video .video-skip {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    outline: none;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px; }
+@font-face {
+  font-family: "MontserratBlack";
+  src: url("../fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-#video-tag {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1000;
-  overflow: hidden; }
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-#snow {
-  position: fixed;
-  display: block; }
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
 .nav-el {
   white-space: nowrap;
@@ -330,143 +329,6 @@ body {
       font-size: 9px;
       padding: 5px 5px; } }
 
-.footer-main {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  padding-right: 20px;
-  padding-bottom: 20px; }
-  @media only screen and (min-width: 1024px) {
-    .footer-main {
-      text-align: right; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    .footer-main {
-      text-align: right; } }
-  @media only screen and (max-width: 767px) {
-    .footer-main {
-      padding-left: 10px;
-      text-align: left; } }
-
-.h5-events {
-  font-family: "Montserrat-ExtraBold", sans-serif; }
-  @media only screen and (min-width: 1024px) {
-    .h5-events {
-      text-align: left; } }
-  @media only screen and (min-width: 979px) and (max-width: 1024px) {
-    .h5-events {
-      text-align: left; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    .h5-events {
-      text-align: left; } }
-  @media only screen and (max-width: 767px) {
-    .h5-events {
-      text-align: left;
-      font-size: 9px; } }
-  @media only screen and (max-width: 480px) {
-    .h5-events {
-      text-align: left;
-      font-size: 10px; } }
-
-@media only screen and (min-width: 1024px) {
-  #h5-events-2 {
-    visibility: visible; } }
-
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
-  #h5-events-2 {
-    visibility: visible; } }
-
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-  #h5-events-2 {
-    visibility: visible; } }
-
-@media only screen and (max-width: 767px) {
-  #h5-events-2 {
-    visibility: hidden; } }
-
-@media only screen and (max-width: 480px) {
-  #h5-events-2 {
-    display: none; } }
-
-@media only screen and (min-width: 1024px) {
-  #h5-events-1 {
-    visibility: hidden; } }
-
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
-  #h5-events-1 {
-    visibility: hidden; } }
-
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-  #h5-events-1 {
-    visibility: hidden; } }
-
-@media only screen and (max-width: 767px) {
-  #h5-events-1 {
-    visibility: visible; } }
-
-@media only screen and (max-width: 480px) {
-  #h5-events-1 {
-    visibility: visible; } }
-
-.text-events {
-  font-family: "Montserrat-Bold", sans-serif;
-  float: left;
-  text-align: left;
-  font-size: 11px; }
-  @media only screen and (max-width: 767px) {
-    .text-events {
-      padding-left: 10px;
-      font-size: 9px; } }
-  @media only screen and (max-width: 480px) {
-    .text-events {
-      font-size: 9px; } }
-  @media only screen and (min-width: 979px) and (max-width: 1024px) {
-    .text-events {
-      padding-left: 0px; } }
-
-.img-events {
-  float: left; }
-  @media only screen and (min-width: 1024px) {
-    .img-events {
-      width: 175px;
-      padding-bottom: 10px; } }
-  @media only screen and (min-width: 979px) and (max-width: 1024px) {
-    .img-events {
-      width: 160px; } }
-  @media only screen and (max-width: 767px) {
-    .img-events {
-      width: 60px;
-      padding-bottom: 0px; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    .img-events {
-      width: 120px;
-      padding-bottom: 5px;
-      padding-right: 5px; } }
-  @media only screen and (max-width: 480px) {
-    .img-events {
-      width: 90px;
-      padding-bottom: 10px; } }
-
-.div-events {
-  display: block; }
-  @media only screen and (min-width: 1024px) {
-    .div-events {
-      float: right; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    .div-events {
-      float: right; } }
-  @media only screen and (max-width: 767px) {
-    .div-events {
-      float: left; } }
-
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
-  #events {
-    padding-right: 30px; } }
-
-/**
- * Styles for Second Page
-**/
 #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
   background-attachment: fixed;
   position: relative;
@@ -570,7 +432,7 @@ body {
       font-size: 5px; } }
 
 .sq-text {
-  background-image: url(../design/first_page/res/sq_topl.png);
+  background-image: url(../images/about/sq_topl.png);
   margin: 0;
   transform: translateY(-45%);
   position: absolute;
@@ -844,7 +706,7 @@ body {
   background-color: transparent; }
 
 .old-cost {
-  background-image: url(../design/first_page/res/old_cost.jpg);
+  background-image: url(../images/about/old_cost.jpg);
   margin-right: 10px; }
   @media only screen and (min-width: 1024px) {
     .old-cost {
@@ -861,7 +723,7 @@ body {
       height: 45px; } }
 
 .offer-cost {
-  background-image: url(../design/first_page/res/offer_cost.jpg); }
+  background-image: url(../images/about/offer_cost.jpg); }
   @media only screen and (min-width: 1024px) {
     .offer-cost {
       width: 20%;
@@ -934,8 +796,8 @@ body {
     margin-bottom: 5px; } }
 
 /**
-  Footer
- */
+    Footer
+   */
 .page-footer ul {
   list-style-type: none;
   margin: 0;
@@ -1024,39 +886,3 @@ body {
 
 .row {
   margin-right: 0px; }
-
-@font-face {
-  font-family: "Montserrat-Medium";
-  src: url("../public/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "MontserratBlack";
-  src: url("../public/fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "Montserrat-Bold";
-  src: url("../public/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "Montserrat-ExtraBold";
-  src: url("../public/fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "OpenSans-Regular";
-  src: url("../public/fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "OpenSans-Bold";
-  src: url("../public/fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
