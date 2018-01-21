@@ -11,6 +11,7 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
@@ -19,14 +20,25 @@ Route::get('/', function () {
     return redirect('/'. App\Http\Middleware\LocaleMiddleware::getLocale());
 });
 
+Route::get('/login', function () {
+    return view('auth/login');
+});
+
+Route::get('auth/login', [ 'as' => 'login', 'uses' => 'Controller@login']);
+Route::post('auth/login', [ 'as' => 'login', 'uses' => 'Controller@authenticate']);
+Route::get('auth/logout', 'Controller@logout');
+
 Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function () {
+
     Route::get('/', function () {
         return view('index/index');
-    });
+    })->middleware('auth');;
+
 
     Route::get('/about', function () {
         return view('about/about');
-    });
+    })->middleware('auth');
+
 
 
     Route::get('/modal', 'MainController@showModal')->name('others/modal');
@@ -34,5 +46,5 @@ Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function
 
 });
 
-
+Auth::routes();
 //Route::get('/modal', 'MainController@showModal')->name('modal');
