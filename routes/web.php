@@ -31,15 +31,17 @@ Route::get('auth/logout', 'Controller@logout');
 Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function () {
 
     Route::get('/', function () {
-        return view('index');
-    })->middleware('auth');
+        return view('index/index');
+    })->middleware('auth');;
+
 
     Route::get('/about', function () {
-        return view('about');
+        return view('about/about');
     })->middleware('auth');
 
 
-    Route::get('/modal', 'MainController@showModal')->name('modal');
+
+    Route::get('/modal', 'MainController@showModal')->name('others/modal');
    // Route::resource('/modal', 'MainController@showModal');
 
 });

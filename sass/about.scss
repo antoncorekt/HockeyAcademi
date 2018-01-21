@@ -1,0 +1,696 @@
+@import "all";
+@import "navbar";
+
+$background-image-panels: url(../images/about/sq_topl.png);
+$background-image-old_cost: url(../images/about/old_cost.jpg);
+$background-image-offer_cost: url(../images/about/offer_cost.jpg);  
+
+#about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
+
+    background-attachment: fixed;
+    position: relative;
+    z-index: -9;
+  
+    padding: 0px;
+  
+    @include  respond-to($large-desktop){
+      margin-top: -10%;
+    }
+  
+    @include  respond-to($ipad){
+      margin-top: -13%;
+    }
+  
+    @include  respond-to($tablet-landscape){
+      margin-top: -14%;
+    }
+  
+    @include  respond-to($tablet-portrait){
+      margin-top: -12%;
+    }
+  
+    @include respond-to($phone) {
+      margin-top: -20%;
+    }
+  
+  }
+  
+  #about-2{
+    @include  respond-to($ipad){
+      margin-top: -9%;
+    }
+  
+    @include  respond-to($phone){
+      margin-top: -9%;
+    }
+  }
+  
+  #about-1 img,  #about-2 img, #about-3 img, #about-5 img{
+    width:100%;
+  }
+  
+  #about-2, #about-3, #about-4, #about-5, #about-6{
+    z-index: 1;
+  }
+  
+  .h1-about{
+    @include respond-to($phone) {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
+  
+  #t-about{
+    @include respond-to($phone) {
+      font-size: 5px;
+    }
+  }
+  
+  .h4-main-page{
+    font-family: "Montserrat-Medium", sans-serif;
+    color: #191d72;
+  
+    @include respond-to($tablet-landscape) {
+      font-size: 12px;
+    }
+    @include respond-to($tablet-portrait) {
+      font-size: 9px;
+    }
+    @include respond-to($phone) {
+      font-size: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  
+  .btn-about{
+    @include respond-to($phone) {
+      font-size: 5px;
+      padding: 2px 2px;
+    }
+  
+  }
+  
+  .h1-team-page{
+    font-weight: 900;
+    font-family: "MontserratBlack", sans-serif;
+  
+    @include respond-to($ipad) {
+      font-size: 20px;
+    }
+  
+  
+    @include respond-to($tablet-portrait) {
+      font-size: 13px;
+    }
+  
+    @include respond-to($tablet-landscape) {
+      font-size: 20px;
+    }
+    @include respond-to($phone) {
+      font-size: 9px;
+      margin-bottom: 5px;
+    }
+  
+  }
+  
+  .h1-team-page{
+    color: #2a2a2a;
+    margin-top: auto;
+  }
+  
+  #team-text-p{
+    font-family: "OpenSans-Regular", sans-serif;
+    color: #191d72;
+    line-height: 2;
+  
+    @include  respond-to($large-desktop){
+      font-size: 14px;
+      margin-top: 5%;
+    }
+  
+    @include  respond-to($ipad){
+      font-size: 12px;
+    }
+  
+    @include respond-to($tablet-portrait) {
+      font-size: 8px;
+    }
+  
+    @include respond-to($phone) {
+      font-size: 5px;
+    }
+  
+  }
+  
+  .sq-text{
+    background-image: $background-image-panels;
+    margin: 0;
+    transform: translateY(-45%);
+    position: absolute;
+    top: 5%;
+    @include  respond-to($large-desktop){
+      padding: 30px;
+    }
+    @include  respond-to($ipad){
+      padding: 5px 15px;
+    }
+  
+    @include  respond-to($tablet-landscape){
+      padding: 2px 10px;
+      transform: translateY(-35%);
+    }
+  
+    @include  respond-to($tablet-portrait){
+      padding: 1px 5px;;
+      transform: translateY(-55%);
+    }
+    @include  respond-to($phone){
+      padding: 2px 5px;;
+      transform: translateY(-55%);
+    }
+  
+  }
+  
+  #sq-text h1{
+    font-family: "Montserrat-ExtraBold", sans-serif;
+    color:white;
+   // text-align: center;
+    @include  respond-to($large-desktop){
+      font-size: 55px;
+    }
+    @include  respond-to($tablet-landscape){
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+  
+    @include  respond-to($tablet-portrait){
+      font-size: 16px;
+      margin-bottom: 3px;
+    }
+    @include  respond-to($phone){
+      font-size: 11px;
+      margin-bottom: 3px;
+    }
+  }
+  
+  #sq-text p{
+    font-family: "MontserratBlack", sans-serif;
+    color:white;
+    @include  respond-to($large-desktop){
+      font-size: 12px;
+    }
+    @include  respond-to($tablet-landscape){
+      font-size: 9px;
+    }
+    @include  respond-to($tablet-portrait){
+      font-size: 7px;
+    }
+    @include  respond-to($phone){
+      font-size: 5px;
+      margin-bottom: 5px;
+    }
+  
+  }
+  
+  #sq-text-1{
+    @include  respond-to($large-desktop){
+      left: 36%;
+    }
+  
+    @include  respond-to($tablet-landscape){
+      left: 46%;
+    }
+  
+    @include  respond-to($tablet-portrait){
+      left: 43%;
+      width: 16%;
+    }
+    @include  respond-to($phone){
+      left: 35%;
+      width: 20%;
+    }
+  }
+  
+  .sq-text{
+    @include  respond-to($large-desktop){
+      height: 25%;
+      width: 19%;
+    }
+  
+  
+  }
+  
+  #sq-text-2{
+    @include  respond-to($large-desktop){
+      left: 56%;
+    }
+  
+    @include  respond-to($tablet-landscape){
+      left: 63%;
+    }
+  
+    @include  respond-to($tablet-portrait){
+      left: 60%;
+      width: 16%;
+    }
+    @include  respond-to($phone){
+      left: 56%;
+      width: 20%;
+    }
+  
+  }
+  
+  #sq-text-3{
+    @include  respond-to($large-desktop){
+      left: 76%;
+    }
+  
+    @include  respond-to($tablet-landscape){
+      left: 79%;
+    }
+    @include  respond-to($tablet-portrait){
+      left: 77%;
+      width: 16%;
+    }
+    @include  respond-to($phone){
+      left: 77%;
+      width: 20%;
+    }
+  }
+  
+  #team-text{
+    @include  respond-to($large-desktop){
+      margin-top: 4%;
+      margin-left: 6%;
+    }
+  
+    @include  respond-to($ipad){
+      margin-left: 6%;
+    }
+  
+    @include  respond-to($tablet-landscape){
+      margin-top: 4%;
+    }
+  
+    @include  respond-to($tablet-portrait){
+      margin-top: 5%;
+    }
+  
+    @include  respond-to($phone){
+      margin-top: 8%;
+    }
+  
+  
+  }
+  
+  #about-3{
+    position: relative;
+    margin-top: auto;
+  }
+  
+  .coach-text, .where-text{
+    margin: auto;
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 10%;
+    bottom: 0;
+    text-align: center;
+  
+    @include  respond-to($tablet-portrait){
+      top: 5%;
+    }
+  
+    @include  respond-to($phone){
+      top: 1%;
+    }
+  
+  
+  }
+  
+  .coach-text h5 {
+    font-family: "Montserrat-Medium", sans-serif;
+  
+    @include  respond-to($tablet-landscape){
+      font-size: 12px;
+    }
+  
+    @include  respond-to($tablet-portrait){
+      font-size: 10px;
+    }
+  
+    @include  respond-to($phone){
+      font-size: 7px;
+      margin-bottom: 2px;
+    }
+  }
+  
+  .coach-text h3, .h3-where-text, #form-text h4 {
+    font-family: "MontserratBlack", sans-serif;
+  
+    @include  respond-to($tablet-landscape){
+      font-size: 17px;
+    }
+  
+    @include  respond-to($tablet-portrait){
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  
+    @include  respond-to($phone){
+      font-size: 7px;
+      margin-bottom: 5px;
+    }
+  }
+  
+  #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1{
+    top: 35%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    @include  respond-to($tablet-portrait){
+      top: 30%;
+    }
+  
+  
+  }
+  
+  #where-photos, #where-photos1, #cost-photos1{
+    align-items: center;
+  }
+  
+  #coach-photos h5{
+    font-family: "OpenSans-Bold", sans-serif;
+    color: #191d72;
+    font-size:15px;
+  
+    @include  respond-to($tablet-landscape){
+      font-size: 10px;
+    }
+  
+    @include  respond-to($tablet-portrait){
+      font-size: 9px;
+      margin-bottom: 5px;
+    }
+    @include  respond-to($phone){
+      font-size: 7px;
+      margin-bottom: 2px;
+      margin-top: 2px;
+    }
+  
+  }
+  #coach-photos p{
+    font-family: "OpenSans-Regular", sans-serif;
+    color: #191d72;
+    font-size:13px;
+  
+    @include  respond-to($tablet-landscape){
+      font-size: 9px;
+    }
+  
+    @include  respond-to($tablet-portrait){
+      font-size: 7px;
+    }
+  
+    @include  respond-to($phone){
+      font-size: 5px;
+      margin-bottom: 2px;
+    }
+  
+  }
+  
+  #coach-btn{
+    top: 80%;
+  }
+  
+  .coach{
+    background-color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  #about-4, #about-6{
+    margin-top: 5%;
+    background-color: white;
+    @include  respond-to($tablet-portrait){
+      margin-top: 3%;
+    }
+  
+  }
+  
+  .where-text-1{
+    margin-left: 10px;
+    margin-top: 5%;
+  }
+  
+  #img-where{
+    width: 100%;
+  }
+  .h3-where-text{
+    color: #191d72;
+  }
+  
+  .h1-team-page, #team-text-p{
+    text-align: left;
+  }
+  
+  #about-5{
+    margin-top: 70%;
+  
+    @include  respond-to($tablet-portrait){
+      margin-top: 80%;
+    }
+    @include  respond-to($phone){
+      margin-top: 88%;
+    }
+  }
+  
+  .form-control{
+    background-color: transparent;
+  }
+  
+  .old-cost{
+    background-image: $background-image-old_cost;
+    margin-right: 10px;
+    @include  respond-to($large-desktop){
+      width: 20%;
+      height: 150px;
+      padding-top: 20px;
+    }
+  
+    @include  respond-to($tablet-portrait){
+      width: 20%;
+      height: 80px;
+      padding-top: 0px;
+    }
+    @include  respond-to($phone){
+      height: 45px;
+    }
+  
+  }
+  
+  .offer-cost{
+    background-image: $background-image-offer_cost;
+    @include  respond-to($large-desktop){
+      width: 20%;
+      height: 150px;
+      padding-top: 20px;
+    }
+    @include  respond-to($tablet-portrait){
+      width: 20%;
+      height: 80px;
+      padding-top: 0px;
+    }
+    @include  respond-to($phone){
+      height: 45px;
+    }
+  }
+  
+  #cost-text{
+    position: relative;
+  }
+  
+  #cost-photos1 h2, p{
+     font-family: "MontserratBlack", sans-serif;
+     color:white;
+   }
+  
+  #cost-photos1 h2{
+    font-weight: 900;
+    @include respond-to($tablet-portrait) {
+      font-size: 14px;
+    }
+    @include respond-to($phone) {
+      font-size: 10px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+  }
+  
+  #cost-photos1  p{
+    @include  respond-to($large-desktop){
+     font-size: 14px;
+    }
+    @include respond-to($tablet-portrait) {
+      font-size: 9px;
+    }
+    @include respond-to($phone) {
+      font-size: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  
+  #cost-btn{
+    margin-top: 3%;
+  }
+  
+  #about-6{
+    margin-bottom: 5%;
+  }
+  
+  
+  .form-control{
+    @include respond-to($tablet-landscape) {
+      font-size: 10px;
+      height: 24px;
+    }
+    @include respond-to($tablet-portrait) {
+      font-size: 9px;
+      height: 20px;
+    }
+    @include respond-to($phone) {
+      font-size: 5px;
+      height: 15px;
+      padding: 2px 6px;
+    }
+  }
+  
+  .form-group{
+    @include respond-to($phone) {
+      margin-bottom: 5px;
+    }
+  }
+  
+  /**
+    Footer
+   */
+  
+  
+  
+  .page-footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .page-footer li {
+    float: left;
+  }
+  
+  .page-footer  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Geometria-Medium", sans-serif;
+  
+    @include respond-to($large-desktop) {
+      font-size: 12px;
+    }
+  
+    @include respond-to($tablet-portrait) {
+      font-size: 8px;
+    }
+  
+    @include respond-to($tablet-landscape) {
+      font-size: 11px;
+    }
+  
+    @include respond-to($phone) {
+      padding: 10px 5px;
+      font-size: 6px;
+    }
+  
+  
+  }
+  
+  .page-footer ul{
+    padding-top: 10px;
+    @include respond-to($tablet-portrait) {
+      padding-top: 0px;
+    }
+    @include respond-to($phone) {
+      padding-top: 0px;
+    }
+  
+  }
+  
+  
+  
+  #logo-footer{
+    width: 60%;
+  
+    @include respond-to($tablet-landscape) {
+      width: 50%;
+    }
+    @include respond-to($tablet-portrait) {
+      width: 25%;
+    }
+    @include respond-to($phone) {
+      width: 15%;
+    }
+  
+  }
+  .logo-el{
+    @include respond-to($tablet-portrait) {
+      margin-left: 0px;
+      margin-right: -10%;
+      margin-top: 7px;
+    }
+    @include respond-to($tablet-landscape) {
+      margin-left: -15px;
+    }
+  
+  
+  
+    @include respond-to($phone) {
+      margin-right: -23%;
+    }
+  
+  
+  }
+  
+  .page-footer{
+    padding-bottom: 0px;
+  }
+  
+  #company-el{
+    float:right;
+    font-family: "Geometria-Medium", sans-serif;
+    margin-top: 13px;
+  
+    @include respond-to($large-desktop) {
+      font-size: 12px;
+    }
+  
+    @include respond-to($tablet-portrait) {
+      font-size: 8px;
+    }
+  
+    @include respond-to($tablet-landscape) {
+      font-size: 11px;
+    }
+    @include respond-to($phone) {
+      font-size: 6px;
+      margin-top: 10px;
+    }
+  }
+  
+  .row{
+    margin-right: 0px;
+  }
