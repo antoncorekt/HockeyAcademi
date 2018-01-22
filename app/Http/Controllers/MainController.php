@@ -10,6 +10,6 @@ class MainController extends Controller
     {
         $articles = "bla";
         $user = "nnn";
-        return view('modal');
+        return view('others/modal');
     }
 }
