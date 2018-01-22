@@ -1,3 +1,51 @@
+@media only screen and (max-width: 480px) {
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(../images/main/main_with_snow.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+@media only screen and (max-width: 767px) {
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(../images/main/main_with_snow.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(../images/main/main_with_snow.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
 body {
   font: 100% Montserrat;
   color: #FFFFFF;
@@ -8,22 +56,17 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-background-size: cover; }
   @media only screen and (max-width: 480px) {
-    body {
-      background-color: rgba(46, 204, 113, 0.5); }
-      body .menu-logo {
-        display: none; } }
+    body .menu-logo {
+      display: none; } }
   @media only screen and (max-width: 767px) {
-    body {
-      background-color: rgba(52, 152, 219, 0.5); }
-      body .menu-logo {
-        display: none; } }
+    body .menu-logo {
+      display: none; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
-    body {
-      background-color: rgba(155, 89, 182, 0.5); }
-      body .menu-logo {
-        display: none; } }
+    body .menu-logo {
+      display: none; } }
   @media only screen and (min-width: 1024px) {
     body .menu-logo {
       background-image: url(../images/logo-test.png);
@@ -31,12 +74,13 @@ body {
       background-attachment: fixed;
       background-position: center;
       background-size: cover;
+      -webkit-background-size: cover;
       background-attachment: initial;
       width: 100px; } }
 
 @font-face {
   font-family: "Montserrat-Medium";
-  src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  src: url("../public/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 

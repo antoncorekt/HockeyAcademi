@@ -10,18 +10,18 @@ body {
   background-position: center;
   background-size: cover; }
   @media only screen and (max-width: 480px) {
-    body {
-      background-color: rgba(46, 204, 113, 0.5); }
+    body {position: fixed;
+      background-attachment: fixed; }
       body .menu-logo {
         display: none; } }
   @media only screen and (max-width: 767px) {
     body {
-      background-color: rgba(52, 152, 219, 0.5); }
+      background-attachment: fixed;}
       body .menu-logo {
         display: none; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     body {
-      background-color: rgba(155, 89, 182, 0.5); }
+      background-attachment: fixed; }
       body .menu-logo {
         display: none; } }
   @media only screen and (min-width: 1024px) {

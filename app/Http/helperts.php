@@ -13,6 +13,7 @@ if (! function_exists('getLangURI')) {
     {
      //   echo url()->current();
         $referer = url()->current(); //URL предыдущей страницы
+
         $parse_url = parse_url($referer, PHP_URL_PATH); //URI предыдущей страницы
 
         //разбиваем на массив по разделителю
@@ -27,7 +28,7 @@ if (! function_exists('getLangURI')) {
 
         //Добавляем метку языка в URL (если выбран не язык по-умолчанию)
        // if ($lang != App\Http\Middleware\LocaleMiddleware::$mainLanguage){
-            array_splice($segments, 1, 2, $lang);
+            array_splice($segments, 1, 0, $lang);
 //        }
         //this adds 30 days to the current time
 
