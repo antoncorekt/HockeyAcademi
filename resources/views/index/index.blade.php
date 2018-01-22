@@ -2,7 +2,7 @@
 @section('title', 'Hockey Academy')
 
 @section('header')
-<link rel="stylesheet" href="{{asset('css/main.css')}}">
+<link rel="stylesheet" href="{{asset('public/css/main.css')}}">
 
 <script type="text/javascript" src="{{asset('js/ThreeCanvas.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/Snow.js')}}"></script>
