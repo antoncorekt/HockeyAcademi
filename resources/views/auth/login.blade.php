@@ -19,7 +19,7 @@
     {!! Form::open(['url' => ['auth/login']]) !!}
     <div class="form-group">
         {!! Form::label('login', 'Login:') !!}
-        {!! Form::text('login', $value = null, $attributes = array('class' => 'form-control')) !!}
+        {!! Form::text('login', $value = 'admin', $attributes = array('class' => 'form-control')) !!}
     </div>
     <div class="form-group">
         {!! Form::label('password', 'Password:') !!}

@@ -1,24 +1,24 @@
-let SCREEN_WIDTH = window.innerWidth;
-let SCREEN_HEIGHT = window.innerHeight;
-let container;
-let particle;
-let camera;
-let scene;
-let renderer;
-let mouseX = 0;
-let mouseY = 0;
-let windowHalfX = window.innerWidth / 2;
-let windowHalfY = window.innerHeight / 2;
+var SCREEN_WIDTH = window.innerWidth;
+var SCREEN_HEIGHT = window.innerHeight;
+var container;
+var particle;
+var camera;
+var scene;
+var renderer;
+var mouseX = 0;
+var mouseY = 0;
+var windowHalfX = window.innerWidth / 2;
+var windowHalfY = window.innerHeight / 2;
 
-let particles = [];
-let particleImage = new Image();//THREE.ImageUtils.loadTexture( "img/ParticleSmoke.png" );
+var particles = [];
+var particleImage = new Image();//THREE.ImageUtils.loadTexture( "img/ParticleSmoke.png" );
 particleImage.src = '../../public/images/main/ParticleSmoke1.png';
 
 
 function init() {
     container = document.createElement('div');
 
-    let el = document.getElementById('snow');
+    var el = document.getElementById('snow');
 
     if (el == null || el == undefined){
         console.log("Element snow not found");
@@ -34,19 +34,19 @@ function init() {
 
     renderer = new THREE.CanvasRenderer();
     renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
-    let material = new THREE.ParticleBasicMaterial(
+    var material = new THREE.ParticleBasicMaterial(
         { 
             map: new THREE.Texture(particleImage),
             transparent: true
         });
 
-    for (let i = 0; i < 100; i++) {
+    for (var i = 0; i < 100; i++) {
         particle = new Particle3D(material);
         particle.position.x = Math.random() * 2000 - 1000;
         particle.position.y = Math.random() * 2000 - 1000;
         particle.position.z = Math.random() * 2000 - 1000;
 
-        let scale_x = Math.random();
+        var scale_x = Math.random();
 
         particle.scale.x += Math.random() + ((i>50)?2:0);
         particle.scale.y += Math.random() + ((i>50)?2:0);
@@ -56,9 +56,13 @@ function init() {
     }
     container.appendChild(renderer.domElement);
 
-    document.addEventListener('mousemove', onDocumentMouseMove, false);
-    document.addEventListener('touchstart', onDocumentTouchStart, false);
-    document.addEventListener('touchmove', onDocumentTouchMove, false);
+    var userAgent = window.navigator.userAgent;
+
+    if (!(userAgent.match(/iPad/i) || userAgent.match(/iPhone/i))) {
+        document.addEventListener('mousemove', onDocumentMouseMove, false);
+        document.addEventListener('touchstart', onDocumentTouchStart, false);
+        document.addEventListener('touchmove', onDocumentTouchMove, false);
+    }
 
     setInterval(loop, 1000 / 60);
 
@@ -84,8 +88,8 @@ function onDocumentTouchMove(event) {
 }
 //
 function loop() {
-    for (let i = 0; i < particles.length; i++) {
-        let particle = particles[i];
+    for (var i = 0; i < particles.length; i++) {
+        var particle = particles[i];
         particle.updatePhysics();
 
         with (particle.position) {
