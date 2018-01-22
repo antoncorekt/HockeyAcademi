@@ -31,9 +31,40 @@ $retina: '(min--moz-device-pixel-ratio: 1.5),
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  -webkit-background-size: cover;
   @content;
 }
 
+@mixin background-img-mobile($img) {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: $img no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  @content;
+}
+
+body:before {
+  @include respond-to($tablet-landscape) {
+    @include background-img-mobile($background-image-desctop);
+  }
+  @include respond-to($tablet-portrait) {
+    @include background-img-mobile($background-image-desctop);
+  }
+  @include respond-to($phone) {
+    @include background-img-mobile($background-image-desctop);
+  }
+
+
+}
 body {
     font: 100% $font-stack;
     color: $font-color;
@@ -46,22 +77,17 @@ body {
     @include background-img($background-image-desctop);
   
     @include respond-to($phone) {
-      //background-image: none;
-      background-color: rgba(#2ecc71, .5);
       .menu-logo {
           display: none;
       }
+
     }
     @include respond-to($tablet-portrait) {
-      //background-image: none;
-      background-color: rgba(#3498db, .5);
       .menu-logo {
         display: none;
       }
     }
     @include respond-to($tablet-landscape) {
-      //background-image: none;
-      background-color: rgba(#9b59b6, .5);
       .menu-logo {
         display: none;
       }
