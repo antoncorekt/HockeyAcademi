@@ -2,12 +2,13 @@
 @section('title', 'Hockey Academy')
 
 @section('header')
-<link rel="stylesheet" href="{{asset('css/main.css')}}">
+<link rel="stylesheet" href="{{asset('public/css/main.css')}}">
 
 <script type="text/javascript" src="{{asset('js/ThreeCanvas.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/Snow.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/SnowManaged.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/VideoManager.js')}}"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 @endsection
 
 @section('before-nav')

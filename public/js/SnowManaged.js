@@ -12,7 +12,7 @@ let windowHalfY = window.innerHeight / 2;
 
 let particles = [];
 let particleImage = new Image();//THREE.ImageUtils.loadTexture( "img/ParticleSmoke.png" );
-particleImage.src = '../../public/images/main/ParticleSmoke.png';
+particleImage.src = '../../public/images/main/ParticleSmoke1.png';
 
 
 function init() {
