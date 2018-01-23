@@ -59,14 +59,8 @@ body {
   background-size: cover;
   -webkit-background-size: cover; }
   @media only screen and (max-width: 480px) {
-    body {
-      background-image: url(../images/main/main_with_snow.gif);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      background-size: cover; }
-      body .menu-logo {
-        display: none; } }
+    body .menu-logo {
+      display: none; } }
   @media only screen and (max-width: 767px) {
     body .menu-logo {
       display: none; } }
@@ -86,7 +80,7 @@ body {
 
 @font-face {
   font-family: "Montserrat-Medium";
-  src: url("../public/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
