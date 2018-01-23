@@ -3,12 +3,8 @@
 
 @section('header')
 <link rel="stylesheet" href="{{asset('public/css/main.css')}}">
-
-<script type="text/javascript" src="{{asset('js/ThreeCanvas.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/Snow.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/SnowManaged.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/VideoManager.js')}}"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
 @endsection
 
 @section('before-nav')
@@ -27,10 +23,6 @@
 @endsection
 
 @section('content')
-
-
-        
-
         <div class="row" id="main-text">
             <!-- <h4 class="h1-main-page" style="color:red"> ТУТ ОЧЕНЬ КОРОТКИЙ ТЕКСТ</h4> -->
             <h1 class="h1-main-page">{{ trans('messages.dream') }} -</h1>

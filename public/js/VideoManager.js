@@ -6,6 +6,7 @@ $(document).ready(function () {
     $(".cont").css("display", "block");
 
     init();
+
     // function start_snow(){
     //     if (flag){
     //         init();
@@ -19,11 +20,14 @@ $(document).ready(function () {
     //     start_snow();
     // }
 
+
+
     // $("#video-tag").on('ended', function () {
     //     $(".cont").css("display", "block");
     //     $("#video").remove();
     //     start_snow();
     // });
+
 
     // $(".video-skip").click(function(){
     //     $(".cont").css("display", "block");
