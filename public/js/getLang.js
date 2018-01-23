@@ -6,7 +6,7 @@
  * Function for getting lang value and showing it at lang dropdownlist
  */
 function getLang(){
-    var str = $(location).attr("href");
+    var str = $(location).attr('href');
     if (str.search("ru") > -1){
         $("#flag").attr("src","../../public/images/ru.png");
         $('#selected').text("РУССКИЙ");

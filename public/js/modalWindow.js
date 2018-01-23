@@ -3,7 +3,7 @@
  */
 $(document).ready(function() {
     $(document).on('hidden.bs.modal', '.modal', function () {
-        let modalData = $(this).data('bs.modal');
+        var modalData = $(this).data('bs.modal');
         // Destroy modal if has remote source – don't want to destroy modals with static content.
         if (modalData && modalData.options.remote) {
             // Destroy component. Next time new component is created and loads fresh content
