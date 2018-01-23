@@ -3,8 +3,6 @@
 
 @section('header')
 <link rel="stylesheet" href="{{asset('public/css/main.css')}}">
-
-
 <script type="text/javascript" src="{{asset('js/VideoManager.js')}}"></script>
 
 @endsection
@@ -25,10 +23,6 @@
 @endsection
 
 @section('content')
-
-
-
-
         <div class="row" id="main-text">
             <!-- <h4 class="h1-main-page" style="color:red"> ТУТ ОЧЕНЬ КОРОТКИЙ ТЕКСТ</h4> -->
             <h1 class="h1-main-page">{{ trans('messages.dream') }} -</h1>
