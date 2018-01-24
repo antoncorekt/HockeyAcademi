@@ -1,3 +1,23 @@
+@media only screen and (min-width: 1024px) {
+  #about-1 img {
+    content: url("../../design/first_page/res/about_main.png"); } }
+
+@media only screen and (min-width: 979px) and (max-width: 1024px) {
+  #about-1 img {
+    content: url("../../design/first_page/res/about_main.png"); } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  #about-1 img {
+    content: url("../../design/first_page/res/about_main.png"); } }
+
+@media only screen and (max-width: 767px) {
+  #about-1 img {
+    content: url("../../design/first_page/res/about_main.png"); } }
+
+@media only screen and (max-width: 480px) {
+  #about-1 img {
+    content: url("../../design/first_page/res/about_2.png"); } }
+
 body {
   font: 100% Montserrat;
   color: #FFFFFF;
@@ -530,12 +550,12 @@ body {
 
 @media only screen and (max-width: 480px) {
   .h1-about {
-    font-size: 12px;
+    font-size: 24px;
     margin-top: 5px; } }
 
 @media only screen and (max-width: 480px) {
   #t-about {
-    font-size: 10px; } }
+    font-size: 16px; } }
 
 .h4-main-page {
   font-family: "Montserrat-Medium", sans-serif;
@@ -553,8 +573,8 @@ body {
 
 @media only screen and (max-width: 480px) {
   .btn-about {
-    font-size: 9px;
-    padding: 2px 5px;
+    font-size: 12px;
+    padding: 5px 5px;
     margin-bottom: 15px; } }
 
 @media only screen and (max-width: 480px) {
