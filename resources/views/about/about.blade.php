@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('header')
+
     <link rel="stylesheet" href="{{asset('public/css/style.css')}}">
     
 @endsection
