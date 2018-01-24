@@ -1,6 +1,9 @@
 @extends('layouts.main')
 @section('header')
+
     <link rel="stylesheet" href="{{asset('public/css/style.css')}}">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
     
 @endsection
 @section('content')
@@ -187,7 +190,7 @@
             </div>
         </div>
         <div class="row" id="cost-btn">
-            <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal') }}" data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about">{{ trans('messages.write_learn') }}</a>
+            <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-enrol') }}" data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about">{{ trans('messages.write_learn') }}</a>
         </div>
     </div>
     @include('layouts.footer')
@@ -197,5 +200,37 @@
             <div class="modal-content"> </div>
         </div>
     </div>
+
+
+
+        @if(Session::has('mes'))
+            <div class="modal fade" id="modalMes" tabindex="-1" role="dialog" aria-labelledby="modalArt" style="color:black">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-header" style="color:black">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" >&times;</span>
+                            </button>
+                            <h3 class="modal-title" id="modalArt" >Message</h3>
+                        </div>
+                        <div class="modal-body" style="color:black">
+                            <p style="color:black">{{ Session::get('mes') }}</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(function() {
+            console.log("modal");
+            $('#modalMes').modal('show');
+            });
+            </script>
+        @endif
+
+
+
 
 @endsection

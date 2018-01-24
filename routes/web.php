@@ -41,10 +41,11 @@ Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function
 
 
 
-    Route::get('/modal', 'MainController@showModal')->name('others/modal');
+    Route::get('/modal-enrol', 'MainController@showModal')->name('others/enrol');
+
    // Route::resource('/modal', 'MainController@showModal');
 
 });
-
+Route::post('/enrol','MainController@enrolForm')->middleware('auth');
 Auth::routes();
 //Route::get('/modal', 'MainController@showModal')->name('modal');

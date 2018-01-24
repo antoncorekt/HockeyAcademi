@@ -38,7 +38,23 @@ $retina: '(min--moz-device-pixel-ratio: 1.5),
   @content;
 }
 
-
+#about-1 img{
+  @include respond-to($large-desktop) {
+    content: url("../../design/first_page/res/about_main.png");
+  }
+  @include respond-to($ipad) {
+    content: url("../../design/first_page/res/about_main.png");
+  }
+  @include respond-to($tablet-landscape) {
+    content: url("../../design/first_page/res/about_main.png");
+  }
+  @include respond-to($tablet-portrait) {
+    content: url("../../design/first_page/res/about_main.png");
+  }
+  @include respond-to($phone) {
+    content: url("../../design/first_page/res/about_2.png");
+  }
+}
 body {
   font: 100% $font-stack;
   color: $font-color;
@@ -709,14 +725,14 @@ body {
 
 .h1-about{
   @include respond-to($phone) {
-    font-size: 12px;
+    font-size: 24px;
     margin-top: 5px;
   }
 }
 
 #t-about{
   @include respond-to($phone) {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 
@@ -738,8 +754,8 @@ body {
 
 .btn-about{
   @include respond-to($phone) {
-    font-size: 9px;
-    padding: 2px 5px;
+    font-size: 12px;
+    padding: 5px 5px;
     margin-bottom: 15px;
   }
 
