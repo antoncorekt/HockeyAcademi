@@ -18,6 +18,9 @@
   #about-1 img {
     content: url("../../design/first_page/res/about_2.png"); } }
 
+#error {
+  color: red; }
+
 body {
   font: 100% Montserrat;
   color: #FFFFFF;

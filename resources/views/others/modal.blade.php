@@ -1,11 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Nadine
- * Date: 19.01.2018
- * Time: 16:33
- */?>
-
 <div class="modal fade" id="modalArt" tabindex="-1" role="dialog" aria-labelledby="modalArt" style="color:black">
     <div class="modal-dialog" role="document">
         <div class="modal-content"> </div>

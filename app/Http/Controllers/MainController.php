@@ -16,14 +16,13 @@ class MainController extends Controller
 
     public function enrolForm(MailFormRequest $request){
         $model = new MailSend();
-        $model->email = $request->get('email');
-        $model->name = $request->get('name');
-        $model->phone = $request->get('phone');
 
-        if ($model->sendMessage()){
+        if ($model->sendMessage($request->get('email'), $request->get('name'), $request->get('phone'),
+            $request->get('nameHock'), $request->get('height'), $request->get('weight'), $request->get('age'),
+            $request->get('add'))){
            // $request->session()->flash('alert-success', 'User was successful added!');
           //  return Redirect::back();
-            return Redirect::back()->with('mes', "Message sent successfully");
+            return Redirect::back()->with('mes', "Message sent successfully. С Вами скоро свяжутся");
          //   return redirect('ru/modal-enrol');
         }
         else

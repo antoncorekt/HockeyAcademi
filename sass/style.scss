@@ -55,6 +55,10 @@ $retina: '(min--moz-device-pixel-ratio: 1.5),
     content: url("../../design/first_page/res/about_2.png");
   }
 }
+
+#error{
+  color: red;
+}
 body {
   font: 100% $font-stack;
   color: $font-color;

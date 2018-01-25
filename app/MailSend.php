@@ -8,13 +8,28 @@ use Illuminate\Support\Facades\Mail;
 
 class MailSend extends Model
 {
-    public $email;
+   /* public $email;
     public $name;
     public $phone;
+    public $nameHock;
+    public $height;
+    public $weight;
+    public $age;
+    public $addInf;*/
 
-    public function sendMessage(){
+    public function sendMessage($email, $name, $phone, $nameHock,
+            $height, $weight, $age, $addInf){
         //for who
-        Mail::to($this->email)->send(new MessageEnrol($this->email, $this->name, $this->phone));
-        return true;
+        Mail::to($email)->send(new MessageEnrol(
+            $email, $name, $phone, $nameHock,
+            $height, $weight, $age, $addInf
+        ));
+
+        if( count(Mail::failures()) > 0 ) {
+           return false;
+        } else {
+            return true;
+        }
+
     }
 }
