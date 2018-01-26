@@ -59,6 +59,15 @@ $retina: '(min--moz-device-pixel-ratio: 1.5),
 #error{
   color: red;
 }
+
+.img-modal, .text-modal h4{
+  text-align: center;
+}
+.text-modal p, ul > li{
+  color:black;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 13px;
+}
 body {
   font: 100% $font-stack;
   color: $font-color;

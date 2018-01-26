@@ -28,4 +28,12 @@ class MainController extends Controller
         else
             return Redirect::back()->with('mes', "Message didn't send");
     }
+
+    public function showCoach($id)
+    {
+        return view('about/coach',
+            array('title' => 'createrating','description' => '',
+                'coach' => $id));
+
+    }
 }

@@ -89,22 +89,34 @@
         <div class="row coach-text" id="coach-photos">
             <div class="col-md-2 col-sm-2 col-xs-3 coach ">
                 <img src="../../design/first_page/res/coach.jpg"/>
-                <h5>Andriej Parfionow</h5>
+                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
+                        data-toggle="modal" data-target="#modalArt" >
+                        Andriej Parfionow</a>
+                </h5>
                 <p>Trener specjalista</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
                 <img src="../../design/first_page/res/coach.jpg"/>
-                <h5>Andriej Parfionow</h5>
+                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
+                        data-toggle="modal" data-target="#modalArt" >
+                        Andriej Parfionow</a>
+                </h5>
                 <p>Trener specjalista</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
                 <img src="../../design/first_page/res/coach.jpg"/>
-                <h5>Andriej Parfionow</h5>
+                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
+                   data-toggle="modal" data-target="#modalArt" >
+                        Andriej Parfionow</a>
+                </h5>
                 <p>Trener specjalista</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
                 <img src="../../design/first_page/res/coach.jpg"/>
-                <h5>Andriej Parfionow</h5>
+                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
+                        data-toggle="modal" data-target="#modalArt" >
+                        Andriej Parfionow</a>
+                </h5>
                 <p>Trener specjalista</p>
             </div>
 
