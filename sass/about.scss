@@ -41,7 +41,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
     @include respond-to($phone) {
-      margin-top: -20%;
+      margin-top: -19%;
     }
   
   }
@@ -75,14 +75,14 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   
   .h1-about{
     @include respond-to($phone) {
-      font-size: 12px;
+      font-size: 24px;
       margin-top: 5px;
     }
   }
   
   #t-about{
     @include respond-to($phone) {
-      font-size: 10px;
+      font-size: 16px;
     }
   }
   
@@ -104,8 +104,8 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   
   .btn-about{
     @include respond-to($phone) {
-      font-size: 9px;
-      padding: 2px 5px;
+      font-size: 12px;
+      padding: 5px 5px;
       margin-bottom: 15px;
     }
   
@@ -679,124 +679,159 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
       margin-bottom: 5px;
     }
   }
-  
-  /**
-    Footer
-   */
-  
-  
-  
-  .page-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+
+/**
+  Footer
+ */
+
+.page-footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.page-footer li {
+  float: left;
+}
+
+.page-footer  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Geometria-Medium", sans-serif;
+
+  @include respond-to($large-desktop) {
+    font-size: 12px;
   }
-  
-  .page-footer li {
-    float: left;
+
+  @include respond-to($tablet-portrait) {
+    font-size: 8px;
   }
-  
-  .page-footer  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "Geometria-Medium", sans-serif;
-  
-    @include respond-to($large-desktop) {
-      font-size: 12px;
-    }
-  
-    @include respond-to($tablet-portrait) {
-      font-size: 8px;
-    }
-  
-    @include respond-to($tablet-landscape) {
-      font-size: 11px;
-    }
-  
-    @include respond-to($phone) {
-      padding: 10px 5px;
-      font-size: 6px;
-    }
-  
-  
+
+  @include respond-to($tablet-landscape) {
+    font-size: 11px;
   }
-  
-  .page-footer ul{
-    padding-top: 10px;
-    @include respond-to($tablet-portrait) {
-      padding-top: 0px;
-    }
-    @include respond-to($phone) {
-      padding-top: 0px;
-    }
-  
+
+  @include respond-to($phone) {
+    padding: 10px 5px;
+    font-size: 6px;
   }
-  
-  
-  
-  #logo-footer{
-    width: 60%;
-  
-    @include respond-to($tablet-landscape) {
-      width: 50%;
-    }
-    @include respond-to($tablet-portrait) {
-      width: 25%;
-    }
-    @include respond-to($phone) {
-      width: 15%;
-    }
-  
+
+
+}
+
+.page-footer ul{
+  padding-top: 10px;
+  @include respond-to($tablet-portrait) {
+    padding-top: 0px;
   }
-  .logo-el{
-    @include respond-to($tablet-portrait) {
-      margin-left: 0px;
-      margin-right: -10%;
-      margin-top: 7px;
-    }
-    @include respond-to($tablet-landscape) {
-      margin-left: -15px;
-    }
-  
-  
-  
-    @include respond-to($phone) {
-      margin-right: -23%;
-    }
-  
-  
+  @include respond-to($phone) {
+    padding-top: 0px;
   }
-  
-  .page-footer{
-    padding-bottom: 0px;
+
+}
+
+
+
+#logo-footer{
+  width: 50%;
+
+  @include respond-to($tablet-landscape) {
+    width: 50%;
   }
-  
-  #company-el{
-    float:right;
-    font-family: "Geometria-Medium", sans-serif;
-    margin-top: 13px;
-  
-    @include respond-to($large-desktop) {
-      font-size: 12px;
-    }
-  
-    @include respond-to($tablet-portrait) {
-      font-size: 8px;
-    }
-  
-    @include respond-to($tablet-landscape) {
-      font-size: 11px;
-    }
-    @include respond-to($phone) {
-      font-size: 6px;
-      margin-top: 10px;
-    }
+  @include respond-to($tablet-portrait) {
+    width: 50%;
   }
-  
-  .row{
-    margin-right: 0px;
+  @include respond-to($phone) {
+    width: 50%;
   }
+
+}
+.logo-el{
+  width: 9%;
+  margin-left: 9px;
+  @include respond-to($tablet-portrait) {
+    margin-left: 5px;
+    margin-right: -10%;
+    margin-top: 7px;
+    width: 10%;
+  }
+  @include respond-to($tablet-landscape) {
+    margin-left: 5px;
+    width: 10%;
+  }
+
+
+
+  @include respond-to($phone) {
+    margin-right: -23%;
+    width: 10%;
+  }
+
+
+}
+
+.page-footer{
+  padding-bottom: 0px;
+}
+
+#company-el{
+  float:right;
+  font-family: "Geometria-Medium", sans-serif;
+  margin-top: 13px;
+  padding-right: 9px;
+
+  @include respond-to($large-desktop) {
+    font-size: 12px;
+  }
+
+  @include respond-to($tablet-portrait) {
+    font-size: 8px;
+  }
+
+  @include respond-to($tablet-landscape) {
+    font-size: 11px;
+  }
+  @include respond-to($phone) {
+    font-size: 6px;
+    margin-top: 10px;
+  }
+}
+
+.row{
+  margin-right: 0px;
+}
+
+#error{
+  color: red;
+}
+
+.img-modal, .text-modal h4{
+  text-align: center;
+}
+.text-modal p, .text-modal ul > li{
+  color:black;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 13px;
+}
+
+#about-1 img{
+  @include respond-to($large-desktop) {
+    content: url("../../design/first_page/res/about_main.png");
+  }
+  @include respond-to($ipad) {
+    content: url("../../design/first_page/res/about_main.png");
+  }
+  @include respond-to($tablet-landscape) {
+    content: url("../../design/first_page/res/about_main.png");
+  }
+  @include respond-to($tablet-portrait) {
+    content: url("../../design/first_page/res/about_main.png");
+  }
+  @include respond-to($phone) {
+    content: url("../../design/first_page/res/about_2.png");
+  }
+}

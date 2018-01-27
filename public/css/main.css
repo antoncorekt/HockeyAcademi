@@ -1,63 +1,9 @@
-@media only screen and (max-width: 480px) {
-  body:before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url(../images/main/main_with_snow.gif) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; } }
-
-@media only screen and (max-width: 767px) {
-  body:before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url(../images/main/main_with_snow.gif) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; } }
-
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-  body:before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url(../images/main/main_with_snow.gif) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; } }
-
 body {
   font: 100% Montserrat;
   color: #FFFFFF;
   background-color: #001128;
   margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  background-image: url(../images/main/main_with_snow.gif);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  -webkit-background-size: cover; }
+  padding: 0px 0px 0px 0px; }
   @media only screen and (max-width: 480px) {
     body .menu-logo {
       display: none; } }
@@ -127,6 +73,14 @@ body {
 
 .nav-el:not(.menu-logo) {
   margin-top: 16px; }
+  @media only screen and (max-width: 767px) {
+    .nav-el:not(.menu-logo) {
+      margin-top: 5px;
+      margin-bottom: 5px; } }
+  @media only screen and (max-width: 767px) {
+    .nav-el:not(.menu-logo) {
+      margin-top: 16px;
+      margin-bottom: 16px; } }
 
 .men-contacts {
   margin-left: 8px; }
@@ -161,7 +115,11 @@ body {
 
 @media only screen and (max-width: 767px) {
   .navbar-collapse {
-    position: absolute; } }
+    position: absolute;
+    width: 109%;
+    text-align: center;
+    background-color: rgba(88, 46, 99, 0.94);
+    margin-left: -5%; } }
 
 @media only screen and (max-width: 480px) {
   .navbar-collapse {
@@ -173,7 +131,8 @@ body {
 
 @media only screen and (max-width: 767px) {
   .men-lang {
-    padding: 10px 5px; } }
+    padding: 10px 5px;
+    margin-top: 0px !important; } }
 
 @media only screen and (max-width: 480px) {
   .men-lang {
@@ -198,12 +157,12 @@ body {
   @media only screen and (min-width: 979px) and (max-width: 1024px) {
     .navbar-default .navbar-nav > li > a {
       font-size: 14px; } }
-  @media only screen and (max-width: 767px) {
-    .navbar-default .navbar-nav > li > a {
-      font-size: 12px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .navbar-default .navbar-nav > li > a {
-      font-size: 12px; } }
+      font-size: 20px; } }
+  @media only screen and (max-width: 767px) {
+    .navbar-default .navbar-nav > li > a {
+      font-size: 18px; } }
   @media only screen and (max-width: 480px) {
     .navbar-default .navbar-nav > li > a {
       font-size: 20px; } }
@@ -227,10 +186,10 @@ body {
   @media only screen and (min-width: 979px) and (max-width: 1024px) {
     .h1-main-page {
       font-size: 30px; } }
-  @media only screen and (max-width: 767px) {
-    .h1-main-page {
-      font-size: 20px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .h1-main-page {
+      font-size: 35px; } }
+  @media only screen and (max-width: 767px) {
     .h1-main-page {
       font-size: 35px; } }
   @media only screen and (max-width: 480px) {
@@ -245,6 +204,9 @@ body {
   @media only screen and (min-width: 979px) and (max-width: 1024px) {
     .main-text-p {
       font-size: 14px; } }
+  @media only screen and (max-width: 767px) {
+    .main-text-p {
+      font-size: 22px; } }
   @media only screen and (max-width: 480px) {
     .main-text-p {
       font-size: 22px; } }
@@ -262,7 +224,7 @@ body {
   @media only screen and (max-width: 767px) {
     #main-text, #form-text, #team-text {
       left: 2%;
-      top: 45%; } }
+      top: 50%; } }
   @media only screen and (max-width: 480px) {
     #main-text, #form-text, #team-text {
       top: 50%;
@@ -283,12 +245,12 @@ body {
   @media only screen and (min-width: 979px) and (max-width: 1024px) {
     .lang {
       font-size: 14px; } }
-  @media only screen and (max-width: 767px) {
-    .lang {
-      font-size: 12px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .lang {
       font-size: 12px; } }
+  @media only screen and (max-width: 767px) {
+    .lang {
+      font-size: 16px; } }
   @media only screen and (max-width: 480px) {
     .lang {
       font-size: 20px; } }
@@ -363,26 +325,34 @@ body {
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   font-family: "Montserrat-Medium", sans-serif; }
-  @media only screen and (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-      color: white;
-      font-size: 12px;
-      padding-left: 7px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: white;
       font-size: 12px;
       padding-left: 7px; } }
+  @media only screen and (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: white;
+      font-size: 16px;
+      padding-left: 7px;
+      text-align: center; } }
   @media only screen and (max-width: 480px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: white;
       font-size: 18px;
       text-align: center; } }
 
-.navbar-header {
-  background-color: rgba(88, 46, 99, 0.9);
-  width: 109%;
-  margin-left: -5%; }
+@media only screen and (max-width: 767px) {
+  .navbar-header {
+    background-color: rgba(88, 46, 99, 0.9);
+    width: 109%;
+    margin-left: -5%; } }
+
+@media only screen and (max-width: 480px) {
+  .navbar-header {
+    background-color: rgba(88, 46, 99, 0.9);
+    width: 109%;
+    margin-left: -5%; } }
 
 .btn-main {
   background-color: #ffeb3c;
@@ -397,6 +367,62 @@ body {
     .btn-main {
       font-size: 14px;
       padding: 8px 8px; } }
+
+@media only screen and (max-width: 480px) {
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(../images/main/main_with_snow.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+@media only screen and (max-width: 767px) {
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(../images/main/main_with_snow.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(../images/main/main_with_snow.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+body {
+  background-image: url(../images/main/main_with_snow.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover; }
 
 .cont {
   display: none; }

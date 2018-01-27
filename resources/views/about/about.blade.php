@@ -1,10 +1,6 @@
 @extends('layouts.main')
 @section('header')
-
-    <link rel="stylesheet" href="{{asset('public/css/style.css')}}">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
-    
+    <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
 @endsection
 @section('content')
     <style>
