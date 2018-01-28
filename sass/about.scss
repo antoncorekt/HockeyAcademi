@@ -394,6 +394,12 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   
   .coach-text h3, .h3-where-text, #form-text h4 {
     font-family: "MontserratBlack", sans-serif;
+    text-align: center;
+
+    @include  respond-to($large-desktop){
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
   
     @include  respond-to($tablet-landscape){
       font-size: 17px;
@@ -432,7 +438,11 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   }
 }
 #form-text{
+  @include respond-to($large-desktop) {
+    transform: translateY(-55%);
+  }
   @include respond-to($tablet-portrait) {
+    transform: translateY(-90%);
     left: 5%;
     top: 50%;
   }
@@ -834,4 +844,23 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   @include respond-to($phone) {
     content: url("../../design/first_page/res/about_2.png");
   }
+}
+
+.list-know{
+  font-family: "OpenSans-Bold", sans-serif;
+  list-style: none;
+
+  @include respond-to($large-desktop) {
+    font-size: 20px;
+  }
+}
+
+.list-know li {
+  @include respond-to($large-desktop) {
+    padding-bottom: 10px;
+  }
+
+}
+.list-know li:hover, .list-know li:focus{
+  color: #BEBEBE;
 }

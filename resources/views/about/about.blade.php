@@ -81,7 +81,9 @@
         </div>
         <div class="row coach-text" id="coach-photos">
             <div class="col-md-2 col-sm-2 col-xs-3 coach ">
-                <img src="../../design/first_page/res/coach.jpg"/>
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
+                   data-toggle="modal" data-target="#modalArt" >
+                    <img src="../../design/first_page/res/coach.jpg"/></a>
                 <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
                         data-toggle="modal" data-target="#modalArt" >
                         Andriej Parfionow</a>
@@ -89,7 +91,9 @@
                 <p>Trener specjalista</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
-                <img src="../../design/first_page/res/coach.jpg"/>
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
+                   data-toggle="modal" data-target="#modalArt" >
+                    <img src="../../design/first_page/res/coach.jpg"/></a>
                 <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
                         data-toggle="modal" data-target="#modalArt" >
                         Andriej Parfionow</a>
@@ -97,7 +101,10 @@
                 <p>Trener specjalista</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
-                <img src="../../design/first_page/res/coach.jpg"/>
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
+                   data-toggle="modal" data-target="#modalArt" >
+                    <img src="../../design/first_page/res/coach.jpg"/></a>
+
                 <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
                    data-toggle="modal" data-target="#modalArt" >
                         Andriej Parfionow</a>
@@ -105,7 +112,9 @@
                 <p>Trener specjalista</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
-                <img src="../../design/first_page/res/coach.jpg"/>
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
+                   data-toggle="modal" data-target="#modalArt" >
+                    <img src="../../design/first_page/res/coach.jpg"/></a>
                 <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
                         data-toggle="modal" data-target="#modalArt" >
                         Andriej Parfionow</a>
@@ -160,17 +169,29 @@
     <div class="container-fluid bg-5" id="about-5">
         <img src="../../design/first_page/res/writel.png"/>
         <div class="row"  id="form-text">
-            <h4>{{ trans('messages.form') }}
-            <br> {{ trans('messages.form1') }}</h4>
-            <form action="">
-                <div class="form-group">
-                    <input type="email" class="form-control" id="email"  placeholder="Ваше имя">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="pwd" placeholder="Ваш телефон">
-                </div>
-            </form>
-            <button class="btn btn-main  btn-about">{{ trans('messages.know_more2') }}!</button>
+            <h4>ВАЖНО ЗНАТЬ</h4>
+            <div class="col-lg-4 col-md-3 col-xs-3">
+                <ul class="list-know">
+                    <li>Бесплатный адаптационный период с 15.04.2018 по 15.05.2018</li>
+                    <li>Ознакомление со школьной и тренировочной программой</li>
+                    <li>Возможность получить вид на жительство для вас и ребёнка</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-3 col-xs-3">
+                <ul class="list-know">
+                    <li>Помощь с оформлением документов</li>
+                    <li>Поступление в 8 школьный класс без экзаменов</li>
+                    <li>Помогаем с поступлением в Европейский университет</li>
+
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-3 col-xs-3">
+                <ul class="list-know">
+                    <li>Обеспечение жильём и питанием</li>
+                    <li>Языковая помощь</li>
+                    <li>Русскоговорящие тренера</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="container-fluid bg-6" id="about-6">

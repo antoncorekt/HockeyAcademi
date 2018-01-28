@@ -687,7 +687,12 @@ body {
       margin-bottom: 2px; } }
 
 .coach-text h3, .h3-where-text, #form-text h4 {
-  font-family: "MontserratBlack", sans-serif; }
+  font-family: "MontserratBlack", sans-serif;
+  text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    .coach-text h3, .h3-where-text, #form-text h4 {
+      font-size: 28px;
+      margin-bottom: 20px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .coach-text h3, .h3-where-text, #form-text h4 {
       font-size: 17px; } }
@@ -718,8 +723,13 @@ body {
     #form-text, #team-text {
       top: 45%; } }
 
+@media only screen and (min-width: 1024px) {
+  #form-text {
+    transform: translateY(-55%); } }
+
 @media only screen and (max-width: 767px) {
   #form-text {
+    transform: translateY(-90%);
     left: 5%;
     top: 50%; } }
 
@@ -1054,3 +1064,17 @@ body {
 @media only screen and (max-width: 480px) {
   #about-1 img {
     content: url("../../design/first_page/res/about_2.png"); } }
+
+.list-know {
+  font-family: "OpenSans-Bold", sans-serif;
+  list-style: none; }
+  @media only screen and (min-width: 1024px) {
+    .list-know {
+      font-size: 20px; } }
+
+@media only screen and (min-width: 1024px) {
+  .list-know li {
+    padding-bottom: 10px; } }
+
+.list-know li:hover, .list-know li:focus {
+  color: #BEBEBE; }
