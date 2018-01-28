@@ -77,10 +77,6 @@ body {
     .nav-el:not(.menu-logo) {
       margin-top: 5px;
       margin-bottom: 5px; } }
-  @media only screen and (max-width: 767px) {
-    .nav-el:not(.menu-logo) {
-      margin-top: 16px;
-      margin-bottom: 16px; } }
 
 .men-contacts {
   margin-left: 8px; }
@@ -116,7 +112,7 @@ body {
 @media only screen and (max-width: 767px) {
   .navbar-collapse {
     position: absolute;
-    width: 109%;
+    width: 107%;
     text-align: center;
     background-color: rgba(88, 46, 99, 0.94);
     margin-left: -5%; } }
@@ -131,7 +127,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   .men-lang {
-    padding: 10px 5px;
+    padding: 5px 5px;
     margin-top: 0px !important; } }
 
 @media only screen and (max-width: 480px) {
@@ -159,7 +155,7 @@ body {
       font-size: 14px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .navbar-default .navbar-nav > li > a {
-      font-size: 20px; } }
+      font-size: 14px; } }
   @media only screen and (max-width: 767px) {
     .navbar-default .navbar-nav > li > a {
       font-size: 18px; } }
@@ -185,7 +181,7 @@ body {
   font-family: "MontserratBlack", sans-serif; }
   @media only screen and (min-width: 979px) and (max-width: 1024px) {
     .h1-main-page {
-      font-size: 30px; } }
+      font-size: 35px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .h1-main-page {
       font-size: 35px; } }
@@ -203,7 +199,10 @@ body {
       font-size: 16px; } }
   @media only screen and (min-width: 979px) and (max-width: 1024px) {
     .main-text-p {
-      font-size: 14px; } }
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .main-text-p {
+      font-size: 16px; } }
   @media only screen and (max-width: 767px) {
     .main-text-p {
       font-size: 22px; } }
@@ -247,26 +246,25 @@ body {
       font-size: 14px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .lang {
-      font-size: 12px; } }
+      font-size: 14px;
+      margin-right: -25px; } }
   @media only screen and (max-width: 767px) {
     .lang {
-      font-size: 16px; } }
+      font-size: 18px; } }
   @media only screen and (max-width: 480px) {
     .lang {
       font-size: 20px; } }
 
-@media only screen and (max-width: 480px) {
-  .lang:focus, .lang:hover {
-    color: #BEBEBE; } }
+.lang:focus, .lang:hover {
+  color: #BEBEBE; }
 
 @media only screen and (max-width: 480px) {
   .navbar-nav .open .dropdown-menu {
     margin-top: 10px; } }
 
-@media only screen and (max-width: 480px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-    color: #BEBEBE; } }
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+  color: #BEBEBE; }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: transparent; }
@@ -282,6 +280,9 @@ body {
   color: white;
   font-size: 16px;
   padding: 3px 7px; }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .dropdown-menu > li > a {
+      font-size: 14px; } }
 
 .flag-ico {
   vertical-align: unset; }
@@ -308,57 +309,59 @@ body {
 
 .drop-text {
   vertical-align: top; }
-  @media only screen and (min-width: 979px) and (max-width: 1024px) {
-    .drop-text {
-      vertical-align: super; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    .drop-text {
-      vertical-align: super; } }
 
 @media only screen and (min-width: 1024px) {
   .navbar-right {
     margin-top: -95px; } }
 
+@media only screen and (min-width: 979px) and (max-width: 1024px) {
+  .navbar-right {
+    margin-top: -98px; } }
+
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .navbar-right {
-    margin-top: -75px; } }
+    margin-top: -77px; } }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   font-family: "Montserrat-Medium", sans-serif; }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: white;
-      font-size: 12px;
+      font-size: 14px;
       padding-left: 7px; } }
   @media only screen and (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: white;
-      font-size: 16px;
+      font-size: 18px;
       padding-left: 7px;
       text-align: center; } }
   @media only screen and (max-width: 480px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: white;
-      font-size: 18px;
+      font-size: 20px;
       text-align: center; } }
 
 @media only screen and (max-width: 767px) {
   .navbar-header {
-    background-color: rgba(88, 46, 99, 0.9);
-    width: 109%;
+    background-color: transparent;
+    width: 107%;
     margin-left: -5%; } }
 
 @media only screen and (max-width: 480px) {
   .navbar-header {
-    background-color: rgba(88, 46, 99, 0.9);
+    background-color: transparent;
     width: 109%;
     margin-left: -5%; } }
+
+@media only screen and (max-width: 767px) {
+  .navbar-toggle {
+    margin-right: 8px; } }
 
 .btn-main {
   background-color: #ffeb3c;
   color: #10425c;
   font-family: "MontserratBlack", sans-serif;
-  font-size: 12px; }
+  font-size: 14px; }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .btn-main {
       font-size: 14px;

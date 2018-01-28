@@ -15,6 +15,18 @@
 <script>
     $(document).ready(function () {
         getLang();
+        var click = 0;
+        $("#navbar-btn").click(function() {
+            console.log("click");
+            if(click == 0) {
+                $(".navbar-header").css("background-color", "rgba(88, 46, 99, 0.9)");
+                click = 1;
+            }
+            else{
+                $(".navbar-header").css("background-color", "transparent");
+                click = 0;
+            }
+        });
     });
 </script>
 <body>
@@ -24,7 +36,7 @@
 <div class="container-fluid" id="body-main">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" id="navbar-btn">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>

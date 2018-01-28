@@ -19,10 +19,6 @@
       margin-top: 5px;
       margin-bottom: 5px;
     }
-    @include respond-to($tablet-portrait) {
-      margin-top: 16px;
-      margin-bottom: 16px;
-    }
 
   }
   
@@ -61,7 +57,7 @@
     }
     @include respond-to($tablet-portrait) {
       position: absolute;
-      width: 109%;
+      width: 107%;
       text-align: center;
       background-color: rgba(88, 46, 99, 0.94);
       margin-left: -5%;
@@ -83,7 +79,7 @@
   
   .men-lang{
     @include respond-to($tablet-portrait) {
-      padding: 10px 5px;
+      padding: 5px 5px;
       margin-top: 0px !important;
     }
 
@@ -119,7 +115,7 @@
       font-size: 14px;
     }
     @include respond-to($tablet-landscape) {
-      font-size: 20px;
+      font-size: 14px;
     }
     @include respond-to($tablet-portrait) {
       font-size: 18px;
@@ -152,7 +148,7 @@
     font-family: "MontserratBlack", sans-serif;
   
     @include respond-to($ipad) {
-      font-size: 30px;
+      font-size: 35px;
     }
   
     @include respond-to($tablet-landscape) {
@@ -174,7 +170,11 @@
       font-size: 16px;
     }
     @include  respond-to($ipad){
-      font-size: 14px;
+      font-size: 16px;
+    }
+
+    @include respond-to($tablet-landscape) {
+      font-size: 16px;
     }
     @include respond-to($tablet-portrait) {
       font-size: 22px;
@@ -227,10 +227,11 @@
     }
 
     @include respond-to($tablet-landscape) {
-      font-size: 12px;
+      font-size: 14px;
+      margin-right: -25px;
     }
     @include respond-to($tablet-portrait) {
-      font-size: 16px;
+      font-size: 18px;
     }
     @include respond-to($phone) {
       font-size: 20px;
@@ -238,9 +239,8 @@
   }
 
   .lang:focus, .lang:hover{
-    @include respond-to($phone) {
       color: #BEBEBE;
-    }
+
   }
 
 .navbar-nav .open .dropdown-menu{
@@ -251,9 +251,7 @@
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
-  @include respond-to($phone) {
     color: #BEBEBE;
-  }
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
@@ -272,6 +270,9 @@
     color: white;
     font-size: 16px;
     padding: 3px 7px;
+    @include respond-to($ipad) {
+      font-size: 14px;
+    }
   }
   
   .flag-ico{
@@ -303,24 +304,19 @@
   
   .drop-text {
     vertical-align: top;
-  
-    @include  respond-to($ipad) {
-      vertical-align: super;
-    }
-  
-    @include respond-to($tablet-landscape) {
-      vertical-align: super;
-    }
-  
   }
   
   .navbar-right{
     @include  respond-to($large-desktop) {
       margin-top: -95px;
     }
-  
+
+    @include respond-to($ipad) {
+      margin-top: -98px;
+    }
+
     @include respond-to($tablet-landscape) {
-      margin-top: -75px;
+      margin-top: -77px;
     }
   
   
@@ -332,42 +328,48 @@
   
     @include respond-to($tablet-landscape) {
       color: white;
-      font-size: 12px;
+      font-size: 14px;
       padding-left: 7px;
     }
 
     @include respond-to($tablet-portrait) {
       color: white;
-      font-size: 16px;
+      font-size: 18px;
       padding-left: 7px;
       text-align: center;
     }
     @include respond-to($phone) {
       color: white;
-      font-size: 18px;
+      font-size: 20px;
       text-align: center;
     }
   }
 
   .navbar-header{
     @include respond-to($tablet-portrait) {
-      background-color: rgba(88, 46, 99, 0.9);
-      width: 109%;
+      background-color: transparent;
+      width: 107%;
       margin-left: -5%;
     }
     @include respond-to($phone) {
-      background-color: rgba(88, 46, 99, 0.9);
+      background-color: transparent;
       width: 109%;
       margin-left: -5%;
     }
 
+  }
+
+  .navbar-toggle{
+    @include respond-to($tablet-portrait) {
+      margin-right: 8px;
+    }
   }
   
   .btn-main{
     background-color: rgb(255, 235, 60);
     color: #10425c;
     font-family: "MontserratBlack", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 
     @include respond-to($tablet-landscape) {
       font-size: 14px;
