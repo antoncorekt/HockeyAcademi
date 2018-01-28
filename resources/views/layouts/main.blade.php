@@ -17,7 +17,6 @@
         getLang();
         var click = 0;
         $("#navbar-btn").click(function() {
-            console.log("click");
             if(click == 0) {
                 $(".navbar-header").css("background-color", "rgba(88, 46, 99, 0.9)");
                 click = 1;

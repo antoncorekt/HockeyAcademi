@@ -828,7 +828,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   font-size: 13px;
 }
 
-#about-1 img{
+#about-1 img, #about-1 img:after, #about-1 img:before{
   @include respond-to($large-desktop) {
     content: url("../../design/first_page/res/about_main.png");
   }
@@ -842,7 +842,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     content: url("../../design/first_page/res/about_main.png");
   }
   @include respond-to($phone) {
-    content: url("../../design/first_page/res/about_2.png");
+    content: url("../images/about/about_2.png");
   }
 }
 

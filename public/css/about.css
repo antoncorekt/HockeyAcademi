@@ -1068,24 +1068,24 @@ body {
   font-size: 13px; }
 
 @media only screen and (min-width: 1024px) {
-  #about-1 img {
+  #about-1 img, #about-1 img:after, #about-1 img:before {
     content: url("../../design/first_page/res/about_main.png"); } }
 
 @media only screen and (min-width: 979px) and (max-width: 1024px) {
-  #about-1 img {
+  #about-1 img, #about-1 img:after, #about-1 img:before {
     content: url("../../design/first_page/res/about_main.png"); } }
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-  #about-1 img {
+  #about-1 img, #about-1 img:after, #about-1 img:before {
     content: url("../../design/first_page/res/about_main.png"); } }
 
 @media only screen and (max-width: 767px) {
-  #about-1 img {
+  #about-1 img, #about-1 img:after, #about-1 img:before {
     content: url("../../design/first_page/res/about_main.png"); } }
 
 @media only screen and (max-width: 480px) {
-  #about-1 img {
-    content: url("../../design/first_page/res/about_2.png"); } }
+  #about-1 img, #about-1 img:after, #about-1 img:before {
+    content: url("../images/about/about_2.png"); } }
 
 .list-know {
   font-family: "OpenSans-Bold", sans-serif;
