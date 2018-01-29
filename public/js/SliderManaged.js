@@ -23,13 +23,14 @@ $(document).ready(function(){
 
     var PADDING = 10;
     
+    // $(".slick-dots").css("bottom", $(".sldr").height());
 
     $(".sldr").width($( window ).width()-PADDING);
 
     $( window ).resize(function() {
-        console.log("max->" + $( window ).width() + " min" + ($( window ).width()-PADDING));
+        console.log("bla " + $(".sldr").height());
         $(".sldr").width($( window ).width()-PADDING);
-      
+        $(".slick-dots").css("bottom", $(".sldr").height()+65);
       });
 
 

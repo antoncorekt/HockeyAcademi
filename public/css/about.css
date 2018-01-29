@@ -1274,3 +1274,11 @@ body {
 
 .slick-active .mydots:before {
   border-top-color: #ffeb3b; }
+
+.img-faq {
+  background-image: url("../../design/first_page/res/img-faq.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }

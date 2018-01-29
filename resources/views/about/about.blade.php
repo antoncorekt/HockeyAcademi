@@ -18,7 +18,8 @@
             background-image: none;
             background-color: white;
         }
-        
+
+       
 
 
     </style>
@@ -193,7 +194,7 @@
             </h3>
             <div class="row where-text-1" id="where-photos">
                 <div class="col-lg-5 col-md-5 col-sm-4 col-xs-9">
-                    <img src="../../design/first_page/res/photo-2.jpg" id="img-where"/>
+                    <img id="img-where"/>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-9">
                     <h3 class="h1-team-page" id="h3-team">ИДЕАЛЬНЫЙ КЛИМАТ ДЛЯ СПОРТМЕНА</h3>
@@ -231,7 +232,7 @@
         </div>
     </div>
     <div class="container-fluid bg-5" id="about-5">
-        <img src="../../design/first_page/res/writel.png"/>
+        <img style="img-faq" src="../../design/first_page/res/img-faq.jpg"/>
         <div class="row"  id="form-text">
             <h4>ВАЖНО ЗНАТЬ</h4>
             <div class="col-lg-4 col-md-3 col-xs-3">
@@ -259,6 +260,7 @@
         </div>
     </div>
     <div class="container-fluid bg-6" id="about-6">
+        
         <div class="row where-text" id="cost-text">
             <h4 class="h4-main-page">{{ trans('messages.cost') }}?</h4>
             <h3 class="h3-where-text">{{ trans('messages.cost1') }}
