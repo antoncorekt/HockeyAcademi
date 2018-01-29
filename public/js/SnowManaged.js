@@ -53,6 +53,7 @@ function init() {
         scene.add(particle);
 
         particles.push(particle);
+        
     }
     container.appendChild(renderer.domElement);
 

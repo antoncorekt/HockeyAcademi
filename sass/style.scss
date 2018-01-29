@@ -679,7 +679,7 @@ body {
 
   background-attachment: fixed;
   position: relative;
-  z-index: -9;
+  z-index: -9;  
 
   padding: 0px;
 
@@ -803,7 +803,6 @@ body {
 
   @include  respond-to($large-desktop){
     font-size: 14px;
-    margin-top: 5%;
   }
 
   @include  respond-to($ipad){
@@ -1449,4 +1448,124 @@ body {
   src: url("../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+
+
+
+
+
+
+ // slider style + block 2
+
+ .sldr{
+  margin-top: -32%;         
+  /* border: 5px solid red; */ 
+  @include respond-to($phone) {
+    margin-top: 0px;   
+  }
+}
+
+.mydots{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 29px;
+  font-variant: small-caps;
+  text-transform: none;
+  padding: 10px;
+
+  @include respond-to($phone) {
+    font-size: 14px;
+    padding: 4px;
+  }
+  
+}
+
+.mydots {
+  position: relative;
+  background: transparent;
+  border: 4px solid grey;
+}
+
+.mydots:after, .mydots:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.mydots:after {
+  border-color:  transparent;
+  border-top-color: 8b8b8b;
+  border-width: 20px;
+  margin-left: -20px;
+}
+
+.mydots:before {
+  border-color: transparent;
+  border-top-color: #8b8b8b;
+  border-width: 26px;
+  margin-left: -26px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: space-between;
+  bottom: 390px;
+  margin-top: 50px;
+  @include respond-to($phone) {
+    bottom: 530px;
+  }
+}
+
+.team{
+  margin-left: 150px;
+  margin-right: 150px;
+
+  @include respond-to($phone) {
+    margin-left: 10px;
+  margin-right: 10px;
+  }
+}
+
+.text-style-1rst-banner{
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #191d72;
+  line-height: 2;
+  font-size: 14px;
+  margin: 0px 0px 0px 0px;
+  @include respond-to($phone) {
+    font-size: 10px;
+  }
+}
+
+.text-style-1rst-banner-if_you{
+  margin-top: -5px;
+}
+
+.text-style-1rst-banner-ab{
+
+  font-size: 15px;
+}
+
+#s1rst-banner-last{
+  display: none;
+}
+
+.slick-active .mydots {
+  
+  border: 4px solid rgba(255, 235, 59, 1);
+}
+
+.slick-active .mydots:after {
+  border-top-color: rgba(255, 235, 59, 1);
+}
+
+.slick-active .mydots:before {
+  border-top-color: rgba(255, 235, 59, 1);
 }
