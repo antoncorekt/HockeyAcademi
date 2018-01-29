@@ -1079,3 +1079,16 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
 .slick-active .mydots:before {
   border-top-color: rgba(255, 235, 59, 1);
 }
+
+// block with faq
+
+.img-faq{
+  background-image: url('../../design/first_page/res/img-faq.jpg');
+  height: 100%; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
