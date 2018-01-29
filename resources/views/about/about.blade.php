@@ -124,7 +124,10 @@
                             <li> Участвуем в международных турнирах SELECT; </li>
                         </ul> 
                         <p></p>
-                        <button class="btn btn-main btn-about" id="">ЧТО ТАКОЕ SELECT?</button>
+                        <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-selects') }}"
+                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                            ЧТО ТАКОЕ SELECT?
+                        </a>
                     </div>
             </div>
         </div>
@@ -204,10 +207,12 @@
                     Но город живёт не только зимой, но и летом.
                     Наши тренеры решили, что это место с его прекрасным климатом 
                     и минеральными источниками идеально подходит для взращивания 
-                    лучших спортсменов Европы и всего мира. Нам оказалось мало только лагерей, 
-                    мы открываем целую Академию!
+                    лучших спортсменов Европы и всего мира.
                     <p></p>
-                    <button class="btn btn-main btn-about" id="">ПОСМОТРЕТЬ ГДЕ ЗАНИМАЮТСЯ ХОККЕИСТЫ</button>
+                    <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-krynica') }}"
+                       data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                        ПОСМОТРЕТЬ ГДЕ ЗАНИМАЮТСЯ ХОККЕИСТЫ
+                    </a>
                     </p>
                 </div>
             </div>
@@ -222,7 +227,10 @@
 После окончания Академии ты можешь получить образование в колледжах и университетах Европы и США.
 
                     </p>
-                    <button class="btn btn-main btn-about" id="">БОЛЬШЕ ОБ ОБРАЗОВАНИИ В ПОЛЬШЕ</button>
+                    <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-education') }}"
+                       data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                        БОЛЬШЕ ОБ ОБРАЗОВАНИИ В ПОЛЬШЕ
+                    </a>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-4  col-xs-9">
                     <img src="../../design/first_page/res/photo-3.jpg" id="img-where"/>

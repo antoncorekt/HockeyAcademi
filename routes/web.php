@@ -43,6 +43,9 @@ Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function
 
     Route::get('/modal-coach/{id}', 'MainController@showCoach')->name('about/coach');
     Route::get('/modal-details', 'MainController@showDetails')->name('about/details');
+    Route::get('/modal-selects', 'MainController@showDetailsSelects')->name('about/selects');
+    Route::get('/modal-krynica', 'MainController@showDetailsKrynica')->name('about/krynica');
+    Route::get('/modal-education', 'MainController@showDetailsEducation')->name('about/education');
 
    // Route::resource('/modal', 'MainController@showModal');
 

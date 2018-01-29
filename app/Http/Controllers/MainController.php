@@ -32,7 +32,7 @@ class MainController extends Controller
     public function showCoach($id)
     {
         return view('about/coach',
-            array('title' => 'createrating','description' => '',
+            array('title' => 'coach','description' => '',
                 'coach' => $id));
 
     }
@@ -40,7 +40,22 @@ class MainController extends Controller
     public function showDetails()
     {
         return view('about/details',
-            array('title' => 'createrating','description' => ''));
+            array('title' => 'details','description' => ''));
+    }
 
+    public function showDetailsSelects()
+    {
+        return view('about/selects',
+            array('title' => 'showDetailsSelects','description' => ''));
+    }
+    public function showDetailsKrynica()
+    {
+        return view('about/place',
+            array('title' => 'showDetailsKrynica','description' => ''));
+    }
+    public function showDetailsEducation()
+    {
+        return view('about/education',
+            array('title' => 'showDetailsEducation','description' => ''));
     }
 }
