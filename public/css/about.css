@@ -669,7 +669,7 @@ body {
       top: -200px; } }
   @media only screen and (max-width: 480px) {
     #about-3 {
-      top: -100px; } }
+      top: -30px; } }
 
 .coach-text, .where-text {
   margin: auto;
@@ -723,7 +723,7 @@ body {
       font-size: 12px; } }
   @media only screen and (max-width: 480px) {
     .coach-text h3, .h3-where-text, #form-text h4 {
-      font-size: 9px;
+      font-size: 14px;
       margin-bottom: 5px; } }
 
 #form-text, #team-text {
@@ -757,7 +757,7 @@ body {
 @media only screen and (max-width: 480px) {
   #form-text {
     position: relative;
-    transform: translateY(-90%);
+    transform: translateY(-105%);
     left: 0;
     padding-left: 10px;
     padding-right: 10px; } }
@@ -839,7 +839,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   #about-4 {
-    margin-top: -29%; } }
+    margin-top: 1%; } }
 
 .where-text-1 {
   margin-left: 10px;
@@ -862,6 +862,10 @@ body {
   @media only screen and (max-width: 480px) {
     #about-5 {
       margin-top: 10%; } }
+
+@media only screen and (max-width: 480px) {
+  #about-5 img {
+    height: 250px; } }
 
 .form-control {
   background-color: transparent; }
@@ -937,6 +941,9 @@ body {
 
 #about-6 {
   margin-bottom: 5%; }
+  @media only screen and (max-width: 480px) {
+    #about-6 {
+      margin-top: -55%; } }
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .form-control {
@@ -1174,6 +1181,10 @@ body {
   @media only screen and (min-width: 1024px) {
     .list-know {
       font-size: 20px; } }
+  @media only screen and (max-width: 480px) {
+    .list-know {
+      padding-left: 0px;
+      text-align: left; } }
 
 @media only screen and (min-width: 1024px) {
   .list-know li {

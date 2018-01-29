@@ -197,7 +197,7 @@
             </h3>
             <div class="row where-text-1" id="where-photos">
                 <div class="col-lg-5 col-md-5 col-sm-4 col-xs-9">
-                    <img id="img-where"/>
+                    <img id="img-where" src="../../design/first_page/res/photo-2.jpg"/>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-9">
                     <h3 class="h1-team-page" id="h3-team">ИДЕАЛЬНЫЙ КЛИМАТ ДЛЯ СПОРТМЕНА</h3>
@@ -240,17 +240,17 @@
         </div>
     </div>
     <div class="container-fluid bg-5" id="about-5">
-        <img style="img-faq" src="../../design/first_page/res/img-faq.jpg"/>
+        <img src="../../design/first_page/res/img-faq.jpg"/>
         <div class="row"  id="form-text">
             <h4>ВАЖНО ЗНАТЬ</h4>
-            <div class="col-lg-4 col-md-3 col-xs-3">
+            <div class="col-lg-4 col-md-3 col-xs-9">
                 <ul class="list-know">
                     <li>Бесплатный адаптационный период с 15.04.2018 по 15.05.2018</li>
                     <li>Ознакомление со школьной и тренировочной программой</li>
                     <li>Возможность получить вид на жительство для вас и ребёнка</li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-3 col-xs-3">
+            <div class="col-lg-4 col-md-3 col-xs-9">
                 <ul class="list-know">
                     <li>Помощь с оформлением документов</li>
                     <li>Поступление в 8 школьный класс без экзаменов</li>
@@ -258,7 +258,7 @@
 
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-3 col-xs-3">
+            <div class="col-lg-4 col-md-3 col-xs-9">
                 <ul class="list-know">
                     <li>Обеспечение жильём и питанием</li>
                     <li>Языковая помощь</li>
