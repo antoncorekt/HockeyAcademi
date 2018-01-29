@@ -95,7 +95,8 @@ body {
 
 .navbar-default {
   color: white;
-  background-color: transparent; }
+  background-color: transparent;
+  z-index: 9; }
 
 @media only screen and (min-width: 1024px) {
   .navbar-collapse {

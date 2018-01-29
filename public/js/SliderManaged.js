@@ -41,7 +41,7 @@ $(document).ready(function(){
         $("#btn-1rst-banner").text("ПОДРОБНОСТИ");
         bl.slideUp();
       }else{
-        $("#btn-1rst-banner").text("СКРЫТЬ ПОДРОБНОСТИ");
+        $("#btn-1rst-banner").text("ПОДРОБНОСТИ");
         bl.slideDown();
       }
       

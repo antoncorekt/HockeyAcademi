@@ -85,8 +85,9 @@
                             </ul>
                             
                         </p>
-                        <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-enrol') }}">
-                            <button class="btn btn-main btn-about" id="btn-1rst-banner" >ПОДРОБНОСТИ</button>
+                        <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-details') }}"
+                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                            ПОДРОБНОСТИ
                         </a>
                     </div>
                     <!-- <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="s1rst-banner-last">

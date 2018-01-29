@@ -36,4 +36,11 @@ class MainController extends Controller
                 'coach' => $id));
 
     }
+
+    public function showDetails()
+    {
+        return view('about/details',
+            array('title' => 'createrating','description' => ''));
+
+    }
 }
