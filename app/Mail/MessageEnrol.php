@@ -13,17 +13,28 @@ class MessageEnrol extends Mailable
     public $email;
     public $name;
     public $phone;
+    public $nameHock;
+    public $height;
+    public $weight;
+    public $age;
+    public $addInf;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($email, $name, $phone)
+    public function __construct($email, $name, $phone, $nameHock,
+            $height, $weight, $age, $addInf)
     {
         $this->email = $email;
         $this->name = $name;
         $this->phone = $phone;
+        $this->nameHock = $nameHock;
+        $this->height = $height;
+        $this->weight = $weight;
+        $this->age = $age;
+        $this->addInf = $addInf;
     }
 
     /**

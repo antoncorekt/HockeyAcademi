@@ -1,7 +1,8 @@
 @extends('layouts.main')
 @section('header')
 
-    <link rel="stylesheet" href="{{asset('public/css/style.css')}}">
+
+    <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick.css')}}"/>
@@ -9,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick-theme.css')}}"/>
     <script type="text/javascript" src="{{asset('public/slick/slick.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('public/js/SliderManaged.js')}}"></script>
+
 @endsection
 @section('content')
     <style>
@@ -24,7 +26,6 @@
     <div class="container-fluid bg-1" id="about-1">
         <img src="../../design/first_page/res/about_main.png"/>
         <div class="row" id="main-text">
-
             <h1 class="h1-main-page h1-about" >{{ trans('messages.grow') }} </h1>
             <h1 class="h1-main-page h1-about">{{ trans('messages.grow1') }}</h1>
             <p class="main-text-p" id="t-about">
@@ -69,7 +70,6 @@
                         <img src="../../design/first_page/res/photo-1.png"/>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
-
                         <h5 class="h4-main-page">#НАБОР2018 #ТВОЙШАНС</h5>
                         <h3 class="h1-team-page">EHL ОБЬЯВЛЯЕТ НОВЫЙ НАБОР В АКАДЕМИЮ</h3>
                         <!-- <h3 class="h1-team-page">С 15 АВПРЕЛЯ 2018 ГОДА</h3> -->
@@ -131,7 +131,6 @@
     <div class="container-fluid bg-3" id="about-3">
         <img src="../../design/first_page/res/textur.png"/>
         <div class="row coach-text">
-            
             <h5 class="h5-coach-text">{{ trans('messages.learn') }}?</h5>
             <h3 class="h3-coach-text">{{ trans('messages.coach') }}
                 <br>{{ trans('messages.coach1') }}
@@ -139,24 +138,45 @@
         </div>
         <div class="row coach-text" id="coach-photos">
             <div class="col-md-2 col-sm-2 col-xs-3 coach ">
-                <img src="../../design/first_page/res/tr1.jpg" />
-                <h5>Андрей Парфенов</h5>
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
+                   data-toggle="modal" data-target="#modalArt" >
+                    <img src="../../design/first_page/res/tr1.jpg"/></a>
+                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
+                        data-toggle="modal" data-target="#modalArt" >
+                        Андрей Парфенов</a>
+                </h5>
                 <p>Тренер специалист</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
-                <img src="../../design/first_page/res/tr2.jpg" />
-                <h5>Андрей Савченко</h5>
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
+                   data-toggle="modal" data-target="#modalArt" >
+                    <img src="../../design/first_page/res/tr2.jpg"/></a>
+                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
+                        data-toggle="modal" data-target="#modalArt" >
+                        Андрей Савченко</a>
+                </h5>
                 <p>Тренер специалист</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
-                <img src="../../design/first_page/res/coach.jpg" />
-                <h5>Тренер Иванов</h5>
-                <p>Тренер вратарей</p>
-            </div>
-            <div class="col-md-2 col-sm-2 col-xs-3 coach">
-                <img src="../../design/first_page/res/coach.jpg" />
-                <h5>Тренер Петров</h5>
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
+                   data-toggle="modal" data-target="#modalArt" >
+                    <img src="../../design/first_page/res/coach.jpg"/></a>
+
+                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
+                   data-toggle="modal" data-target="#modalArt" >
+                        Andriej Parfionow</a>
+                </h5>
                 <p>Помощник тренера</p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 coach">
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
+                   data-toggle="modal" data-target="#modalArt" >
+                    <img src="../../design/first_page/res/coach.jpg"/></a>
+                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
+                        data-toggle="modal" data-target="#modalArt" >
+                        Andriej Parfionow</a>
+                </h5>
+                <p>Тренер вратарей</p>
             </div>
 
         </div>
@@ -166,7 +186,6 @@
     </div>
     <div class="container-fluid bg-4" id="about-4">
         <div class="row where-text">
-           
             <h4 class="h4-main-page">{{ trans('messages.where') }}</h4>
             <h3 class="h3-where-text">{{ trans('messages.where1') }}
                 <br>{{ trans('messages.where2') }}
@@ -181,9 +200,7 @@
                     Академия находится в европейском спортивном центре c большой и современной инфраструктурой – 
                     в Польской Швейцарии городе Крыниця-Здруй. 
                     Это излюбленное место многих горнолыжников, хоккеистов и других спортсменов. 
-                    Но город живёт не только зимой, но и летом. 
-                
-
+                    Но город живёт не только зимой, но и летом.
                     Наши тренеры решили, что это место с его прекрасным климатом 
                     и минеральными источниками идеально подходит для взращивания 
                     лучших спортсменов Европы и всего мира. Нам оказалось мало только лагерей, 
@@ -201,7 +218,7 @@
 
 У Академии есть контракт на обучение студентов в местной школе. У тебя будут полноценные и школьные, и тренировочные занятия! Но это ещё не всё.
 
-После окончания Академии ты можешь получить образование в колледжах и университетах Европы и США. 
+После окончания Академии ты можешь получить образование в колледжах и университетах Европы и США.
 
                     </p>
                     <button class="btn btn-main btn-about" id="">БОЛЬШЕ ОБ ОБРАЗОВАНИИ В ПОЛЬШЕ</button>
@@ -215,23 +232,33 @@
     <div class="container-fluid bg-5" id="about-5">
         <img src="../../design/first_page/res/writel.png"/>
         <div class="row"  id="form-text">
-            
-            <h4>{{ trans('messages.form') }}
-            <br> {{ trans('messages.form1') }}</h4>
-            <form action="">
-                <div class="form-group">
-                    <input type="email" class="form-control" id="email"  placeholder="Ваше имя">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="pwd" placeholder="Ваш телефон">
-                </div>
-            </form>
-            <button class="btn btn-main  btn-about">{{ trans('messages.know_more2') }}!</button>
+            <h4>ВАЖНО ЗНАТЬ</h4>
+            <div class="col-lg-4 col-md-3 col-xs-3">
+                <ul class="list-know">
+                    <li>Бесплатный адаптационный период с 15.04.2018 по 15.05.2018</li>
+                    <li>Ознакомление со школьной и тренировочной программой</li>
+                    <li>Возможность получить вид на жительство для вас и ребёнка</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-3 col-xs-3">
+                <ul class="list-know">
+                    <li>Помощь с оформлением документов</li>
+                    <li>Поступление в 8 школьный класс без экзаменов</li>
+                    <li>Помогаем с поступлением в Европейский университет</li>
+
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-3 col-xs-3">
+                <ul class="list-know">
+                    <li>Обеспечение жильём и питанием</li>
+                    <li>Языковая помощь</li>
+                    <li>Русскоговорящие тренера</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="container-fluid bg-6" id="about-6">
         <div class="row where-text" id="cost-text">
-            
             <h4 class="h4-main-page">{{ trans('messages.cost') }}?</h4>
             <h3 class="h3-where-text">{{ trans('messages.cost1') }}
                 <br>{{ trans('messages.cost2') }}
@@ -259,36 +286,13 @@
         </div>
     </div>
 
-
-
         @if(Session::has('mes'))
-            <div class="modal fade" id="modalMes" tabindex="-1" role="dialog" aria-labelledby="modalArt" style="color:black">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-
-                        <div class="modal-header" style="color:black">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" >&times;</span>
-                            </button>
-                            <h3 class="modal-title" id="modalArt" >Message</h3>
-                        </div>
-                        <div class="modal-body" style="color:black">
-                            <p style="color:black">{{ Session::get('mes') }}</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            @include('others.messModal')
             <script>
                 $(function() {
-            console.log("modal");
-            $('#modalMes').modal('show');
-            });
+                    $('#modalMes').modal('show');
+                });
             </script>
         @endif
-
-
-
 
 @endsection

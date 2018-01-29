@@ -4,7 +4,7 @@ $border-debug: 1px solid sandybrown;
 $font-stack: Montserrat;
 $font-color: #FFFFFF;
 $background-color: #001128;
-$background-image-logo: url(../images/main/logo.gif);
+$background-image-logo: url(../images/logo-test.png);
 $background-image-desctop: url(../images/main/main_with_snow.gif);
 $background-image-panels: url(../images/about/sq_topl.png);
 $background-image-old_cost: url(../images/about/old_cost.jpg);
@@ -54,6 +54,19 @@ $retina: '(min--moz-device-pixel-ratio: 1.5),
   @include respond-to($phone) {
     content: url("../../design/first_page/res/about_2.png");
   }
+}
+
+#error{
+  color: red;
+}
+
+.img-modal, .text-modal h4{
+  text-align: center;
+}
+.text-modal p, .text-modal ul > li{
+  color:black;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 13px;
 }
 body {
   font: 100% $font-stack;
@@ -1288,8 +1301,6 @@ body {
 /**
   Footer
  */
-
-
 
 .page-footer ul {
   list-style-type: none;

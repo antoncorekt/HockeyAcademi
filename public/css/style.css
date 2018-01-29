@@ -18,6 +18,17 @@
   #about-1 img {
     content: url("../../design/first_page/res/about_2.png"); } }
 
+#error {
+  color: red; }
+
+.img-modal, .text-modal h4 {
+  text-align: center; }
+
+.text-modal p, .text-modal ul > li {
+  color: black;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 13px; }
+
 body {
   font: 100% Montserrat;
   color: #FFFFFF;
@@ -46,7 +57,7 @@ body {
         display: none; } }
   @media only screen and (min-width: 1024px) {
     body .menu-logo {
-      background-image: url(../images/main/logo.gif);
+      background-image: url(../images/logo-test.png);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;

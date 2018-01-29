@@ -1,6 +1,23 @@
 @import "all";
 @import "navbar";
 
+body:before {
+  @include respond-to($phone) {
+    @include background-img-mobile($background-image-desctop);
+  }
+
+  @include respond-to($tablet-portrait) {
+    @include background-img-mobile($background-image-desctop);
+  }
+  @include respond-to($tablet-landscape) {
+    @include background-img-mobile($background-image-desctop);
+  }
+}
+
+body {
+  @include background-img($background-image-desctop);
+}
+
 .cont{
     display: none;
   }
@@ -71,6 +88,7 @@
     }
   
     @include respond-to($tablet-portrait  && $phone) {
+      display: none;
       padding-left: 10px;
       text-align: left;
     }

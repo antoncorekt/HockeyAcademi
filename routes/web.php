@@ -39,9 +39,9 @@ Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function
         return view('about/about');
     })->middleware('auth');
 
-
-
     Route::get('/modal-enrol', 'MainController@showModal')->name('others/enrol');
+
+    Route::get('/modal-coach/{id}', 'MainController@showCoach')->name('about/coach');
 
    // Route::resource('/modal', 'MainController@showModal');
 
