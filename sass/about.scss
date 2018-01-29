@@ -20,8 +20,6 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
 
     background-attachment: fixed;
     position: relative;
-    z-index: -9;
-  
     padding: 0px;
   
     @include  respond-to($large-desktop){
@@ -152,7 +150,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   
     @include  respond-to($large-desktop){
       font-size: 14px;
-      margin-top: 5%;
+     
     }
   
     @include  respond-to($ipad){
@@ -176,7 +174,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     position: absolute;
     top: 5%;
     @include  respond-to($large-desktop){
-      padding: 30px;
+      padding: 20px;
     }
     @include  respond-to($ipad){
       padding: 5px 15px;
@@ -342,7 +340,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
 
     @include  respond-to($phone){
-      top: -100px;
+      top: -30px;
     }
   }
   
@@ -411,7 +409,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
     @include  respond-to($phone){
-      font-size: 9px;
+      font-size: 14px;
       margin-bottom: 5px;
     }
   }
@@ -449,7 +447,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
 
   @include respond-to($phone) {
     position: relative;
-    transform: translateY(-90%);
+    transform: translateY(-105%);
     left:0;
     padding-left: 10px;
     padding-right: 10px;
@@ -551,7 +549,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   }
 #about-4{
   @include  respond-to($tablet-portrait){
-    margin-top: -29%;
+    margin-top: 1%;
   }
 }
   
@@ -572,7 +570,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   }
   
   #about-5{
-    margin-top: 70%;
+    margin-top: 77%;
   
     @include  respond-to($tablet-portrait){
       margin-top: 5%;
@@ -581,6 +579,12 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
       margin-top: 10%;
     }
   }
+#about-5 img{
+  @include  respond-to($phone){
+    height: 250px;
+  }
+}
+
   
   .form-control{
     background-color: transparent;
@@ -665,6 +669,10 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   
   #about-6{
     margin-bottom: 5%;
+    @include respond-to($phone) {
+      margin-top: -55%;
+    }
+
   }
   
   
@@ -746,7 +754,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
 
 
 
-#logo-footer{
+#logo-footer {
   width: 50%;
 
   @include respond-to($tablet-landscape) {
@@ -755,6 +763,109 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   @include respond-to($tablet-portrait) {
     width: 50%;
   }
+}
+  
+  .row{
+    margin-right: 0px;
+  }
+
+
+  // slider style + block 2
+
+  .sldr{
+    margin-top: -32%;         
+    /* border: 5px solid red; */ 
+    @include respond-to($phone) {
+      margin-top: 200px;   
+    }
+}
+
+.mydots{
+    background-color: #FFFFFF;
+    color: #000000;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 29px;
+    font-variant: small-caps;
+    text-transform: none;
+    padding: 10px;
+}
+
+.mydots {
+    position: relative;
+    background: transparent;
+    border: 4px solid grey;
+}
+
+.mydots:after, .mydots:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.mydots:after {
+    border-color:  transparent;
+    border-top-color: 8b8b8b;
+    border-width: 20px;
+    margin-left: -20px;
+}
+
+.mydots:before {
+    border-color: transparent;
+    border-top-color: #8b8b8b;
+    border-width: 26px;
+    margin-left: -26px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: space-between;
+    bottom: 390px;
+    margin-top: 50px;
+}
+
+.team{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.text-style-1rst-banner{
+    font-family: "OpenSans-Regular", sans-serif;
+    color: #191d72;
+    line-height: 2;
+    font-size: 14px;
+    margin: 0px 0px 0px 0px;
+}
+
+.text-style-1rst-banner-if_you{
+    margin-top: -5px;
+}
+
+.text-style-1rst-banner-ab{
+
+    font-size: 15px;
+}
+
+#s1rst-banner-last{
+    display: none;
+}
+
+.slick-active .mydots {
+    
+    border: 4px solid rgba(255, 235, 59, 1);
+}
+
+.slick-active .mydots:after {
+    border-top-color: rgba(255, 235, 59, 1);
+}
+
+.slick-active .mydots:before {
+  border-top-color: rgba(255, 235, 59, 1);
   @include respond-to($phone) {
     width: 50%;
   }
@@ -853,14 +964,146 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   @include respond-to($large-desktop) {
     font-size: 20px;
   }
+  @include respond-to($phone) {
+    padding-left: 0px;
+    text-align: left;
+  }
+
 }
 
 .list-know li {
   @include respond-to($large-desktop) {
     padding-bottom: 10px;
   }
-
 }
-.list-know li:hover, .list-know li:focus{
+.list-know li:hover, .list-know li:focus {
   color: #BEBEBE;
 }
+
+// slider style + block 2
+
+.sldr{
+  margin-top: -32%;
+  /* border: 5px solid red; */
+  @include respond-to($phone) {
+    margin-top: 0px;
+  }
+}
+
+.mydots{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 29px;
+  font-variant: small-caps;
+  text-transform: none;
+  padding: 10px;
+
+  @include respond-to($phone) {
+    font-size: 14px;
+    padding: 4px;
+  }
+
+}
+
+.mydots {
+  position: relative;
+  background: transparent;
+  border: 4px solid grey;
+}
+
+.mydots:after, .mydots:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.mydots:after {
+  border-color:  transparent;
+  border-top-color: 8b8b8b;
+  border-width: 20px;
+  margin-left: -20px;
+}
+
+.mydots:before {
+  border-color: transparent;
+  border-top-color: #8b8b8b;
+  border-width: 26px;
+  margin-left: -26px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: space-between;
+  bottom: 390px;
+  margin-top: 50px;
+  @include respond-to($phone) {
+    bottom: 530px;
+  }
+}
+
+.team{
+  margin-left: 150px;
+  margin-right: 150px;
+
+  @include respond-to($phone) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.text-style-1rst-banner{
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #191d72;
+  line-height: 2;
+  font-size: 14px;
+  margin: 0px 0px 0px 0px;
+  @include respond-to($phone) {
+    font-size: 10px;
+  }
+}
+
+.text-style-1rst-banner-if_you{
+  margin-top: -5px;
+}
+
+.text-style-1rst-banner-ab{
+
+  font-size: 15px;
+}
+
+#s1rst-banner-last{
+  display: none;
+}
+
+.slick-active .mydots {
+
+  border: 4px solid rgba(255, 235, 59, 1);
+}
+
+.slick-active .mydots:after {
+  border-top-color: rgba(255, 235, 59, 1);
+}
+
+.slick-active .mydots:before {
+  border-top-color: rgba(255, 235, 59, 1);
+}
+
+// block with faq
+
+.img-faq{
+  background-image: url('../../design/first_page/res/img-faq.jpg');
+  height: 100%; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
