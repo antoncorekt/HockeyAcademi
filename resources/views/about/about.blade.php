@@ -4,7 +4,11 @@
     <link rel="stylesheet" href="{{asset('public/css/style.css')}}">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
-    
+    <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick.css')}}"/>
+
+    <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick-theme.css')}}"/>
+    <script type="text/javascript" src="{{asset('public/slick/slick.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('public/js/SliderManaged.js')}}"></script>
 @endsection
 @section('content')
     <style>
@@ -12,19 +16,22 @@
             background-image: none;
             background-color: white;
         }
+        
+
+
     </style>
     <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
     <div class="container-fluid bg-1" id="about-1">
         <img src="../../design/first_page/res/about_main.png"/>
         <div class="row" id="main-text">
-            <h4 class="h1-main-page" style="color:red">БЛОК 1</h4>
+
             <h1 class="h1-main-page h1-about" >{{ trans('messages.grow') }} </h1>
             <h1 class="h1-main-page h1-about">{{ trans('messages.grow1') }}</h1>
             <p class="main-text-p" id="t-about">
                 {{ trans('messages.care') }}
                 <br>{{ trans('messages.care1') }}
             </p>
-            <button class="btn btn-main btn-about">{{ trans('messages.know_more1') }}</button>
+            <button class="btn btn-main btn-about" id="btn-main">{{ trans('messages.know_more1') }}</button>
         </div>
 
     </div>
@@ -33,14 +40,14 @@
         <img src="../../design/first_page/res/white_sql.png"/>
         <div class="row" id="sq-text" >
             <div class="col-md-2 col-sm-2 sq-text" id="sq-text-1">
-                <h1>70</h1>
+                <h1>40</h1>
                 <p>
                     {{ trans('messages.70text') }}
                     <br>{{ trans('messages.70text1') }}
                 </p>
             </div>
             <div class="col-md-2 col-sm-2 sq-text" id="sq-text-2">
-                <h1>10</h1>
+                <h1>7</h1>
                 <p>
                     {{ trans('messages.10text') }}
                     <br>{{ trans('messages.10text1') }}
@@ -54,33 +61,77 @@
                 </p>
             </div>
         </div>
-        <div class="row team" id="team-text">
-            <h1 class="h1-team-page" style="color:red">БЛОК 2</h1>
-            <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
-                <img src="../../design/first_page/res/photo-1.png"/>
+        <div class="sldr">
+            <div class="row team" id="team-text">
+    
+            
+                    <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
+                        <img src="../../design/first_page/res/photo-1.png"/>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
+
+                        <h5 class="h4-main-page">#НАБОР2018 #ТВОЙШАНС</h5>
+                        <h3 class="h1-team-page">EHL ОБЬЯВЛЯЕТ НОВЫЙ НАБОР В АКАДЕМИЮ</h3>
+                        <!-- <h3 class="h1-team-page">С 15 АВПРЕЛЯ 2018 ГОДА</h3> -->
+
+                        <p class="text-style-1rst-banner">
+                            <div class="text-style-1rst-banner text-style-1rst-banner-if_you">Если ты: </div> 
+                            <ul class="text-style-1rst-banner">   
+                                <li>2003-2004 годов рождения;</li>
+                                <li>Хоккей – это твоя жизнь;</li>
+                                <li>Хочешь быть учеником лучших тренеров Европы и СНГ;</li>
+                                <li>Хочешь получить европейское образование;</li>
+                                <li>Мечтаешь играть в профессиональных лигах Европы;</li>
+                            </ul>
+                            
+                        </p>
+                        <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-enrol') }}">
+                            <button class="btn btn-main btn-about" id="btn-1rst-banner" >ПОДРОБНОСТИ</button>
+                        </a>
+                    </div>
+                    <!-- <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="s1rst-banner-last">
+                        <div class="text-style-1rst-banner text-style-1rst-banner-ab"> 
+                                С <b>15 апреля 2018 года</b> Международная Европейская Хоккейная Академия <b>Euro Hockey Lab</b> (EHL) 
+                                начинает селекционный отбор претендентов на зачисление в Академию.
+                                В конкурсе участвуют ведущие скауты и тренеры Европы.
+                                <br>
+                                Возглавляют отбор главные тренеры Академии:
+                                <ul class="text-style-1rst-banner text-style-1rst-banner-ab">
+                                    <li>З.Т.Р.Ф Парфенов А.В;</li>
+                                    <li>М.С.М.К Савченко А.Н. - главный тренер сборной «Европейской Университетской Команды».</li>
+                                </ul>
+                        </div>
+                    </div> -->
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
+            <div class="row team" id="team-text">
+    
+            
+                    <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
+                        <img src="../../design/first_page/res/photo-6.png"/>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
 
-                <h5 class="h4-main-page">{{ trans('messages.team') }}</h5>
-                <h3 class="h1-team-page">{{ trans('messages.team1') }}</h3>
-                <h3 class="h1-team-page">{{ trans('messages.team2') }}</h3>
-
-                <p id="team-text-p">
-                    {{ trans('messages.team3') }}
-                    <br>{{ trans('messages.team4') }}
-                    <br>{{ trans('messages.team5') }}
-                    <br>{{ trans('messages.team6') }}
-                    <br>{{ trans('messages.team7') }}
-                    <br>{{ trans('messages.team8') }}
-
-                </p>
+                        <h5 class="h4-main-page">#EHL #SELECT</h5>
+                        <h3 class="h1-team-page">EHL - академия с амбициями</h3>
+                        <div class="text-style-1rst-banner"> Мы с гордостью можем сообщить что: </div>
+                        <ul class="text-style-1rst-banner">
+                            <li> Мы участвуем в регулярном чемпионате Словакии; </li>
+                            <li> EHL официальный представитель компании LEGACY GLOBAL SPORTS.
+                                <br>Данная программа позволяет каждому учаснику попасть 
+                                в профессиональных хоккей на уровне НХЛ и получить образование в колледжах и университетах США;
+                            </li>
+                            <li> Участвуем в международных турнирах SELECT; </li>
+                        </ul> 
+                        <p></p>
+                        <button class="btn btn-main btn-about" id="">ЧТО ТАКОЕ SELECT?</button>
+                    </div>
             </div>
         </div>
     </div>
     <div class="container-fluid bg-3" id="about-3">
         <img src="../../design/first_page/res/textur.png"/>
         <div class="row coach-text">
-            <h1 class="h1-team-page" style="color:red">БЛОК 3</h1>
+            
             <h5 class="h5-coach-text">{{ trans('messages.learn') }}?</h5>
             <h3 class="h3-coach-text">{{ trans('messages.coach') }}
                 <br>{{ trans('messages.coach1') }}
@@ -88,24 +139,24 @@
         </div>
         <div class="row coach-text" id="coach-photos">
             <div class="col-md-2 col-sm-2 col-xs-3 coach ">
-                <img src="../../design/first_page/res/coach.jpg"/>
-                <h5>Andriej Parfionow</h5>
-                <p>Trener specjalista</p>
+                <img src="../../design/first_page/res/tr1.jpg" />
+                <h5>Андрей Парфенов</h5>
+                <p>Тренер специалист</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
-                <img src="../../design/first_page/res/coach.jpg"/>
-                <h5>Andriej Parfionow</h5>
-                <p>Trener specjalista</p>
+                <img src="../../design/first_page/res/tr2.jpg" />
+                <h5>Андрей Савченко</h5>
+                <p>Тренер специалист</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
-                <img src="../../design/first_page/res/coach.jpg"/>
-                <h5>Andriej Parfionow</h5>
-                <p>Trener specjalista</p>
+                <img src="../../design/first_page/res/coach.jpg" />
+                <h5>Тренер Иванов</h5>
+                <p>Тренер вратарей</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
-                <img src="../../design/first_page/res/coach.jpg"/>
-                <h5>Andriej Parfionow</h5>
-                <p>Trener specjalista</p>
+                <img src="../../design/first_page/res/coach.jpg" />
+                <h5>Тренер Петров</h5>
+                <p>Помощник тренера</p>
             </div>
 
         </div>
@@ -115,7 +166,7 @@
     </div>
     <div class="container-fluid bg-4" id="about-4">
         <div class="row where-text">
-            <h1 class="h1-team-page" style="color:red">БЛОК 4</h1>
+           
             <h4 class="h4-main-page">{{ trans('messages.where') }}</h4>
             <h3 class="h3-where-text">{{ trans('messages.where1') }}
                 <br>{{ trans('messages.where2') }}
@@ -125,28 +176,35 @@
                     <img src="../../design/first_page/res/photo-2.jpg" id="img-where"/>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-9">
-                    <h3 class="h1-team-page" id="h3-team">{{ trans('messages.school') }}</h3>
+                    <h3 class="h1-team-page" id="h3-team">ИДЕАЛЬНЫЙ КЛИМАТ ДЛЯ СПОРТМЕНА</h3>
                     <p id="team-text-p">
-                        {{ trans('messages.school1') }}
-                        <br>{{ trans('messages.school2') }}
-                        <br>{{ trans('messages.school3') }}
-                        <br>{{ trans('messages.school4') }}
-                        <br>{{ trans('messages.school5') }}
+                    Академия находится в европейском спортивном центре c большой и современной инфраструктурой – 
+                    в Польской Швейцарии городе Крыниця-Здруй. 
+                    Это излюбленное место многих горнолыжников, хоккеистов и других спортсменов. 
+                    Но город живёт не только зимой, но и летом. 
+                
 
+                    Наши тренеры решили, что это место с его прекрасным климатом 
+                    и минеральными источниками идеально подходит для взращивания 
+                    лучших спортсменов Европы и всего мира. Нам оказалось мало только лагерей, 
+                    мы открываем целую Академию!
+                    <p></p>
+                    <button class="btn btn-main btn-about" id="">ПОСМОТРЕТЬ ГДЕ ЗАНИМАЮТСЯ ХОККЕИСТЫ</button>
                     </p>
                 </div>
             </div>
             <div class="row where-text-1"  id="where-photos1">
                 <div class="col-lg-4 col-sm-6">
-                    <h3 class="h1-team-page">{{ trans('messages.school') }}</h3>
+                    <h3 class="h1-team-page">ХОККЕЙ ИЛИ ОБРАЗОВАНИЕ? ХОККЕЙ И ОБРАЗОВАНИЕ!</h3>
                     <p id="team-text-p">
-                        {{ trans('messages.school1') }}
-                        <br>{{ trans('messages.school2') }}
-                        <br>{{ trans('messages.school3') }}
-                        <br>{{ trans('messages.school4') }}
-                        <br>{{ trans('messages.school5') }}
+                    Думаешь, что хоккей и образование не совместимы? Или так думают твои родители? В EHL можешь стать и успешным, и умным! Ведь мы считаем, что ты не должен бросать учёбу ради хоккея, и хоккей ради учёбы. И знаем, как вам помочь!
+
+У Академии есть контракт на обучение студентов в местной школе. У тебя будут полноценные и школьные, и тренировочные занятия! Но это ещё не всё.
+
+После окончания Академии ты можешь получить образование в колледжах и университетах Европы и США. 
 
                     </p>
+                    <button class="btn btn-main btn-about" id="">БОЛЬШЕ ОБ ОБРАЗОВАНИИ В ПОЛЬШЕ</button>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-4  col-xs-9">
                     <img src="../../design/first_page/res/photo-3.jpg" id="img-where"/>
@@ -157,7 +215,7 @@
     <div class="container-fluid bg-5" id="about-5">
         <img src="../../design/first_page/res/writel.png"/>
         <div class="row"  id="form-text">
-            <h1 class="h1-team-page" style="color:red">БЛОК 5</h1>
+            
             <h4>{{ trans('messages.form') }}
             <br> {{ trans('messages.form1') }}</h4>
             <form action="">
@@ -173,7 +231,7 @@
     </div>
     <div class="container-fluid bg-6" id="about-6">
         <div class="row where-text" id="cost-text">
-            <h1 class="h1-team-page" style="color:red">БЛОК 6</h1>
+            
             <h4 class="h4-main-page">{{ trans('messages.cost') }}?</h4>
             <h3 class="h3-where-text">{{ trans('messages.cost1') }}
                 <br>{{ trans('messages.cost2') }}

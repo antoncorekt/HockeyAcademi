@@ -3,7 +3,7 @@ $(document).ready(function () {
     var el = document.getElementById("video");
     var flag = true;
 
-    function start_snow(){
+    function start_snow(){  
         if (flag){
             init();
             flag = false;
