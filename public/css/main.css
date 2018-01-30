@@ -625,3 +625,24 @@ body {
 
 .btn-main a {
   z-index: 2; }
+
+/**
+Contact Page
+ */
+.contacts {
+  display: flex;
+  flex-direction: row;
+  /* make main axis horizontal (default setting) */
+  justify-content: center;
+  /* center items horizontally, in this case */
+  align-items: center; }
+  @media only screen and (max-width: 480px) {
+    .contacts {
+      display: block; } }
+
+#map {
+  height: 400px;
+  width: 100%; }
+
+.contact-inf {
+  font-size: 16px; }

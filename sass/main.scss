@@ -242,4 +242,25 @@ body {
 .btn-main a{
   z-index: 2;
 }
+
+/**
+Contact Page
+ */
+.contacts{
+  display: flex;
+  flex-direction: row;     /* make main axis horizontal (default setting) */
+  justify-content: center; /* center items horizontally, in this case */
+  align-items: center;
+  @include respond-to($phone) {
+    display: block;
+  }
+}
+#map {
+  height: 400px;
+  width: 100%;
+}
+.contact-inf{
+  font-size: 16px;
+
+}
   
