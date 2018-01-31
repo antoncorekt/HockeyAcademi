@@ -9,7 +9,7 @@
     <div class="col-lg-4 col-md-5 col-xs-9 contact-inf">
         <div>
             <h2 class="h1-main-page">{{ trans('messages.Location') }}</h2>
-            <br>{{ trans('messages.ul') }}
+            {{ trans('messages.ul') }}
             <br>{{ trans('messages.city') }},
             <br>{{ trans('messages.voevod') }}
             <br>{{ trans('messages.country') }},
@@ -17,14 +17,14 @@
         </div>
         <div>
             <h2 class="h1-main-page">{{ trans('messages.Telephone') }}</h2>
-            <br>{{ trans('messages.ukr') }}: +38 050 000 00 00
+           {{ trans('messages.ukr') }}: +38 050 000 00 00
             <br>{{ trans('messages.rus') }}: +79 009 000 00 00
             <br>{{ trans('messages.bel') }}: +37 500 000 00 00
             <br>{{ trans('messages.eur') }}: +48 733 000 00 00
         </div>
         <div>
             <h2 class="h1-main-page">Email</h2></div>
-        <br>hockeyacademy@gmail.com
+                hockeyacademy@gmail.com
         </div>
         <div class="col-lg-5 col-md-6 col-xs-9">
         <div id="map"></div>
