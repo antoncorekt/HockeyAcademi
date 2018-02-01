@@ -48,6 +48,14 @@ Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function
     Route::get('/modal-education', 'MainController@showDetailsEducation')->name('about/education');
     Route::get('/modal-slovac', 'MainController@showDetailsSlovac')->name('about/slovac');
 
+    Route::get('/contacts', function () {
+        return view('contacts/contact');
+    })->middleware('auth');
+
+    Route::get('/blog', function () {
+        return view('blog/blog');
+    })->middleware('auth');
+
    // Route::resource('/modal', 'MainController@showModal');
 
 });

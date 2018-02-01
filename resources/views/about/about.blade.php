@@ -1,12 +1,8 @@
 @extends('layouts.main')
 @section('header')
-
-
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick.css')}}"/>
-
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick-theme.css')}}"/>
     <script type="text/javascript" src="{{asset('public/slick/slick.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('public/js/SliderManaged.js')}}"></script>
@@ -18,10 +14,6 @@
             background-image: none;
             background-color: white;
         }
-
-       
-
-
     </style>
     <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
     <div class="container-fluid bg-1" id="about-1">
