@@ -6,6 +6,7 @@
  * Time: 16:45
  */?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 <div class="container">
 <h3>Website for renovation</h3>
 @php

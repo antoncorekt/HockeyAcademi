@@ -15,6 +15,8 @@
     </script>
     @yield('header')
     
+
+
 </head>
 <script>
     $(document).ready(function () {
@@ -35,6 +37,8 @@
 <body>
 
 @yield('before-nav')
+
+
 
 <div class="container-fluid" id="body-main">
     <nav class="navbar navbar-default" role="navigation">

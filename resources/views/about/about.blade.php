@@ -121,6 +121,10 @@
                            data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
                             ЧТО ТАКОЕ SELECT?
                         </a>
+                        <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-slovac') }}"
+                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                           О ЧЕМПИОНАТЕ СЛОВАКИИ
+                        </a>
                     </div>
             </div>
         </div>
@@ -269,11 +273,11 @@
         </div>
         <div class="row"  id="cost-photos1">
             <div class="col-md-3 col-xs-3 old-cost">
-                <h2>2000$</h2>
+                <h2>1699€</h2>
                 <p>{{ trans('messages.old_cost') }}</p>
             </div>
             <div class="col-md-3 col-xs-3 offer-cost">
-                <h2>1000$</h2>
+                <h2>1250€</h2>
                 <p>{{ trans('messages.offer_cost') }}</p>
             </div>
         </div>

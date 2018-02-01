@@ -58,4 +58,9 @@ class MainController extends Controller
         return view('about/education',
             array('title' => 'showDetailsEducation','description' => ''));
     }
+    public function showDetailsSlovac()
+    {
+        return view('about/slovac',
+            array('title' => 'showDetailsSlovac','description' => ''));
+    }
 }
