@@ -16,7 +16,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
 
 }
 
-#about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
+#about-1, #about-2, #about-3, #about-4, #about-5, #about-6, .blog-1 {
 
     background-attachment: fixed;
     position: relative;
@@ -54,7 +54,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   }
   
-  #about-1 img,  #about-2 img, #about-3 img, #about-5 img{
+  #about-1 img,  #about-2 img, #about-3 img, #about-5 img, .blog-1 img{
     width:100%;
   }
 
@@ -344,7 +344,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   }
   
-  .coach-text, .where-text{
+  .coach-text, .where-text, .blog-text{
     margin: auto;
     position: absolute;
     left:0;
@@ -360,11 +360,13 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     @include  respond-to($phone){
       top: 1%;
     }
-  
-  
   }
 
-.where-text{
+  .blog-text{
+    position: relative;
+  }
+
+.where-text, .blog-text{
   @include  respond-to($tablet-portrait){
     position: relative;
   }
@@ -1107,3 +1109,28 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   background-size: cover;
 }
 
+.blog-date{
+  font-family: "OpenSans-Bold", sans-serif;
+  color: #191d72;
+  text-align: left;
+  font-size: 14px;
+}
+
+.el-main{
+  margin-left: -40px;
+  @include respond-to($phone) {
+    margin-left: 30px;
+  }
+}
+
+.pages p{
+  font-family: "OpenSans-Bold", sans-serif;
+  color: #191d72;
+}
+
+.blog-a {
+  font-family: "OpenSans-Bold", sans-serif;
+  color: #191d72;
+  font-size: 16px;
+  text-decoration: underline;
+}

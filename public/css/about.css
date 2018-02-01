@@ -402,24 +402,24 @@ body {
   .col-xs-9 {
     width: 100%; } }
 
-#about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
+#about-1, #about-2, #about-3, #about-4, #about-5, #about-6, .blog-1 {
   background-attachment: fixed;
   position: relative;
   padding: 0px; }
   @media only screen and (min-width: 1024px) {
-    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
+    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6, .blog-1 {
       margin-top: -10%; } }
   @media only screen and (min-width: 979px) and (max-width: 1024px) {
-    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
+    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6, .blog-1 {
       margin-top: -13%; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
-    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
+    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6, .blog-1 {
       margin-top: -14%; } }
   @media only screen and (max-width: 767px) {
-    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
+    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6, .blog-1 {
       margin-top: -12%; } }
   @media only screen and (max-width: 480px) {
-    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6 {
+    #about-1, #about-2, #about-3, #about-4, #about-5, #about-6, .blog-1 {
       margin-top: -19%; } }
 
 @media only screen and (min-width: 979px) and (max-width: 1024px) {
@@ -430,7 +430,7 @@ body {
   #about-2 {
     margin-top: -7%; } }
 
-#about-1 img, #about-2 img, #about-3 img, #about-5 img {
+#about-1 img, #about-2 img, #about-3 img, #about-5 img, .blog-1 img {
   width: 100%; }
 
 @media only screen and (min-width: 1024px) {
@@ -671,7 +671,7 @@ body {
     #about-3 {
       top: -30px; } }
 
-.coach-text, .where-text {
+.coach-text, .where-text, .blog-text {
   margin: auto;
   position: absolute;
   left: 0;
@@ -680,18 +680,21 @@ body {
   bottom: 0;
   text-align: center; }
   @media only screen and (max-width: 767px) {
-    .coach-text, .where-text {
+    .coach-text, .where-text, .blog-text {
       top: 5%; } }
   @media only screen and (max-width: 480px) {
-    .coach-text, .where-text {
+    .coach-text, .where-text, .blog-text {
       top: 1%; } }
 
+.blog-text {
+  position: relative; }
+
 @media only screen and (max-width: 767px) {
-  .where-text {
+  .where-text, .blog-text {
     position: relative; } }
 
 @media only screen and (max-width: 480px) {
-  .where-text {
+  .where-text, .blog-text {
     position: relative; } }
 
 .coach-text h5 {
@@ -1293,3 +1296,25 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.blog-date {
+  font-family: "OpenSans-Bold", sans-serif;
+  color: #191d72;
+  text-align: left;
+  font-size: 14px; }
+
+.el-main {
+  margin-left: -40px; }
+  @media only screen and (max-width: 480px) {
+    .el-main {
+      margin-left: 30px; } }
+
+.pages p {
+  font-family: "OpenSans-Bold", sans-serif;
+  color: #191d72; }
+
+.blog-a {
+  font-family: "OpenSans-Bold", sans-serif;
+  color: #191d72;
+  font-size: 16px;
+  text-decoration: underline; }

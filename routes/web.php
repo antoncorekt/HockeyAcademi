@@ -51,6 +51,10 @@ Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function
         return view('contacts/contact');
     })->middleware('auth');
 
+    Route::get('/blog', function () {
+        return view('blog/blog');
+    })->middleware('auth');
+
    // Route::resource('/modal', 'MainController@showModal');
 
 });
