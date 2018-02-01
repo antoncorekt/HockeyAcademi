@@ -58,5 +58,16 @@ return [
     'write_learn' => 'ZAPISZ SIĘ NA KURS',
     'old_cost' => 'STARA CENA BEZ ZNIŻEK',
     'offer_cost' => 'OFERTA PROMOCYJNA',
+
+    'Location' =>'Lokalizacja',
+    'ul' => 'ul. Halna, 12,',
+    'city' => 'Krynica-Zdrój',
+    'voevod' => 'Województwo małopolskie',
+    'country' => 'Polska',
+    'Telephone' => 'Telefony',
+    'ukr' => 'Ukraina',
+    'rus' => 'Rosja',
+    'bel' => 'Białoruś',
+    'eur' => 'Europa',
 ];
 ?>

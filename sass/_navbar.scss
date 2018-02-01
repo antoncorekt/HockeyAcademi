@@ -185,7 +185,7 @@
     }
   }
   
-  #main-text, #form-text, #team-text {
+  #main-text, #form-text, #team-text, #blog-text {
     margin: 0;
     transform: translateY(-50%);
     position: absolute; 
@@ -207,6 +207,14 @@
       text-align: center;
     }
   }
+
+#blog-text{
+  @include respond-to($tablet-landscape) {
+    top: 55%;
+  }
+
+}
+
   #form-text{
     @include respond-to($tablet-portrait) {
       left: 5%;

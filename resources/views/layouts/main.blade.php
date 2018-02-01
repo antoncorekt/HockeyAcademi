@@ -53,8 +53,8 @@
                 <li class="nav-el men-main"><a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/")}}">{{ trans('messages.main') }}</a></li>
                 <li class="nav-el"><a class=" men-about" href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about")}}">{{ trans('messages.about') }}</a></li>
                 <li class="nav-el menu-logo"><a href="#"></a></li>
-                <li class="nav-el men-blog"><a href="#">{{ trans('messages.blog') }}</a></li>
-                <li class="nav-el men-contacts"><a href="#">{{ trans('messages.cont') }}</a></li>
+                <li class="nav-el men-blog"><a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}">{{ trans('messages.blog') }}</a></li>
+                <li class="nav-el men-contacts"><a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/contacts")}}">{{ trans('messages.cont') }}</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-el men-lang">

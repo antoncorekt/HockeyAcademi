@@ -59,5 +59,16 @@ return [
     'write_learn' => 'APPLY FOR TRAINING',
     'old_cost' => 'OLD PRICE',
     'offer_cost' => 'SPECIAL OFFER',
+
+    'Location' =>'Location',
+    'ul' => 'Halna Str., 12,',
+    'city' => 'Krynica-Zdrój',
+    'voevod' => 'Lesser Poland Voivodeship',
+    'country' => 'Poland',
+    'Telephone' => 'Phones',
+    'ukr' => 'Ukraine',
+    'rus' => 'Russia',
+    'bel' => 'Belarus',
+    'eur' => 'Europe',
 ];
 ?>
