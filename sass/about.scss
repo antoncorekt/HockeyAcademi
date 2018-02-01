@@ -12,6 +12,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
 
   @include respond-to($phone) {
     width:100%;
+    padding: 0px;
   }
 
 }
@@ -39,7 +40,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
     @include respond-to($phone) {
-      margin-top: -19%;
+      margin-top: -23%;
     }
   
   }
@@ -72,9 +73,13 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   }
   
   .h1-about{
+    @include respond-to($tablet-landscape) {
+      font-size: 28px;
+    }
+
     @include respond-to($phone) {
-      font-size: 24px;
-      margin-top: 5px;
+      font-size: 40px;
+      margin-top: -3%;
     }
   }
   
@@ -123,18 +128,18 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
 
     @include respond-to($tablet-portrait) {
-      font-size: 16px;
+      font-size: 18px;
     }
 
     @include respond-to($phone) {
-      font-size: 14px;
+      font-size: 18px;
       margin-bottom: 5px;
     }
   
   }
 #h3-team{
  @include respond-to($phone) {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 }
   
@@ -158,11 +163,11 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
     @include respond-to($tablet-portrait) {
-      font-size: 12px;
+      font-size: 14px;
     }
   
     @include respond-to($phone) {
-      font-size: 9px;
+      font-size: 14px;
     }
   
   }
@@ -1114,13 +1119,29 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   color: #191d72;
   text-align: left;
   font-size: 14px;
+  @include respond-to($tablet-portrait) {
+    margin-top: 3%;
+  }
+  @include respond-to($phone) {
+    margin-top: 15px;
+  }
+
 }
 
 .el-main{
   margin-left: -40px;
+  @include respond-to($tablet-portrait) {
+    margin-left: 30px;
+  }
   @include respond-to($phone) {
     margin-left: 30px;
   }
+}
+
+
+.pages{
+  margin-top: 1%;
+  margin-bottom: 3%;
 }
 
 .pages p{
@@ -1133,4 +1154,38 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   color: #191d72;
   font-size: 16px;
   text-decoration: underline;
+  @include respond-to($tablet-landscape) {
+    font-size: 14px;
+  }
+  @include respond-to($phone) {
+    font-size: 14px;
+  }
+}
+
+.num-page{
+  font-size: 16px;
+  color: black;
+  border: #18117b 1px solid;
+  padding: 2px 10px;
+  @include respond-to($tablet-landscape) {
+    font-size: 14px;
+  }
+  @include respond-to($tablet-portrait) {
+    font-size: 14px;
+  }
+}
+
+.num-page:hover, .num-page:focus{
+  color: white;
+  background-color: #18117b;
+  text-decoration: none;
+}
+
+.blog-1 img{
+  @include respond-to($large-desktop) {
+    content: url("../images/blog_img.png");
+  }
+  @include respond-to($phone) {
+    content: url("../images/blog_img_m.png");
+  }
 }

@@ -211,24 +211,28 @@ body {
     .main-text-p {
       font-size: 22px; } }
 
-#main-text, #form-text, #team-text {
+#main-text, #form-text, #team-text, #blog-text {
   margin: 0;
   transform: translateY(-50%);
   position: absolute;
   top: 50%;
   left: 5%; }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
-    #main-text, #form-text, #team-text {
+    #main-text, #form-text, #team-text, #blog-text {
       left: 2%;
       top: 45%; } }
   @media only screen and (max-width: 767px) {
-    #main-text, #form-text, #team-text {
+    #main-text, #form-text, #team-text, #blog-text {
       left: 2%;
       top: 50%; } }
   @media only screen and (max-width: 480px) {
-    #main-text, #form-text, #team-text {
+    #main-text, #form-text, #team-text, #blog-text {
       top: 50%;
       text-align: center; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  #blog-text {
+    top: 55%; } }
 
 @media only screen and (max-width: 767px) {
   #form-text {
