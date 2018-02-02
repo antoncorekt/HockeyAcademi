@@ -3,6 +3,7 @@
 
 @section('header')
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
+    <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
 @endsection
 <style>
     body {
@@ -20,29 +21,28 @@
     </div>
     <div class="container-fluid bg-2">
         <div class="row blog-text">
-            <div class="row where-text-1" id="where-photos">
-                <div class="col-lg-5 col-md-6 col-sm-5 col-xs-9">
-                    <img id="img-where" src="../../design/first_page/res/photo-2.jpg"/>
+            @foreach($articles as $article)
+                <div class="row where-text-1" id="where-photos">
+                    <div class="col-lg-5 col-md-6 col-sm-5 col-xs-9">
+                        <img id="img-where" src="{{$article->img_title}}"/>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-9">
+                        <p class="blog-date">{{$article->create_date}}</p>
+                        <h3 class="h1-team-page" id="h3-team">{{$article->title}}</h3>
+                        <p id="team-text-p">
+                            <?php
+                            echo \App\ListOfBlog::getShortText($article);
+                            ?>
+                        <p></p>
+                        <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-post/'.$article->idPText) }}"
+                           data-toggle="modal" data-target="#modalArt" class="btn blog-a" >
+                            РАЗВЕРНУТЬ ВЕСЬ ТЕКСТ
+                        </a>
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-xs-9">
-                    <p class="blog-date">20/08/2017</p>
-                    <h3 class="h1-team-page" id="h3-team">ИДЕАЛЬНЫЙ КЛИМАТ ДЛЯ СПОРТМЕНА</h3>
-                    <p id="team-text-p">
-                        Академия находится в европейском спортивном центре c большой и современной инфраструктурой –
-                        в Польской Швейцарии городе Крыниця-Здруй.
-                        Это излюбленное место многих горнолыжников, хоккеистов и других спортсменов.
-                        Но город живёт не только зимой, но и летом.
-                        Наши тренеры решили, что это место с его прекрасным климатом
-                        и минеральными источниками идеально подходит для взращивания
-                        лучших спортсменов Европы и всего мира.
-                    <p></p>
-                    <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-krynica') }}"
-                       data-toggle="modal" data-target="#modalArt" class="btn blog-a" >
-                        РАЗВЕРНУТЬ ВЕСЬ ТЕКСТ
-                    </a>
-                    </p>
-                </div>
-            </div>
+            @endforeach
+
             <div class="row where-text-1" id="where-photos">
                 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-9">
                     <img id="img-where" src="../../design/first_page/res/photo-2.jpg"/>
@@ -124,6 +124,10 @@
             </p>
         </div>
     </div>
-
+    <div class="modal fade" id="modalArt" tabindex="-1" role="dialog" aria-labelledby="modalArt" style="color:black">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content"> </div>
+        </div>
+    </div>
     @include('layouts.footer')
 @endsection

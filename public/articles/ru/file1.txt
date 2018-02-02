@@ -1,0 +1,181 @@
+<p id="team-text-p">Втора я статьяАкадемия находится в европейском спортивном центре c большой и современной инфраструктурой –
+                            в Польской Швейцарии городе Крыниця-Здруй.
+                            Это излюбленное место многих горнолыжников, хоккеистов и других спортсменов.
+                            Но город живёт не только зимой, но и летом.
+                            Наши тренеры решили, что это место с его прекрасным климатом
+                            и минеральными источниками идеально подходит для взращивания
+                            лучших спортсменов Европы и всего мира.</p>
+<p><span class='point'>Технологии:</span>
+<ul> <li>RESTful API: JavaScript, Node.js с модулями express, socket.io, mysql и другими.
+<li>Android-приложение: Java с различными библиотеками, например, io.socket, android.app, android.os, android.support и др.
+</ul>
+</p>
+<p><span class='point'>Зачем:</span> Курсовой проект на 4 курсе.</p>
+<p><span class='point'>Цель:</span> разобраться с клиент-серверной архитектурой приложений.</p>
+<p><span class='point'>Ссылка github:</span>  <a href="https://github.com/NadineAstakhova/SystemClient">SystemClient</a></p>
+<hr><h4 class='pointh4'>Описание</h4>
+<p>Данный проект создавался как часть веб-системы 
+(на моём сайте можно найти <a href="http://portfolio/frontend/web/post/article?idArticle=2">статью</a> о веб-приложении для индивидуальных работ). 
+Node.js сервер имеет доступ к базе данных этой системы. Он получает запросы от клиента, 
+посылает их в базу и отдаёт клиенту. Но кроме того «слушает» изменения в бд и 
+при наличие новых работ присылает клиенту уведомление.</p>
+<p>Что же касается самого Android-приложения, то это обычное приложение, которое выводит 
+информацию и даёт возможность с ней работать (смотреть, удалять, редактировать и т.д.). 
+Каждое такое действие порождает запрос к серверу, который в свою очередь получает данные с БД. 
+Стоит отметить, что приложением могут пользоваться только пользователи, которые зарегистрированы в веб системе.</p>
+<p>Также клиент может получать информацию от сервера, но при этом не отправляя ему запрос (полнодуплексная связь). 
+В этом случае клиент «слушает» сервер и, когда тот получает информацию о наличии нового сообщения для пользователя 
+приложения, выводит данное сообщение. Это организовано с помощью socket.io, наличия дополнительной таблицы с сообщения 
+в БД и обычным вывод push-уведомлений. Что касается таблицы в БД, то записи в неё добавляются, когда студент 
+присылает работу. В неё добавляется информацию о работе, о студенте и кому нужно отправить сообщение. 
+Как-только мобильное приложение отправляет преподавателю уведомление, то запись о нём удаляется из БД, 
+чтобы не засорять саму базу, а также исключить вариант с отправкой множества сообщений.</p>
+<hr><p>И в заключении добавлю пару фрагментов кода и скрины:</p>
+<p>При подключении нового клиента определяется его id на сервере и сразу проверяется наличие новых сообщений функцией <b>maybe</b>:
+<pre><code class="javascript hljs">io.on('connection', function(socket){
+	console.log("User Connected!");
+	var idMess;
+	var idUs;
+        //server monitors the connection of a new user
+	socket.emit('socketID', { id: socket.id });
+    socket.on('getNewUser', function (message){
+	//push new user to users with unique id
+        users.push(new user(socket.id, message));
+        idUs = message;
+	//check function is repeated every 10 seconds
+        maybe(idUs, wait10sec);
+        console.log('New user with id: ' + message);
+    });//...});
+</code></pre></p>
+<p>Функция maybe, которая вызывает функцию работы с БД и повторяется каждые 30 секунд:
+<pre><code class="javascript hljs">function maybe(idUs,  callback){
+        console.log('A client is speaking to me! They’re saying: ' + idUs);
+        for(var i = 0; i < users.length; i++){
+            if(users[i].idUser !== undefined && idUs !== null)
+                if(users[i].idUser === idUs){
+                    console.log(users[i].idUser);
+                    todo.getNewMess(idUs).then(t).catch((err) => setImmediate(() => { throw err; })); // Throw async to escape the promise chain
+                }
+        }
+        callback();
+   }</code></pre></p>
+<p>Функция, которая обращается к БД за выборкой данных:
+<pre><code class="javascript hljs">
+ this.getNewMess = function(idProf, callback) {
+      return new Promise(function(resolve, reject) {
+       connection.acquire(function(err, con) {
+         con.query('SELECT * FROM messages WHERE FK_Prof = ?',  [idProf],  function(err, json) {
+            con.release();
+            if (err) {
+                return reject(err);
+            }
+           var str = JSON.stringify(json);
+           var rows = JSON.parse(str);        
+           resolve(rows);
+        });
+    });
+  })
+</code></pre></p>
+<p>Функция, которая отправляет данные в клиент:
+<pre><code class="javascript hljs">
+function t(rows) {
+       if(rows.length  !== 0) {
+           var res = ""+rows[rows.length-1].new_task+" for "+rows[rows.length-1].subject+" by "+rows[rows.length-1].author;
+           var idDelMess = rows[rows.length-1].id_Messages;
+           var id;
+           console.log('message here ' + res);
+          
+           socket.emit('newMess', {
+               message:  res,
+               idDel: idDelMess
+           });
+	   //delete new message from database when it was sent
+           todo.deleteOldMes(rows[rows.length-1].id_work);    
+        }
+        else
+          console.log("no message");  
+   }
+</code></pre></p>
+<p>Функция, которая обращается к БД и удаляет отосланное сообщение:
+<pre><code class="javascript hljs">this.deleteOldMes = function(id) {
+    connection.acquire(function(err, con) {
+     con.query('SELECT * FROM messages WHERE id_work = ?',[id],  function(err, result) {
+         if (err) {
+             console.log(err);
+         }
+         else 
+         {
+             if(result.length  !== 0){
+                con.query('DELETE FROM messages WHERE id_work = ?',[id],  function(err, result) {
+                    con.release();
+                    if (err) {
+                        console.log(err);
+                    }
+                    else {
+                        console.log("Message deleted successfully");       
+                    }         
+                });
+            }
+            else 
+               console.log("no message");
+        };
+    });
+});
+};</code></pre></p>
+<p>Функция клиента, которая по сокету отправляет id пользователя:
+<pre><code class="java">socket.on(Socket.EVENT_CONNECT, new Emitter.Listener() {
+@Override
+public void call(Object... args) {
+    System.out.println("SocketIO Connected");
+
+    socket.emit("idUser", user.getIdProf());
+
+}
+</code></pre></p>
+<p>Функция клиента, которая при отправке сообщения от сокета создаёт уведомление в приложении и выводит его на экран:
+<pre><code class="java">.on("newMess", new Emitter.Listener() {
+    @Override
+    public void call(Object... args) {
+        JSONObject data = (JSONObject) args[0];
+        try {
+message = data.getString("message");
+            idDelMess = data.getString("idDel");
+            Log.d("SocketIO", "New mess"  +" "+ message +" "+idDelMess);
+
+            Context context = getApplicationContext();
+            Resources res = context.getResources();
+            int notifyID = 1;
+
+            Intent notificationIntent = new Intent();
+            PendingIntent contentIntent = PendingIntent.getActivity(context,
+                    0, notificationIntent,
+                    PendingIntent.FLAG_CANCEL_CURRENT);
+            NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
+
+            builder.setContentIntent(contentIntent)
+                    .setSmallIcon(R.drawable.notific)
+                    .setLargeIcon(BitmapFactory.decodeResource(res,R.drawable.notif))
+                    .setColor(Color.WHITE)
+                    .setContentTitle("New work")
+                    .setContentText(message)// Текст уведомления
+                    .setPriority(NotificationCompat.PRIORITY_HIGH);
+            Notification notification = builder.build();
+
+            Uri ringURI =
+                    RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+            notification.sound = ringURI;
+
+            NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
+            notificationManager.notify(notifyID, notification);
+
+
+        } catch (JSONException e) {
+            Log.d("SocketIO", "Error getting New mess");
+        }
+    }
+</code></pre></p>
+<p align="center"><span class='point'>Экран при получении сообщения:</span><br><br>
+<img src="https://github.com/NadineAstakhova/SystemClient/raw/master/popup.png" data-canonical-src="https://github.com/NadineAstakhova/SystemClient/raw/master/popup.png" width="250" height="500"  align="middle" /> 
+<p align="center"><span class='point'>А здесь можно увидеть как сообщение приходит</span><br><br>
+<iframe class="video" src="https://www.youtube.com/embed/fQvowU1rVqg" frameborder="0" allowfullscreen></iframe>
+</p>
