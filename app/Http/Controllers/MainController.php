@@ -62,6 +62,7 @@ class MainController extends Controller
             array('title' => 'showDetailsEducation','description' => ''));
     }
 
+
     public function blogList()
     {
         return view('blog/blog',
@@ -70,10 +71,18 @@ class MainController extends Controller
 
     }
 
-    public function showPost($id){
+    public function showPost($id)
+    {
         //$post = new Article($id);
         return view('blog/article',
-            array('title' => 'article','description' => '',
+            array('title' => 'article', 'description' => '',
                 'post' => Article::getPostById($id)));
+    }
+
+    public function showDetailsSlovac()
+    {
+        return view('about/slovac',
+            array('title' => 'showDetailsSlovac','description' => ''));
+
     }
 }
