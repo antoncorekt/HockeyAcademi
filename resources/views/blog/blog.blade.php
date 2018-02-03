@@ -24,7 +24,12 @@
             @foreach($articles as $article)
                 <div class="row where-text-1" id="where-photos">
                     <div class="col-lg-5 col-md-6 col-sm-5 col-xs-9">
-                        <img id="img-where" src="{{$article->img_title}}"/>
+                        @if(is_null($article->video_title))
+                            <img id="img-where" src="{{$article->img_title}}"/>
+                        @else
+                            <iframe  class="video-blog" src="{{$article->video_title}}" frameborder="0" allowfullscreen></iframe>
+                        @endif
+
                     </div>
                     <div class="col-lg-4 col-sm-6 col-xs-9">
                         <p class="blog-date">{{$article->create_date}}</p>
@@ -38,80 +43,11 @@
                            data-toggle="modal" data-target="#modalArt" class="btn blog-a" >
                             РАЗВЕРНУТЬ ВЕСЬ ТЕКСТ
                         </a>
+
                         </p>
                     </div>
                 </div>
             @endforeach
-
-            <div class="row where-text-1" id="where-photos">
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-9">
-                    <img id="img-where" src="../../design/first_page/res/photo-2.jpg"/>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-xs-9">
-                    <p class="blog-date">20/08/2017</p>
-                    <h3 class="h1-team-page" id="h3-team">ИДЕАЛЬНЫЙ КЛИМАТ ДЛЯ СПОРТМЕНА</h3>
-                    <p id="team-text-p">
-                        Академия находится в европейском спортивном центре c большой и современной инфраструктурой –
-                        в Польской Швейцарии городе Крыниця-Здруй.
-                        Это излюбленное место многих горнолыжников, хоккеистов и других спортсменов.
-                        Но город живёт не только зимой, но и летом.
-                        Наши тренеры решили, что это место с его прекрасным климатом
-                        и минеральными источниками идеально подходит для взращивания
-                        лучших спортсменов Европы и всего мира.
-                    <p></p>
-                    <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-krynica') }}"
-                       data-toggle="modal" data-target="#modalArt" class="btn blog-a" >
-                        РАЗВЕРНУТЬ ВЕСЬ ТЕКСТ
-                    </a>
-                    </p>
-                </div>
-            </div>
-            <div class="row where-text-1" id="where-photos">
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-9">
-                    <img id="img-where" src="../../design/first_page/res/photo-2.jpg"/>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-xs-9">
-                    <p class="blog-date">20/08/2017</p>
-                    <h3 class="h1-team-page" id="h3-team">ИДЕАЛЬНЫЙ КЛИМАТ  СПОРТМЕНА</h3>
-                    <p id="team-text-p">
-                        Академия находится в европейском спортивном центре c большой и современной инфраструктурой –
-                        в Польской Швейцарии городе Крыниця-Здруй.
-                        Это излюбленное место многих горнолыжников, хоккеистов и других спортсменов.
-                        Но город живёт не только зимой, но и летом.
-                        Наши тренеры решили, что это место с его прекрасным климатом
-                        и минеральными источниками идеально подходит для взращивания
-                        лучших спортсменов Европы и всего мира.
-                    <p></p>
-                    <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-krynica') }}"
-                       data-toggle="modal" data-target="#modalArt" class="btn blog-a" >
-                        РАЗВЕРНУТЬ ВЕСЬ ТЕКСТ
-                    </a>
-                    </p>
-                </div>
-            </div>
-            <div class="row where-text-1" id="where-photos">
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-9">
-                    <img id="img-where" src="../../design/first_page/res/photo-2.jpg"/>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-xs-9">
-                    <p class="blog-date">20/08/2017</p>
-                    <h3 class="h1-team-page" id="h3-team">ИДЕАЛЬНЫЙ</h3>
-                    <p id="team-text-p">
-                        Академия находится в европейском спортивном центре c большой и современной инфраструктурой –
-                        в Польской Швейцарии городе Крыниця-Здруй.
-                        Это излюбленное место многих горнолыжников, хоккеистов и других спортсменов.
-                        Но город живёт не только зимой, но и летом.
-                        Наши тренеры решили, что это место с его прекрасным климатом
-                        и минеральными источниками идеально подходит для взращивания
-                        лучших спортсменов Европы и всего мира.
-                    <p></p>
-                    <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-krynica') }}"
-                       data-toggle="modal" data-target="#modalArt" class="btn blog-a">
-                        РАЗВЕРНУТЬ ВЕСЬ ТЕКСТ
-                    </a>
-                    </p>
-                </div>
-            </div>
         </div>
         <div class="row pages" style="text-align: center">
             <p>

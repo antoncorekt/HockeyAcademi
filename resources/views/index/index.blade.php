@@ -82,11 +82,8 @@
 
 @section('content')
 
-
-
         <div class="row" id="main-text">
-            <!-- <h4 class="h1-main-page" style="color:red"> ТУТ ОЧЕНЬ КОРОТКИЙ ТЕКСТ</h4> -->
-            
+
             <h1 class="h1-main-page">{{ trans('messages.dream') }} -</h1>
             <h1 class="h1-main-page">{{ trans('messages.dream1') }}</h1>
             <p class="main-text-p">
@@ -99,16 +96,16 @@
 
         <div class="footer-main">
             <div class="row" id="events">
-                <!-- <h4  style="color:red">НОВОСТИ ИЗ БЛОГА</h4> -->
+
                 <div class="col-sm-2 col-lg-2 col-md-2 div-events">
                     <h5 class="h5-events" id="h5-events-1">{{ trans('messages.events') }}</h5>
-                    <img src="../public/images/news.jpg" class="img-events">
-                    <p class="text-events">EUHL: pierwsze punkty<br> Academy 1929 KTH</p>
+                    <img src=">{{$posts[0]->img_title}}" class="img-events">
+                    <p class="text-events">{{$posts[0]->title}}</p>
                 </div>
                 <div class="col-sm-2 col-lg-2 col-md-2 div-events">
                     <h5 class="h5-events" id="h5-events-2">{{ trans('messages.events') }}</h5>
-                    <img src="../public/images/news.jpg" class="img-events">
-                    <p class="text-events">EUHL: pierwsze punkty<br> Academy 1928 KTH</p>
+                    <img src="{{$posts[1]->img_title}}" class="img-events">
+                    <p class="text-events">{{$posts[1]->title}}</p>
                 </div>
             </div>
         </div>

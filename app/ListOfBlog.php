@@ -28,4 +28,15 @@ class ListOfBlog extends Model
         return "<p>" . strstr($string, '</p>', true) . "</p>";
     }
 
+    public static function getLastTwoPosts(){
+        $posts = DB::table('post_text')
+            ->join('lang', 'post_text.fkLang', '=', 'lang.idLang')
+            ->join('post', 'post_text.fkPost', '=', 'post.idPost')
+            ->where('lang.name', '=', LocaleMiddleware::getLocale())
+            ->orderBy('post.create_date', 'ASC')
+            ->take(2)
+            ->get();
+        return $posts;
+    }
+
 }

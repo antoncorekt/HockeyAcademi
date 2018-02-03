@@ -11,6 +11,15 @@ use Illuminate\Support\Facades\Redirect;
 
 class MainController extends Controller
 {
+
+
+    public function index()
+    {
+        return view('index/index',
+            array('title' => 'index','description' => '',
+                'posts' => ListOfBlog::getLastTwoPosts()));
+    }
+
     public function showModal()
     {
         return view('others/enrol');
@@ -68,7 +77,6 @@ class MainController extends Controller
         return view('blog/blog',
             array('title' => 'blog','description' => '',
                 'articles' => ListOfBlog::getAllPosts()));
-
     }
 
     public function showPost($id)

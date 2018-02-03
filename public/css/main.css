@@ -630,7 +630,6 @@ body {
 .btn-main a {
   z-index: 2; }
 
-// modal for main page
 .fixed-container {
   z-index: 10;
   position: absolute;
@@ -710,4 +709,3 @@ Contact Page
 @media only screen and (max-width: 480px) {
   .col-xs-9 {
     width: 100%; } }
-
