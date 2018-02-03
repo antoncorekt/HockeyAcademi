@@ -49,7 +49,7 @@ Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function
     Route::get('/contacts', function () {
         return view('contacts/contact');
     });
-    
+
     Route::get('/blog', 'MainController@blogList')->name('blog/blog');
     Route::get('/modal-post/{id}', 'MainController@showPost')->name('blog/article');
 
