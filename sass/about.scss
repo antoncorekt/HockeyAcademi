@@ -14,7 +14,17 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     width:100%;
     padding: 0px;
   }
+}
 
+.col-list{
+  @include  respond-to($tablet-portrait){
+    width:80%;
+  }
+
+  @include respond-to($phone) {
+    width:80%;
+    padding: 0px;
+  }
 }
 
 #about-1, #about-2, #about-3, #about-4, #about-5, #about-6, .blog-1 {
@@ -588,7 +598,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   }
 #about-5 img{
   @include  respond-to($phone){
-    height: 250px;
+    height: 360px;
   }
 }
 
@@ -1188,4 +1198,22 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   @include respond-to($phone) {
     content: url("../images/blog_img_m.png");
   }
+}
+
+.video-blog{
+  width: 100%;
+  height: 300px;
+  @include respond-to($ipad) {
+    height: 300px;
+  }
+  @include respond-to($tablet-landscape) {
+    height: 150px;
+  }
+  @include respond-to($tablet-portrait) {
+    height: 200px;
+  }
+  @include respond-to($phone) {
+    height: 200px;
+  }
+
 }

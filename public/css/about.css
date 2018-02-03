@@ -407,6 +407,15 @@ body {
     width: 100%;
     padding: 0px; } }
 
+@media only screen and (max-width: 767px) {
+  .col-list {
+    width: 80%; } }
+
+@media only screen and (max-width: 480px) {
+  .col-list {
+    width: 80%;
+    padding: 0px; } }
+
 #about-1, #about-2, #about-3, #about-4, #about-5, #about-6, .blog-1 {
   background-attachment: fixed;
   position: relative;
@@ -877,7 +886,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   #about-5 img {
-    height: 250px; } }
+    height: 360px; } }
 
 .form-control {
   background-color: transparent; }
@@ -1371,3 +1380,19 @@ body {
 @media only screen and (max-width: 480px) {
   .blog-1 img {
     content: url("../images/blog_img_m.png"); } }
+
+.video-blog {
+  width: 100%;
+  height: 300px; }
+  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+    .video-blog {
+      height: 300px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .video-blog {
+      height: 150px; } }
+  @media only screen and (max-width: 767px) {
+    .video-blog {
+      height: 200px; } }
+  @media only screen and (max-width: 480px) {
+    .video-blog {
+      height: 200px; } }
