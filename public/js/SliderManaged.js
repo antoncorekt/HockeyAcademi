@@ -54,7 +54,6 @@ $(document).ready(function(){
      
       var elementClick = $(".sldr");
       var destination = $(elementClick).offset().top-250;
-      console.log("l " +destination)
       // if ($.browser.safari) {
       //     $('body').animate({ scrollTop: destination }, 1100); //1100 - скорость
       // } else {
