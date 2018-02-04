@@ -40,7 +40,7 @@
             window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about?p=coach")}}";
         })
         $(".flex-link-4").click(function (){
-            window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about?p=selects")}}";
+            window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about?p= ")}}";
         })
         $(".flex-link-5").click(function (){
             window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about?p=krynica")}}";
