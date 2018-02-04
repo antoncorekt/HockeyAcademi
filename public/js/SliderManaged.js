@@ -23,14 +23,16 @@ $(document).ready(function(){
 
     var PADDING = 10;
     
-    // $(".slick-dots").css("bottom", $(".sldr").height());
+    // $(".slick-dots").css("bottom", $(".sldr").height()); sq-text-1
 
     $(".sldr").width($( window ).width()-PADDING);
 
+    // $( ".sq-text-1" ).append( $( ".slick-dots" ) );
+
     $( window ).resize(function() {
-        console.log("bla " + $(".sldr").height());
+       
         $(".sldr").width($( window ).width()-PADDING);
-        $(".slick-dots").css("bottom", $(".sldr").height()+65);
+       // $(".slick-dots").css("bottom", $(".sldr").height()+65);
       });
 
 

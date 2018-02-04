@@ -102,7 +102,7 @@ body {
   .navbar-collapse {
     position: relative; } }
 
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
   .navbar-collapse {
     position: relative; } }
 
@@ -151,7 +151,7 @@ body {
   @media only screen and (min-width: 1024px) {
     .navbar-default .navbar-nav > li > a {
       font-size: 16px; } }
-  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .navbar-default .navbar-nav > li > a {
       font-size: 14px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -180,7 +180,7 @@ body {
 .h1-main-page {
   font-weight: 900;
   font-family: "MontserratBlack", sans-serif; }
-  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .h1-main-page {
       font-size: 35px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -198,7 +198,7 @@ body {
   @media only screen and (min-width: 1024px) {
     .main-text-p {
       font-size: 16px; } }
-  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .main-text-p {
       font-size: 16px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -246,7 +246,7 @@ body {
   @media only screen and (min-width: 1024px) {
     .lang {
       font-size: 16px; } }
-  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .lang {
       font-size: 14px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -285,7 +285,7 @@ body {
   color: white;
   font-size: 16px;
   padding: 3px 7px; }
-  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .dropdown-menu > li > a {
       font-size: 14px; } }
 
@@ -319,7 +319,7 @@ body {
   .navbar-right {
     margin-top: -95px; } }
 
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
   .navbar-right {
     margin-top: -98px; } }
 
@@ -380,7 +380,7 @@ body {
   #logo-navheader {
     display: none; } }
 
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
   #logo-navheader {
     display: none; } }
 
@@ -517,7 +517,7 @@ body {
   @media only screen and (min-width: 1024px) {
     .h5-events {
       text-align: left; } }
-  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .h5-events {
       text-align: left; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -536,7 +536,7 @@ body {
   #h5-events-2 {
     visibility: visible; } }
 
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
   #h5-events-2 {
     visibility: visible; } }
 
@@ -556,7 +556,7 @@ body {
   #h5-events-1 {
     visibility: hidden; } }
 
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
   #h5-events-1 {
     visibility: hidden; } }
 
@@ -584,7 +584,7 @@ body {
   @media only screen and (max-width: 480px) {
     .text-events {
       font-size: 9px; } }
-  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .text-events {
       padding-left: 0px; } }
 
@@ -594,7 +594,7 @@ body {
     .img-events {
       width: 175px;
       padding-bottom: 10px; } }
-  @media only screen and (min-width: 979px) and (max-width: 1024px) {
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .img-events {
       width: 160px; } }
   @media only screen and (max-width: 767px) {
@@ -623,7 +623,7 @@ body {
     .div-events {
       float: left; } }
 
-@media only screen and (min-width: 979px) and (max-width: 1024px) {
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
   #events {
     padding-right: 30px; } }
 
@@ -647,7 +647,7 @@ body {
     color: white; }
   @media only screen and (max-width: 480px) {
     .fixed-container {
-      margin-top: 140%; } }
+      margin-top: 150%; } }
   .fixed-container .flex-conteiner {
     display: flex;
     flex-direction: column;
@@ -689,7 +689,7 @@ body {
             width: 10%;
             background-color: transparent; } }
 
-@-webkit-keyframes uparrow {
+@keyframes uparrow {
   0% {
     -webkit-transform: translateY(0);
     opacity: 0.7; }
@@ -697,7 +697,7 @@ body {
     -webkit-transform: translateY(-0.9em);
     opacity: 1; } }
 
-@-webkit-keyframes downarrow {
+@keyframes downarrow {
   0% {
     -webkit-transform: translateY(0);
     opacity: 0.7; }
