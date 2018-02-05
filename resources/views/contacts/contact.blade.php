@@ -3,6 +3,13 @@
 
 @section('header')
     <link rel="stylesheet" href="{{asset('public/css/main.css')}}">
+
+    <style>
+        .dubl-num{
+            margin-left: 75px;
+        }
+     </style>   
+
 @endsection
 @section('content')
     <div class="contacts" >
@@ -17,10 +24,11 @@
         </div>
         <div>
             <h2 class="h1-main-page">{{ trans('messages.Telephone') }}</h2>
-           {{ trans('messages.ukr') }}: +38 050 000 00 00
-            <br>{{ trans('messages.rus') }}: +79 009 000 00 00
-            <br>{{ trans('messages.bel') }}: +37 500 000 00 00
-            <br>{{ trans('messages.eur') }}: +48 733 000 00 00
+           {{ trans('messages.ukr') }}: +38 067 235 63 73 (VIBER)
+           <br><div  class="dubl-num"> +48 79 445 20 36 </div>
+            {{ trans('messages.rus') }}: +7 929 617 73 65
+            <br>{{ trans('messages.bel') }}: +38 067 235 63 73 (VIBER)
+            <br>{{ trans('messages.eur') }}: +48 53 739 49 69 (VIBER)
         </div>
         <div>
             <h2 class="h1-main-page">Email</h2></div>
@@ -30,7 +38,7 @@
         <div id="map"></div>
             <script>
                 function initMap() {
-                    var uluru = {lat:49.409461, lng: 20.956848};
+                    var uluru = {lat:49.426109, lng: 20.953203};
                     var map = new google.maps.Map(document.getElementById('map'), {
                         zoom: 12,
                         center: uluru,

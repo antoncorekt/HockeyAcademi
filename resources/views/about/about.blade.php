@@ -23,6 +23,11 @@
             {}
         );
 
+        $("#coach-btn").click(function (){
+            
+            window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/train")}}";
+        });
+
         // console.log( params['data']);
 
         // alert(params['par']);
@@ -181,33 +186,33 @@
         </div>
         <div class="row coach-text" id="coach-photos">
             <div class="col-md-2 col-sm-2 col-xs-3 coach ">
-                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/parf') }}"
                    data-toggle="modal" data-target="#modalArt" >
                     <img src="../../design/first_page/res/tr1.jpg"/></a>
-                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
+                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/parf') }}"
                         data-toggle="modal" data-target="#modalArt" >
                         Андрей Парфенов</a>
                 </h5>
                 <p>Тренер специалист</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
-                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/savchenko') }}"
                    data-toggle="modal" data-target="#modalArt" >
                     <img src="../../design/first_page/res/tr2.jpg"/></a>
-                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
+                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/savchenko') }}"
                         data-toggle="modal" data-target="#modalArt" >
                         Андрей Савченко</a>
                 </h5>
                 <p>Тренер специалист</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
-                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/ivlev') }}"
                    data-toggle="modal" data-target="#modalArt" >
-                    <img src="../../design/first_page/res/coach.jpg"/></a>
+                    <img src="../../design/first_page/res/tr3.jpg"/></a>
 
-                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
+                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/ivlev') }}"
                    data-toggle="modal" data-target="#modalArt" >
-                        Andriej Parfionow</a>
+                        Александр Ивлев</a>
                 </h5>
                 <p>Помощник тренера</p>
             </div>
@@ -217,7 +222,7 @@
                     <img src="../../design/first_page/res/coach.jpg"/></a>
                 <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
                         data-toggle="modal" data-target="#modalArt" >
-                        Andriej Parfionow</a>
+                        Иванов Иван</a>
                 </h5>
                 <p>Тренер вратарей</p>
             </div>

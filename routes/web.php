@@ -41,12 +41,13 @@ Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function
 
     Route::get('/modal-enrol', 'MainController@showModal')->name('others/enrol');
 
-    Route::get('/modal-coach/{id}', 'MainController@showCoach')->name('about/coach');
+    Route::get('/modal-coach/{id}', 'MainController@showCoach')->name('modal-coach/{id}');
     Route::get('/modal-details', 'MainController@showDetails')->name('about/details');
     Route::get('/modal-selects', 'MainController@showDetailsSelects')->name('about/selects');
     Route::get('/modal-krynica', 'MainController@showDetailsKrynica')->name('about/krynica');
     Route::get('/modal-education', 'MainController@showDetailsEducation')->name('about/education');
     Route::get('/modal-slovac', 'MainController@showDetailsSlovac')->name('about/slovac');
+    Route::get('/modal-train', 'MainController@showTrain')->name('about/train');
 
     Route::get('/contacts', function () {
         return view('contacts/contact');
