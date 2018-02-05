@@ -18,6 +18,7 @@ class MessageEnrol extends Mailable
     public $weight;
     public $age;
     public $addInf;
+    public $subject;
 
     /**
      * Create a new message instance.
@@ -25,7 +26,7 @@ class MessageEnrol extends Mailable
      * @return void
      */
     public function __construct($email, $name, $phone, $nameHock,
-            $height, $weight, $age, $addInf)
+            $height, $weight, $age, $addInf, $subject)
     {
         $this->email = $email;
         $this->name = $name;
@@ -35,6 +36,7 @@ class MessageEnrol extends Mailable
         $this->weight = $weight;
         $this->age = $age;
         $this->addInf = $addInf;
+        $this->subject = $subject;
     }
 
     /**
@@ -44,6 +46,8 @@ class MessageEnrol extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.enrol')->subject("Enrol");
+        return $this->view('emails.enrol')
+            ->from("ehlabenrol@ehlab.org")
+            ->subject($this->subject);
     }
 }

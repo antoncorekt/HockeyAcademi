@@ -16,7 +16,8 @@ class MailFormRequest extends FormRequest
     {
         // By default it returns false, change it to something like
         // this if ure using auth
-        return Auth::check();
+      //  return Auth::check();
+        return true;
     }
 
     /**

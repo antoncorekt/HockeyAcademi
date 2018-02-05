@@ -172,7 +172,7 @@
         </div>
     </div>
     <div class="container-fluid bg-3" id="about-3">
-        <img src="../../design/first_page/res/textur.png"/>
+        <img src="../../design/first_page/res/textur.png" style="height: 100%;"/>
         <div class="row coach-text">
             <h5 class="h5-coach-text">{{ trans('messages.learn') }}?</h5>
             <h3 class="h3-coach-text">{{ trans('messages.coach') }}
