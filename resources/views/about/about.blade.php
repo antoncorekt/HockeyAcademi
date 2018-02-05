@@ -7,6 +7,61 @@
     <script type="text/javascript" src="{{asset('public/slick/slick.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('public/js/SliderManaged.js')}}"></script>
 
+    <script>
+    $(document).ready(function () {
+        var params = window
+        .location
+        .search
+        .replace('?','')
+        .split('&')
+        .reduce(
+            function(p,e){
+                var a = e.split('=');
+                p[ decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+                return p;
+            },
+            {}
+        );
+
+        // console.log( params['data']);
+
+        // alert(params['par']);
+
+        if (params["p"] == "slov"){
+            var elementClick = $(".sldr");
+            var destination = $(elementClick).offset().top-250;
+            $('html').animate({ scrollTop: destination }, 1100);
+            $(".sldr").slick("slickNext");
+        }
+        else if (params["p"] == "edu"){
+            var elementClick = $(".edu");
+            var destination = $(elementClick).offset().top-590;
+            $('html').animate({ scrollTop: destination }, 1100);
+            }
+        else if (params["p"] == "coach"){
+            var elementClick = $(".coach");
+            var destination = $(elementClick).offset().top-650;
+            $('html').animate({ scrollTop: destination }, 1100);
+            }
+        else if (params["p"] == "selects"){
+            var elementClick = $(".sldr");
+            var destination = $(elementClick).offset().top-250;
+            $('html').animate({ scrollTop: destination }, 1100);
+            }
+        else if (params["p"] == "krynica"){
+            var elementClick = $(".kryn");
+            var destination = $(elementClick).offset().top-650;
+            $('html').animate({ scrollTop: destination }, 1100);
+            }
+        
+    
+            
+        
+
+    });
+
+    </script>
+
 @endsection
 @section('content')
     <style>
@@ -34,21 +89,21 @@
         <img src="../../design/first_page/res/white_sql.png"/>
         <div class="row" id="sq-text" >
             <div class="col-md-2 col-sm-2 sq-text" id="sq-text-1">
-                <h1>40</h1>
+                <h1>21</h1>
                 <p>
                     {{ trans('messages.70text') }}
                     <br>{{ trans('messages.70text1') }}
                 </p>
             </div>
             <div class="col-md-2 col-sm-2 sq-text" id="sq-text-2">
-                <h1>7</h1>
+                <h1>4</h1>
                 <p>
                     {{ trans('messages.10text') }}
                     <br>{{ trans('messages.10text1') }}
                 </p>
             </div>
             <div class="col-md-2 col-sm-2 sq-text" id="sq-text-3">
-                <h1>12</h1>
+                <h1>10</h1>
                 <p>
                     {{ trans('messages.12text') }}
                     <br>{{ trans('messages.12text1') }}
@@ -56,21 +111,21 @@
             </div>
         </div>
         <div class="sldr">
-            <div class="row team" id="team-text">
+            <div class="row team euro" id="team-text">
     
             
                     <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
                         <img src="../../design/first_page/res/photo-1.png"/>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
-                        <h5 class="h4-main-page">#НАБОР2018 #ТВОЙШАНС</h5>
-                        <h3 class="h1-team-page">EHL ОБЬЯВЛЯЕТ НОВЫЙ НАБОР В АКАДЕМИЮ</h3>
+                        <h5 class="h4-main-page selects">#НАБОР2018 #ТВОЙШАНС</h5>
+                        <h3 class="h1-team-page">EEHL ОБЬЯВЛЯЕТ НОВЫЙ НАБОР В АКАДЕМИЮ</h3>
                         <!-- <h3 class="h1-team-page">С 15 АВПРЕЛЯ 2018 ГОДА</h3> -->
 
                         <p class="text-style-1rst-banner">
                             <div class="text-style-1rst-banner text-style-1rst-banner-if_you">Если ты: </div> 
                             <ul class="text-style-1rst-banner">   
-                                <li>2003-2004 годов рождения;</li>
+                                <li>2004-2005 годов рождения;</li>
                                 <li>Хоккей – это твоя жизнь;</li>
                                 <li>Хочешь быть учеником лучших тренеров Европы и СНГ;</li>
                                 <li>Хочешь получить европейское образование;</li>
@@ -83,19 +138,6 @@
                             ПОДРОБНОСТИ
                         </a>
                     </div>
-                    <!-- <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="s1rst-banner-last">
-                        <div class="text-style-1rst-banner text-style-1rst-banner-ab"> 
-                                С <b>15 апреля 2018 года</b> Международная Европейская Хоккейная Академия <b>Euro Hockey Lab</b> (EHL) 
-                                начинает селекционный отбор претендентов на зачисление в Академию.
-                                В конкурсе участвуют ведущие скауты и тренеры Европы.
-                                <br>
-                                Возглавляют отбор главные тренеры Академии:
-                                <ul class="text-style-1rst-banner text-style-1rst-banner-ab">
-                                    <li>З.Т.Р.Ф Парфенов А.В;</li>
-                                    <li>М.С.М.К Савченко А.Н. - главный тренер сборной «Европейской Университетской Команды».</li>
-                                </ul>
-                        </div>
-                    </div> -->
             </div>
             <div class="row team" id="team-text">
     
@@ -105,21 +147,21 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
 
-                        <h5 class="h4-main-page">#EHL #SELECT</h5>
-                        <h3 class="h1-team-page">EHL - академия с амбициями</h3>
+                        <h5 class="h4-main-page">#EEHL #SELECTS</h5>
+                        <h3 class="h1-team-page">EEHL - академия с амбициями</h3>
                         <div class="text-style-1rst-banner"> Мы с гордостью можем сообщить что: </div>
                         <ul class="text-style-1rst-banner">
                             <li> Мы участвуем в регулярном чемпионате Словакии; </li>
-                            <li> EHL официальный представитель компании LEGACY GLOBAL SPORTS.
+                            <li> EEHL официальный представитель компании LEGACY GLOBAL SPORTS.
                                 <br>Данная программа позволяет каждому учаснику попасть 
                                 в профессиональных хоккей на уровне НХЛ и получить образование в колледжах и университетах США;
                             </li>
-                            <li> Участвуем в международных турнирах SELECT; </li>
+                            <li> Участвуем в международных турнирах SELECTS; </li>
                         </ul> 
                         <p></p>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-selects') }}"
                            data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
-                            ЧТО ТАКОЕ SELECT?
+                            О SELECTS?
                         </a>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-slovac') }}"
                            data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
@@ -196,7 +238,7 @@
                     <img id="img-where" src="../../design/first_page/res/photo-2.jpg"/>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-9">
-                    <h3 class="h1-team-page" id="h3-team">ИДЕАЛЬНЫЙ КЛИМАТ ДЛЯ СПОРТМЕНА</h3>
+                    <h3 class="h1-team-page kryn" id="h3-team">ИДЕАЛЬНЫЙ КЛИМАТ ДЛЯ СПОРТМЕНА</h3>
                     <p id="team-text-p">
                     Академия находится в европейском спортивном центре c большой и современной инфраструктурой – 
                     в Польской Швейцарии городе Крыниця-Здруй. 
@@ -213,15 +255,20 @@
                     </p>
                 </div>
             </div>
-            <div class="row where-text-1"  id="where-photos1">
+            <div class="row where-text-1 edu"  id="where-photos1">
                 <div class="col-lg-4 col-sm-6">
                     <h3 class="h1-team-page">ХОККЕЙ ИЛИ ОБРАЗОВАНИЕ? ХОККЕЙ И ОБРАЗОВАНИЕ!</h3>
                     <p id="team-text-p">
-                    Думаешь, что хоккей и образование не совместимы? Или так думают твои родители? В EHL можешь стать и успешным, и умным! Ведь мы считаем, что ты не должен бросать учёбу ради хоккея, и хоккей ради учёбы. И знаем, как вам помочь!
+                    Думаешь, что хоккей и образование не совместимы? 
+                    Или так думают твои родители? 
+                    В EEHL можешь стать и успешным, и умным! 
+                    Ведь мы считаем, что ты не должен бросать учёбу ради хоккея, 
+                    и хоккей ради учёбы. И знаем, как вам помочь!
 
-У Академии есть контракт на обучение студентов в местной школе. У тебя будут полноценные и школьные, и тренировочные занятия! Но это ещё не всё.
+                    У Академии есть контракт на обучение студентов в местной школе. 
+                    У тебя будут полноценные и школьные, и тренировочные занятия! Но это ещё не всё.
 
-После окончания Академии ты можешь получить образование в колледжах и университетах Европы и США.
+                    После окончания Академии ты можешь получить образование в колледжах и университетах Европы и США.
 
                     </p>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-education') }}"
@@ -239,28 +286,31 @@
         <img src="../../design/first_page/res/img-faq.jpg"/>
         <div class="row"  id="form-text">
             <h4>ВАЖНО ЗНАТЬ</h4>
-            <div class="col-lg-4 col-md-3 col-xs-9">
+            <div class="col-lg-6 col-md-6 col-xs-9 col-list">
                 <ul class="list-know">
-                    <li>Бесплатный адаптационный период с 15.04.2018 по 15.05.2018</li>
+                    <li>Ознакомительные туры в период весенних каникул 24.03-25.03.2018 и
+                        31.03-01.04.2018 года</li>
+                    <li>Полноценный летний лагерь в июле 2018 года</li>
                     <li>Ознакомление со школьной и тренировочной программой</li>
                     <li>Возможность получить вид на жительство для вас и ребёнка</li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-3 col-xs-9">
-                <ul class="list-know">
                     <li>Помощь с оформлением документов</li>
-                    <li>Поступление в 8 школьный класс без экзаменов</li>
-                    <li>Помогаем с поступлением в Европейский университет</li>
-
+                    <li>В сезоне 2018/19 команда Академии участвует в трех турнирах 'Selects': в
+                        Сан-Себастьяне (Испания), Ярославле (РФ) и в Филадельфии (США)</li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-3 col-xs-9">
+            <div class="col-lg-6 col-md-6 col-xs-9  col-list">
+
                 <ul class="list-know">
-                    <li>Обеспечение жильём и питанием</li>
+
+                    <li>Поступление в 8 класс (аналог 9 класса в странах СНГ) без экзаменов с обучением на польском языке</li>
+                    <li>Помогаем с поступлением в Европейский университет</li>
+                    <li>Помощь в выборе размещения и проживания в г.Крыница-Здруй</li>
                     <li>Языковая помощь</li>
                     <li>Русскоговорящие тренера</li>
+                    <li>Существует система скидок и бонусов на обучение в Академии</li>
                 </ul>
             </div>
+
         </div>
     </div>
     <div class="container-fluid bg-6" id="about-6">
@@ -273,11 +323,11 @@
         </div>
         <div class="row"  id="cost-photos1">
             <div class="col-md-3 col-xs-3 old-cost">
-                <h2>1699€</h2>
+                <h2>1699€ / мес.</h2>
                 <p>{{ trans('messages.old_cost') }}</p>
             </div>
             <div class="col-md-3 col-xs-3 offer-cost">
-                <h2>1250€</h2>
+                <h2>1250€ / мес.</h2>
                 <p>{{ trans('messages.offer_cost') }}</p>
             </div>
         </div>

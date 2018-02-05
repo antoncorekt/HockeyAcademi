@@ -24,14 +24,27 @@
             else{
                 $('.fixed-container').css('display','block');
             }
+
+            var destination = $(".flex-link-4").offset().top;
+                $('html').animate({ scrollTop: destination }, 1500);
+
         });
-       
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            
-            var destination = $(".fixed-container").offset().top-250;
-                $('html').animate({ scrollTop: destination }, 1100);
-        }
-        
+
+        $(".flex-link-1").click(function (){
+            window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about?p=slov")}}";
+        })
+        $(".flex-link-2").click(function (){
+            window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about?p=edu")}}";
+        })
+        $(".flex-link-3").click(function (){
+            window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about?p=coach")}}";
+        })
+        $(".flex-link-4").click(function (){
+            window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about?p= ")}}";
+        })
+        $(".flex-link-5").click(function (){
+            window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about?p=krynica")}}";
+        })
 
       
     });
@@ -53,27 +66,57 @@
 </div> -->
 
 <div class="fixed-container">
-<a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about")}}">
+
     <div class="flex-conteiner">
     
-        <div class="flex-content">
+        <div class="flex-content flex-link-1">
+            <div class="flex-text">
+                Сильный регулярный европейский чемпионат Словакии в группе
+                'Кадетты'. Гарантированное участие минимум в 23 играх;
+            </div>
+            <div class="flext-link">
+                <div class="arrow right"></div>
+            </div>
+        </div>
+        <div class="flex-content flex-link-2">
+            <div class="flext-link ">
+                <div class="arrow left"></div>
+            </div>
+            <div class="flex-text">
+                ЕВРОПЕЙСКОЕ образования в лучших школах и университетах
+                с возможностью получение диплома американского образца;
+            </div>
+        </div>
+        <div class="flex-content flex-link-3">
+            <div class="flex-text">
+                Продвинутый тренировочный процесс и уникальные методики  
+                под руководством ведущих специалистов Европы и СНГ. 
+            </div>
+            <div class="flext-link">
+                <div class="arrow right"></div>
+            </div>
+        </div>
+        <div class="flex-content flex-link-4">
+            <div class="flext-link">
+                <div class="arrow left"></div>
+            </div>
+            <div class="flex-text">
+            Участие (по отдельному протоколу) в программе LEGASY GLOBAL SPORTS
+            - "чемпионат мира" среди лучших юниорских хоккейных команд.
+            </div>
+        </div>
         
-        Сильный регулярный европейский чемпионат Словакии в группе 'Кадетты' и гарантированное участие мин. в 23 играх;
-        </div>
-        <div class="flex-content">
-        Получение ЕВРОПЕЙСКОГО образования в лучших школах и университетах; 
-        </div>
-        <div class="flex-content">
-        Продвинутый тренировочный процесс под руководством ведущих специалистов;
-        </div>
-        <div class="flex-content">
-        Участие (по отдельному протоколу) в программе 'Selects', 
-        </div>
-        <div class="flex-content">
-        Уникальное расположение в сердце Европы - круглогодичный горный (горнолыжный) курорт с динамическим развитием.
+        <div class="flex-content flex-link-5">
+            <div class="flex-text">
+             Уникальное расположение в самом сердце Европы - круглогодичный 
+             горный (горнолыжный) курорт с динамическим развитием.
+             </div>
+            <div class="flext-link flex-link-1">
+                <div class="arrow right"></div>
+            </div>
         </div>
     </div>
-    </a>
+    
 </div>
 
 <div class="cont" >
@@ -83,7 +126,6 @@
 @section('content')
 
         <div class="row" id="main-text">
-
             <h1 class="h1-main-page">{{ trans('messages.dream') }} -</h1>
             <h1 class="h1-main-page">{{ trans('messages.dream1') }}</h1>
             <p class="main-text-p">
@@ -96,7 +138,6 @@
 
         <div class="footer-main">
             <div class="row" id="events">
-
                 <div class="col-sm-2 col-lg-2 col-md-2 div-events">
                     <h5 class="h5-events" id="h5-events-1">{{ trans('messages.events') }}</h5>
                     <img src="{{$posts[0]->img_title}}" class="img-events">
