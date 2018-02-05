@@ -13,6 +13,16 @@ body {
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     body .menu-logo {
       display: none; } }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    body .menu-logo {
+      background-image: url(../images/logo-test.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      -webkit-background-size: cover;
+      background-attachment: initial;
+      width: 100px; } }
   @media only screen and (min-width: 1024px) {
     body .menu-logo {
       background-image: url(../images/logo-test.png);
@@ -290,19 +300,24 @@ body {
       font-size: 14px; } }
 
 .flag-ico {
-  vertical-align: unset; }
+  vertical-align: top; }
   @media only screen and (min-width: 1024px) {
     .flag-ico {
       width: 20px; } }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .flag-ico {
       width: 15px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .flag-ico {
       width: 20px; } }
+  @media only screen and (max-width: 767px) {
+    .flag-ico {
+      width: 15px;
+      vertical-align: super; } }
   @media only screen and (max-width: 480px) {
     .flag-ico {
-      width: 17px; } }
+      width: 17px;
+      vertical-align: super; } }
 
 .flag {
   margin-right: 1px;
@@ -313,11 +328,11 @@ body {
   min-width: 140px; }
 
 .drop-text {
-  vertical-align: top; }
+  vertical-align: super; }
 
 @media only screen and (min-width: 1024px) {
   .navbar-right {
-    margin-top: -95px; } }
+    margin-top: -96px; } }
 
 @media only screen and (min-width: 980px) and (max-width: 1024px) {
   .navbar-right {
@@ -325,7 +340,7 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .navbar-right {
-    margin-top: -77px; } }
+    margin-top: -76px; } }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   font-family: "Montserrat-Medium", sans-serif; }
@@ -482,7 +497,7 @@ body {
       font-size: 13px; } }
   @media only screen and (max-width: 480px) {
     .h4-main-page {
-      font-size: 10px;
+      font-size: 12px;
       margin-bottom: 5px; } }
 
 @media only screen and (max-width: 480px) {
@@ -556,7 +571,7 @@ body {
       transform: translateY(-55%); } }
   @media only screen and (max-width: 480px) {
     .sq-text {
-      padding: 3px 5px;
+      padding: 8px 8px;
       transform: translateY(-55%); } }
 
 #sq-text h1 {
@@ -575,7 +590,7 @@ body {
       margin-bottom: 3px; } }
   @media only screen and (max-width: 480px) {
     #sq-text h1 {
-      font-size: 12px;
+      font-size: 18px;
       margin-bottom: 3px; } }
 
 #sq-text p {
@@ -592,7 +607,7 @@ body {
       font-size: 7px; } }
   @media only screen and (max-width: 480px) {
     #sq-text p {
-      font-size: 7px;
+      font-size: 12px;
       margin-bottom: 5px; } }
 
 @media only screen and (min-width: 1024px) {
@@ -611,7 +626,7 @@ body {
 @media only screen and (max-width: 480px) {
   #sq-text-1 {
     left: 6%;
-    width: 27%; } }
+    width: 29%; } }
 
 @media only screen and (min-width: 1024px) {
   .sq-text {
@@ -634,7 +649,7 @@ body {
 @media only screen and (max-width: 480px) {
   #sq-text-2 {
     left: 36%;
-    width: 27%; } }
+    width: 29%; } }
 
 @media only screen and (min-width: 1024px) {
   #sq-text-3 {
@@ -652,7 +667,7 @@ body {
 @media only screen and (max-width: 480px) {
   #sq-text-3 {
     left: 66%;
-    width: 27%; } }
+    width: 29%; } }
 
 @media only screen and (min-width: 1024px) {
   #team-text {
@@ -687,6 +702,7 @@ body {
       top: -200px; } }
   @media only screen and (max-width: 480px) {
     #about-3 {
+      height: 220px;
       top: -30px; } }
 
 .coach-text, .where-text, .blog-text {
@@ -744,7 +760,7 @@ body {
       font-size: 12px; } }
   @media only screen and (max-width: 480px) {
     .coach-text h3, .h3-where-text, #form-text h4 {
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 5px; } }
 
 #form-text, #team-text {
@@ -777,8 +793,8 @@ body {
 
 @media only screen and (max-width: 480px) {
   #form-text {
-    position: relative;
-    transform: translateY(-105%);
+    position: absolute;
+    transform: translateY(-55%);
     left: 0;
     padding-left: 10px;
     padding-right: 10px; } }
@@ -839,7 +855,7 @@ body {
       top: 89%; } }
   @media only screen and (max-width: 480px) {
     #coach-btn {
-      top: 85%; } }
+      top: 82%; } }
 
 .coach {
   background-color: white;
@@ -886,7 +902,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   #about-5 img {
-    height: 360px; } }
+    height: 400px; } }
 
 .form-control {
   background-color: transparent; }
@@ -906,8 +922,8 @@ body {
       padding-top: 0px; } }
   @media only screen and (max-width: 480px) {
     .old-cost {
-      height: 50px;
-      width: 23%; } }
+      height: 70px;
+      width: 34%; } }
 
 .offer-cost {
   background-image: url(../images/about/offer_cost.jpg); }
@@ -923,11 +939,14 @@ body {
       padding-top: 0px; } }
   @media only screen and (max-width: 480px) {
     .offer-cost {
-      height: 50px;
-      width: 23%; } }
+      height: 70px;
+      width: 34%; } }
 
 #cost-text {
   position: relative; }
+  @media only screen and (max-width: 480px) {
+    #cost-text {
+      height: 70px; } }
 
 #cost-photos1 h2, p {
   font-family: "MontserratBlack", sans-serif;
@@ -940,7 +959,7 @@ body {
       font-size: 16px; } }
   @media only screen and (max-width: 480px) {
     #cost-photos1 h2 {
-      font-size: 10px;
+      font-size: 14px;
       margin-top: 10px;
       margin-bottom: 5px; } }
 
@@ -954,7 +973,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   #cost-photos1 p {
-    font-size: 7px;
+    font-size: 10px;
     margin-bottom: 5px; } }
 
 #cost-btn {
@@ -964,7 +983,7 @@ body {
   margin-bottom: 5%; }
   @media only screen and (max-width: 480px) {
     #about-6 {
-      margin-top: -55%; } }
+      margin-top: 5%; } }
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .form-control {
@@ -1248,7 +1267,7 @@ body {
       margin-left: 30px; } }
 
 .pages {
-  margin-top: 1%;
+  margin-top: 3%;
   margin-bottom: 3%; }
 
 .pages p {
@@ -1307,3 +1326,7 @@ body {
   @media only screen and (max-width: 480px) {
     .video-blog {
       height: 200px; } }
+
+@media only screen and (max-width: 480px) {
+  #cost-btn a {
+    margin-bottom: 0px; } }

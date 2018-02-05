@@ -13,6 +13,16 @@ body {
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     body .menu-logo {
       display: none; } }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    body .menu-logo {
+      background-image: url(../images/logo-test.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      -webkit-background-size: cover;
+      background-attachment: initial;
+      width: 100px; } }
   @media only screen and (min-width: 1024px) {
     body .menu-logo {
       background-image: url(../images/logo-test.png);
@@ -290,19 +300,24 @@ body {
       font-size: 14px; } }
 
 .flag-ico {
-  vertical-align: unset; }
+  vertical-align: top; }
   @media only screen and (min-width: 1024px) {
     .flag-ico {
       width: 20px; } }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .flag-ico {
       width: 15px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .flag-ico {
       width: 20px; } }
+  @media only screen and (max-width: 767px) {
+    .flag-ico {
+      width: 15px;
+      vertical-align: super; } }
   @media only screen and (max-width: 480px) {
     .flag-ico {
-      width: 17px; } }
+      width: 17px;
+      vertical-align: super; } }
 
 .flag {
   margin-right: 1px;
@@ -313,11 +328,11 @@ body {
   min-width: 140px; }
 
 .drop-text {
-  vertical-align: top; }
+  vertical-align: super; }
 
 @media only screen and (min-width: 1024px) {
   .navbar-right {
-    margin-top: -95px; } }
+    margin-top: -96px; } }
 
 @media only screen and (min-width: 980px) and (max-width: 1024px) {
   .navbar-right {
@@ -325,7 +340,7 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .navbar-right {
-    margin-top: -77px; } }
+    margin-top: -76px; } }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   font-family: "Montserrat-Medium", sans-serif; }
@@ -498,9 +513,11 @@ body {
   width: 100%;
   color: white;
   padding-right: 20px;
-  padding-bottom: 20px;
-  z-index: -1; }
+  padding-bottom: 20px; }
   @media only screen and (min-width: 1024px) {
+    .footer-main {
+      text-align: right; } }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .footer-main {
       text-align: right; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -577,6 +594,9 @@ body {
   float: left;
   text-align: left;
   font-size: 11px; }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    .text-events {
+      padding-left: 0px; } }
   @media only screen and (max-width: 767px) {
     .text-events {
       padding-left: 10px;
@@ -584,9 +604,6 @@ body {
   @media only screen and (max-width: 480px) {
     .text-events {
       font-size: 9px; } }
-  @media only screen and (min-width: 980px) and (max-width: 1024px) {
-    .text-events {
-      padding-left: 0px; } }
 
 .img-events {
   float: left; }
@@ -596,16 +613,16 @@ body {
       padding-bottom: 10px; } }
   @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .img-events {
-      width: 160px; } }
-  @media only screen and (max-width: 767px) {
-    .img-events {
-      width: 60px;
-      padding-bottom: 0px; } }
+      width: 150px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .img-events {
       width: 120px;
       padding-bottom: 5px;
       padding-right: 5px; } }
+  @media only screen and (max-width: 767px) {
+    .img-events {
+      width: 60px;
+      padding-bottom: 0px; } }
   @media only screen and (max-width: 480px) {
     .img-events {
       width: 90px;
@@ -614,6 +631,9 @@ body {
 .div-events {
   display: block; }
   @media only screen and (min-width: 1024px) {
+    .div-events {
+      float: right; } }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .div-events {
       float: right; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {

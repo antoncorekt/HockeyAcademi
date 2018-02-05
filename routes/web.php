@@ -30,14 +30,12 @@ Route::get('auth/logout', 'Controller@logout');
 
 Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function () {
 
-    Route::get('/', function () {
-        return view('index/index');
-    })->middleware('auth');;
+    Route::get('/', 'MainController@index')->name('index');
 
 
     Route::get('/about', function () {
         return view('about/about');
-    })->middleware('auth');
+    });
 
     Route::get('/modal-enrol', 'MainController@showModal')->name('others/enrol');
 
@@ -50,15 +48,13 @@ Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function
 
     Route::get('/contacts', function () {
         return view('contacts/contact');
-    })->middleware('auth');
+    });
 
-    Route::get('/blog', function () {
-        return view('blog/blog');
-    })->middleware('auth');
+    Route::get('/blog', 'MainController@blogList')->name('blog/blog');
+    Route::get('/modal-post/{id}', 'MainController@showPost')->name('blog/article');
 
-   // Route::resource('/modal', 'MainController@showModal');
 
 });
-Route::post('/enrol','MainController@enrolForm')->middleware('auth');
+Route::post('/enrol','MainController@enrolForm');
 Auth::routes();
 //Route::get('/modal', 'MainController@showModal')->name('modal');

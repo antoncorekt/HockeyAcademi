@@ -285,18 +285,23 @@
   }
   
   .flag-ico{
-    vertical-align: unset;
+    vertical-align: top;
     @include  respond-to($large-desktop){
       width: 20px;
     }
-    @include respond-to($tablet-portrait) {
+    @include  respond-to($ipad){
       width: 15px;
     }
     @include respond-to($tablet-landscape) {
       width: 20px;
     }
+    @include respond-to($tablet-portrait) {
+      width: 15px;
+      vertical-align: super;
+    }
     @include respond-to($phone) {
       width: 17px;
+      vertical-align: super;
     }
   
   }
@@ -312,12 +317,12 @@
   }
   
   .drop-text {
-    vertical-align: top;
+    vertical-align: super;
   }
   
   .navbar-right{
     @include  respond-to($large-desktop) {
-      margin-top: -95px;
+      margin-top: -96px;
     }
 
     @include respond-to($ipad) {
@@ -325,7 +330,7 @@
     }
 
     @include respond-to($tablet-landscape) {
-      margin-top: -77px;
+      margin-top: -76px;
     }
   
   

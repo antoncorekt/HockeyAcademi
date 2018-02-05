@@ -138,16 +138,19 @@
 
         <div class="footer-main">
             <div class="row" id="events">
-                <div class="col-sm-2 col-lg-2 col-md-2 div-events">
+                <div class="col-sm-2 div-events">
                     <h5 class="h5-events" id="h5-events-1">
-                        {{ trans('messages.events') }}</h5>
-                    <img src="../public/images/news.png" class="img-events">
-                    <p class="text-events">Питерский СКА <br>в Крынице-Здруй</p>
+                        <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" style="color: white; z-index:10 !important;">{{ trans('messages.events') }}</a>
+                    </h5>
+                    <img src="{{$posts[0]->img_title}}" class="img-events">
+                    <p class="text-events">{{$posts[0]->title}}</p>
                 </div>
-                <div class="col-sm-2 col-lg-2 col-md-2 div-events">
-                    <h5 class="h5-events" id="h5-events-2">{{ trans('messages.events') }}</h5>
-                    <img src="../../images/Selects_Hockey_2_large.jpg" class="img-events">
-                    <p class="text-events">SELECTS НАБОР <br> В ПАМПЛОНЕ ИСПАНИИ</p>
+                <div class="col-sm-2 div-events">
+                    <h5 class="h5-events" id="h5-events-2">
+                        <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" style="color: white; z-index:10 !important;">{{ trans('messages.events') }}</a>
+                    </h5>
+                    <img src="{{$posts[1]->img_title}}" class="img-events">
+                    <p class="text-events">{{$posts[1]->title}}</p>
                 </div>
             </div>
         </div>

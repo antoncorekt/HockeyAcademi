@@ -77,9 +77,13 @@ body {
     padding-right: 20px;
     padding-bottom: 20px;
 
-    z-index: -1;
+   // z-index: -1;
   
     @include  respond-to($large-desktop){
+      text-align: right;
+    }
+	
+	@include respond-to($ipad) {
       text-align: right;
     }
   
@@ -171,6 +175,10 @@ body {
     float: left;
     text-align: left;
     font-size: 11px;
+	
+	 @include  respond-to($ipad){
+      padding-left: 0px;
+    }
   
     @include respond-to($tablet-portrait) {
       padding-left: 10px;
@@ -182,9 +190,7 @@ body {
       font-size: 9px;
     }
   
-    @include  respond-to($ipad){
-      padding-left: 0px;
-    }
+   
   }
   
   .img-events{
@@ -196,18 +202,18 @@ body {
     }
   
     @include  respond-to($ipad){
-      width: 160px;
+      width: 150px;
+    }
+	
+	@include respond-to($tablet-landscape) {
+      width: 120px;
+      padding-bottom: 5px;
+      padding-right: 5px;
     }
   
     @include respond-to($tablet-portrait) {
       width: 60px;
       padding-bottom: 0px;
-    }
-  
-    @include respond-to($tablet-landscape) {
-      width: 120px;
-      padding-bottom: 5px;
-      padding-right: 5px;
     }
   
     @include  respond-to($phone){
@@ -221,6 +227,10 @@ body {
   
     display: block;
     @include  respond-to($large-desktop){
+      float: right;
+    }
+	
+	@include respond-to($ipad) {
       float: right;
     }
   

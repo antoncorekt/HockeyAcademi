@@ -2,13 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
 use App\Http\Requests\MailFormRequest;
+use App\ListOfBlog;
 use App\MailSend;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
 class MainController extends Controller
 {
+
+
+    public function index()
+    {
+        return view('index/index',
+            array('title' => 'index','description' => '',
+                'posts' => ListOfBlog::getLastTwoPosts()));
+    }
+
     public function showModal()
     {
         return view('others/enrol');
@@ -53,14 +64,33 @@ class MainController extends Controller
         return view('about/place',
             array('title' => 'showDetailsKrynica','description' => ''));
     }
+
     public function showDetailsEducation()
     {
         return view('about/education',
             array('title' => 'showDetailsEducation','description' => ''));
     }
+
+
+    public function blogList()
+    {
+        return view('blog/blog',
+            array('title' => 'blog','description' => '',
+                'articles' => ListOfBlog::getAllPosts()));
+    }
+
+    public function showPost($id)
+    {
+        //$post = new Article($id);
+        return view('blog/article',
+            array('title' => 'article', 'description' => '',
+                'post' => Article::getPostById($id)));
+    }
+
     public function showDetailsSlovac()
     {
         return view('about/slovac',
             array('title' => 'showDetailsSlovac','description' => ''));
+
     }
 }

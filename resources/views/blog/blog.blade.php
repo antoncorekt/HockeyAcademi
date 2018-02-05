@@ -3,6 +3,7 @@
 
 @section('header')
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
+    <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
 @endsection
 <style>
     body {
@@ -20,49 +21,33 @@
     </div>
     <div class="container-fluid bg-2">
         <div class="row blog-text">
-            <div class="row where-text-1" id="where-photos">
-                <div class="col-lg-5 col-md-6 col-sm-5 col-xs-9">
-                    <iframe  class="video-blog" src="https://www.youtube.com/embed/6cOoiAoa2CY" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-xs-9">
-                    <p class="blog-date">20/10/2017</p>
-                    <h3 class="h1-team-page" id="h3-team">Питерский СКА в Крынице-Здруй</h3>
-                    <p id="team-text-p">
-                        Место для Академии было выброно не случайно:
-                        Материально техническая база, природный ланшафт,
-                        целебные питьевые источники.
-                        Все это соответствует даже таким грандам и звездам Российского хоккея как
-                        Питерский СКА. Ну и что еще делает очень привлекательным нашу
-                        Академию, так это территориальная близость
-                    <p></p>
-                    <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-krynica') }}"
-                       data-toggle="modal" data-target="#modalArt" class="btn blog-a" >
-                        РАЗВЕРНУТЬ ВЕСЬ ТЕКСТ
-                    </a>
-                    </p>
-                </div>
-            </div>
-            <div class="row where-text-1" id="where-photos">
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-9">
-                    <img id="img-where" src="../../images/Selects_Hockey_2_large.jpg"/>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-xs-9">
-                    <p class="blog-date">31/12/2017</p>
-                    <h3 class="h1-team-page" id="h3-team">SELECTS НАБОР В ИСПАНИИ</h3>
-                    <p id="team-text-p">
-                        Академия примет участие в наборе SELECTS, который будет проиходить в Сан-Себастьяне (Испания) в мае 2018.
-                        За более детальной информацией обращайтесь к нашим тренерам.
-                        <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/contacts")}}">Узнать всё о наборе.</a>
+            @foreach($articles as $article)
+                <div class="row where-text-1" id="where-photos">
+                    <div class="col-lg-5 col-md-6 col-sm-5 col-xs-9">
+                        @if(is_null($article->video_title))
+                            <img id="img-where" src="{{$article->img_title}}"/>
+                        @else
+                            <iframe  class="video-blog" src="{{$article->video_title}}" frameborder="0" allowfullscreen></iframe>
+                        @endif
 
-                    <p></p>
-                    <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-krynica') }}"
-                       data-toggle="modal" data-target="#modalArt" class="btn blog-a" >
-                        РАЗВЕРНУТЬ ВЕСЬ ТЕКСТ
-                    </a>
-                    </p>
-                </div>
-            </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-9">
+                        <p class="blog-date">{{$article->create_date}}</p>
+                        <h3 class="h1-team-page" id="h3-team">{{$article->title}}</h3>
+                        <p id="team-text-p">
+                            <?php
+                            echo \App\ListOfBlog::getShortText($article);
+                            ?>
+                        <p></p>
+                        <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-post/'.$article->idPText) }}"
+                           data-toggle="modal" data-target="#modalArt" class="btn blog-a" >
+                            РАЗВЕРНУТЬ ВЕСЬ ТЕКСТ
+                        </a>
 
+                        </p>
+                    </div>
+                </div>
+            @endforeach
         </div>
         <div class="row pages" style="text-align: center">
             <p>
@@ -75,6 +60,10 @@
             </p>
         </div>
     </div>
-
+    <div class="modal fade" id="modalArt" tabindex="-1" role="dialog" aria-labelledby="modalArt" style="color:black">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content"> </div>
+        </div>
+    </div>
     @include('layouts.footer')
 @endsection

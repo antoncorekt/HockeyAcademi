@@ -77,6 +77,15 @@ body {
     }
   }
 
+  @include respond-to($ipad) {
+    .menu-logo {
+      @include background-img($background-image-logo) {
+        background-attachment: initial;
+      }
+      width: 100px;
+    }
+  }
+
   @include respond-to($large-desktop) {
     .menu-logo {
       @include background-img($background-image-logo) {

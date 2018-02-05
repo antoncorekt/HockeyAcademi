@@ -1,0 +1,173 @@
+<p id="team-text-p">polskiu yuiMobile application for Android – the Client and RESTful API server.</p>
+<p><span class='point'>Technologies:</span>
+<ul> <li>RESTful API: JavaScript, Node.js with modules express, socket.io, mysql etc.
+<li>Android-application: Java with different libraries, for example, io.socket, android.app, android.os, android.support è äð.
+</ul>
+</p>
+<p><span class='point'>For what:</span> The term paper for 4 course</p>
+<p><span class='point'>Goal:</span> Understand the client–server architecture.</p>
+<p><span class='point'>Link to github:</span>  <a href="https://github.com/NadineAstakhova/SystemClient">SystemClient</a></p>
+<hr><h4 class='pointh4'>Description</h4>
+<p>This project was created as a part of the web-system 
+(you can read the <a href="http://portfolio/frontend/web/post/article?idArticle=2">article</a> about the web-application for individual works). 
+Node.js server has the access to this web-system database. It gets requests by a client, it sends them to database and it 
+gives them to the client. Moreover, server “listen to” database changes and, if new works exist, server sends 
+a message to the client.</p>
+<p>As for the Android-application, it is the simple application that outputs information and lets you work with it 
+(view, delete, edit etc). Every action generates a request to the server. It is worth noting that only web-system 
+users can use this application.</p>
+<p>Also, the client can get the information from the server without sending a request (the full-duplex connection). 
+In this case the client “listen to” the server and, when the server gets the information about new message to 
+the application user, it outputs a push message. I used socket.io, additional database table with messages and 
+Push notifications for this. When a student sends a work, data is added to the table. Data consists of 
+the information about the student, the work, the professor.  After sending the message to the professor, 
+message data is deleted from the table.</p>
+<hr><p>And in conclusion I'll add a couple of code snippets and screenshots:</p>
+<p>When connecting a new client, its id on the server is determined and function <b>maybe</b> checks for new messages:
+<pre><code class="javascript hljs">io.on('connection', function(socket){
+	console.log("User Connected!");
+	var idMess;
+	var idUs;
+        //server monitors the connection of a new user
+	socket.emit('socketID', { id: socket.id });
+    socket.on('getNewUser', function (message){
+	//push new user to users with unique id
+        users.push(new user(socket.id, message));
+        idUs = message;
+	//check function is repeated every 10 seconds
+        maybe(idUs, wait10sec);
+        console.log('New user with id: ' + message);
+    });//...});
+</code></pre></p>
+<p>The function maybe, which calls the function of working with the database and repeats every 30 seconds:
+<pre><code class="javascript hljs">function maybe(idUs,  callback){
+        console.log('A client is speaking to me! They’re saying: ' + idUs);
+        for(var i = 0; i < users.length; i++){
+            if(users[i].idUser !== undefined && idUs !== null)
+                if(users[i].idUser === idUs){
+                    console.log(users[i].idUser);
+                    todo.getNewMess(idUs).then(t).catch((err) => setImmediate(() => { throw err; })); // Throw async to escape the promise chain
+                }
+        }
+        callback();
+   }</code></pre></p>
+<p>A function that accesses to the database for data retrieval:
+<pre><code class="javascript hljs">
+ this.getNewMess = function(idProf, callback) {
+      return new Promise(function(resolve, reject) {
+       connection.acquire(function(err, con) {
+         con.query('SELECT * FROM messages WHERE FK_Prof = ?',  [idProf],  function(err, json) {
+            con.release();
+            if (err) {
+                return reject(err);
+            }
+           var str = JSON.stringify(json);
+           var rows = JSON.parse(str);        
+           resolve(rows);
+        });
+    });
+  })
+</code></pre></p>
+<p>A function that sends data to the client:
+<pre><code class="javascript hljs">
+function t(rows) {
+       if(rows.length  !== 0) {
+           var res = ""+rows[rows.length-1].new_task+" for "+rows[rows.length-1].subject+" by "+rows[rows.length-1].author;
+           var idDelMess = rows[rows.length-1].id_Messages;
+           var id;
+           console.log('message here ' + res);
+          
+           socket.emit('newMess', {
+               message:  res,
+               idDel: idDelMess
+           });
+	   //delete new message from database when it was sent
+           todo.deleteOldMes(rows[rows.length-1].id_work);    
+        }
+        else
+          console.log("no message");  
+   }
+</code></pre></p>
+<p>A function that accesses to the database and deletes the sent message:
+<pre><code class="javascript hljs">this.deleteOldMes = function(id) {
+    connection.acquire(function(err, con) {
+     con.query('SELECT * FROM messages WHERE id_work = ?',[id],  function(err, result) {
+         if (err) {
+             console.log(err);
+         }
+         else 
+         {
+             if(result.length  !== 0){
+                con.query('DELETE FROM messages WHERE id_work = ?',[id],  function(err, result) {
+                    con.release();
+                    if (err) {
+                        console.log(err);
+                    }
+                    else {
+                        console.log("Message deleted successfully");       
+                    }         
+                });
+            }
+            else 
+               console.log("no message");
+        };
+    });
+});
+};</code></pre></p>
+<p>Client function that sends a user id by the socket:
+<pre><code class="java">socket.on(Socket.EVENT_CONNECT, new Emitter.Listener() {
+@Override
+public void call(Object... args) {
+    System.out.println("SocketIO Connected");
+
+    socket.emit("idUser", user.getIdProf());
+
+}
+</code></pre></p>
+<p>The client function, which when sending a message from the socket creates a notification in the application and displays it on the screen:
+<pre><code class="java">.on("newMess", new Emitter.Listener() {
+    @Override
+    public void call(Object... args) {
+        JSONObject data = (JSONObject) args[0];
+        try {
+message = data.getString("message");
+            idDelMess = data.getString("idDel");
+            Log.d("SocketIO", "New mess"  +" "+ message +" "+idDelMess);
+
+            Context context = getApplicationContext();
+            Resources res = context.getResources();
+            int notifyID = 1;
+
+            Intent notificationIntent = new Intent();
+            PendingIntent contentIntent = PendingIntent.getActivity(context,
+                    0, notificationIntent,
+                    PendingIntent.FLAG_CANCEL_CURRENT);
+            NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
+
+            builder.setContentIntent(contentIntent)
+                    .setSmallIcon(R.drawable.notific)
+                    .setLargeIcon(BitmapFactory.decodeResource(res,R.drawable.notif))
+                    .setColor(Color.WHITE)
+                    .setContentTitle("New work")
+                    .setContentText(message)// Òåêñò óâåäîìëåíèÿ
+                    .setPriority(NotificationCompat.PRIORITY_HIGH);
+            Notification notification = builder.build();
+
+            Uri ringURI =
+                    RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+            notification.sound = ringURI;
+
+            NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
+            notificationManager.notify(notifyID, notification);
+
+
+        } catch (JSONException e) {
+            Log.d("SocketIO", "Error getting New mess");
+        }
+    }
+</code></pre></p>
+<p align="center"><span class='point'>Activity screen when user receives a push message:</span><br><br>
+<img src="https://github.com/NadineAstakhova/SystemClient/raw/master/popup.png" data-canonical-src="https://github.com/NadineAstakhova/SystemClient/raw/master/popup.png" width="250" height="500"  align="middle" /> 
+<p align="center"><span class='point'>And here you can see how the message outputs</span><br><br>
+<iframe class="video" src="https://www.youtube.com/embed/fQvowU1rVqg" frameborder="0" allowfullscreen></iframe>
+</p>
