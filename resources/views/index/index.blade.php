@@ -99,7 +99,7 @@
 
                 <div class="col-sm-2 col-lg-2 col-md-2 div-events">
                     <h5 class="h5-events" id="h5-events-1">{{ trans('messages.events') }}</h5>
-                    <img src=">{{$posts[0]->img_title}}" class="img-events">
+                    <img src="{{$posts[0]->img_title}}" class="img-events">
                     <p class="text-events">{{$posts[0]->title}}</p>
                 </div>
                 <div class="col-sm-2 col-lg-2 col-md-2 div-events">
