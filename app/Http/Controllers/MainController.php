@@ -42,9 +42,8 @@ class MainController extends Controller
 
     public function showCoach($id)
     {
-        return view('about/coach',
-            array('title' => 'coach','description' => '',
-                'coach' => $id));
+        return view('about/'.$id,
+            array('title' => 'coach','description' => ''));
 
     }
 
@@ -52,6 +51,12 @@ class MainController extends Controller
     {
         return view('about/details',
             array('title' => 'details','description' => ''));
+    }
+
+    public function showTrain()
+    {
+        return view('about/train',
+            array('title' => 'showTrain','description' => ''));
     }
 
     public function showDetailsSelects()
