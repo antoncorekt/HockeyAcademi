@@ -79,8 +79,8 @@
     <div class="container-fluid bg-1" id="about-1">
         <img src="../../design/first_page/res/about_main.png"/>
         <div class="row" id="main-text">
-            <h1 class="h1-main-page h1-about" >{{ trans('messages.grow') }} </h1>
-            <h1 class="h1-main-page h1-about">{{ trans('messages.grow1') }}</h1>
+            <h1 class="h1-about h1-main-page" >{{ trans('messages.grow') }} </h1>
+            <h1 class="h1-about h1-main-page">{{ trans('messages.grow1') }}</h1>
             <p class="main-text-p" id="t-about">
                 {{ trans('messages.care') }}
                 <br>{{ trans('messages.care1') }}
@@ -117,8 +117,8 @@
         </div>
         <div class="sldr">
             <div class="row team euro" id="team-text">
-    
-            
+
+
                     <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
                         <img src="../../design/first_page/res/photo-1.png"/>
                     </div>
@@ -128,15 +128,15 @@
                         <!-- <h3 class="h1-team-page">С 15 АВПРЕЛЯ 2018 ГОДА</h3> -->
 
                         <p class="text-style-1rst-banner">
-                            <div class="text-style-1rst-banner text-style-1rst-banner-if_you">Если ты: </div> 
-                            <ul class="text-style-1rst-banner">   
+                            <div class="text-style-1rst-banner text-style-1rst-banner-if_you">Если ты: </div>
+                            <ul class="text-style-1rst-banner">
                                 <li>2004-2005 годов рождения;</li>
                                 <li>Хоккей – это твоя жизнь;</li>
                                 <li>Хочешь быть учеником лучших тренеров Европы и СНГ;</li>
                                 <li>Хочешь получить европейское образование;</li>
                                 <li>Мечтаешь играть в профессиональных лигах Европы;</li>
                             </ul>
-                            
+
                         </p>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-details') }}"
                            data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
@@ -145,8 +145,8 @@
                     </div>
             </div>
             <div class="row team" id="team-text">
-    
-            
+
+
                     <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
                         <img src="../../design/first_page/res/photo-6.png"/>
                     </div>
@@ -158,11 +158,11 @@
                         <ul class="text-style-1rst-banner">
                             <li> Мы участвуем в регулярном чемпионате Словакии; </li>
                             <li> EEHL официальный представитель компании LEGACY GLOBAL SPORTS.
-                                <br>Данная программа позволяет каждому учаснику попасть 
+                                <br>Данная программа позволяет каждому учаснику попасть
                                 в профессиональных хоккей на уровне НХЛ и получить образование в колледжах и университетах США;
                             </li>
                             <li> Участвуем в международных турнирах SELECTS; </li>
-                        </ul> 
+                        </ul>
                         <p></p>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-selects') }}"
                            data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">

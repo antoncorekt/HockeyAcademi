@@ -15,7 +15,7 @@ body {
       display: none; } }
   @media only screen and (min-width: 980px) and (max-width: 1024px) {
     body .menu-logo {
-      background-image: url(../images/logo-test.png);
+      background-image: url(../images/log.gif);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
@@ -477,10 +477,18 @@ body {
   .h1-about {
     font-size: 28px; } }
 
+@media only screen and (max-width: 767px) {
+  .h1-about {
+    font-size: 30px; } }
+
 @media only screen and (max-width: 480px) {
   .h1-about {
     font-size: 40px;
     margin-top: -3%; } }
+
+@media only screen and (max-width: 767px) {
+  #t-about {
+    font-size: 16px; } }
 
 @media only screen and (max-width: 480px) {
   #t-about {
@@ -567,7 +575,7 @@ body {
       transform: translateY(-35%); } }
   @media only screen and (max-width: 767px) {
     .sq-text {
-      padding: 1px 5px;
+      padding: 6px 9px;
       transform: translateY(-55%); } }
   @media only screen and (max-width: 480px) {
     .sq-text {
@@ -586,7 +594,7 @@ body {
       margin-bottom: 5px; } }
   @media only screen and (max-width: 767px) {
     #sq-text h1 {
-      font-size: 16px;
+      font-size: 18px;
       margin-bottom: 3px; } }
   @media only screen and (max-width: 480px) {
     #sq-text h1 {
@@ -850,6 +858,9 @@ body {
 
 #coach-btn {
   top: 80%; }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    #coach-btn {
+      top: 86%; } }
   @media only screen and (max-width: 767px) {
     #coach-btn {
       top: 89%; } }
@@ -915,6 +926,9 @@ body {
       width: 20%;
       height: 150px;
       padding-top: 20px; } }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    .old-cost {
+      width: 23%; } }
   @media only screen and (max-width: 767px) {
     .old-cost {
       width: 20%;
@@ -932,6 +946,9 @@ body {
       width: 20%;
       height: 150px;
       padding-top: 20px; } }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    .offer-cost {
+      width: 23%; } }
   @media only screen and (max-width: 767px) {
     .offer-cost {
       width: 20%;
@@ -1071,6 +1088,9 @@ body {
     display: flex;
     justify-content: center;
     margin-top: -100px; }
+    @media only screen and (min-width: 980px) and (max-width: 1024px) {
+      .sldr .slick-dots {
+        margin-top: -54px; } }
     @media only screen and (max-width: 480px) {
       .sldr .slick-dots {
         margin-top: -54px; } }
@@ -1124,6 +1144,9 @@ body {
 .team {
   margin-left: 150px;
   margin-right: 150px; }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    .team {
+      margin-top: 10px; } }
   @media only screen and (max-width: 480px) {
     .team {
       margin-left: 30px;
@@ -1213,11 +1236,13 @@ body {
 
 @media only screen and (max-width: 767px) {
   #about-1 img, #about-1 img:after, #about-1 img:before {
-    content: url("../../design/first_page/res/about_main.png"); } }
+    content: url("../../design/first_page/res/about_main.png");
+    height: 350px; } }
 
 @media only screen and (max-width: 480px) {
   #about-1 img, #about-1 img:after, #about-1 img:before {
-    content: url("../images/about/about_2.png"); } }
+    content: url("../images/about/about_2.png");
+    height: auto; } }
 
 .list-know {
   font-family: "OpenSans-Bold", sans-serif;
