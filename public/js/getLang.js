@@ -10,13 +10,16 @@ function getLang(){
     if (str.search("ru") > -1){
         $("#flag").attr("src","../../public/images/ru.png");
         $('#selected').text("РУССКИЙ");
+        return "ru";
     }
     else if (str.search("en") > -1){
         $("#flag").attr("src","../../public/images/en.ico");
         $('#selected').text("ENGLISH");
+        return "en";
     }
     else if (str.search("pl") > -1){
         $("#flag").attr("src","../../public/images/pl.ico");
         $('#selected').text("POLSKI");
+        return "pl";
     }
 }

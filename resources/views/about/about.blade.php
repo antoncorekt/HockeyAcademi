@@ -23,10 +23,7 @@
             {}
         );
 
-        $("#coach-btn").click(function (){
-            
-            window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/train")}}";
-        });
+
 
         // console.log( params['data']);
 
@@ -228,8 +225,12 @@
             </div>
 
         </div>
-        <div class="row coach-text" id="coach-btn">
-            <button class="btn btn-main btn-about">{{ trans('messages.coaches') }}</button>
+        <div class="row coach-text" id="coach-btn"  >
+            <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/train') }}"
+               data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about" >
+                {{ trans('messages.coaches') }}
+            </a>
+
         </div>
     </div>
     <div class="container-fluid bg-4" id="about-4">

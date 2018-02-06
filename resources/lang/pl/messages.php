@@ -69,5 +69,7 @@ return [
     'rus' => 'Rosja',
     'bel' => 'Białoruś',
     'eur' => 'Europa',
+    'parfionov' => 'Andrey Parfyonov',
+    'savchenko' => 'Andrey Savchenko',
 ];
 ?>

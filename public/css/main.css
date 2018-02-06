@@ -803,7 +803,61 @@ Contact Page
   @media only screen and (max-width: 480px) {
     .contact-inf {
       text-align: center;
-      padding-bottom: 25px; } }
+      padding-bottom: 15px; } }
+
+.country-contact {
+  width: 22%;
+  padding-right: 0px; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .country-contact {
+      padding-bottom: 0px;
+      text-align: right; } }
+  @media only screen and (max-width: 767px) {
+    .country-contact {
+      padding-bottom: 0px;
+      text-align: right; } }
+  @media only screen and (max-width: 480px) {
+    .country-contact {
+      text-align: center; } }
+
+.tels-row {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .tels-row {
+      padding-left: 15%; } }
+  @media only screen and (max-width: 767px) {
+    .tels-row {
+      padding-left: 10%; } }
+  @media only screen and (max-width: 480px) {
+    .tels-row {
+      padding-left: 0%; } }
+
+.tel {
+  padding-left: 1px;
+  line-height: 1.5em;
+  width: 78%; }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    .tel {
+      width: 55%; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .tel {
+      padding-left: 15px;
+      text-align: left; } }
+  @media only screen and (max-width: 767px) {
+    .tel {
+      padding-left: 15px;
+      text-align: left; } }
+  @media only screen and (max-width: 480px) {
+    .tel {
+      text-align: center; } }
+
+.contact-ico img {
+  width: 9%;
+  margin-top: -5px; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .contact-ico img {
+      width: 7%; } }
 
 @media only screen and (max-width: 480px) {
   .col-xs-9 {

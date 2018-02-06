@@ -24,11 +24,40 @@
         </div>
         <div>
             <h2 class="h1-main-page">{{ trans('messages.Telephone') }}</h2>
-           {{ trans('messages.ukr') }}: +38 067 235 63 73 (VIBER)
-           <br><div  class="dubl-num"> +48 79 445 20 36 </div>
-            {{ trans('messages.rus') }}: +7 929 617 73 65
-            <br>{{ trans('messages.bel') }}: +38 067 235 63 73 (VIBER)
-            <br>{{ trans('messages.eur') }}: +48 53 739 49 69 (VIBER)
+            <div class="row tels-row">
+                <div class="col-lg-3 col-sm-3 col-xs-9 country-contact contact-inf">
+                    {{ trans('messages.ukr') }}:
+                </div>
+                <div class="col-lg-8 col-md-6  col-xs-9 tel">
+                    <span class="contact-ico"><img src="../images/viber.png"></span>+38 067 235 63 73 ({{ trans('messages.savchenko') }})
+                </div>
+            </div>
+            <div class="row tels-row">
+                <div class="col-lg-3 col-lg-3 col-sm-3  col-xs-9 country-contact contact-inf">
+                    {{ trans('messages.rus') }}:
+                </div>
+                <div class="col-lg-8 col-md-6 col-xs-9 tel">
+                    +7 929 617 73 65 ({{ trans('messages.parfionov') }})
+                </div>
+            </div>
+            <div class="row tels-row">
+                <div class="col-lg-3 col-sm-3  col-xs-9 country-contact contact-inf">
+                    {{ trans('messages.bel') }}:
+                </div>
+                <div class="col-lg-8 col-md-6 col-xs-9 tel">
+                    <span class="contact-ico"><img src="../images/viber.png"></span>+38 067 235 63 73 ({{ trans('messages.savchenko') }})
+                </div>
+            </div>
+            <div class="row tels-row">
+                <div class="col-lg-3 col-sm-3  col-xs-9 country-contact contact-inf">
+                    {{ trans('messages.eur') }}:
+                </div>
+                <div class="col-lg-8 col-md-6 col-xs-9 tel">
+                    <span class="contact-ico"><img src="../images/viber.png"></span>+48 53 739 49 69 ({{ trans('messages.parfionov') }})
+                    <br> +48 79 445 20 36 ({{ trans('messages.savchenko') }})
+                </div>
+            </div>
+
         </div>
         <div>
             <h2 class="h1-main-page">Email</h2></div>
