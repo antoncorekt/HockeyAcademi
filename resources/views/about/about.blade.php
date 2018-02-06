@@ -28,6 +28,12 @@
             window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/train")}}";
         });
 
+        $(".photo-kryn").click(function (){
+            
+            $(".photo-kryn").css("display","none");
+            $(".video-kryn").css("display","block");
+        });
+
         // console.log( params['data']);
 
         // alert(params['par']);
@@ -74,8 +80,17 @@
             background-image: none;
             background-color: white;
         }
+
+        .photo-kryn{
+            display: block;
+        }
+
+        .video-kryn{
+            display: none;
+        }
     </style>
     <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
+    
     <div class="container-fluid bg-1" id="about-1">
         <img src="../../design/first_page/res/about_main.png"/>
         <div class="row" id="main-text">
@@ -282,8 +297,12 @@
                     </a>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-4  col-xs-9">
-                    <img src="../../design/first_page/res/photo-3.jpg" id="img-where"/>
+                    <img src="../../design/first_page/res/photo-3.jpg" id="img-where" class="photo-kryn"/>
+                    <div class="video-kryn">
+                        <iframe src="https://www.youtube.com/embed/lQsFMf2Fl5I"  id="img-where" height="300px" frameborder="1" allowfullscreen></iframe>
+                    </div>
                 </div>
+               
             </div>
         </div>
     </div>
