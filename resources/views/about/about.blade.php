@@ -23,10 +23,7 @@
             {}
         );
 
-        $("#coach-btn").click(function (){
-            
-            window.location.href = "{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/train")}}";
-        });
+
 
         $(".photo-kryn").click(function (){
             
@@ -94,8 +91,8 @@
     <div class="container-fluid bg-1" id="about-1">
         <img src="../../design/first_page/res/about_main.png"/>
         <div class="row" id="main-text">
-            <h1 class="h1-main-page h1-about" >{{ trans('messages.grow') }} </h1>
-            <h1 class="h1-main-page h1-about">{{ trans('messages.grow1') }}</h1>
+            <h1 class="h1-about h1-main-page" >{{ trans('messages.grow') }} </h1>
+            <h1 class="h1-about h1-main-page">{{ trans('messages.grow1') }}</h1>
             <p class="main-text-p" id="t-about">
                 {{ trans('messages.care') }}
                 <br>{{ trans('messages.care1') }}
@@ -132,26 +129,26 @@
         </div>
         <div class="sldr">
             <div class="row team euro" id="team-text">
-    
-            
+
+
                     <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
                         <img src="../../design/first_page/res/photo-1.png"/>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
                         <h5 class="h4-main-page selects">#НАБОР2018 #ТВОЙШАНС</h5>
-                        <h3 class="h1-team-page">EEHL ОБЬЯВЛЯЕТ НОВЫЙ НАБОР В АКАДЕМИЮ</h3>
+                        <h3 class="h1-team-page">EEHL ОБЪЯВЛЯЕТ НОВЫЙ НАБОР В АКАДЕМИЮ</h3>
                         <!-- <h3 class="h1-team-page">С 15 АВПРЕЛЯ 2018 ГОДА</h3> -->
 
                         <p class="text-style-1rst-banner">
-                            <div class="text-style-1rst-banner text-style-1rst-banner-if_you">Если ты: </div> 
-                            <ul class="text-style-1rst-banner">   
+                            <div class="text-style-1rst-banner text-style-1rst-banner-if_you">Если ты: </div>
+                            <ul class="text-style-1rst-banner">
                                 <li>2004-2005 годов рождения;</li>
                                 <li>Хоккей – это твоя жизнь;</li>
                                 <li>Хочешь быть учеником лучших тренеров Европы и СНГ;</li>
                                 <li>Хочешь получить европейское образование;</li>
                                 <li>Мечтаешь играть в профессиональных лигах Европы;</li>
                             </ul>
-                            
+
                         </p>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-details') }}"
                            data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
@@ -160,8 +157,8 @@
                     </div>
             </div>
             <div class="row team" id="team-text">
-    
-            
+
+
                     <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
                         <img src="../../design/first_page/res/photo-6.png"/>
                     </div>
@@ -173,11 +170,11 @@
                         <ul class="text-style-1rst-banner">
                             <li> Мы участвуем в регулярном чемпионате Словакии; </li>
                             <li> EEHL официальный представитель компании LEGACY GLOBAL SPORTS.
-                                <br>Данная программа позволяет каждому учаснику попасть 
-                                в профессиональных хоккей на уровне НХЛ и получить образование в колледжах и университетах США;
+                                <br>Данная программа позволяет каждому учаснику попасть
+                                в профессиональный хоккей на уровне НХЛ и получить образование в колледжах и университетах США;
                             </li>
                             <li> Участвуем в международных турнирах SELECTS; </li>
-                        </ul> 
+                        </ul>
                         <p></p>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-selects') }}"
                            data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
@@ -243,8 +240,12 @@
             </div>
 
         </div>
-        <div class="row coach-text" id="coach-btn">
-            <button class="btn btn-main btn-about">{{ trans('messages.coaches') }}</button>
+        <div class="row coach-text" id="coach-btn"  >
+            <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/train') }}"
+               data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about" >
+                {{ trans('messages.coaches') }}
+            </a>
+
         </div>
     </div>
     <div class="container-fluid bg-4" id="about-4">
@@ -258,7 +259,7 @@
                     <img id="img-where" src="../../design/first_page/res/photo-2.jpg"/>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-9">
-                    <h3 class="h1-team-page kryn" id="h3-team">ИДЕАЛЬНЫЙ КЛИМАТ ДЛЯ СПОРТМЕНА</h3>
+                    <h3 class="h1-team-page kryn" id="h3-team">ИДЕАЛЬНЫЙ КЛИМАТ ДЛЯ СПОРТCМЕНА</h3>
                     <p id="team-text-p">
                     Академия находится в европейском спортивном центре c большой и современной инфраструктурой – 
                     в Польской Швейцарии городе Крыниця-Здруй. 
