@@ -16,7 +16,7 @@ $(document).ready(function(){
 
         if (lan == undefined || lan == null) lan = "";
         
-        return '<nobr class="mydots">' + text + lan +'</nobr>';
+        return '<nobr class="mydots">' + text + '</nobr>';
       },
       adaptiveHeight: false
     });
