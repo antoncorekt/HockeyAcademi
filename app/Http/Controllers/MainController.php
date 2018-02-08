@@ -77,11 +77,15 @@ class MainController extends Controller
     }
 
 
-    public function blogList()
+    public function blogList(Request $request)
     {
-        return view('blog/blog',
-            array('title' => 'blog','description' => '',
-                'articles' => ListOfBlog::getAllPosts()));
+        $articles = ListOfBlog::getAllPosts()->paginate(2); //how many articles at the page
+
+        if ($request->ajax()) {
+            return view('blog.listOfArticles', ['articles' => $articles])->render();
+        }
+
+        return view('blog.blog', compact('articles'));
     }
 
     public function showPost($id)

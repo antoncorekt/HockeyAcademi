@@ -200,6 +200,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
     @include  respond-to($ipad){
       padding: 5px 15px;
+      transform: translateY(-45%);
     }
   
     @include  respond-to($tablet-landscape){
@@ -430,7 +431,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   
     @include  respond-to($tablet-portrait){
       margin-top: 5px;
-      font-size: 12px;
+      font-size: 18px;
     }
   
     @include  respond-to($phone){
@@ -464,15 +465,21 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   @include respond-to($large-desktop) {
     transform: translateY(-55%);
   }
+  @include respond-to($ipad) {
+    transform: translateY(-50%);
+  }
+  @include respond-to($tablet-landscape) {
+    transform: translateY(-45%);
+  }
   @include respond-to($tablet-portrait) {
-    transform: translateY(-90%);
+    transform: translateY(-50%);
     left: 5%;
     top: 50%;
   }
 
   @include respond-to($phone) {
     position: absolute;
-    transform: translateY(-55%);
+    transform: translateY(-50%);
     left:0;
     padding-left: 10px;
     padding-right: 10px;
@@ -579,7 +586,10 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   }
 #about-4{
   @include  respond-to($tablet-portrait){
-    margin-top: 1%;
+      margin-top: -22%;
+    }
+  @include  respond-to($phone){
+    margin-top: -2%;
   }
 }
   
@@ -601,7 +611,11 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   
   #about-5{
     margin-top: 77%;
-  
+
+    @include  respond-to($tablet-landscape){
+      margin-top: 90%;
+    }
+
     @include  respond-to($tablet-portrait){
       margin-top: 5%;
     }
@@ -611,7 +625,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   }
 #about-5 img{
   @include  respond-to($phone){
-    height: 400px;
+    height: 500px;
   }
 }
 
@@ -633,7 +647,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
       width: 23%;
     }
     @include  respond-to($tablet-portrait){
-      width: 20%;
+      width: 22%;
       height: 80px;
       padding-top: 0px;
     }
@@ -656,7 +670,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
 
     @include  respond-to($tablet-portrait){
-      width: 20%;
+      width: 22%;
       height: 80px;
       padding-top: 0px;
     }
@@ -683,6 +697,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     font-weight: 900;
     @include respond-to($tablet-portrait) {
       font-size: 16px;
+      margin-top: 13px;
     }
     @include respond-to($phone) {
       font-size: 14px;
@@ -751,6 +766,9 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
 
 .page-footer li {
   float: left;
+  @include respond-to($phone) {
+   float: none;
+  }
 }
 
 .page-footer  li a {
@@ -765,19 +783,33 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     font-size: 12px;
   }
 
-  @include respond-to($tablet-portrait) {
-    font-size: 8px;
+  @include respond-to($ipad) {
+    font-size: 12px;
   }
 
   @include respond-to($tablet-landscape) {
+    font-size: 12px;
+  }
+
+  @include respond-to($tablet-portrait) {
     font-size: 11px;
   }
 
+
   @include respond-to($phone) {
     padding: 10px 5px;
-    font-size: 6px;
+    font-size: 12px;
+  }
+}
+
+.page-footer  li a:not(#logo-footer){
+  @include respond-to($ipad) {
+    margin-top: -5px;
   }
 
+  @include respond-to($tablet-landscape) {
+    margin-top: -5px;
+  }
 
 }
 
@@ -798,10 +830,13 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   width: 50%;
 
   @include respond-to($tablet-landscape) {
-    width: 50%;
+    width: 40%;
   }
   @include respond-to($tablet-portrait) {
     width: 50%;
+  }
+  @include respond-to($phone) {
+    width: 10%;
   }
 }
   
@@ -949,6 +984,11 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
 .logo-el{
   width: 9%;
   margin-left: 9px;
+
+  @include respond-to($ipad) {
+    margin-top: -4px;
+  }
+
   @include respond-to($tablet-portrait) {
     margin-left: 5px;
     margin-right: -10%;
@@ -960,11 +1000,10 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     width: 10%;
   }
 
-
-
   @include respond-to($phone) {
-    margin-right: -23%;
-    width: 10%;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
   }
 
 
@@ -984,16 +1023,26 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     font-size: 12px;
   }
 
-  @include respond-to($tablet-portrait) {
-    font-size: 8px;
+  @include respond-to($ipad) {
+    font-size: 12px;
+    margin-top: 8px;
   }
 
   @include respond-to($tablet-landscape) {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  @include respond-to($tablet-portrait) {
     font-size: 11px;
   }
+
   @include respond-to($phone) {
-    font-size: 6px;
-    margin-top: 10px;
+    float: none;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 25px;
   }
 }
 
@@ -1041,20 +1090,44 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   @include respond-to($large-desktop) {
     font-size: 20px;
   }
+
+  @include respond-to($ipad) {
+    font-size: 18px;
+  }
+
+  @include respond-to($tablet-landscape) {
+    font-size: 14px;
+  }
+
+  @include respond-to($tablet-portrait) {
+    font-size: 14px;
+  }
+
   @include respond-to($phone) {
     padding-left: 0px;
     text-align: left;
+    font-size: 13px;
   }
 
 }
 
 .list-know li {
+
   @include respond-to($large-desktop) {
     padding-bottom: 10px;
   }
 }
 .list-know li:hover, .list-know li:focus {
   color: #BEBEBE;
+}
+.list-know li::before {
+  top: 8px;
+  margin: -9px 0 0 0;
+  padding-right: 5px;
+  vertical-align: middle;
+  display: inline-block;
+  content: "■";
+  color: #ffeb3c;
 }
 
 
@@ -1090,7 +1163,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     margin-left: 30px;
   }
   @include respond-to($phone) {
-    margin-left: 30px;
+    margin-left: 0px;
   }
 }
 
@@ -1100,9 +1173,10 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   margin-bottom: 3%;
 }
 
-.pages p{
+.pages>ul{
   font-family: "OpenSans-Bold", sans-serif;
   color: #191d72;
+  font-size: 16px;
 }
 
 .blog-a {
