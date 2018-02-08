@@ -79,7 +79,7 @@ class MainController extends Controller
 
     public function blogList(Request $request)
     {
-        $articles = ListOfBlog::getAllPosts()->paginate(4); //how many articles at the page
+        $articles = ListOfBlog::getAllPosts()->paginate(2); //how many articles at the page
 
         if ($request->ajax()) {
             return view('blog.listOfArticles', ['articles' => $articles])->render();
