@@ -1100,9 +1100,10 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   margin-bottom: 3%;
 }
 
-.pages p{
+.pages>ul{
   font-family: "OpenSans-Bold", sans-serif;
   color: #191d72;
+  font-size: 16px;
 }
 
 .blog-a {

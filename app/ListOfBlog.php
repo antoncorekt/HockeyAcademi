@@ -19,7 +19,7 @@ class ListOfBlog extends Model
             ->join('post', 'post_text.fkPost', '=', 'post.idPost')
             ->where('lang.name', '=', LocaleMiddleware::getLocale())
             ->orderBy('post.create_date', 'ASC')
-            ->get();
+           ;
         return $posts;
     }
 
