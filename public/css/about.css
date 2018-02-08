@@ -1097,13 +1097,20 @@ body {
       padding-top: 0px; } }
 
 #logo-footer {
-  width: 50%; }
+  width: 40%; }
+  @media only screen and (min-width: 1024px) {
+    #logo-footer {
+      margin-top: -3px; } }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    #logo-footer {
+      margin-top: 3px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     #logo-footer {
       width: 40%; } }
   @media only screen and (max-width: 767px) {
     #logo-footer {
-      width: 50%; } }
+      width: 50%;
+      margin-top: -2px; } }
   @media only screen and (max-width: 480px) {
     #logo-footer {
       width: 10%; } }
