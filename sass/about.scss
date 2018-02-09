@@ -472,8 +472,8 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     transform: translateY(-45%);
   }
   @include respond-to($tablet-portrait) {
-    transform: translateY(-50%);
-    left: 5%;
+    transform: translateY(-48%);
+    left: 0;
     top: 50%;
   }
 
@@ -624,6 +624,12 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   }
 #about-5 img{
+  @include  respond-to($large-desktop){
+    height: 600px;
+  }
+  @include  respond-to($ipad){
+    height: 500px;
+  }
   @include  respond-to($phone){
     height: 500px;
   }
@@ -803,6 +809,11 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
 }
 
 .page-footer  li a:not(#logo-footer){
+
+  @include respond-to($large-desktop) {
+    margin-top: 0px;
+  }
+
   @include respond-to($ipad) {
     margin-top: -5px;
   }
@@ -1100,13 +1111,13 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   }
 
   @include respond-to($tablet-portrait) {
-    font-size: 14px;
+    font-size: 11px;
   }
 
   @include respond-to($phone) {
     padding-left: 0px;
     text-align: left;
-    font-size: 13px;
+    font-size: 12px;
   }
 
 }

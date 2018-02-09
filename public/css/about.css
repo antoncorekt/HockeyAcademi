@@ -805,8 +805,8 @@ body {
 
 @media only screen and (max-width: 767px) {
   #form-text {
-    transform: translateY(-50%);
-    left: 5%;
+    transform: translateY(-48%);
+    left: 0;
     top: 50%; } }
 
 @media only screen and (max-width: 480px) {
@@ -927,6 +927,14 @@ body {
   @media only screen and (max-width: 480px) {
     #about-5 {
       margin-top: 10%; } }
+
+@media only screen and (min-width: 1024px) {
+  #about-5 img {
+    height: 600px; } }
+
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+  #about-5 img {
+    height: 500px; } }
 
 @media only screen and (max-width: 480px) {
   #about-5 img {
@@ -1078,6 +1086,10 @@ body {
     .page-footer li a {
       padding: 10px 5px;
       font-size: 12px; } }
+
+@media only screen and (min-width: 1024px) {
+  .page-footer li a:not(#logo-footer) {
+    margin-top: 0px; } }
 
 @media only screen and (min-width: 980px) and (max-width: 1024px) {
   .page-footer li a:not(#logo-footer) {
@@ -1305,12 +1317,12 @@ body {
       font-size: 14px; } }
   @media only screen and (max-width: 767px) {
     .list-know {
-      font-size: 14px; } }
+      font-size: 11px; } }
   @media only screen and (max-width: 480px) {
     .list-know {
       padding-left: 0px;
       text-align: left;
-      font-size: 13px; } }
+      font-size: 12px; } }
 
 @media only screen and (min-width: 1024px) {
   .list-know li {
