@@ -75,7 +75,7 @@ return [
     'parfionov' => 'Андрей Парфёнов',
     'savchenko' => 'Андрей Савченко',
 
-    'BackToBlog' => 'НАЗАД В БЛОГ',
+    'BackToBlog' => 'ВСЕ НОВОСТИ',
 
 ];
 ?>

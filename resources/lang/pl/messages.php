@@ -72,6 +72,6 @@ return [
     'parfionov' => 'Andrey Parfyonov',
     'savchenko' => 'Andrey Savchenko',
 
-    'BackToBlog' => 'BACK TO BLOG',
+    'BackToBlog' => 'ALL NEWS',
 ];
 ?>
