@@ -131,10 +131,10 @@
             <div class="row team euro" id="team-text">
 
 
-                    <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
+                    <div class="col-lg-6 col-md-5 col-sm-9 col-xs-9">
                         <img src="/../../design/first_page/res/photo-1.png"/>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
+                    <div class="col-lg-6 col-md-6 col-sm-8 col-xs-9">
                         <h5 class="h4-main-page selects">#НАБОР2018 #ТВОЙШАНС</h5>
                         <h3 class="h1-team-page">EEHL ОБЪЯВЛЯЕТ НОВЫЙ НАБОР В АКАДЕМИЮ</h3>
                         <!-- <h3 class="h1-team-page">С 15 АВПРЕЛЯ 2018 ГОДА</h3> -->
@@ -159,10 +159,10 @@
             <div class="row team" id="team-text">
 
 
-                    <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
+                    <div class="col-lg-6 col-md-5 col-sm-9 col-xs-9">
                         <img src="/../../design/first_page/res/photo-6.png"/>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
+                    <div class="col-lg-6 col-md-6 col-sm-8 col-xs-9">
 
                         <h5 class="h4-main-page">#EEHL #SELECTS</h5>
                         <h3 class="h1-team-page">EEHL - академия с амбициями</h3>
@@ -255,7 +255,7 @@
                 <br>{{ trans('messages.where2') }}
             </h3>
             <div class="row where-text-1" id="where-photos">
-                <div class="col-lg-5 col-md-5 col-sm-4 col-xs-9">
+                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-9 edu">
                     <img id="img-where" src="../../design/first_page/res/photo-2.jpg"/>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-9">
@@ -270,14 +270,14 @@
                     лучших спортсменов Европы и всего мира.
                     <p></p>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-krynica') }}"
-                       data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                       data-toggle="modal" data-target="#modalArt" class="btn btn-about btn-main "  id="btn-1rst-banner">
                         ПОСМОТРЕТЬ ГДЕ ЗАНИМАЮТСЯ ХОККЕИСТЫ
                     </a>
                     </p>
                 </div>
             </div>
             <div class="row where-text-1 edu"  id="where-photos1">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 edu">
                     <h3 class="h1-team-page">ХОККЕЙ ИЛИ ОБРАЗОВАНИЕ? ХОККЕЙ И ОБРАЗОВАНИЕ!</h3>
                     <p id="team-text-p">
                     Думаешь, что хоккей и образование не совместимы? 
@@ -297,7 +297,7 @@
                         БОЛЬШЕ ОБ ОБРАЗОВАНИИ В ПОЛЬШЕ
                     </a>
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-4  col-xs-9">
+                <div class="col-lg-5 col-md-5 col-sm-6  col-xs-9">
                     <img src="/../../design/first_page/res/photo-3.jpg" id="img-where" class="photo-kryn"/>
                     <div class="video-kryn">
                         <iframe src="https://www.youtube.com/embed/lQsFMf2Fl5I"  id="img-where" height="300px" frameborder="1" allowfullscreen></iframe>

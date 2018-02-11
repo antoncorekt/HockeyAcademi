@@ -412,7 +412,7 @@ body {
 @media only screen and (max-width: 480px) {
   #logo-navheader {
     width: 18%;
-    margin-left: 48%; } }
+    margin-left: 42%; } }
 
 @media only screen and (max-width: 767px) {
   .col-xs-9 {
@@ -456,6 +456,10 @@ body {
   #about-2 {
     margin-top: -9%; } }
 
+@media only screen and (max-width: 767px) {
+  #about-2 {
+    margin-top: -9%; } }
+
 @media only screen and (max-width: 480px) {
   #about-2 {
     margin-top: -7%; } }
@@ -484,7 +488,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   .h1-about {
-    font-size: 40px;
+    font-size: 35px;
     margin-top: -3%; } }
 
 @media only screen and (max-width: 767px) {
@@ -509,10 +513,16 @@ body {
       font-size: 12px;
       margin-bottom: 5px; } }
 
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .btn-about {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin-bottom: 15px; } }
+
 @media only screen and (max-width: 480px) {
   .btn-about {
     font-size: 12px;
-    padding: 5px 5px;
+    padding: 4px 8px;
     margin-bottom: 15px; } }
 
 .h1-team-page {
@@ -551,6 +561,9 @@ body {
   @media only screen and (min-width: 980px) and (max-width: 1024px) {
     #team-text-p {
       font-size: 12px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    #team-text-p {
+      font-size: 12px; } }
   @media only screen and (max-width: 767px) {
     #team-text-p {
       font-size: 14px; } }
@@ -566,19 +579,19 @@ body {
   top: 5%; }
   @media only screen and (min-width: 1024px) {
     .sq-text {
-      padding: 20px; } }
+      padding: 10px 15px; } }
   @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .sq-text {
-      padding: 5px 15px;
+      padding: 10px 15px;
       transform: translateY(-45%); } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .sq-text {
-      padding: 2px 10px;
-      transform: translateY(-35%); } }
+      padding: 5px 10px;
+      transform: translateY(-50%); } }
   @media only screen and (max-width: 767px) {
     .sq-text {
       padding: 6px 9px;
-      transform: translateY(-55%); } }
+      transform: translateY(-50%); } }
   @media only screen and (max-width: 480px) {
     .sq-text {
       padding: 8px 8px;
@@ -590,13 +603,16 @@ body {
   @media only screen and (min-width: 1024px) {
     #sq-text h1 {
       font-size: 55px; } }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    #sq-text h1 {
+      font-size: 50px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     #sq-text h1 {
       font-size: 25px;
       margin-bottom: 5px; } }
   @media only screen and (max-width: 767px) {
     #sq-text h1 {
-      font-size: 18px;
+      font-size: 22px;
       margin-bottom: 3px; } }
   @media only screen and (max-width: 480px) {
     #sq-text h1 {
@@ -609,12 +625,15 @@ body {
   @media only screen and (min-width: 1024px) {
     #sq-text p {
       font-size: 12px; } }
+  @media only screen and (min-width: 980px) and (max-width: 1024px) {
+    #sq-text p {
+      font-size: 12px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     #sq-text p {
-      font-size: 9px; } }
+      font-size: 10px; } }
   @media only screen and (max-width: 767px) {
     #sq-text p {
-      font-size: 7px; } }
+      font-size: 10px; } }
   @media only screen and (max-width: 480px) {
     #sq-text p {
       font-size: 12px;
@@ -624,19 +643,25 @@ body {
   #sq-text-1 {
     left: 36%; } }
 
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+  #sq-text-1 {
+    left: 36%;
+    width: 20%; } }
+
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   #sq-text-1 {
-    left: 46%; } }
+    left: 39%;
+    width: 19%; } }
 
 @media only screen and (max-width: 767px) {
   #sq-text-1 {
-    left: 42%;
-    width: 18%; } }
+    left: 27%;
+    width: 23%; } }
 
 @media only screen and (max-width: 480px) {
   #sq-text-1 {
-    left: 6%;
-    width: 29%; } }
+    left: 1%;
+    width: 32%; } }
 
 @media only screen and (min-width: 1024px) {
   .sq-text {
@@ -647,37 +672,49 @@ body {
   #sq-text-2 {
     left: 56%; } }
 
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+  #sq-text-2 {
+    left: 57%;
+    width: 20%; } }
+
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   #sq-text-2 {
-    left: 63%; } }
+    left: 59%;
+    width: 19%; } }
 
 @media only screen and (max-width: 767px) {
   #sq-text-2 {
-    left: 61%;
-    width: 18%; } }
+    left: 51%;
+    width: 23%; } }
 
 @media only screen and (max-width: 480px) {
   #sq-text-2 {
-    left: 36%;
-    width: 29%; } }
+    left: 34%;
+    width: 32%; } }
 
 @media only screen and (min-width: 1024px) {
   #sq-text-3 {
     left: 76%; } }
 
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+  #sq-text-3 {
+    left: 78%;
+    width: 20%; } }
+
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   #sq-text-3 {
-    left: 79%; } }
+    left: 79%;
+    width: 19%; } }
 
 @media only screen and (max-width: 767px) {
   #sq-text-3 {
-    left: 80%;
-    width: 18%; } }
+    left: 75%;
+    width: 23%; } }
 
 @media only screen and (max-width: 480px) {
   #sq-text-3 {
-    left: 66%;
-    width: 29%; } }
+    left: 67%;
+    width: 32%; } }
 
 @media only screen and (min-width: 1024px) {
   #team-text {
@@ -709,7 +746,8 @@ body {
   margin-top: auto; }
   @media only screen and (max-width: 767px) {
     #about-3 {
-      top: -200px; } }
+      top: 0;
+      height: 400px; } }
   @media only screen and (max-width: 480px) {
     #about-3 {
       height: 220px;
@@ -723,6 +761,9 @@ body {
   top: 10%;
   bottom: 0;
   text-align: center; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .coach-text, .where-text, .blog-text {
+      top: 5%; } }
   @media only screen and (max-width: 767px) {
     .coach-text, .where-text, .blog-text {
       top: 5%; } }
@@ -763,7 +804,8 @@ body {
       margin-bottom: 20px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     .coach-text h3, .h3-where-text, #form-text h4 {
-      font-size: 17px; } }
+      font-size: 17px;
+      margin-top: 10px; } }
   @media only screen and (max-width: 767px) {
     .coach-text h3, .h3-where-text, #form-text h4 {
       margin-top: 5px;
@@ -823,6 +865,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: baseline; }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1 {
+      top: 30%; } }
   @media only screen and (max-width: 767px) {
     #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1 {
       top: 30%; } }
@@ -871,12 +916,15 @@ body {
   @media only screen and (min-width: 980px) and (max-width: 1024px) {
     #coach-btn {
       top: 86%; } }
-  @media only screen and (max-width: 767px) {
-    #coach-btn {
-      top: 89%; } }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
     #coach-btn {
       top: 82%; } }
+  @media only screen and (max-width: 767px) {
+    #coach-btn {
+      top: 86%; } }
+  @media only screen and (max-width: 480px) {
+    #coach-btn {
+      top: 80%; } }
 
 .coach {
   background-color: white;
@@ -897,11 +945,15 @@ body {
 
 @media only screen and (max-width: 767px) {
   #about-4 {
-    margin-top: -22%; } }
+    margin-top: 4%; } }
 
 @media only screen and (max-width: 480px) {
   #about-4 {
-    margin-top: -2%; } }
+    margin-top: -4%; } }
+
+@media only screen and (max-width: 767px) {
+  .edu {
+    margin-bottom: 20px; } }
 
 .where-text-1 {
   margin-left: 10px;
@@ -920,7 +972,7 @@ body {
   margin-top: 77%; }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     #about-5 {
-      margin-top: 90%; } }
+      margin-top: 110%; } }
   @media only screen and (max-width: 767px) {
     #about-5 {
       margin-top: 5%; } }
@@ -953,7 +1005,12 @@ body {
       padding-top: 20px; } }
   @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .old-cost {
-      width: 23%; } }
+      width: 23%;
+      height: 135px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .old-cost {
+      width: 23%;
+      height: 135px; } }
   @media only screen and (max-width: 767px) {
     .old-cost {
       width: 22%;
@@ -973,7 +1030,12 @@ body {
       padding-top: 20px; } }
   @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .offer-cost {
-      width: 23%; } }
+      width: 23%;
+      height: 135px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .offer-cost {
+      width: 23%;
+      height: 135px; } }
   @media only screen and (max-width: 767px) {
     .offer-cost {
       width: 22%;
@@ -1009,6 +1071,10 @@ body {
 @media only screen and (min-width: 1024px) {
   #cost-photos1 p {
     font-size: 14px; } }
+
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+  #cost-photos1 p {
+    font-size: 12px; } }
 
 @media only screen and (max-width: 767px) {
   #cost-photos1 p {
@@ -1144,10 +1210,16 @@ body {
     margin-top: -100px; }
     @media only screen and (min-width: 980px) and (max-width: 1024px) {
       .sldr .slick-dots {
-        margin-top: -54px; } }
+        margin-top: -20px; } }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      .sldr .slick-dots {
+        margin-top: -10px; } }
+    @media only screen and (max-width: 767px) {
+      .sldr .slick-dots {
+        margin-top: 0px; } }
     @media only screen and (max-width: 480px) {
       .sldr .slick-dots {
-        margin-top: -54px; } }
+        margin-top: -30px; } }
     .sldr .slick-dots .slick-active .mydots {
       border: 4px solid #ffeb3b; }
     .sldr .slick-dots .slick-active .mydots:after {
@@ -1167,6 +1239,14 @@ body {
       text-transform: none;
       padding: 10px;
       border: 4px solid grey; }
+      @media only screen and (min-width: 768px) and (max-width: 979px) {
+        .sldr .slick-dots .mydots {
+          font-size: 20px;
+          padding: 7px; } }
+      @media only screen and (max-width: 767px) {
+        .sldr .slick-dots .mydots {
+          font-size: 20px;
+          padding: 7px; } }
       @media only screen and (max-width: 480px) {
         .sldr .slick-dots .mydots {
           font-size: 19px;
@@ -1200,9 +1280,18 @@ body {
   margin-right: 150px; }
   @media only screen and (min-width: 980px) and (max-width: 1024px) {
     .team {
-      margin-top: 10px; } }
+      margin-top: 80px; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .team {
+      margin-top: 60px; } }
+  @media only screen and (max-width: 767px) {
+    .team {
+      margin-top: 60px;
+      margin-left: 10px;
+      margin-right: 30px; } }
   @media only screen and (max-width: 480px) {
     .team {
+      margin-top: 30px;
       margin-left: 30px;
       margin-right: 30px; } }
 
@@ -1324,7 +1413,7 @@ body {
       font-size: 14px; } }
   @media only screen and (max-width: 767px) {
     .list-know {
-      font-size: 11px; } }
+      font-size: 12px; } }
   @media only screen and (max-width: 480px) {
     .list-know {
       padding-left: 0px;
