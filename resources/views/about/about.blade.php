@@ -229,10 +229,10 @@
                 <p>Тренер вратарей</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
-                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/ruzhana') }}"
                    data-toggle="modal" data-target="#modalArt" >
-                    <img src="../../design/first_page/res/tr4.jpg"/></a>
-                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
+                    <img src="/../../design/first_page/res/tr4.jpg"/></a>
+                <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/ruzhana') }}"
                         data-toggle="modal" data-target="#modalArt" >
                         Войцех Ружана</a>
                 </h5>
