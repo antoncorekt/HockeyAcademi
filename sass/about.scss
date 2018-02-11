@@ -838,13 +838,20 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
 
 
 #logo-footer {
-  width: 50%;
+  width: 40%;
 
+  @include respond-to($large-desktop) {
+   margin-top: -3px;
+  }
+  @include respond-to($ipad) {
+    margin-top: 3px;
+  }
   @include respond-to($tablet-landscape) {
     width: 40%;
   }
   @include respond-to($tablet-portrait) {
     width: 50%;
+    margin-top: -2px;
   }
   @include respond-to($phone) {
     width: 10%;

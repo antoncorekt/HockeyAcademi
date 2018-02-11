@@ -226,17 +226,17 @@
                    data-toggle="modal" data-target="#modalArt" >
                         Александр Ивлев</a>
                 </h5>
-                <p>Помощник тренера</p>
+                <p>Тренер вратарей</p>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
                 <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
                    data-toggle="modal" data-target="#modalArt" >
-                    <img src="/../../design/first_page/res/coach.jpg"/></a>
+                    <img src="../../design/first_page/res/tr4.jpg"/></a>
                 <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
                         data-toggle="modal" data-target="#modalArt" >
-                        Иванов Иван</a>
+                        Войцех Ружана</a>
                 </h5>
-                <p>Тренер вратарей</p>
+                <p>Тренер специалист</p>
             </div>
 
         </div>
