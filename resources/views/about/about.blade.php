@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick-theme.css')}}"/>
     <script type="text/javascript" src="{{asset('public/slick/slick.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('public/js/SliderManaged.js')}}"></script>
+    <script type="text/javascript" src="{{asset('public/js/imgGalManaged.js')}}"></script>
 
     <script>
     $(document).ready(function () {
@@ -85,6 +86,10 @@
         .video-kryn{
             display: none;
         }
+
+
+
+
     </style>
     <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
     
@@ -256,13 +261,54 @@
             </h3>
             <div class="row where-text-1" id="where-photos">
                 <div class="col-lg-5 col-md-5 col-sm-4 col-xs-9">
-                    <img id="img-where" src="../../design/first_page/res/photo-2.jpg"/>
+                    <div class="img-container">
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                        <div class = "yellow-back">
+                            <img id="img-where" id="img-yell" src="{{asset('images/gal/yell.jpg')}}"/>
+                        </div>
+                        <a class="prev arr-gal" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next arr-gal" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="img-galary">
+                            <img id="img-where" class="img-mod" src="{{asset('images/gal/2.jpg')}}"/>
+                        </div>
+                        <div class="img-galary">
+                            <img id="img-where" class="img-mod" src="{{asset('images/gal/1.jpg')}}"/>
+                        </div>
+                        <div class="img-galary">
+                            <img id="img-where" class="img-mod" src="{{asset('images/gal/3.jpg')}}"/>
+                        </div>
+                        <div class="img-galary">
+                            <img id="img-where" class="img-mod" src="{{asset('images/gal/4.jpg')}}"/>
+                        </div>
+                        <div class="img-galary">
+                            <img id="img-where" class="img-mod" src="{{asset('images/gal/5.jpg')}}"/>
+                        </div>
+                        <div class="img-galary">
+                            <img id="img-where" class="img-mod" src="{{asset('images/gal/6.jpg')}}"/>
+                        </div>
+                        <div class="img-galary">
+                            <img id="img-where" class="img-mod" src="{{asset('images/gal/7.jpg')}}"/>
+                        </div>
+                        <div class="img-galary">
+                            <img id="img-where" class="img-mod" src="{{asset('images/gal/8.jpg')}}"/>
+                        </div>
+                        <div class="img-galary">
+                            <img id="img-where" class="img-mod" src="{{asset('images/gal/9.jpg')}}"/>
+                        </div>
+                        <div class="img-galary">
+                            <img id="img-where" class="img-mod" src="{{asset('images/gal/10.jpg')}}"/>
+                        </div>
+                    </div>  
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-9">
                     <h3 class="h1-team-page kryn" id="h3-team">ИДЕАЛЬНЫЙ КЛИМАТ ДЛЯ СПОРТCМЕНА</h3>
                     <p id="team-text-p">
                     Академия находится в европейском спортивном центре c большой и современной инфраструктурой – 
-                    в Польской Швейцарии городе Крыниця-Здруй. 
+                    в "Польской Швейцарии" городе Крыниця-Здруй. 
                     Это излюбленное место многих горнолыжников, хоккеистов и других спортсменов. 
                     Но город живёт не только зимой, но и летом.
                     Наши тренеры решили, что это место с его прекрасным климатом 
