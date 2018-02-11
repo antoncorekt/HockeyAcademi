@@ -52,6 +52,7 @@ Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function
     });
 
     Route::get('/blog', 'MainController@blogList')->name('blog/blog');
+    Route::get('/post/{id}', 'MainController@showPost'); ///???????????????????
     Route::get('/modal-post/{id}', 'MainController@showPost')->name('blog/article');
 
 

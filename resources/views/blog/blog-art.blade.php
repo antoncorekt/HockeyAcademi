@@ -3,8 +3,6 @@
 
 @section('header')
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
-    <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/paginateAjax.js')}}"></script>
 
 @endsection
 <style>
@@ -15,7 +13,7 @@
 </style>
 @section('content')
     <div class="container-fluid bg-1 blog-1">
-        <img src="/../public/images/blog_img.png"/>
+        <img src="../public/images/blog_img.png"/>
         <div class="row" id="blog-text">
             <h1 class="h1-main-page h1-about" >БЛОГ ХОККЕЙНОЙ</h1>
             <h1 class="h1-main-page h1-about">АКАДЕМИИ</h1>
@@ -23,16 +21,12 @@
     </div>
     <div class="container-fluid bg-2">
         <div class="row blog-text">
-            @if (isset($articles) && count($articles) > 0)
-                <section class="articles">
-                    @include('blog.listOfArticles')
+
+
+                <section class="post">
+                    @include('blog.article')
                 </section>
-            @endif
-                @if (isset($post))
-                    <section class="articles">
-                        @include('blog.article')
-                    </section>
-                @endif
+
         </div>
 
     </div>

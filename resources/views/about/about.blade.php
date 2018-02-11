@@ -89,7 +89,7 @@
     <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
     
     <div class="container-fluid bg-1" id="about-1">
-        <img src="../../design/first_page/res/about_main.png"/>
+        <img src="/../../design/first_page/res/about_main.png"/>
         <div class="row" id="main-text">
             <h1 class="h1-about h1-main-page" >{{ trans('messages.grow') }} </h1>
             <h1 class="h1-about h1-main-page">{{ trans('messages.grow1') }}</h1>
@@ -103,7 +103,7 @@
     </div>
 
     <div class="container-fluid bg-2" id="about-2">
-        <img src="../../design/first_page/res/white_sql.png"/>
+        <img src="/../../design/first_page/res/white_sql.png"/>
         <div class="row" id="sq-text" >
             <div class="col-md-2 col-sm-2 sq-text" id="sq-text-1">
                 <h1>21</h1>
@@ -132,7 +132,7 @@
 
 
                     <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
-                        <img src="../../design/first_page/res/photo-1.png"/>
+                        <img src="/../../design/first_page/res/photo-1.png"/>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
                         <h5 class="h4-main-page selects">#НАБОР2018 #ТВОЙШАНС</h5>
@@ -160,7 +160,7 @@
 
 
                     <div class="col-lg-6 col-md-5 col-sm-5 col-xs-9">
-                        <img src="../../design/first_page/res/photo-6.png"/>
+                        <img src="/../../design/first_page/res/photo-6.png"/>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
 
@@ -189,7 +189,7 @@
         </div>
     </div>
     <div class="container-fluid bg-3" id="about-3">
-        <img src="../../design/first_page/res/textur.png" style="height: 100%;"/>
+        <img src="/../../design/first_page/res/textur.png" style="height: 100%;"/>
         <div class="row coach-text">
             <h5 class="h5-coach-text">{{ trans('messages.learn') }}?</h5>
             <h3 class="h3-coach-text">{{ trans('messages.coach') }}
@@ -200,7 +200,7 @@
             <div class="col-md-2 col-sm-2 col-xs-3 coach ">
                 <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/parf') }}"
                    data-toggle="modal" data-target="#modalArt" >
-                    <img src="../../design/first_page/res/tr1.jpg"/></a>
+                    <img src="/../../design/first_page/res/tr1.jpg"/></a>
                 <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/parf') }}"
                         data-toggle="modal" data-target="#modalArt" >
                         Андрей Парфенов</a>
@@ -210,7 +210,7 @@
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
                 <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/savchenko') }}"
                    data-toggle="modal" data-target="#modalArt" >
-                    <img src="../../design/first_page/res/tr2.jpg"/></a>
+                    <img src="/../../design/first_page/res/tr2.jpg"/></a>
                 <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/savchenko') }}"
                         data-toggle="modal" data-target="#modalArt" >
                         Андрей Савченко</a>
@@ -220,7 +220,7 @@
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
                 <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/ivlev') }}"
                    data-toggle="modal" data-target="#modalArt" >
-                    <img src="../../design/first_page/res/tr3.jpg"/></a>
+                    <img src="/../../design/first_page/res/tr3.jpg"/></a>
 
                 <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/ivlev') }}"
                    data-toggle="modal" data-target="#modalArt" >
@@ -231,7 +231,7 @@
             <div class="col-md-2 col-sm-2 col-xs-3 coach">
                 <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/2') }}"
                    data-toggle="modal" data-target="#modalArt" >
-                    <img src="../../design/first_page/res/coach.jpg"/></a>
+                    <img src="/../../design/first_page/res/coach.jpg"/></a>
                 <h5> <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/1') }}"
                         data-toggle="modal" data-target="#modalArt" >
                         Иванов Иван</a>
@@ -298,7 +298,7 @@
                     </a>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-4  col-xs-9">
-                    <img src="../../design/first_page/res/photo-3.jpg" id="img-where" class="photo-kryn"/>
+                    <img src="/../../design/first_page/res/photo-3.jpg" id="img-where" class="photo-kryn"/>
                     <div class="video-kryn">
                         <iframe src="https://www.youtube.com/embed/lQsFMf2Fl5I"  id="img-where" height="300px" frameborder="1" allowfullscreen></iframe>
                     </div>
@@ -308,7 +308,7 @@
         </div>
     </div>
     <div class="container-fluid bg-5" id="about-5">
-        <img src="../../design/first_page/res/img-faq.jpg"/>
+        <img src="/../../design/first_page/res/img-faq.jpg"/>
         <div class="row"  id="form-text">
             <h4>ВАЖНО ЗНАТЬ</h4>
             <div class="col-lg-6 col-md-6 col-xs-9 col-list">

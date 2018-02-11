@@ -1434,3 +1434,9 @@ body {
 @media only screen and (max-width: 480px) {
   #cost-btn a {
     margin-bottom: 0px; } }
+
+/**
+Article page
+ */
+.article {
+  margin-bottom: 50px; }

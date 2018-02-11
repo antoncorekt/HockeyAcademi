@@ -79,7 +79,7 @@ class MainController extends Controller
 
     public function blogList(Request $request)
     {
-        $articles = ListOfBlog::getAllPosts()->paginate(2); //how many articles at the page
+        $articles = ListOfBlog::getAllPosts()->paginate(4); //how many articles at the page
 
         if ($request->ajax()) {
             return view('blog.listOfArticles', ['articles' => $articles])->render();
@@ -88,12 +88,15 @@ class MainController extends Controller
         return view('blog.blog', compact('articles'));
     }
 
-    public function showPost($id)
+    public function showPost($id, Request $request)
     {
-        //$post = new Article($id);
-        return view('blog/article',
-            array('title' => 'article', 'description' => '',
-                'post' => Article::getPostById($id)));
+        $post = Article::getPostById($id);
+        //$articles = 1;
+        if ($request->ajax()) {
+            return view('blog.article', ['post' =>  $post])->render();
+        }
+        return view('blog.blog', compact('post'));
+
     }
 
     public function showDetailsSlovac()

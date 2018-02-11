@@ -43,7 +43,7 @@
 <div class="container-fluid" id="body-main">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
-            <img src="../images/log.gif" id="logo-navheader">
+            <img src="/../images/log.gif" id="logo-navheader">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" id="navbar-btn">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -72,21 +72,21 @@
                             <li>
                                 <a href="{{@getLangURI('ru')}}">
                                     <span class="flag">
-                                        <img src="../../public/images/ru.png" class="flag-ico">
+                                        <img src="/../../public/images/ru.png" class="flag-ico">
                                     </span>
                                     <span class="drop-text">РУССКИЙ</span></a>
                             </li>
                             <li>
                                 <a href="{{@getLangURI('en')}}">
                                      <span class="flag">
-                                        <img src="../../public/images/en.ico" class="flag-ico">
+                                        <img src="/../../public/images/en.ico" class="flag-ico">
                                     </span>
                                     <span class="drop-text">ENGLISH</span></a>
                             </li>
                             <li>
                                 <a href="{{@getLangURI('pl')}}">
                                     <span class="flag">
-                                        <img src="../../public/images/pl.ico" class="flag-ico">
+                                        <img src="/../../public/images/pl.ico" class="flag-ico">
                                     </span>
                                     <span class="drop-text">POLSKI</span></a>
                             </li>

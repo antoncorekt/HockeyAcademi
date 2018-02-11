@@ -72,5 +72,7 @@ return [
     'eur' => 'Europe',
     'parfionov' => 'Andrey Parfyonov',
     'savchenko' => 'Andrey Savchenko',
+
+    'BackToBlog' => 'BACK TO BLOG',
 ];
 ?>
