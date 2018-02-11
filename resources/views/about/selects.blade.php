@@ -22,7 +22,7 @@
         <li style="font-size: 16px; ">Турнир в США 2018 (Филадельфия)</li>
     </ul>
 
-
+    <a href="http://www.lgstours.com/page/show/1001318--" target="_blank">Больше на сайте Selects</a>
 
 
     </div>
