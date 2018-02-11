@@ -55,6 +55,9 @@ Route::prefix(App\Http\Middleware\LocaleMiddleware::getLocale())->group(function
     Route::get('/post/{id}', 'MainController@showPost'); ///???????????????????
     Route::get('/modal-post/{id}', 'MainController@showPost')->name('blog/article');
 
+    Route::get('/gif', function () {
+        return view('others/gif');
+    });
 
 });
 Route::post('/enrol','MainController@enrolForm');
