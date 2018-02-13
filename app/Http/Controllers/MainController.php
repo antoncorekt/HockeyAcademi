@@ -103,6 +103,11 @@ class MainController extends Controller
     {
         return view('about/slovac',
             array('title' => 'showDetailsSlovac','description' => ''));
+    }
 
+    public function showLiving()
+    {
+        return view('about/living',
+            array('title' => 'showLiving'));
     }
 }
