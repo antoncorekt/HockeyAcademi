@@ -159,6 +159,10 @@
                            data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
                             ПОДРОБНОСТИ
                         </a>
+                        <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-living') }}"
+                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                            КОНЦЕПЦИЯ ПРОЖИВАНИЯ
+                        </a>
                     </div>
             </div>
             <div class="row team" id="team-text">
