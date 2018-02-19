@@ -13,15 +13,62 @@ return [
     'cont' => 'CONTACTS',
     'dream' => 'FULFILL YOUR DREAM',
     'dream1' => 'BECOME A HOCKEY PLAYER',
-    'dream2' => 'The best academy with qualified',
-    'dream3' => 'coaches helps you on the way to the dream',
+    'dream2' => 'European academy with high-qualities',
+    'dream3' => 'coaches helps you on the way to the hockey dream',
+    'dream4' => 'and - get EUROPEAN education!',
     'know_more' => 'KNOW MORE',
     'events' => 'OUR EVENTS',
     'grow' =>'WE RAISE CHAMPIONS',
     'grow1' =>'OF THE EUROPEAN LEVEL',
-    'care' => 'We guarantee care for the future of each student.',
-    'care1' => 'After graduating from the academy, we support every hockey player',
-    'know_more1' => 'FIND OUT ABOUT TRAINING',
+    'care' => 'Participation in international tournaments, strong regular season, best coaches and',
+    'care1' => 'ideal European conditions will help to grow a world-class hockey star',
+    'know_more1' => 'WHY WE ARE THE BEST',
+
+    'enrolment' => 'ENROLMENT2018',
+    'your_chance' => 'YOURCHANCE',
+    'new_enrolment' => 'EEHL ANNOUNCES A NEW ENROLMENT TO THE ACADEMY',
+    'if_you' => 'If you:',
+    'years_old' => 'Born in 2004-2005',
+    'hock_life' => 'Hockey is your life',
+    'want_student' => 'Want to be a student of the best coaches in Europe and the CIS',
+    'want_euro' => 'Want to get a European education',
+    'dream_leagues' => 'Dream to play in professional leagues of Europe',
+    'details' => 'DETAILS',
+    'concept_acc' => 'THE CONCEPT OF ACCOMMODATION',
+
+    'eehl_ambitions' => 'EEHL - academy with ambitions',
+    'proudly' => 'We can proudly say that',
+    'Slovakia_season' => 'We participate in the regular season of Slovakia',
+    'official_LGS' => 'EEHL is the official representative of the company LEGACY GLOBAL SPORTS.',
+    'official_LGS1' => 'This program allows each participant to get in professional hockey at the NHL level and get education in colleges and universities of the USA',
+    'tournaments_Selects' => 'We participate in international tournaments SELECTS',
+    'about_selects' => 'ABOUT SELECTS',
+    'Slovakia_tour' => 'ABOUT THE CHAMPIONSHIP OF SLOVAKIA',
+
+
+    'climate' => 'THE PERFECT CLIMATE FOR ATHLETES',
+    'about_town' => 'The Academy is located in the European Sports Center with a large and modern infrastructure – 
+                    in the "Polish Switzerland" in Krynica-Zdrój. 
+                    This is a favorite place for many skiers, hockey players and other athletes. 
+                    But the city lives not only in winter, but also in summer.
+                    Our coaches decided that this place with its perfect climate 
+                    and mineral water is ideal for the nurturing
+                    the best athletes of Europe and the whole world.',
+    'see_where' => 'SEE WHERE HOCKEYISTS TRAIN',
+
+    'hockey_educ' => 'HOCKEY OR EDUCATION? HOCKEY AND EDUCATION',
+    'hockey_educ1' => 'Do you think that hockey and education are not compatible? 
+                    Or do your parents think so? 
+                    In EEHL you can become both successful and smart! 
+                    After all, we believe, that you should not quit school for the sake of hockey, 
+                    and hockey for the sake of studying. And we know how to help you!
+
+                    The Academy has a contract for teaching students at the local school. 
+                    You will have full-time school and training course! But that is not all.
+
+                    After graduating from the Academy, you can study at colleges and universities in Europe and the USA.',
+    'more_about_educ' => 'MORE ABOUT EDUCATION IN POLAND',
+
     'team' => 'OUR TEAMS',
     'team1' => 'TRADITIONS: YOUTH',
     'team2' =>'AND STUDENT TEAM',
@@ -59,6 +106,22 @@ return [
     'write_learn' => 'APPLY FOR TRAINING',
     'old_cost' => 'OLD PRICE',
     'offer_cost' => 'SPECIAL OFFER',
+    'month' =>'mon',
+
+    'imp_to_know' => 'IMPORTANT TO KNOW',
+    'tours' => 'Study tours during the spring holidays 24.03-25.03.2018 and 31.03-01.04.2018 year',
+    'summer_camp' => 'The full summer camp in July 2018',
+    'introduce' => 'Familiarization with the school and training program',
+    'permit' => 'Possibility to obtain a residence permit for you and your child',
+    'doc_help' => 'Help with paperwork',
+    'three_Selects' => 'In the 2018/19 season, the Academy participates in three tournaments \'Selects\':
+                        in San Sebastian (Spain), Yaroslavl (RF) and in Philadelphia (USA)',
+    'class_room' => 'Admission to Grade 8 (analogue of the 9th class in the CIS countries) without exams with education in Polish',
+    'help_admis' => 'We help with the admission to the European University',
+    'help_living' => 'Help in choosing accommodation in Krynica-Zdrój',
+    'help_lang' => 'Language help',
+    'rus_lang_coach' => 'Russian-speaking coaches',
+    'system_offer' => 'There is the system of discounts and bonuses for training in the Academy',
 
     'Location' =>'Location',
     'ul' => 'Halna Str., 12,',
@@ -73,7 +136,12 @@ return [
     'parfionov' => 'Andrey Parfyonov',
     'savchenko' => 'Andrey Savchenko',
     'ruzhana' => 'Wojciech Różana',
+    'ivlev' =>'Aleksander Ivlev',
+    'coach_spec' => 'Coach Specialist',
+    'coach_goalkeeper' => 'Goalkeeper coach',
 
     'BackToBlog' => 'ALL NEWS',
+    'blogTitle' => 'THE HOCKEY ACADEMY',
+    'blogTitle1' => 'BLOG',
 ];
 ?>

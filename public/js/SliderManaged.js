@@ -7,10 +7,31 @@ $(document).ready(function(){
         var text = "no text";
         var lan = getLang();
         if (i == 0){
-          text = "НАБОР 2018";
+            if (lan == "ru") {
+                text = "НАБОР 2018";
+            }
+            else{
+                if(lan == "en"){
+                    text = "ENROLMENT 2018";
+                }
+                else{
+                    text = "REKRUTACJA 2018";
+                }
+            }
         } else {
           if (i == 1){
-            text = "ГДЕ ИГРАЕМ"
+              if (lan == "ru") {
+                  text = "ГДЕ ИГРАЕМ";
+              }
+              else{
+                  if(lan == "en"){
+                      text = "WHERE DO WE PLAY";
+                  }
+                  else{
+                      text = "GDZIE GRAMY";
+                  }
+              }
+
           }
         }
 

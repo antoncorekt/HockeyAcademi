@@ -17,8 +17,8 @@
     <div class="container-fluid bg-1 blog-1">
         <img src="/../public/images/blog_img.png"/>
         <div class="row" id="blog-text">
-            <h1 class="h1-main-page h1-about" >БЛОГ ХОККЕЙНОЙ</h1>
-            <h1 class="h1-main-page h1-about">АКАДЕМИИ</h1>
+            <h1 class="h1-main-page h1-about" >{{ trans('messages.blogTitle') }}</h1>
+            <h1 class="h1-main-page h1-about">{{ trans('messages.blogTitle1') }}</h1>
         </div>
     </div>
     <div class="container-fluid bg-2">
