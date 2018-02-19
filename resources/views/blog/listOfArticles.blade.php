@@ -20,7 +20,7 @@
                 <p>
                 <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-post/'.$article->idPText) }}"
                    data-toggle="modal" data-target="#modalArt" class="btn blog-a">
-                    РАЗВЕРНУТЬ ВЕСЬ ТЕКСТ
+                    {{ trans('messages.show_more') }}
                 </a>
 
                 </p>

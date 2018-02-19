@@ -142,9 +142,14 @@ return [
     'ivlev' =>'Aleksander Ivlev',
     'coach_spec' => 'Trener specjalista',
     'coach_goalkeeper' => 'Trener bramkarza',
+    'coach_career' => 'Kariera trenera',
+
+    'ivlev_inf' => 'Kandydat na wydział nauk o wychowaniu fizycznym i sporcie, profesor nadzwyczajny',
+    'dn_wolves' => 'HC Dnipro Wolves',
 
     'BackToBlog' => 'ALL NEWS',
     'blogTitle' => 'BLOG AKADEMII',
     'blogTitle1' => 'HOKEJOWEJ',
+    'show_more' => 'POKAZYWAĆ CAŁY TEKST',
 ];
 ?>

@@ -139,9 +139,14 @@ return [
     'ivlev' =>'Aleksander Ivlev',
     'coach_spec' => 'Coach Specialist',
     'coach_goalkeeper' => 'Goalkeeper coach',
+    'coach_career' => 'Coach career',
+
+    'ivlev_inf' => 'Candidate of Science in Physical Education and Sports, Associate Professor',
+    'dn_wolves' => 'HC Dnipro Wolves',
 
     'BackToBlog' => 'ALL NEWS',
     'blogTitle' => 'THE HOCKEY ACADEMY',
     'blogTitle1' => 'BLOG',
+    'show_more' => 'SHOW MORE',
 ];
 ?>
