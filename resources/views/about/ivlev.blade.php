@@ -12,11 +12,11 @@
     <p>{{ trans('messages.coach_career') }}: </p>
     <ul>
         <li>2007-2008 – {{ trans('messages.dn_wolves') }}</li>
-        <li>2008-2010 – ХК Донбасс</li>
-        <li>2006-2010 – вице-президент федерации хоккея Донецкой области</li>
-        <li>2008-2010 – вице-президент ХК Донбасс</li>
-        <li>2016-2017 – тренер вратарей ДЮСШ ХК Донбасс</li>
-        <li>2017-2018 – тренер ДЮСШ Льдинка 2007</li>
+        <li>2008-2010 – {{ trans('messages.donbass') }}</li>
+        <li>2006-2010 – {{ trans('messages.ivlev_inf1') }}</li>
+        <li>2008-2010 – {{ trans('messages.ivlev_donbass') }}</li>
+        <li>2016-2017 – {{ trans('messages.ivlev_inf2') }}</li>
+        <li>2017-2018 – {{ trans('messages.ivlev_inf3') }} </li>
 </ul>
 </p> 
 </div>
