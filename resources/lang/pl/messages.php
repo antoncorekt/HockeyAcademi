@@ -105,7 +105,21 @@ return [
     'cost' => 'ILE TO KOSZTUJE',
     'cost1' => 'CENA I WARUNKI',
     'cost2' => 'SZKOLENIA W AKADEMII',
+
     'write_learn' => 'ZAPISZ SIĘ NA KURS',
+    'write_learn_form' => 'Zapisz się na kurs',
+    'fill_fields' => 'Proszę wypełnić następujące pola',
+    'your_name' => 'Twoje imię (nazwisko):',
+    'placeholder_name' => 'Iwan Iwanow',
+    'email' => 'Email:',
+    'nameHock' => 'Imię hokejista:',
+    'height' => 'Рост в см:',
+    'age' => 'Возраст:',
+    'add_form' => 'Дополнительная инфомация (команды, школы):',
+    'placeholder_add_form' => 'Напишите здесь в каких командах играл ваш хоккеист, в школах учился и чемпионатах участвовал',
+    'send' => 'Send',
+    'cancel' => 'Cancel',
+
     'old_cost' => 'STARA CENA BEZ ZNIŻEK',
     'offer_cost' => 'OFERTA PROMOCYJNA',
 

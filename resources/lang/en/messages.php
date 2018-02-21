@@ -103,7 +103,23 @@ return [
     'cost' => 'HOW MUCH IS IT',
     'cost1' => 'PRICE AND TERMS',
     'cost2' => 'OF TRAINING IN THE ACADEMY',
+
     'write_learn' => 'APPLY FOR TRAINING',
+    'write_learn_form' => 'Apply for training',
+    'fill_fields' => 'Please fill the following fields',
+    'your_name' => 'Your name:',
+    'placeholder_name' => 'Ivan Ivanov',
+    'email' => 'Email:',
+    'nameHock' => 'Hockey player name:',
+    'height' => 'Height (sm):',
+    'age' => 'Age:',
+    'add_form' => 'Дополнительная инфомация (команды, школы):',
+    'placeholder_add_form' => 'Напишите здесь в каких командах играл ваш хоккеист, в школах учился и чемпионатах участвовал',
+    'send' => 'Send',
+    'cancel' => 'Cancel',
+
+
+
     'old_cost' => 'OLD PRICE',
     'offer_cost' => 'SPECIAL OFFER',
     'month' =>'mon',
