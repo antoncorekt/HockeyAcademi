@@ -26,7 +26,7 @@
             }
 
             var destination = $(".flex-link-4").offset().top;
-                $('html').animate({ scrollTop: destination }, 1500);
+                $('html, body').animate({ scrollTop: destination }, 1500);
 
         });
 
