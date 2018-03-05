@@ -6,15 +6,15 @@ $(document).ready(function(){
       customPaging : function(slider, i) {
         var text = "no text";
         var lan = getLang();
-        if (i == 0){
+        if (i === 0){
           text = "НАБОР 2018";
         } else {
-          if (i == 1){
+          if (i === 1){
             text = "ГДЕ ИГРАЕМ"
           }
         }
 
-        if (lan == undefined || lan == null) lan = "";
+        if (lan === undefined || lan == null) lan = "";
         
         return '<nobr class="mydots">' + text + '</nobr>';
       },
@@ -56,12 +56,9 @@ $(document).ready(function(){
      
       var elementClick = $(".sldr");
       var destination = $(elementClick).offset().top-250;
-      // if ($.browser.safari) {
-      //     $('body').animate({ scrollTop: destination }, 1100); //1100 - скорость
-      // } else {
-          $('html').animate({ scrollTop: destination }, 1100);
-      // }
-      return false; 
+
+      $('html, body').animate({ scrollTop: destination }, 1100);
+
     });
 
   });
