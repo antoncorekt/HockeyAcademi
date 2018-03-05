@@ -3,6 +3,8 @@
 
 @section('header')
     <link rel="stylesheet" href="{{asset('public/css/main.css')}}">
+    <meta name="description" content="East Euro Hockey Lab - Европейская Хоккейная Академия в Польше.
+Спорт без отрыва от обучения! Набор весной 2018 для мальчиков 2004 года рождения. Спешите связаться с нашими профессинальными тренерами: Парфёновым и Савченко!">
 
     <style>
         .dubl-num{
@@ -29,7 +31,7 @@
                     {{ trans('messages.ukr') }}:
                 </div>
                 <div class="col-lg-8 col-md-6  col-xs-9 tel">
-                    <span class="contact-ico"><img src="../images/viber.png"></span>+38 067 235 63 73 ({{ trans('messages.savchenko') }})
+                    <span class="contact-ico"><img src="../images/viber.png" alt="viber-icon"></span>+38 067 235 63 73 ({{ trans('messages.savchenko') }})
                 </div>
             </div>
             <div class="row tels-row">
@@ -45,7 +47,7 @@
                     {{ trans('messages.bel') }}:
                 </div>
                 <div class="col-lg-8 col-md-6 col-xs-9 tel">
-                    <span class="contact-ico"><img src="../images/viber.png"></span>+38 067 235 63 73 ({{ trans('messages.savchenko') }})
+                    <span class="contact-ico"><img src="../images/viber.png" alt="viber-icon-1"></span>+38 067 235 63 73 ({{ trans('messages.savchenko') }})
                 </div>
             </div>
             <div class="row tels-row">
@@ -53,7 +55,7 @@
                     {{ trans('messages.eur') }}:
                 </div>
                 <div class="col-lg-8 col-md-6 col-xs-9 tel">
-                    <span class="contact-ico"><img src="../images/viber.png"></span>+48 53 739 49 69 ({{ trans('messages.parfionov') }})
+                    <span class="contact-ico"><img src="../images/viber.png" alt="viber-icon-2"></span>+48 53 739 49 69 ({{ trans('messages.parfionov') }})
                     <br> +48 79 445 20 36 ({{ trans('messages.savchenko') }})
                 </div>
             </div>

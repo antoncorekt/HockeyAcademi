@@ -1,8 +1,10 @@
 <div class="row where-text-1 article" id="where-photos">
+
+   
     <div class="col-lg-5 col-md-6 col-sm-5 col-xs-9">
         <p class="blog-date"><a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" class="back-link">{{ trans('messages.BackToBlog') }}</a></p>
         @if(is_null($post->video_title))
-            <img id="img-where" src="{{$post->img_title}}"/>
+            <img id="img-where" src="{{$post->img_title}}" alt="{{$post->title}}"/>
         @else
             <iframe  class="video-blog" src="{{$post->video_title}}" frameborder="0" allowfullscreen></iframe>
         @endif
@@ -18,4 +20,6 @@
         ?>
 
     </div>
+
+
 </div>

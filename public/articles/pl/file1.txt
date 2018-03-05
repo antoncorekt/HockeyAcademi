@@ -1,4 +1,4 @@
-<p id="team-text-p">Академия примет участие в наборе SELECTS, 
-который будет проиходить в Памплоне (Испания) в мае 2018. 
-За более детальной информацией обращайтесь к нашим тренерам. 
-Узнать всё о наборе.</p>
+<p id="team-text-p">Akademia wezmie udzial w rekrutacji SELECTS, 
+ktora odbedzie sie w maju 2018 w SAN SEBASTIAN (Hiszpania). 
+W celu otrzymania wiecej informacji prosimy o kontakt z naszymi trenerami.
+Dowiedz sie wszystkiego na temat rekrutacji.</p>

@@ -4,7 +4,7 @@
         <div class="row where-text-1" id="where-photos">
             <div class="col-lg-5 col-md-6 col-sm-5 col-xs-9">
                 @if(is_null($article->video_title))
-                    <img id="img-where" src="{{$article->img_title}}"/>
+                    <img id="img-where" src="{{$article->img_title}}" alt="{{$article->title}}"/>
                 @else
                     <iframe  class="video-blog" src="{{$article->video_title}}" frameborder="0" allowfullscreen></iframe>
                 @endif
@@ -18,9 +18,9 @@
                 echo \App\ListOfBlog::getShortText($article);
                 ?>
                 <p>
-                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-post/'.$article->idPText) }}"
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$article->idPText) }}"
                    data-toggle="modal" data-target="#modalArt" class="btn blog-a">
-                    РАЗВЕРНУТЬ ВЕСЬ ТЕКСТ
+                    {{ trans('messages.show_more') }}
                 </a>
 
                 </p>
@@ -40,7 +40,7 @@
             e.preventDefault();
 
 
-            $('#load').append('<img style="position: absolute; left: 40%; top: 0; z-index: 100000;" src="/images/loading.gif"  />');
+            $('#load').append('<img style="position: absolute; left: 40%; top: 0; z-index: 100000;" src="/images/loading.gif"  alt="loading"/>');
             $('#load .row').css('visibility', 'hidden');
 
             var url = $(this).attr('href');

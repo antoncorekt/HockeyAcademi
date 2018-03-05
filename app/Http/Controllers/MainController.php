@@ -92,6 +92,7 @@ class MainController extends Controller
     {
         $post = Article::getPostById($id);
         //$articles = 1;
+
         if ($request->ajax()) {
             return view('blog.article', ['post' =>  $post])->render();
         }

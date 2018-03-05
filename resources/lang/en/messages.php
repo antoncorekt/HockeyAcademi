@@ -13,15 +13,62 @@ return [
     'cont' => 'CONTACTS',
     'dream' => 'FULFILL YOUR DREAM',
     'dream1' => 'BECOME A HOCKEY PLAYER',
-    'dream2' => 'The best academy with qualified',
-    'dream3' => 'coaches helps you on the way to the dream',
+    'dream2' => 'European academy with high-qualities',
+    'dream3' => 'coaches helps you on the way to the hockey dream',
+    'dream4' => 'and - get EUROPEAN education!',
     'know_more' => 'KNOW MORE',
     'events' => 'OUR EVENTS',
     'grow' =>'WE RAISE CHAMPIONS',
     'grow1' =>'OF THE EUROPEAN LEVEL',
-    'care' => 'We guarantee care for the future of each student.',
-    'care1' => 'After graduating from the academy, we support every hockey player',
-    'know_more1' => 'FIND OUT ABOUT TRAINING',
+    'care' => 'Participation in international tournaments, strong regular season, best coaches and',
+    'care1' => 'ideal European conditions will help to grow a world-class hockey star',
+    'know_more1' => 'WHY WE ARE THE BEST',
+
+    'enrolment' => 'ENROLMENT2018',
+    'your_chance' => 'YOURCHANCE',
+    'new_enrolment' => 'EEHL ANNOUNCES A NEW ENROLMENT TO THE ACADEMY',
+    'if_you' => 'If you:',
+    'years_old' => 'Born in 2004-2005',
+    'hock_life' => 'Hockey is your life',
+    'want_student' => 'Want to be a student of the best coaches in Europe and the CIS',
+    'want_euro' => 'Want to get a European education',
+    'dream_leagues' => 'Dream to play in professional leagues of Europe',
+    'details' => 'DETAILS',
+    'concept_acc' => 'THE CONCEPT OF ACCOMMODATION',
+
+    'eehl_ambitions' => 'EEHL - academy with ambitions',
+    'proudly' => 'We can proudly say that',
+    'Slovakia_season' => 'We participate in the regular season of Slovakia',
+    'official_LGS' => 'EEHL is the official representative of the company LEGACY GLOBAL SPORTS.',
+    'official_LGS1' => 'This program allows each participant to get in professional hockey at the NHL level and get education in colleges and universities of the USA',
+    'tournaments_Selects' => 'We participate in international tournaments SELECTS',
+    'about_selects' => 'ABOUT SELECTS',
+    'Slovakia_tour' => 'ABOUT THE CHAMPIONSHIP OF SLOVAKIA',
+
+
+    'climate' => 'THE PERFECT CLIMATE FOR ATHLETES',
+    'about_town' => 'The Academy is located in the European Sports Center with a large and modern infrastructure – 
+                    in the "Polish Switzerland" in Krynica-Zdrój. 
+                    This is a favorite place for many skiers, hockey players and other athletes. 
+                    But the city lives not only in winter, but also in summer.
+                    Our coaches decided that this place with its perfect climate 
+                    and mineral water is ideal for the nurturing
+                    the best athletes of Europe and the whole world.',
+    'see_where' => 'SEE WHERE HOCKEYISTS TRAIN',
+
+    'hockey_educ' => 'HOCKEY OR EDUCATION? HOCKEY AND EDUCATION',
+    'hockey_educ1' => 'Do you think that hockey and education are not compatible? 
+                    Or do your parents think so? 
+                    In EEHL you can become both successful and smart! 
+                    After all, we believe, that you should not quit school for the sake of hockey, 
+                    and hockey for the sake of studying. And we know how to help you!
+
+                    The Academy has a contract for teaching students at the local school. 
+                    You will have full-time school and training course! But that is not all.
+
+                    After graduating from the Academy, you can study at colleges and universities in Europe and the USA.',
+    'more_about_educ' => 'MORE ABOUT EDUCATION IN POLAND',
+
     'team' => 'OUR TEAMS',
     'team1' => 'TRADITIONS: YOUTH',
     'team2' =>'AND STUDENT TEAM',
@@ -56,9 +103,41 @@ return [
     'cost' => 'HOW MUCH IS IT',
     'cost1' => 'PRICE AND TERMS',
     'cost2' => 'OF TRAINING IN THE ACADEMY',
+
     'write_learn' => 'APPLY FOR TRAINING',
+    'write_learn_form' => 'Apply for training',
+    'fill_fields' => 'Please fill the following fields',
+    'your_name' => 'Your name:',
+    'placeholder_name' => 'Ivan Ivanov',
+    'email' => 'Email:',
+    'nameHock' => 'Hockey player name:',
+    'height' => 'Height (sm):',
+    'age' => 'Age:',
+    'add_form' => 'Дополнительная инфомация (команды, школы):',
+    'placeholder_add_form' => 'Напишите здесь в каких командах играл ваш хоккеист, в школах учился и чемпионатах участвовал',
+    'send' => 'Send',
+    'cancel' => 'Cancel',
+
+
+
     'old_cost' => 'OLD PRICE',
     'offer_cost' => 'SPECIAL OFFER',
+    'month' =>'mon',
+
+    'imp_to_know' => 'IMPORTANT TO KNOW',
+    'tours' => 'Study tours during the spring holidays 24.03-25.03.2018 and 31.03-01.04.2018 year',
+    'summer_camp' => 'The full summer camp in July 2018',
+    'introduce' => 'Familiarization with the school and training program',
+    'permit' => 'Possibility to obtain a residence permit for you and your child',
+    'doc_help' => 'Help with paperwork',
+    'three_Selects' => 'In the 2018/19 season, the Academy participates in three tournaments \'Selects\':
+                        in San Sebastian (Spain), Yaroslavl (RF) and in Philadelphia (USA)',
+    'class_room' => 'Admission to Grade 8 (analogue of the 9th class in the CIS countries) without exams with education in Polish',
+    'help_admis' => 'We help with the admission to the European University',
+    'help_living' => 'Help in choosing accommodation in Krynica-Zdrój',
+    'help_lang' => 'Language help',
+    'rus_lang_coach' => 'Russian-speaking coaches',
+    'system_offer' => 'There is the system of discounts and bonuses for training in the Academy',
 
     'Location' =>'Location',
     'ul' => 'Halna Str., 12,',
@@ -73,7 +152,58 @@ return [
     'parfionov' => 'Andrey Parfyonov',
     'savchenko' => 'Andrey Savchenko',
     'ruzhana' => 'Wojciech Różana',
+    'ivlev' =>'Aleksander Ivlev',
+    'coach_spec' => 'Coach Specialist',
+    'coach_goalkeeper' => 'Goalkeeper coach',
+    'coach_career' => 'Coach career',
+
+    'savchenko_inf1' => 'Master of Sports of International Class, the coach of the highest category. He graduated from Lesgaft NSUPE in St. Petersburg, Russia. 
+    Pupil of the Kiev school "Sokol". ',
+    'savchenko_inf2' => 'During the sports career he played
+        for various clubs',
+    'savchenko_Wings' => 'Krylia Sovetov(Moscow)',
+    'severstal' => 'Severstal(Cherepovets)',
+    'cska' => 'CSKA(Moscow)',
+    'sokol' =>'Sokil(Kiev)',
+    'hungarian_hc' => 'Dunaújváros(Hungary)',
+    'maribor' => 'Maribor(Slovenia)',
+    'savchenko_inf3' => 'Also for the National Teams',
+    'savchenko_inf4' => 'U-18 USSR (silver medalist of the European Championship 1989)',
+    'ukr_team' => 'Ukraine national team',
+    'coach_career_sav' => 'Since 2008',
+    'savchenko_inf5' => 'Senior coach of the Sokil Sports school(Kiev)',
+    'savchenko_inf6' => 'in 2010 He graduated from Lesgaft NSUPE in St. Petersburg(with honours)',
+    'savchenko_inf7' => 'since 2015 Senior coach in the HC Donbass Sports school (Donetsk)',
+    'savchenko_inf8' => 'from 2013 to 2017 head coach of the U-18 and U-20 of Ukraine',
+
+
+    'ivlev_inf' => 'Candidate of Science in Physical Education and Sports, Associate Professor',
+    'dn_wolves' => 'HC Dnipro Wolves',
+    'donbass' => 'HC Donbass',
+    'ivlev_inf1' => 'Vice-President of the Ice Hockey Federation Of Donetsk Region',
+    'ivlev_donbass' => 'Vice-President of the HC Donbass',
+    'ivlev_inf2' => 'Goalkeeper coach in the HC Donbass Sports school',
+    'ivlev_inf3' => 'coach of the Ldinka Sports school 2007',
+
+    'coach_first_class' => 'The coach of the highest category',
+    'pupils' => 'Pupils',
+
+    'ruzhana_inf' => 'He graduated from The Jerzy Kukuczka Academy of Physical Education in Katowice',
+    'experience' => 'He has extensive experience as a coach',
+    'ruzhana_inf1' => 'Ice hockey coach in the KTH Krynica',
+    'ruzhana_inf2' => 'Physical education teacher - sports classes with ice hockey profile',
+    'ruzhana_inf3' => 'Ice hockey coach, Coach-Coordinator in the KTH KM Krynica',
+    'ruzhana_inf4' => 'Ice hockey coach in the MOSiR in Krynicy-Zdroju',
+    'success_inf' => 'Achievements in the coaching career',
+    'ruzhana_inf5' => 'Vice-championship of Poland: 2000 – Adult, 2002 – Junior, 2014 – Adult, 2014 - Junior',
+    'ruzhana_inf6' => 'Bronze medal of the Polish championship:  2003 – Junior, 2007 - Junior',
+    'Grzegorz_Pasiut' => 'Grzegorz Pasiut - player of The Polish ice hockey Ekstraklasa, HK Neman Grodno',
+    'Radosław_Galant' => 'Radosław Galant - the champion of Poland and the two-time winner of the national Cup, forward hockey player of the GKS Tychy',
+    'Jakub_Witecki' => 'Jakub Witecki -forward hockey player of the GKS Tychy in The Polish ice hockey Ekstraklasa',
 
     'BackToBlog' => 'ALL NEWS',
+    'blogTitle' => 'THE HOCKEY ACADEMY',
+    'blogTitle1' => 'BLOG',
+    'show_more' => 'SHOW MORE',
 ];
 ?>

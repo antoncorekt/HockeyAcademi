@@ -1,40 +1,38 @@
 @extends('others.modal')
 @section('title-modal')
-Андрей Савченко
+    {{ trans('messages.savchenko') }}
 @endsection
 @section('content-modal')
 <div class="img-modal">
-    <img src="../../design/first_page/res/tr2.jpg"/>
+    <img src="../../design/first_page/res/tr2.jpg" alt="{{ trans('messages.savchenko') }}"/>
 </div>
 <div class="text-modal">
     <br>
-    <p>Мастер спорта международного класса, тренер высшей категории. Закончил ВШТ им. Лесговта в Санкт-Петербурге, Росии. 
-    Воспитанник киевской школы Сокол. 
-    <p>За время спортивной карьеры выступал
-        за различные клубы:</p>
+    <p> {{ trans('messages.savchenko_inf1') }}
+    <p>{{ trans('messages.savchenko_inf2') }}:</p>
     
     <ul>
-        <li>Крылья Советов(Москва)</li> 
-        <li>Северсталь(Череповец)</li> 
-        <li> ЦСКА(Москва)</li> 
-        <li> Сокол(Киев)</li>  
-        <li>Дунайварош(Венгрия)</li> 
-        <li> Марибор(Словения)</li>  
+        <li>{{ trans('messages.savchenko_Wings') }}</li>
+        <li>{{ trans('messages.severstal') }}</li>
+        <li>{{ trans('messages.cska') }}</li>
+        <li>{{ trans('messages.sokol') }}</li>
+        <li>{{ trans('messages.hungarian_hc') }}</li>
+        <li>{{ trans('messages.maribor') }}</li>
         <li>Ice Bears (Knoxville)</li> 
     </ul>
-    <p>А так же за сборные команды:
+    <p>{{ trans('messages.savchenko_inf3') }}:
     <ul>
-        <li>Ю-18 СССР (серебряный призер 1989 чемпионата Европы)</li> 
-        <li>сборная Украины (1995-2000) </li> 
+        <li>{{ trans('messages.savchenko_inf4') }}</li>
+        <li>{{ trans('messages.ukr_team') }} (1995-2000) </li>
     </ul>
     </p>
 
-    <p>ТРЕНЕРСКАЯ КАРЬЕРА: С 2008 года, </p>
+    <p>{{ trans('messages.coach_career') }}: {{ trans('messages.coach_career_sav') }}, </p>
     <ul>
-        <li>старший тренер ДЮСШ Сокол(КИЕВ) </li>
-        <li>в 2010 окончил ВШТ в питерском университете им.Лесговта(с отличием) </li>
-        <li>с 2015 старший тренер ДЮСШ Донбасс(ДОНЕЦК) </li>
-        <li>с 2013 по 2017 главный тренер Ю-18 и Ю-20 Украины.</li>
+        <li>{{ trans('messages.savchenko_inf5') }} </li>
+        <li>{{ trans('messages.savchenko_inf6') }} </li>
+        <li>{{ trans('messages.savchenko_inf7') }} </li>
+        <li>{{ trans('messages.savchenko_inf8') }}.</li>
     </ul>
    
     </p>
