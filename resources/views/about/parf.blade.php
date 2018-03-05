@@ -4,7 +4,7 @@
 @endsection
 @section('content-modal')
 <div class="img-modal">
-    <img src="../../design/first_page/res/tr1.jpg"/>
+    <img src="../../design/first_page/res/tr1.jpg" alt=" {{ trans('messages.parfionov') }}"/>
 </div>
 <div class="text-modal">
     <br>

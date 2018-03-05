@@ -43,7 +43,7 @@
 <div class="container-fluid" id="body-main">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
-            <img src="/../images/log.gif" id="logo-navheader">
+            <img src="/../images/log.gif" id="logo-navheader" alt="eehl-logo-2018">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" id="navbar-btn">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -64,7 +64,7 @@
                 <li class="nav-el men-lang">
                     <div class="dropdown">
                         <button class="dropdown-toggle lang" type="button" data-toggle="dropdown">
-                            <span class="flag"><img src="" class="flag-ico" id="flag"></span>
+                            <span class="flag"><img src="" class="flag-ico" id="flag" alt="flag"></span>
                             <span class="drop-text"><span id="selected"></span>
                             <span class="caret"></span></span>
                         </button>
@@ -72,21 +72,21 @@
                             <li>
                                 <a href="{{@getLangURI('ru')}}">
                                     <span class="flag">
-                                        <img src="/../../public/images/ru.png" class="flag-ico">
+                                        <img src="/../../public/images/ru.png" class="flag-ico" alt="ru">
                                     </span>
                                     <span class="drop-text">РУССКИЙ</span></a>
                             </li>
                             <li>
                                 <a href="{{@getLangURI('en')}}">
                                      <span class="flag">
-                                        <img src="/../../public/images/en.ico" class="flag-ico">
+                                        <img src="/../../public/images/en.ico" class="flag-ico" alt="en">
                                     </span>
                                     <span class="drop-text">ENGLISH</span></a>
                             </li>
                             <li>
                                 <a href="{{@getLangURI('pl')}}">
                                     <span class="flag">
-                                        <img src="/../../public/images/pl.ico" class="flag-ico">
+                                        <img src="/../../public/images/pl.ico" class="flag-ico" alt="pl">
                                     </span>
                                     <span class="drop-text">POLSKI</span></a>
                             </li>

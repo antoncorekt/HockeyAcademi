@@ -4,7 +4,7 @@
 @endsection
 @section('content-modal')
 <div class="img-modal">
-    <img src="../../design/first_page/res/tr3.jpg"/>
+    <img src="../../design/first_page/res/tr3.jpg" alt=" {{ trans('messages.ivlev') }}"/>
 </div>
 <div class="text-modal">
     <h4>{{ trans('messages.ivlev') }}</h4>

@@ -7,12 +7,8 @@
 <script type="text/javascript" src="{{asset('js/ThreeCanvas.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/SnowManaged.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/Snow.js')}}"></script>
-<style>
-        
-
-
-
-</style>
+<meta name="description" content="East Euro Hockey Lab - Европейская Хоккейная Академия в Крынице-Здруй (Польша).
+Спорт без отрыва от обучения! Набор весной 2018 для мальчиков 2004 года рождения. Прекрасная возможность получить европейское образование!">
 
 <script>
     $(document).ready(function () {
@@ -143,7 +139,7 @@
                         <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" style="color: white; z-index:10 !important;">{{ trans('messages.events') }}</a>
                     </h5>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[0]->idPText) }}">
-                        <img src="{{$posts[0]->img_title}}" class="img-events">
+                        <img src="{{$posts[0]->img_title}}" class="img-events" alt="{{$posts[0]->idPText}}">
                     </a>
                     <p class="text-events">
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[0]->idPText) }}" style="color: white; z-index:10 !important;">
@@ -156,7 +152,7 @@
                         <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" style="color: white; z-index:10 !important;">{{ trans('messages.events') }}</a>
                     </h5>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[1]->idPText) }}">
-                        <img src="{{$posts[1]->img_title}}" class="img-events">
+                        <img src="{{$posts[1]->img_title}}" class="img-events" alt="{{$posts[1]->idPText}}">
                     </a>
                     <p class="text-events">
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[1]->idPText) }} " style="color: white; z-index:10 !important;">

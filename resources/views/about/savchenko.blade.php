@@ -4,7 +4,7 @@
 @endsection
 @section('content-modal')
 <div class="img-modal">
-    <img src="../../design/first_page/res/tr2.jpg"/>
+    <img src="../../design/first_page/res/tr2.jpg" alt="{{ trans('messages.savchenko') }}"/>
 </div>
 <div class="text-modal">
     <br>
