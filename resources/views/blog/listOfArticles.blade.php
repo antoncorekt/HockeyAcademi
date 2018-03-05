@@ -18,7 +18,7 @@
                 echo \App\ListOfBlog::getShortText($article);
                 ?>
                 <p>
-                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-post/'.$article->idPText) }}"
+                <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$article->idPText) }}"
                    data-toggle="modal" data-target="#modalArt" class="btn blog-a">
                     {{ trans('messages.show_more') }}
                 </a>
