@@ -31,11 +31,10 @@ $(document).ready(function(){
                       text = "GDZIE GRAMY";
                   }
               }
-
           }
         }
 
-        if (lan == undefined || lan == null) lan = "";
+        if (lan === undefined || lan == null) lan = "";
         
         return '<nobr class="mydots">' + text + '</nobr>';
       },
@@ -77,12 +76,9 @@ $(document).ready(function(){
      
       var elementClick = $(".sldr");
       var destination = $(elementClick).offset().top-250;
-      // if ($.browser.safari) {
-      //     $('body').animate({ scrollTop: destination }, 1100); //1100 - скорость
-      // } else {
-          $('html').animate({ scrollTop: destination }, 1100);
-      // }
-      return false; 
+
+      $('html, body').animate({ scrollTop: destination }, 1100);
+
     });
 
   });

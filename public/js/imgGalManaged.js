@@ -68,12 +68,10 @@ $(document).ready(function(){
 
     var arr_img = document.getElementsByClassName('img-galary');
 
-    console.log($(".yellow-back").offset());
-    console.log(document.getElementsByClassName("yellow-back")[0].getBoundingClientRect().height);
 
     for(var i=0; i<img.length; i++){
         $(".img-galary").css("margin-top",document.getElementsByClassName("yellow-back")[0].getBoundingClientRect().height * -1 + 10);
-        //$(".img-galary").css("margin-top",500);
+
     }
 
 })

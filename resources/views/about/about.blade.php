@@ -43,28 +43,28 @@
         if (params["p"] == "slov"){
             var elementClick = $(".sldr");
             var destination = $(elementClick).offset().top-250;
-            $('html').animate({ scrollTop: destination }, 1100);
+            $('html, body').animate({ scrollTop: destination }, 1100);
             $(".sldr").slick("slickNext");
         }
         else if (params["p"] == "edu"){
             var elementClick = $(".edu");
             var destination = $(elementClick).offset().top-590;
-            $('html').animate({ scrollTop: destination }, 1100);
+            $('html, body').animate({ scrollTop: destination }, 1100);
             }
         else if (params["p"] == "coach"){
             var elementClick = $(".coach");
             var destination = $(elementClick).offset().top-650;
-            $('html').animate({ scrollTop: destination }, 1100);
+            $('html, body').animate({ scrollTop: destination }, 1100);
             }
         else if (params["p"] == "selects"){
             var elementClick = $(".sldr");
             var destination = $(elementClick).offset().top-250;
-            $('html').animate({ scrollTop: destination }, 1100);
+            $('html, body').animate({ scrollTop: destination }, 1100);
             }
         else if (params["p"] == "krynica"){
             var elementClick = $(".kryn");
             var destination = $(elementClick).offset().top-650;
-            $('html').animate({ scrollTop: destination }, 1100);
+            $('html, body').animate({ scrollTop: destination }, 1100);
             }
         
     
