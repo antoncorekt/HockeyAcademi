@@ -3,9 +3,10 @@
 
 @section('header')
     <link rel="stylesheet" href="{{asset('public/css/main.css')}}">
+
     <meta name="description" content="East Euro Hockey Lab - Европейская Хоккейная Академия в Польше.
 Спорт без отрыва от обучения! Набор весной 2018 для мальчиков 2004 года рождения. Спешите связаться с нашими профессинальными тренерами: Парфёновым и Савченко!">
-
+    <title>East EHL - Contact</title>
     <style>
         .dubl-num{
             margin-left: 75px;

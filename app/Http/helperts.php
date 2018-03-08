@@ -35,7 +35,7 @@ if (! function_exists('getLangURI')) {
 
             $newPostId = \App\Article::getPostIdByParentIdAndLang(\App\Article::getParentIdPost($segments[3]),$lang);
             $segments[3] =  $newPostId;
-          
+
         }
         //формируем полный URL
         $url = Request::root().implode("/", $segments);

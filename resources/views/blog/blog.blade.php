@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
     <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/paginateAjax.js')}}"></script>
+    <title>East EHL - Blog</title>
 
 
 @endsection

@@ -4,6 +4,7 @@
     EEHL ОБЪЯВЛЯЕТ НОВЫЙ НАБОР В АКАДЕМИЮ ВЕСНОЙ 2018! Спорт и европейское образование. Лучшие тренера Европы и СНГ.
     Участие в регулярном чемпионате Словакии, в международных турнирах SELECTS. EEHL официальный представитель компании LEGACY GLOBAL SPORTS!">
 
+    <title>East EHL - About</title>
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
 
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick.css')}}"/>
@@ -200,7 +201,7 @@
         </div>
     </div>
     <div class="container-fluid bg-3" id="about-3">
-        <img src="/../../design/first_page/res/textur.png" alt="texture" style="height: 100%;"/>
+        <img src="/../../design/first_page/res/textur.png" alt="texture" />
         <div class="row coach-text">
             <h5 class="h5-coach-text">{{ trans('messages.learn') }}?</h5>
             <h3 class="h3-coach-text">{{ trans('messages.coach') }}
