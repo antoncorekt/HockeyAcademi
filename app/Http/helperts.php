@@ -31,9 +31,15 @@ if (! function_exists('getLangURI')) {
             array_splice($segments, 1, 0, $lang);
 //        }
         //this adds 30 days to the current time
+        if(in_array('post', $segments)){
 
+            $newPostId = \App\Article::getPostIdByParentIdAndLang(\App\Article::getParentIdPost($segments[3]),$lang);
+            $segments[3] =  $newPostId;
+          
+        }
         //формируем полный URL
         $url = Request::root().implode("/", $segments);
+
 
         //если были еще GET-параметры - добавляем их
         if(parse_url($referer, PHP_URL_QUERY)){

@@ -96,7 +96,10 @@ class MainController extends Controller
         if ($request->ajax()) {
             return view('blog.article', ['post' =>  $post])->render();
         }
-        return view('blog.blog', compact('post'));
+        if(!is_null($post))
+            return view('blog.blog', compact('post'));
+        else
+            return abort(404);
 
     }
 
