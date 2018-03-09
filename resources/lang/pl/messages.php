@@ -94,11 +94,21 @@ return [
     'where1' =>'PIĘKNE GÓRY',
     'where2' => 'I PRZESTRONNE STADIONY',
     'school' => 'SZKOŁA, W KTÓREJ BĘDĄ SIĘ UCZYĆ HOKEJÓWKI',
-    'school1' => 'Oprócz doskonałych warunków w doskonałym klimacie górskim,',
-    'school2' =>'Gwarantujemy opiekę nad przyszłością każdego ucznia. Po ukończeniu akademii',
-    'school3' => ' hokejista zwraca się do akademii studenckiej',
-    'school4' => 'a następnie do profesjonalnego klubu.',
-    'school5' => 'Akademia ma również kontrakt z Uniwersytetem Europejskim.',
+
+    'school1' => 'Górski klimat i przytulna atmosfera miasta przyczyniają się do fizycznego rozwoju i sprzyjają mocnej grze.',
+    'school2' =>'Nie bez powodu w Krynicy-Zdroju zaczęło grać wielu europejskich hokejowców.',
+    'school3' => 'Nasze miasto jest idealnym miejscem do wypoczynku i pracy. Malownicze położenie, czyste powietrze, specyficzny klimat górski i ogromne bogactwo wód mineralnych (23 sprężyny mineralne)sprawiają, że Krynica jest jednym z najpopularniejszych kurortów na świecie.',
+    'school4' => 'Krynica jest znana z rozwiniętej nowoczesnej infrastruktury sportowej.',
+    'school5' =>'To światowe centrum sportów zimowych, funkcjonują tu nowoczesne kolejki linowe, wyciągi i kolejki linowe, istnieje wiele tras narciarskich i snowboardowych.',
+    'school6' =>'W centrum znajduje się całoroczny tor saneczkowy Sankostrada. Latem jest tu wiele szlaków pieszych.',
+    'school7' => 'Wielokrotni mistrzowie Ligi Hokeja Kontynentalnego prowadzą tu swoje letnie spotkania -  SKA Sankt Petersburg!
+            A w ciągu ostatnich 5 lat базируется летний лагерь имени Быкова-Захаркина.',
+    'school8' => 'Nasi trenerzy zdecydowali, że to miejsce z idealnym klimatem
+                  i wodzie mineralnej idealnie nadaje się do wychowania najlepszych sportowców w Europie i na całym świecie.
+            Odkryliśmy, że nie ma wystarczająco dużo obozów, otwieramy całą Akademię!',
+
+
+
     'form' => 'WĄTPISZ? WYPRÓBUJ',
     'form1' => 'BEZPŁATNY TRENING!',
     'know_more2' => 'CHCĘ WIEDZIEĆ WIĘCEJ',
@@ -115,8 +125,8 @@ return [
     'nameHock' => 'Imię hokejista:',
     'height' => 'Рост в см:',
     'age' => 'Возраст:',
-    'add_form' => 'Дополнительная инфомация (команды, школы):',
-    'placeholder_add_form' => 'Напишите здесь в каких командах играл ваш хоккеист, в школах учился и чемпионатах участвовал',
+    'add_form' => 'Informacje dodatkowe (zespoły, szkoły):',
+    'placeholder_add_form' => 'Napisz tutaj w jakich teamach grał twój hokeista, w których szkołach uczył się i w których mistrzostwach brał udział',
     'send' => 'Send',
     'cancel' => 'Cancel',
 
@@ -201,6 +211,43 @@ return [
     'Grzegorz_Pasiut' => 'Grzegorz Pasiut - zawodnik Ekstraligi polskej w hokeju na lodzie, HK Nioman Grodno',
     'Radosław_Galant' => 'Radosław Galant - mistrz Polski i dwukrotny zwycięzca Pucharu Polski, napastnik GKS Tychy',
     'Jakub_Witecki' => 'Jakub Witecki - napastnik GKS Tychy w Ekstraligi polskej w hokeju na lodzie',
+
+
+    'education_title' => 'Edukacja',
+    'education_info' => 'Czy myślisz, że hokej i edukacja są niezgodne? A może rodzice tak myślą?',
+    'education_info1' => 'W EEHL możesz odnieść sukces i stać się mądry!',
+    'education_info2' => 'Uważamy, że nie należy porzucać nauki dla hokeja, i hokeja na studia.
+            I wiemy, jak ci pomóc!',
+    'education_info3' => 'Akademia ma kontrakt na nauczanie uczniów w lokalnej szkole.',
+    'education_info4' => 'Będziesz miał pełne lekcje i szkolenie! Ale to nie wszystko.',
+    'education_info5' => 'Po ukończeniu Akademii możesz studiować na wyższych uczelniach w Europie i USA.',
+    'education_info6' => 'Wszystko to przy pomocy międzynarodowego programu rozwoju LEGACY GLOBAL SPORTS.',
+    'education_info7' => 'LGS umożliwia każdemu uczestnikowi uzyskanie w hokeju zawodowym na poziomie NHL',
+    'education_info8' => 'i zdobyć wykształcenie w kolegiach i uniwersytetach USA i Europie.',
+    'education_info9' => 'Informacje o polskim systemie szkolnictwa średniego',
+
+    'living_info' => 'Komfort psychologiczny - jeden z najważniejszych czynników wzrostu i rozwoju ucznia.',
+    'living_info1' => 'W zespole pracowniczym Akademii znajduje się wykwalifikowany specjalista - psycholog, ale tylko w ścisłej
+            współpracy z rodzicami można osiągnąć maksymalny rezultat, szybsze przystosowanie się dziecka.
+            Uzyskać doskonałe wyniki zarówno w sporcie, jak i w nauce.',
+    'living_info2' => 'My, pracownicy Akademii, jako specjaliści z bogatym doświadczeniem w pracy z dziećmi i młodzieżą,
+            którzy są także rodzicami,
+            Przestrzegamy tej koncepcji, potwierdzonej przez wiodące badania współczesne
+            w dziedzinie edukacji i sportu, że dla młodzieży
+            w wieku 13-14 lat najkorzystniejszym rozwiązaniem jest objęcie kontroli rodzicielskiej.
+            I oczywiście nie powinniśmy zapominać, że twoje dziecko potrzebuje twojej miłości i wsparcia.',
+    'living_info3' => 'Z naszej strony pomagamy Państwu w legalizacji pobytu w kraju przyjazdu,
+            znaleźć zakwaterowanie, rozwiązując wiele codziennych problemów, które nieuchronnie się pojawią.',
+
+    'slovac_info' => 'Zespół Akademii EEHL w kategorii wiekowej U-14 w sezonie 2018/2019 wystąpi we wschodniej grupie Mistrzostw Słowacji w kategorii "Kadety".',
+    'slovac_info1' => 'Mistrzostwa Słowacji odbywają się w trzech etapach zgodnie z zasadą sportu:',
+    'slovac_info2' => 'Minimalna liczba meczów',
+    'slovac_info3' => 'Maksymalna możliwa liczba meczów w sezonie, w zależności od wyników sportowych.',
+    'slovac_info4' => 'Stałe mistrzostwa Słowacji zaliczane są do "Wielkiej ósemki" światowych lig hokejowych.
+        Infrastrukturę hokejową Słowacji wyróżnia zwięzłość terytorialna i jakościowy dobór zespołów..',
+    'slovac_info5' => 'Gry w tym mistrzostwie organizowane są po jednym meczu w weekend, głównie w sobotę.',
+
+
 
     'BackToBlog' => 'ALL NEWS',
     'blogTitle' => 'BLOG AKADEMII',

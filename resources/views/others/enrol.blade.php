@@ -60,7 +60,7 @@
 
 
     {!! Form::submit(trans('messages.send'), ['class' => 'btn btn-default', 'id' => 'btn']) !!}
-    <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('messages.cancela') }}</button>
+    <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('messages.cancel') }}</button>
     {!! Form::close() !!}
 
 @endsection
