@@ -5,10 +5,10 @@
     <meta name="description" content="East Euro Hockey Lab - Европейская Хоккейная Академия в Крынице-Здруй (Польша).
 Спорт без отрыва от обучения! Набор весной 2018 для мальчиков 2004 года рождения. Прекрасная возможность получить европейское образование!">
 <link rel="stylesheet" href="{{asset('public/css/main.css')}}">
-<script type="text/javascript" src="{{asset('js/VideoManager.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/ThreeCanvas.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/SnowManaged.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/Snow.js')}}"></script>
+<script src="{{asset('js/VideoManager.js')}}"></script>
+<script src="{{asset('js/ThreeCanvas.js')}}"></script>
+<script src="{{asset('js/SnowManaged.js')}}"></script>
+<script src="{{asset('js/Snow.js')}}"></script>
 
 <title>East Euro Hockey Lab</title>
 

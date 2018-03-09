@@ -1,5 +1,4 @@
 @extends('layouts.main')
-@section('title', 'Hockey Academy Contacts')
 
 @section('header')
     <link rel="stylesheet" href="{{asset('public/css/main.css')}}">

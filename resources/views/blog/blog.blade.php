@@ -1,5 +1,4 @@
 @extends('layouts.main')
-@section('title', 'Hockey Academy Blog')
 
 @section('header')
     <meta name="description" content="Европейская Хоккейная Академия в Польше.
@@ -8,15 +7,15 @@
     <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/paginateAjax.js')}}"></script>
     <title>East EHL - Blog</title>
-
+    <style>
+        body {
+            background-image: none;
+            background-color: white !important;
+        }
+    </style>
 
 @endsection
-<style>
-    body {
-        background-image: none;
-        background-color: white !important;
-    }
-</style>
+
 @section('content')
     <div class="container-fluid bg-1 blog-1">
         <img src="/../public/images/blog_img.png" alt="hockey-player-blog"/>
