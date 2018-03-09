@@ -1,20 +1,20 @@
 @extends('others.modal')
 @section('title-modal')
-    Как проходят наши тренировки?
+    {{ trans('messages.training_title') }}
 @endsection
 @section('content-modal')
     <div class="text-modal" style="font-size: 16px; line-height: 1.5em;">
-    <h4>Что касается тренировочного процесса в нашей Академии</h4>
+    <h4>{{ trans('messages.train_info') }}</h4>
     <br>
-    Философия EEHL - <b>развитие и воспитание личности.</b>
+        {{ trans('messages.philosophy_Ac') }} EEHL - <b>{{ trans('messages.philosophy_Ac1') }}.</b>
     <br>
-    Наши методы:
+        {{ trans('messages.train_info1') }}
     <ul style="list-style-type: decimal; font-size: 16px; ">
-        <li style="font-size: 16px; "> Индивидуальный подход к каждому абитурьенту. </li>
-        <li style="font-size: 16px; "> Системность и планирование. </li>
-        <li style="font-size: 16px; ">Учет особенностей сенсативных периодов. </li>
-        <li style="font-size: 16px; ">Углубленная специализация по амплуа (вратарь ,защитник, нападающий). </li>
-        <li style="font-size: 16px; ">Тестирование и контроль. </li>
+        <li style="font-size: 16px; "> {{ trans('messages.train_info2') }} </li>
+        <li style="font-size: 16px; "> {{ trans('messages.train_info3') }} </li>
+        <li style="font-size: 16px; "> {{ trans('messages.train_info4') }}</li>
+        <li style="font-size: 16px; "> {{ trans('messages.train_info5') }}</li>
+        <li style="font-size: 16px; "> {{ trans('messages.train_info6') }}</li>
     </ul>
     <br>
     <h5 style="font-size: 16px; ">А что мы можем контролировать? </h5>

@@ -1,34 +1,30 @@
 @extends('others.modal')
 @section('title-modal')
-    ПОДРОБНОСТИ
+    {{ trans('messages.details') }}
 @endsection
 @section('content-modal')
     <div class="text-modal" style="font-size: 16px; line-height: 1.5em;">
-        С 24 марта 2018 года Международная Европейская Хоккейная Академия East Euro Hockey Lab (EEHL) начинает селекционный отбор претендентов на зачисление в Академию.
-        <br>В конкурсе участвуют ведущие скауты и тренеры Европы.
-        <br>Возглавляют отбор главные тренеры Академии:
+            {{ trans('messages.details_info') }}
+        <br> {{ trans('messages.details_info1') }}
+        <br>{{ trans('messages.details_info2') }}
         <ul >
-            <li style="font-size: 16px">З.Т.Р.Ф Парфенов А.В;</li>
-            <li style="font-size: 16px">М.С.М.К Савченко А.Н;</li>
+            <li style="font-size: 16px">{{ trans('messages.ztrf') }} {{ trans('messages.parfionov') }};</li>
+            <li style="font-size: 16px">{{ trans('messages.msmk') }} {{ trans('messages.savchenko') }};</li>
         </ul>
-        EEHL базируется в европейском спортивном центре – Крыница-Здруй в Западных Карпатах, что на границе со Словакией.
-        <!-- <br>Всем зачисленным в Академию предоставляется вид на жительство. -->
+        {{ trans('messages.details_info3') }}
+    <!-- <br>Всем зачисленным в Академию предоставляется вид на жительство. -->
         
         <hr>
-        Специалисты нашей Академии прекрасно понимают каким стрессом для юного игрока 
-        может являться смена места жительства и нахождение в иноязычной бытовой среде.
+        {{ trans('messages.details_info4') }}
         <br>
-        В связи с этим фактором Академия, совместно с администрацией гмины г.Криница-Здруй, приняли решение
-        <br> <b>узаконить пребывание одного опекуна ребенка на территории ЕС</b> на период обучения в Академии.
-        <br>Это решение позволит легализовать Ваше пребывание вместе с юным хоккеистом на 
-        основе получения 
+        {{ trans('messages.details_info5') }}
+        <br> <b>{{ trans('messages.details_info6') }}</b> {{ trans('messages.details_info7') }}
+        <br> {{ trans('messages.details_info8') }}
             <a href="http://poland-consult.com/vnzh-i-pmzh/karta-pobytu/kak-oformit.html">
-            'Карты Побута'
+            '{{ trans('messages.karta') }}'
             </a>
-        , что исключительно благоприятно скажется на тренировочном и учебном процессе.
+        ,{{ trans('messages.details_info9') }}
         <hr>
-        После завершения обучения каждый воспитанник может трудоустроиться в лучшие лиги Европы, а так же поступить в лучшие ВУЗы.
-    
+        {{ trans('messages.details_info10') }}
     </div>
-
 @endsection
