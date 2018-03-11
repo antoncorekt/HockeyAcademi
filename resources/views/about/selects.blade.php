@@ -13,6 +13,6 @@
         <li style="font-size: 16px; ">{{ trans('messages.selects_tur1') }}</li>
         <li style="font-size: 16px; ">{{ trans('messages.selects_tur2') }}</li>
     </ul>
-    <a href="http://www.lgstours.com/page/show/1001318--" target="_blank">{{ trans('messages.select_more_link') }}</a>
+    <a rel="nofollow" href="http://www.lgstours.com/page/show/1001318--" target="_blank">{{ trans('messages.select_more_link') }}</a>
     </div>
 @endsection

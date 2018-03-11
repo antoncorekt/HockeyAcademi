@@ -14,7 +14,7 @@
         getLang();
         });
     </script>
-    @yield('header')
+
 
     <script>
         $(document).ready(function () {
@@ -32,6 +32,47 @@
             });
         });
     </script>
+    <meta name="yandex-verification" content="d016d5a75b4d8148" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter47835631 = new Ya.Metrika({
+                        id:47835631,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/47835631" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <meta name="google-site-verification" content="cKvkfXewbPJQvro-OrgNGP9dw-1CRdVsHKIwCKqeS9w" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114787633-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114787633-1');
+    </script>
+
+        <!-- /Yandex.Metrika counter -->
+    @yield('header')
 </head>
 
 <body>

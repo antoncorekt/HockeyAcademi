@@ -176,7 +176,7 @@ body {
       font-size: 20px; } }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #BEBEBE; }
+  color: #ffeb3c; }
 
 @media (min-width: 768px) {
   .navbar-nav {
@@ -280,7 +280,7 @@ body {
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-  color: #BEBEBE; }
+  color: #ffeb3c; }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: transparent; }
@@ -1553,7 +1553,8 @@ body {
     padding-bottom: 10px; } }
 
 .list-know li:hover, .list-know li:focus {
-  color: #BEBEBE; }
+  color: #BEBEBE;
+  cursor: pointer; }
 
 .list-know li::before {
   top: 8px;

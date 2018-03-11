@@ -13,15 +13,15 @@
 
 @endsection
 @section('content')
-    <div class="contacts" >
+    <div class="contacts"  itemscope itemtype="http://schema.org/Organization">
     <div class="col-lg-4 col-md-5 col-xs-9 contact-inf">
-        <div>
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <h2 class="h1-main-page">{{ trans('messages.Location') }}</h2>
-            {{ trans('messages.ul') }}
-            <br>{{ trans('messages.city') }},
+            <span itemprop="streetAddress">{{ trans('messages.ul') }}</span>
+            <br><span itemprop="addressLocality">{{ trans('messages.city') }},
             <br>{{ trans('messages.voevod') }}
-            <br>{{ trans('messages.country') }},
-            <br>23-098
+            <br>{{ trans('messages.country') }},</span>
+            <br><span itemprop="postalCode">23-098</span>
         </div>
         <div>
             <h2 class="h1-main-page">{{ trans('messages.Telephone') }}</h2>
@@ -30,7 +30,8 @@
                     {{ trans('messages.ukr') }}:
                 </div>
                 <div class="col-lg-8 col-md-6  col-xs-9 tel">
-                    <span class="contact-ico"><img src="../images/viber.png" alt="viber-icon"></span>+38 067 235 63 73 ({{ trans('messages.savchenko') }})
+                    <span class="contact-ico"><img src="../images/viber.png" alt="viber-icon"></span>
+                    <span itemprop="telephone">+38 067 235 63 73</span><span itemprop="alumni" itemscope itemtype="http://schema.org/Person">(<span itemprop="name">{{ trans('messages.savchenko') }}</span>)</span>
                 </div>
             </div>
             <div class="row tels-row">
@@ -38,7 +39,8 @@
                     {{ trans('messages.rus') }}:
                 </div>
                 <div class="col-lg-8 col-md-6 col-xs-9 tel">
-                    +7 929 617 73 65 ({{ trans('messages.parfionov') }})
+                    <span itemprop="telephone">+7 929 617 73 65</span><span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
+                        (<span itemprop="name">{{ trans('messages.parfionov') }}</span>)</span>
                 </div>
             </div>
             <div class="row tels-row">
@@ -46,7 +48,8 @@
                     {{ trans('messages.bel') }}:
                 </div>
                 <div class="col-lg-8 col-md-6 col-xs-9 tel">
-                    <span class="contact-ico"><img src="../images/viber.png" alt="viber-icon-1"></span>+38 067 235 63 73 ({{ trans('messages.savchenko') }})
+                    <span class="contact-ico"><img src="../images/viber.png" alt="viber-icon-1"></span>
+                    <span itemprop="telephone">+38 067 235 63 73</span><span itemprop="alumni" itemscope itemtype="http://schema.org/Person">(<span itemprop="name">{{ trans('messages.savchenko') }}</span>)</span>
                 </div>
             </div>
             <div class="row tels-row">
@@ -54,15 +57,20 @@
                     {{ trans('messages.eur') }}:
                 </div>
                 <div class="col-lg-8 col-md-6 col-xs-9 tel">
-                    <span class="contact-ico"><img src="../images/viber.png" alt="viber-icon-2"></span>+48 53 739 49 69 ({{ trans('messages.parfionov') }})
-                    <br> +48 79 445 20 36 ({{ trans('messages.savchenko') }})
+                    <span class="contact-ico"><img src="../images/viber.png" alt="viber-icon-2"></span>
+                    <span itemprop="telephone">+48 53 739 49 69</span>
+                    <span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
+                        (<span itemprop="name">{{ trans('messages.parfionov') }}</span>)</span>
+                    <br><span itemprop="telephone"> +48 79 445 20 36</span>
+                    <span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
+                        (<span itemprop="name">{{ trans('messages.savchenko') }}</span>)</span>
                 </div>
             </div>
 
         </div>
         <div>
             <h2 class="h1-main-page">Email</h2></div>
-                academy@ehlab.org
+            <span itemprop="email">academy@ehlab.org</span>
         </div>
         <div class="col-lg-5 col-md-6 col-xs-9">
         <div id="map"></div>

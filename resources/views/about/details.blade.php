@@ -20,7 +20,7 @@
         {{ trans('messages.details_info5') }}
         <br> <b>{{ trans('messages.details_info6') }}</b> {{ trans('messages.details_info7') }}
         <br> {{ trans('messages.details_info8') }}
-            <a href="http://poland-consult.com/vnzh-i-pmzh/karta-pobytu/kak-oformit.html">
+            <a rel="nofollow" href="http://poland-consult.com/vnzh-i-pmzh/karta-pobytu/kak-oformit.html">
             '{{ trans('messages.karta') }}'
             </a>
         ,{{ trans('messages.details_info9') }}

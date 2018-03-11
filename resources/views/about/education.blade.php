@@ -17,7 +17,7 @@
             <br>{{ trans('messages.education_info7') }}
             <br>{{ trans('messages.education_info8') }}
 
-            <h5> <a href="http://www.isttravel.ru/index.pl?act=PRODUCT&id=214" target="_blank">
+            <h5> <a rel="nofollow" href="http://www.isttravel.ru/index.pl?act=PRODUCT&id=214" target="_blank">
                     {{ trans('messages.education_info9') }}</a>
             </h5>
         </p>
