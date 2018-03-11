@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Send Email</title>
+    <meta name="description" content="
+    EEHL - Запрос на участие в отборе 2018">
 </head>
 <body>
 <h2>Запрос на контакт </h2>

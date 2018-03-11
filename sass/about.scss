@@ -1242,6 +1242,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
 }
 .list-know li:hover, .list-know li:focus {
   color: #BEBEBE;
+  cursor: pointer;
 }
 .list-know li::before {
   top: 8px;

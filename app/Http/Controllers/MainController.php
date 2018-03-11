@@ -20,9 +20,14 @@ class MainController extends Controller
                 'posts' => ListOfBlog::getLastTwoPosts()));
     }
 
-    public function showModal()
+    public function showModal(Request $request)
     {
-        return view('others/enrol');
+        if ($request->ajax()) {
+            return view('others/enrol');
+        }
+        else
+            return abort(404);
+
     }
 
     public function enrolForm(MailFormRequest $request){
@@ -40,40 +45,67 @@ class MainController extends Controller
             return Redirect::back()->with('mes', "Message didn't send");
     }
 
-    public function showCoach($id)
+    public function showCoach($id,Request $request)
     {
-        return view('about/'.$id,
-            array('title' => 'coach','description' => ''));
+        if ($request->ajax()) {
+            return view('about/'.$id,
+                array('title' => 'coach','description' => ''));
+        }
+        else
+            return abort(404);
 
     }
 
-    public function showDetails()
+    public function showDetails(Request $request)
     {
-        return view('about/details',
-            array('title' => 'details','description' => ''));
+        if ($request->ajax()) {
+            return view('about/details',
+                array('title' => 'details','description' => ''));
+        }
+        else
+            return abort(404);
+
     }
 
-    public function showTrain()
+    public function showTrain(Request $request)
     {
-        return view('about/train',
-            array('title' => 'showTrain','description' => ''));
+        if ($request->ajax()) {
+            return view('about/train',
+                array('title' => 'showTrain','description' => ''));
+        }
+        else
+            return abort(404);
     }
 
-    public function showDetailsSelects()
+    public function showDetailsSelects(Request $request)
     {
-        return view('about/selects',
-            array('title' => 'showDetailsSelects','description' => ''));
+        if ($request->ajax()) {
+            return view('about/selects',
+                array('title' => 'showDetailsSelects','description' => ''));
+        }
+        else
+            return abort(404);
+
     }
-    public function showDetailsKrynica()
+    public function showDetailsKrynica(Request $request)
     {
-        return view('about/place',
-            array('title' => 'showDetailsKrynica','description' => ''));
+        if ($request->ajax()) {
+            return view('about/place',
+                array('title' => 'showDetailsKrynica','description' => ''));
+        }
+        else
+            return abort(404);
     }
 
-    public function showDetailsEducation()
+    public function showDetailsEducation(Request $request)
     {
-        return view('about/education',
-            array('title' => 'showDetailsEducation','description' => ''));
+        if ($request->ajax()) {
+            return view('about/education',
+                array('title' => 'showDetailsEducation','description' => ''));
+        }
+        else
+            return abort(404);
+
     }
 
 
@@ -92,22 +124,35 @@ class MainController extends Controller
     {
         $post = Article::getPostById($id);
         //$articles = 1;
+
         if ($request->ajax()) {
             return view('blog.article', ['post' =>  $post])->render();
         }
-        return view('blog.blog', compact('post'));
+        if(!is_null($post))
+            return view('blog.blog', compact('post'));
+        else
+            return abort(404);
 
     }
 
-    public function showDetailsSlovac()
+    public function showDetailsSlovac(Request $request)
     {
-        return view('about/slovac',
-            array('title' => 'showDetailsSlovac','description' => ''));
+        if ($request->ajax()) {
+            return view('about/slovac',
+                array('title' => 'showDetailsSlovac','description' => ''));
+        }
+        else
+            return abort(404);
+
     }
 
-    public function showLiving()
+    public function showLiving( Request $request)
     {
-        return view('about/living',
-            array('title' => 'showLiving'));
+        if ($request->ajax()) {
+            return view('about/living',
+                array('title' => 'showLiving'));
+        }
+        else
+            return abort(404);
     }
 }

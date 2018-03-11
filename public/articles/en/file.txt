@@ -1,5 +1,5 @@
-<p id="team-text-p">Место для Академии было выброно не случайно: 
-Материально техническая база, природный ланшафт, целебные питьевые источники. 
-Все это соответствует даже таким грандам и звездам Российского хоккея как Питерский СКА. 
-Ну и что еще делает очень привлекательным нашу Академию, так это территориальная близость
+<p id="team-text-p">The place for the Academy was not chosen by chance: 
+Material and technical base, natural landscape, medicinal waters. 
+All this corresponds to even such grandees and Russian hockey stars as SKA Saint Petersburg. 
+Well, what else makes our Academy very attractive is territorial proximity
 </p>

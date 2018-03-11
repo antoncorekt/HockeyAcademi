@@ -1,15 +1,15 @@
 @extends('layouts.main')
-@section('title', 'Hockey Academy')
+
 
 @section('header')
+
 <link rel="stylesheet" href="{{asset('public/css/main.css')}}" media="all">
-<script async  type="text/javascript" src="{{asset('js/VideoManager.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/VideoManager.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/ThreeCanvas.js')}}"></script>
 <script  type="text/javascript" src="{{asset('js/SnowManaged.js')}}"></script>
 <script  type="text/javascript" src="{{asset('js/Snow.js')}}"></script>
-<script  type="text/javascript" src="{{asset('public/js/preloader.js')}}"></script>
+<script  type="text/javascript" src="{{asset('js/preloader.js')}}"></script>
 <style>
-
     div#preloader {
         position: fixed;
         left: 0; top: 0;
@@ -19,9 +19,9 @@
         overflow: visible;
         background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center;
     }
-
-
 </style>
+
+<title>East Euro Hockey Lab</title>
 
 <script>
     $(document).ready(function () {
@@ -82,8 +82,7 @@
     
         <div class="flex-content flex-link-1">
             <div class="flex-text">
-                Сильный регулярный европейский чемпионат Словакии в группе
-                'Кадетты'. Гарантированное участие минимум в 23 играх;
+                {{ trans('messages.main_cadets') }}
             </div>
             <div class="flext-link">
                 <div class="arrow right"></div>
@@ -94,14 +93,12 @@
                 <div class="arrow left"></div>
             </div>
             <div class="flex-text">
-                ЕВРОПЕЙСКОЕ образования в лучших школах и университетах
-                с возможностью получение диплома американского образца;
+                {{ trans('messages.main_educ') }}
             </div>
         </div>
         <div class="flex-content flex-link-3">
             <div class="flex-text">
-                Продвинутый тренировочный процесс и уникальные методики  
-                под руководством ведущих специалистов Европы и СНГ. 
+                {{ trans('messages.main_coah') }}
             </div>
             <div class="flext-link">
                 <div class="arrow right"></div>
@@ -112,15 +109,13 @@
                 <div class="arrow left"></div>
             </div>
             <div class="flex-text">
-            Участие (по отдельному протоколу) в программе LEGASY GLOBAL SPORTS
-            - "чемпионат мира" среди лучших юниорских хоккейных команд.
+                {{ trans('messages.main_LGS') }}
             </div>
         </div>
         
         <div class="flex-content flex-link-5">
             <div class="flex-text">
-             Уникальное расположение в самом сердце Европы - круглогодичный 
-             горный (горнолыжный) курорт с динамическим развитием.
+                {{ trans('messages.main_place') }}
              </div>
             <div class="flext-link flex-link-1">
                 <div class="arrow right"></div>
@@ -154,7 +149,7 @@
                         <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" style="color: white; z-index:10 !important;">{{ trans('messages.events') }}</a>
                     </h5>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[0]->idPText) }}">
-                        <img src="{{$posts[0]->img_title}}" class="img-events">
+                        <img src="{{$posts[0]->img_title}}" class="img-events" alt="{{$posts[0]->idPText}}">
                     </a>
                     <p class="text-events">
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[0]->idPText) }}" style="color: white; z-index:10 !important;">
@@ -167,7 +162,7 @@
                         <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" style="color: white; z-index:10 !important;">{{ trans('messages.events') }}</a>
                     </h5>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[1]->idPText) }}">
-                        <img src="{{$posts[1]->img_title}}" class="img-events">
+                        <img src="{{$posts[1]->img_title}}" class="img-events" alt="{{$posts[1]->idPText}}">
                     </a>
                     <p class="text-events">
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[1]->idPText) }} " style="color: white; z-index:10 !important;">

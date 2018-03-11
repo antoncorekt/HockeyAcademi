@@ -1,49 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{{asset('js/getLang.js')}}"></script>
+    <script src="{{asset('js/getLang.js')}}"></script>
     <script>
     $(document).ready(function () {
         getLang();
         });
     </script>
-    @yield('header')
-    
 
 
-</head>
-<script>
-    $(document).ready(function () {
-        getLang();
-        var click = 0;
-        $("#navbar-btn").click(function() {
-            if(click == 0) {
-                $(".navbar-header").css("background-color", "rgba(88, 46, 99, 0.9)");
-                click = 1;
-            }
-            else{
-                $(".navbar-header").css("background-color", "transparent");
-                click = 0;
-            }
+    <script>
+        $(document).ready(function () {
+            getLang();
+            var click = 0;
+            $("#navbar-btn").click(function() {
+                if(click == 0) {
+                    $(".navbar-header").css("background-color", "rgba(88, 46, 99, 0.9)");
+                    click = 1;
+                }
+                else{
+                    $(".navbar-header").css("background-color", "transparent");
+                    click = 0;
+                }
+            });
         });
-    });
-</script>
+    </script>
+    <meta name="yandex-verification" content="d016d5a75b4d8148" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter47835631 = new Ya.Metrika({
+                        id:47835631,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/47835631" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <meta name="google-site-verification" content="cKvkfXewbPJQvro-OrgNGP9dw-1CRdVsHKIwCKqeS9w" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114787633-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114787633-1');
+    </script>
+
+        <!-- /Yandex.Metrika counter -->
+    @yield('header')
+</head>
+
 <body>
-
 @yield('before-nav')
-
-
 
 <div class="container-fluid" id="body-main">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
-            <img src="/../images/log.gif" id="logo-navheader">
+            <img src="/../images/log.gif" id="logo-navheader" alt="eehl-logo-2018">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" id="navbar-btn">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -64,7 +102,7 @@
                 <li class="nav-el men-lang">
                     <div class="dropdown">
                         <button class="dropdown-toggle lang" type="button" data-toggle="dropdown">
-                            <span class="flag"><img src="" class="flag-ico" id="flag"></span>
+                            <span class="flag"><img src="" class="flag-ico" id="flag" alt="flag"></span>
                             <span class="drop-text"><span id="selected"></span>
                             <span class="caret"></span></span>
                         </button>
@@ -72,21 +110,21 @@
                             <li>
                                 <a href="{{@getLangURI('ru')}}">
                                     <span class="flag">
-                                        <img src="/../../public/images/ru.png" class="flag-ico">
+                                        <img src="/../../public/images/ru.png" class="flag-ico" alt="ru">
                                     </span>
                                     <span class="drop-text">РУССКИЙ</span></a>
                             </li>
                             <li>
                                 <a href="{{@getLangURI('en')}}">
                                      <span class="flag">
-                                        <img src="/../../public/images/en.ico" class="flag-ico">
+                                        <img src="/../../public/images/en.ico" class="flag-ico" alt="en">
                                     </span>
                                     <span class="drop-text">ENGLISH</span></a>
                             </li>
                             <li>
                                 <a href="{{@getLangURI('pl')}}">
                                     <span class="flag">
-                                        <img src="/../../public/images/pl.ico" class="flag-ico">
+                                        <img src="/../../public/images/pl.ico" class="flag-ico" alt="pl">
                                     </span>
                                     <span class="drop-text">POLSKI</span></a>
                             </li>
