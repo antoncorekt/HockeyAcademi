@@ -8,7 +8,7 @@
 
 ?>
 @extends('layouts.main')
-@section('title', 'Hockey Academy 404')
+<title>East EHL - 404</title>
 
 <style>
     .navbar{

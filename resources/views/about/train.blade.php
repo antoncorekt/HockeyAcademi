@@ -1,42 +1,35 @@
 @extends('others.modal')
 @section('title-modal')
-    Как проходят наши тренировки?
+    {{ trans('messages.training_title') }}
 @endsection
 @section('content-modal')
     <div class="text-modal" style="font-size: 16px; line-height: 1.5em;">
-    <h4>Что касается тренировочного процесса в нашей Академии</h4>
+    <h4>{{ trans('messages.train_info') }}</h4>
     <br>
-    Философия EEHL - <b>развитие и воспитание личности.</b>
+        {{ trans('messages.philosophy_Ac') }} EEHL - <b>{{ trans('messages.philosophy_Ac1') }}.</b>
     <br>
-    Наши методы:
+        {{ trans('messages.train_info1') }}
     <ul style="list-style-type: decimal; font-size: 16px; ">
-        <li style="font-size: 16px; "> Индивидуальный подход к каждому абитурьенту. </li>
-        <li style="font-size: 16px; "> Системность и планирование. </li>
-        <li style="font-size: 16px; ">Учет особенностей сенсативных периодов. </li>
-        <li style="font-size: 16px; ">Углубленная специализация по амплуа (вратарь ,защитник, нападающий). </li>
-        <li style="font-size: 16px; ">Тестирование и контроль. </li>
+        <li style="font-size: 16px; "> {{ trans('messages.train_info2') }} </li>
+        <li style="font-size: 16px; "> {{ trans('messages.train_info3') }} </li>
+        <li style="font-size: 16px; "> {{ trans('messages.train_info4') }}</li>
+        <li style="font-size: 16px; "> {{ trans('messages.train_info5') }}</li>
+        <li style="font-size: 16px; "> {{ trans('messages.train_info6') }}</li>
     </ul>
     <br>
-    <h5 style="font-size: 16px; ">А что мы можем контролировать? </h5>
-    Только тренировочный процесс, подготовку. 
-    Традиционно мы говорим о результате - как о цели. <br>
-    А результат мы не можем контролировать. 
-    А значит ценность не в результате, а в росте игроков, <br>
-     это мы можем контролировать и это и есть <b>ЦЕЛЬ - воспитание игроков!</b>
-
+    <h5 style="font-size: 16px; ">{{ trans('messages.train_info7') }} </h5>
+        {{ trans('messages.train_info8') }}<br>
+        {{ trans('messages.train_info9') }}<br>
+        {{ trans('messages.train_info10') }} <b>{{ trans('messages.train_info11') }}</b>
      <br>
      <br>
-    Количество тренировок на льду: 5 раз в неделю по 1.30 часа плюс в выходной день,
-    дополнительно по желанию, есть еще 1.30 льда для индивидуальной работы.
+        {{ trans('messages.train_info12') }}
     <br>
-    Каждый день, до и после тренировки, разминка и заминка, минимум по 30 минут.
+        {{ trans('messages.train_info13') }}
     <br>
-    А так же восстановительные мероприятия, бассеин, сауна.
+        {{ trans('messages.train_info14') }}
     <br>
-    Занятия по теории с использованием тематического материала, просмотров игр НХЛ, КХЛ,
-     Чемпионатов Мира и Олимпийских Игр С дальнейшим разбором и анализом.
-       
-
+        {{ trans('messages.train_info15') }}
     </div>
 
 @endsection

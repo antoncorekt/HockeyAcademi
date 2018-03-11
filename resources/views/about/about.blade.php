@@ -1,16 +1,32 @@
 @extends('layouts.main')
 @section('header')
-    <meta name="description" content="
-    EEHL ОБЪЯВЛЯЕТ НОВЫЙ НАБОР В АКАДЕМИЮ ВЕСНОЙ 2018! Спорт и европейское образование. Лучшие тренера Европы и СНГ.
-    Участие в регулярном чемпионате Словакии, в международных турнирах SELECTS. EEHL официальный представитель компании LEGACY GLOBAL SPORTS!">
+    <meta name="description" content="{{ trans('messages.description_about') }}">
 
+    <title>East EHL - About</title>
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
 
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick-theme.css')}}"/>
-    <script type="text/javascript" src="{{asset('public/slick/slick.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('public/js/SliderManaged.js')}}"></script>
-    <script type="text/javascript" src="{{asset('public/js/imgGalManaged.js')}}"></script>
+    <script src="{{asset('public/slick/slick.min.js')}}"></script>
+    <script src="{{asset('public/js/SliderManaged.js')}}"></script>
+    <script src="{{asset('public/js/imgGalManaged.js')}}"></script>
+
+    <style>
+        body {
+            background-image: none;
+            background-color: white;
+        }
+
+        .photo-kryn{
+            display: block;
+        }
+
+        .video-kryn{
+            display: none;
+        }
+
+    </style>
+    <script src="{{asset('js/modalWindow.js')}}"></script>
 
     <script>
     $(document).ready(function () {
@@ -66,37 +82,13 @@
             var destination = $(elementClick).offset().top-650;
             $('html, body').animate({ scrollTop: destination }, 1100);
             }
-        
-    
-            
-        
-
     });
 
     </script>
 
 @endsection
 @section('content')
-    <style>
-        body {
-            background-image: none;
-            background-color: white;
-        }
 
-        .photo-kryn{
-            display: block;
-        }
-
-        .video-kryn{
-            display: none;
-        }
-
-
-
-
-    </style>
-    <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
-    
     <div class="container-fluid bg-1" id="about-1">
         <img src="/../../design/first_page/res/about_main.png" alt="Hockey Player About"/>
         <div class="row" id="main-text">
@@ -200,7 +192,7 @@
         </div>
     </div>
     <div class="container-fluid bg-3" id="about-3">
-        <img src="/../../design/first_page/res/textur.png" alt="texture" style="height: 100%;"/>
+        <img src="/../../design/first_page/res/textur.png" alt="texture" />
         <div class="row coach-text">
             <h5 class="h5-coach-text">{{ trans('messages.learn') }}?</h5>
             <h3 class="h3-coach-text">{{ trans('messages.coach') }}

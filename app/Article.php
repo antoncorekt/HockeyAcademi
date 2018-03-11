@@ -30,4 +30,19 @@ class Article extends Model
         return $post;
     }
 
+    public static function getParentIdPost($idPost){
+        $post = DB::table('post_text')
+            ->where('post_text.idPText', '=', $idPost)
+            ->first();
+        return $post->fkPost;
+    }
+
+    public static function getPostIdByParentIdAndLang($idParent, $lang){
+        $post = DB::table('post_text')
+            ->join('lang', 'post_text.fkLang', '=', 'lang.idLang')
+            ->where([['lang.name', '=', $lang], ['post_text.fkPost', '=', $idParent]])
+            ->first();
+        return $post->idPText;
+    }
+
 }

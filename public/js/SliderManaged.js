@@ -61,10 +61,8 @@ $(document).ready(function(){
       var bl = $("#s1rst-banner-last");
 
       if (bl.is(':visible')){
-        $("#btn-1rst-banner").text("ПОДРОБНОСТИ");
         bl.slideUp();
       }else{
-        $("#btn-1rst-banner").text("ПОДРОБНОСТИ");
         bl.slideDown();
       }
       

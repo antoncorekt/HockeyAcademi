@@ -1,14 +1,15 @@
 @extends('layouts.main')
-@section('title', 'Hockey Academy')
+
 
 @section('header')
+    <meta name="description" content="{{ trans('messages.description_index') }}">
 <link rel="stylesheet" href="{{asset('public/css/main.css')}}">
-<script type="text/javascript" src="{{asset('js/VideoManager.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/ThreeCanvas.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/SnowManaged.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/Snow.js')}}"></script>
-<meta name="description" content="East Euro Hockey Lab - Европейская Хоккейная Академия в Крынице-Здруй (Польша).
-Спорт без отрыва от обучения! Набор весной 2018 для мальчиков 2004 года рождения. Прекрасная возможность получить европейское образование!">
+<script src="{{asset('js/VideoManager.js')}}"></script>
+<script src="{{asset('js/ThreeCanvas.js')}}"></script>
+<script src="{{asset('js/SnowManaged.js')}}"></script>
+<script src="{{asset('js/Snow.js')}}"></script>
+
+<title>East Euro Hockey Lab</title>
 
 <script>
     $(document).ready(function () {
@@ -67,8 +68,7 @@
     
         <div class="flex-content flex-link-1">
             <div class="flex-text">
-                Сильный регулярный европейский чемпионат Словакии в группе
-                'Кадетты'. Гарантированное участие минимум в 23 играх;
+                {{ trans('messages.main_cadets') }}
             </div>
             <div class="flext-link">
                 <div class="arrow right"></div>
@@ -79,14 +79,12 @@
                 <div class="arrow left"></div>
             </div>
             <div class="flex-text">
-                ЕВРОПЕЙСКОЕ образования в лучших школах и университетах
-                с возможностью получение диплома американского образца;
+                {{ trans('messages.main_educ') }}
             </div>
         </div>
         <div class="flex-content flex-link-3">
             <div class="flex-text">
-                Продвинутый тренировочный процесс и уникальные методики  
-                под руководством ведущих специалистов Европы и СНГ. 
+                {{ trans('messages.main_coah') }}
             </div>
             <div class="flext-link">
                 <div class="arrow right"></div>
@@ -97,15 +95,13 @@
                 <div class="arrow left"></div>
             </div>
             <div class="flex-text">
-            Участие (по отдельному протоколу) в программе LEGASY GLOBAL SPORTS
-            - "чемпионат мира" среди лучших юниорских хоккейных команд.
+                {{ trans('messages.main_LGS') }}
             </div>
         </div>
         
         <div class="flex-content flex-link-5">
             <div class="flex-text">
-             Уникальное расположение в самом сердце Европы - круглогодичный 
-             горный (горнолыжный) курорт с динамическим развитием.
+                {{ trans('messages.main_place') }}
              </div>
             <div class="flext-link flex-link-1">
                 <div class="arrow right"></div>

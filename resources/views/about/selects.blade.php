@@ -1,30 +1,18 @@
 @extends('others.modal')
 @section('title-modal')
-    ЧТО ТАКОЕ SELECTS?
+    {{ trans('messages.selects_title') }}
 @endsection
 @section('content-modal')
     <div class="text-modal" style="font-size: 16px; line-height: 1.5em;">
-    Международная хоккейная Академия <b>'EEHL'</b> 
-    является эксклюзивным уполномоченным агентом 
-    Международного спортивного агентства 'WLS' (USA) на территории Восточной Европы.
-    <br>Это позволяет инклюзивно включать игроков нашей 
-    Академии в мировой лист просмотровых турниров серии 'Селектс',
-    что в конечном итоге позволит юным хоккеистам попасть 'на карандаш' 
-    лучших менеджеров и специалистов клубов Северной Америки и Европы.
-    <br>При достижении определенных спортивных успехов, 
-    Академия готова предоставить юному спортсмену, 
-    СОГЛАСНО ОТДЕЛЬНОГО ПРОТОКОЛА, возможность участия 
-    в выставочной команде 'EEHL SELEKTS' минимум в трех международных турнирах, 
-    проходящих под эгидой 'WLS' в Северной Америке и странах Европы:
+        <p>{{ trans('messages.selects_info') }} <b>'EEHL'</b>
+            {{ trans('messages.selects_info1') }} </p>
+        <p>{{ trans('messages.selects_info2') }}</p>
+        <p>{{ trans('messages.selects_info3') }}</p>
     <ul>
-        <li style="font-size: 16px; ">Турнир в Испании 2018 (Сан-Себастьян)</li>
-        <li style="font-size: 16px; ">Турнир в России 2018 (Ярославль)</li>
-        <li style="font-size: 16px; ">Турнир в США 2018 (Филадельфия)</li>
+        <li style="font-size: 16px; ">{{ trans('messages.selects_tur') }}</li>
+        <li style="font-size: 16px; ">{{ trans('messages.selects_tur1') }}</li>
+        <li style="font-size: 16px; ">{{ trans('messages.selects_tur2') }}</li>
     </ul>
-
-    <a href="http://www.lgstours.com/page/show/1001318--" target="_blank">Больше на сайте Selects</a>
-
-
+    <a rel="nofollow" href="http://www.lgstours.com/page/show/1001318--" target="_blank">{{ trans('messages.select_more_link') }}</a>
     </div>
-
 @endsection

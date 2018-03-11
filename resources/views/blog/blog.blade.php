@@ -1,21 +1,20 @@
 @extends('layouts.main')
-@section('title', 'Hockey Academy Blog')
 
 @section('header')
-    <meta name="description" content="Европейская Хоккейная Академия в Польше.
-        Блог Хоккейной академии - здесь вы узнаете наши крайние новости и другие интересные события. Летние лагеря в Крынице-Здруй! SELECTS НАБОР В CАН-СЕБАСТЬЯН!">
+    <meta name="description" content="{{ trans('messages.description_blog') }}">
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
     <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/paginateAjax.js')}}"></script>
-
+    <title>East EHL - Blog</title>
+    <style>
+        body {
+            background-image: none;
+            background-color: white !important;
+        }
+    </style>
 
 @endsection
-<style>
-    body {
-        background-image: none;
-        background-color: white !important;
-    }
-</style>
+
 @section('content')
     <div class="container-fluid bg-1 blog-1">
         <img src="/../public/images/blog_img.png" alt="hockey-player-blog"/>
