@@ -4,12 +4,16 @@
 
     <title>East EHL - About</title>
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
+    <link rel="stylesheet" href="{{asset('public/css/animate.css')}}">
 
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick-theme.css')}}"/>
-    <script src="{{asset('public/slick/slick.min.js')}}"></script>
-    <script src="{{asset('public/js/SliderManaged.js')}}"></script>
-    <script src="{{asset('public/js/imgGalManaged.js')}}"></script>
+
+    <script type="text/javascript" src="{{asset('public/slick/slick.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('public/js/SliderManaged.js')}}"></script>
+    <script type="text/javascript" src="{{asset('public/js/imgGalManaged.js')}}"></script>
+    <script type="text/javascript" src="{{asset('public/js/preloader.js')}}"></script>
+    <script type="text/javascript" src="{{asset('public/js/wow.min.js')}}"></script>
 
     <style>
         body {
@@ -30,6 +34,8 @@
 
     <script>
     $(document).ready(function () {
+        new WOW().init();
+
         var params = window
         .location
         .search
@@ -89,16 +95,37 @@
 @endsection
 @section('content')
 
+    <style>
+        .video-kryn{
+            display: none;
+        }
+
+        div#preloader {
+            position: fixed;
+            left: 0; top: 0;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+            background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center;
+        }
+
+
+    </style>
+    <div id="preloader"></div>
+
+    <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
+
     <div class="container-fluid bg-1" id="about-1">
         <img src="/../../design/first_page/res/about_main.png" alt="Hockey Player About"/>
         <div class="row" id="main-text">
-            <h1 class="h1-about h1-main-page" >{{ trans('messages.grow') }} </h1>
-            <h1 class="h1-about h1-main-page">{{ trans('messages.grow1') }}</h1>
+            <h1 class="h1-about h1-main-page " data-wow-duration="1s" >{{ trans('messages.grow') }} </h1>
+            <h1 class="h1-about h1-main-page" data-wow-duration="1s" data-wow-delay="1.3s" >{{ trans('messages.grow1') }}</h1>
             <p class="main-text-p" id="t-about">
                 {{ trans('messages.care') }}
                 <br>{{ trans('messages.care1') }}
             </p>
-            <button class="btn btn-main btn-about" id="btn-main">{{ trans('messages.know_more1') }}</button>
+            <button class="btn btn-main btn-about wow slideInLeft" data-wow-duration="2s" id="btn-main">{{ trans('messages.know_more1') }}</button>
         </div>
 
     </div>
@@ -106,26 +133,33 @@
     <div class="container-fluid bg-2" id="about-2">
         <img src="/../../design/first_page/res/white_sql.png" alt="White square background"/>
         <div class="row" id="sq-text" >
-            <div class="col-md-2 col-sm-2 sq-text" id="sq-text-1">
+
+            <div class="col-md-2 col-sm-2 sq-text " id="sq-text-1">
+                <div class="wow slideInLeft">
                 <h1>21</h1>
                 <p>
                     {{ trans('messages.70text') }}
                     <br>{{ trans('messages.70text1') }}
                 </p>
+                </div>
             </div>
             <div class="col-md-2 col-sm-2 sq-text" id="sq-text-2">
+                <div class="wow slideInDown">
                 <h1>4</h1>
                 <p>
                     {{ trans('messages.10text') }}
                     <br>{{ trans('messages.10text1') }}
                 </p>
+                </div>
             </div>
             <div class="col-md-2 col-sm-2 sq-text" id="sq-text-3">
+                <div class="wow slideInRight">
                 <h1>10</h1>
                 <p>
                     {{ trans('messages.12text') }}
                     <br>{{ trans('messages.12text1') }}
                 </p>
+                </div>
             </div>
         </div>
         <div class="sldr">
@@ -200,6 +234,7 @@
             </h3>
         </div>
         <div class="row coach-text" id="coach-photos">
+
             <div class="col-md-2 col-sm-2 col-xs-3 coach ">
                 <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-coach/parf') }}"
                    data-toggle="modal" data-target="#modalArt" >
