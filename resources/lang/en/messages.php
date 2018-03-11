@@ -327,6 +327,19 @@ return [
     'train_info4' => 'Accounting for the peculiarities of sensitive periods.',
     'train_info5' => 'Deep specialization in the role (goalkeeper, defender, forward).',
     'train_info6' => 'Testing and control.',
+    'train_info7' => 'And what can we control?',
+    'train_info8' => 'Only the training process, the physical training. 
+        Traditionally we are talking about the result - as a goal.',
+    'train_info9' => 'And we can not control the result. 
+        So the value is not the result, but in the growth of players,',
+    'train_info10' => 'this we can control and this is',
+    'train_info11' => 'THE GOAL - the education of players!',
+    'train_info12' => 'Number of training on the ice: 5 times per week for 1.30 hours plus on a day off,
+        additionally, if desired, there is another 1.30 hours of ice for individual work.',
+    'train_info13' =>'Every day, before and after training, warm-up and cooling down, minimum of 30 minutes.',
+    'train_info14' => 'And also restoration activities, swimming pool, sauna.',
+    'train_info15' => 'Theory classes using thematic material, views of NHL and KHL games, 
+        World Championships and Olympic Games With further analysis.',
 
     'BackToBlog' => 'ALL NEWS',
     'blogTitle' => 'THE HOCKEY ACADEMY',

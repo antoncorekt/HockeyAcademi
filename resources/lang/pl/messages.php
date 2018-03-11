@@ -132,6 +132,7 @@ return [
 
     'old_cost' => 'STARA CENA BEZ ZNIŻEK',
     'offer_cost' => 'OFERTA PROMOCYJNA',
+    'month' =>'mies',
 
     'imp_to_know' => 'TRZEBA WIEDZIEĆ',
     'tours' => 'Wycieczki studyjne podczas wakacji wiosennych 24.03-25.03.2018 i 31.03-01.04.2018 roku',
@@ -328,6 +329,19 @@ return [
     'train_info4' => 'Uwzględnianie specyfiki okresów wrażliwych.',
     'train_info5' => 'Głęboka specjalizacja w roli (bramkarz, obrońca, naprzód).',
     'train_info6' => 'Badanie i kontrola.',
+    'train_info7' => 'A co możemy kontrolować?',
+    'train_info8' => 'Tylko proces treningu, trening fizyczny. 
+        Tradycyjnie mówimy o rezultacie - jako celu.',
+    'train_info9' => 'I nie możemy kontrolować rezultatu. 
+        Więc wartość nie jest rezultatem, ale jest rozwojem zawodników,',
+    'train_info10' => 'możemy to kontrolować i to jest',
+    'train_info11' => 'CELEM - edukacja zawodników!',
+    'train_info12' => 'Liczba zajęć na lodzie: 5 razy w tygodniu po 1,30 godziny plus w dzień wolny,
+        na życzenie, kolejne 1,30 godziny lodu do indywidualnej pracy.',
+    'train_info13' =>'Każdego dnia przed i po treningu, rozgrzewanie i chłodzenie, сo najmniej 30 minut.',
+    'train_info14' => 'A także rekultywacja, basen, sauna.',
+    'train_info15' => 'Zajęcia teoretyczne z wykorzystaniem materiałów tematycznych, poglądy na gry NHL i KHL,
+        Mistrzostwa Świata i Igrzyska Olimpijskie z dalszymi analizami.',
 
 
     'BackToBlog' => 'ALL NEWS',
