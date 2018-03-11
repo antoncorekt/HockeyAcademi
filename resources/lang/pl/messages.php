@@ -100,7 +100,7 @@ return [
     'learn' => 'KTO BĘDZIE NAUCZAĆ',
     'coach' => 'NASI PROFESJONALNI',
     'coach1' => 'TRENERZY',
-    'coaches' => 'ZOBACZ WSZYSTKICH TRENERÓW',
+    'coaches' => 'NASZ PROCES SZKOLENIA',
     'where' => 'GDZIE JEST DOSTARCZANY TRENING?',
     'where1' =>'PIĘKNE GÓRY',
     'where2' => 'I PRZESTRONNE STADIONY',

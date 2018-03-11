@@ -98,7 +98,7 @@ return [
     'learn' => 'WHO WILL BE TEACHING',
     'coach' => 'OUR PROFESSIONAL',
     'coach1' => 'COACHES',
-    'coaches' => 'SEE ALL COACHES',
+    'coaches' => 'OUR TRAINING PROCESS',
     'where' => 'WHERE IS TRAINING DELIVERED?',
     'where1' =>'PAINTING MOUNTAINS',
     'where2' => 'AND SPACIOUS STADIUMS',
