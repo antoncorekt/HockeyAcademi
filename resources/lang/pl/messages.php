@@ -359,5 +359,16 @@ return [
     'blogTitle' => 'BLOG AKADEMII',
     'blogTitle1' => 'HOKEJOWEJ',
     'show_more' => 'POKAZYWAĆ CAŁY TEKST',
+
+    'description_index' => 'East Euro Hockey Lab - Europejska Akademia Hokeja w Krynicy-Zdrój (Polska).
+       Sport bez oddzielenia studiów! Zapis na studia wiosną 2018 r. dla chłopców urodzonych w 2004 r. Doskonała okazja do zdobycia europejskiej edukacji!',
+    'description_about' => 'EEHL OGŁASZA NOWE REKRUTACJE DO AKADEMII WIOSNĄ 2018! Sport i edukacja europejska. Najlepsi trenerzy w Europie i krajach WNP.
+        Udział w regularnych mistrzostwach Słowacji, w turniejach międzynarodowych SELECTS. EEHL оficjalny przedstawiciel firmy LEGACY GLOBAL SPORTS!',
+    'description_blog' => 'Europejska Akademia Hokeja w Polsce.
+        Blog Akademii Hokejowej - tutaj dowiedzą się Państwo najnowszych wiadomości i innych interesujących wydarzeń. Lato Obóz w Krynica-Zdrój! SELECTS REKRUTACJA W SAN SEBASTIAN(HISZPANIA)!',
+    'description_contacts' => 'East Euro Hockey Lab - Europejska Akademia Hokeja w Polsce.
+        Sport bez oddzielenia studiów! Zapis na studia wiosną 2018 r. dla chłopców urodzonych w 2004 r. Pośpiesz się skontaktować z naszymi profesjonalnymi trenerami: Andrejem Parfyonovym i Andrejem Savchenko!',
+
+
 ];
 ?>

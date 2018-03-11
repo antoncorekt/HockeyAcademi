@@ -356,5 +356,16 @@ return [
     'blogTitle' => 'THE HOCKEY ACADEMY',
     'blogTitle1' => 'BLOG',
     'show_more' => 'SHOW MORE',
+
+    'description_index' => 'East Euro Hockey Lab - European Hockey Academy in Krynica-Zdrój (Poland).
+        Sport without separation of study! The enrolment in the spring of 2018 for boys born in 2004. A great opportunity to get the European education!',
+    'description_about' => 'EEHL ANNOUNCES NEW ENROLMENT IN THE ACADEMY IN SPRING 2018! Sport and the European education. The best coaches in Europe and the CIS.
+        Participation in the regular championship of Slovakia, in international tournaments SELECTS. EEHL official representative of the company LEGACY GLOBAL SPORTS!',
+    'description_blog' => 'European Hockey Academy in Poland.
+        The Hockey Academy Blog - here you will learn our latest news and other interesting events. Summer Camps in Krynica-Zdrój! SELECTS ENROLMENT IN SAN SEBASTIAN(SPAIN)!',
+    'description_contacts' => 'East Euro Hockey Lab - European Hockey Academy in Poland.
+        Sport without separation of study! The enrolment in the spring of 2018 for boys born in 2004. Hurry to contact our professional trainers: Andrey Parfyonov and Andrey Savchenko!',
+
+
 ];
 ?>

@@ -1,8 +1,7 @@
 @extends('layouts.main')
 
 @section('header')
-    <meta name="description" content="Европейская Хоккейная Академия в Польше.
-        Блог Хоккейной академии - здесь вы узнаете наши крайние новости и другие интересные события. Летние лагеря в Крынице-Здруй! SELECTS НАБОР В CАН-СЕБАСТЬЯН!">
+    <meta name="description" content="{{ trans('messages.description_blog') }}">
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
     <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/paginateAjax.js')}}"></script>

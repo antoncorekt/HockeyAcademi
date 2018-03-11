@@ -1,8 +1,6 @@
 @extends('layouts.main')
 @section('header')
-    <meta name="description" content="
-    EEHL ОБЪЯВЛЯЕТ НОВЫЙ НАБОР В АКАДЕМИЮ ВЕСНОЙ 2018! Спорт и европейское образование. Лучшие тренера Европы и СНГ.
-    Участие в регулярном чемпионате Словакии, в международных турнирах SELECTS. EEHL официальный представитель компании LEGACY GLOBAL SPORTS!">
+    <meta name="description" content="{{ trans('messages.description_about') }}">
 
     <title>East EHL - About</title>
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
