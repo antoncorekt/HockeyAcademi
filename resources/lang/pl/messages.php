@@ -38,7 +38,7 @@ return [
     '12text1' => 'KONTRAKT',
     'learn' => 'KTO BĘDZIE NAUCZAĆ',
     'coach' => 'NASI PROFESJONALNI',
-    // 'coach1' => 'COACHES',
+    'coach1' => 'TRENERZY',
     'coaches' => 'ZOBACZ WSZYSTKICH TRENERÓW',
     'where' => 'GDZIE JEST DOSTARCZANY TRENING?',
     'where1' =>'PIĘKNE GÓRY',
@@ -58,5 +58,21 @@ return [
     'write_learn' => 'ZAPISZ SIĘ NA KURS',
     'old_cost' => 'STARA CENA BEZ ZNIŻEK',
     'offer_cost' => 'OFERTA PROMOCYJNA',
+
+    'Location' =>'Lokalizacja',
+    'ul' => 'ul. Halna, 12,',
+    'city' => 'Krynica-Zdrój',
+    'voevod' => 'Województwo małopolskie',
+    'country' => 'Polska',
+    'Telephone' => 'Telefony',
+    'ukr' => 'Ukraina',
+    'rus' => 'Rosja',
+    'bel' => 'Białoruś',
+    'eur' => 'Europa',
+    'parfionov' => 'Andrey Parfyonov',
+    'savchenko' => 'Andrey Savchenko',
+    'ruzhana' => 'Wojciech Różana',
+
+    'BackToBlog' => 'ALL NEWS',
 ];
 ?>

@@ -8,21 +8,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="{{asset('js/getLang.js')}}"></script>
-    <link rel="stylesheet" href="../../css/style.css">
-    <title>Hockey Academy</title>
+    <script>
+    $(document).ready(function () {
+        getLang();
+        });
+    </script>
+    @yield('header')
+    
+
+
 </head>
 <script>
     $(document).ready(function () {
         getLang();
+        var click = 0;
+        $("#navbar-btn").click(function() {
+            if(click == 0) {
+                $(".navbar-header").css("background-color", "rgba(88, 46, 99, 0.9)");
+                click = 1;
+            }
+            else{
+                $(".navbar-header").css("background-color", "transparent");
+                click = 0;
+            }
+        });
     });
-
 </script>
 <body>
+
+@yield('before-nav')
+
+
 
 <div class="container-fluid" id="body-main">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <img src="/../images/log.gif" id="logo-navheader">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" id="navbar-btn">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -35,8 +57,8 @@
                 <li class="nav-el men-main"><a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/")}}">{{ trans('messages.main') }}</a></li>
                 <li class="nav-el"><a class=" men-about" href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/about")}}">{{ trans('messages.about') }}</a></li>
                 <li class="nav-el menu-logo"><a href="#"></a></li>
-                <li class="nav-el men-blog"><a href="#">{{ trans('messages.blog') }}</a></li>
-                <li class="nav-el men-contacts"><a href="#">{{ trans('messages.cont') }}</a></li>
+                <li class="nav-el men-blog"><a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}">{{ trans('messages.blog') }}</a></li>
+                <li class="nav-el men-contacts"><a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/contacts")}}">{{ trans('messages.cont') }}</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-el men-lang">
@@ -50,21 +72,21 @@
                             <li>
                                 <a href="{{@getLangURI('ru')}}">
                                     <span class="flag">
-                                        <img src="../../public/images/ru.png" class="flag-ico">
+                                        <img src="/../../public/images/ru.png" class="flag-ico">
                                     </span>
                                     <span class="drop-text">РУССКИЙ</span></a>
                             </li>
                             <li>
                                 <a href="{{@getLangURI('en')}}">
                                      <span class="flag">
-                                        <img src="../../public/images/en.ico" class="flag-ico">
+                                        <img src="/../../public/images/en.ico" class="flag-ico">
                                     </span>
                                     <span class="drop-text">ENGLISH</span></a>
                             </li>
                             <li>
                                 <a href="{{@getLangURI('pl')}}">
                                     <span class="flag">
-                                        <img src="../../public/images/pl.ico" class="flag-ico">
+                                        <img src="/../../public/images/pl.ico" class="flag-ico">
                                     </span>
                                     <span class="drop-text">POLSKI</span></a>
                             </li>

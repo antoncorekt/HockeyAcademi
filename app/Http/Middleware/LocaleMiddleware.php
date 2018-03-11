@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Request;
 
 class LocaleMiddleware
 {
-    public static $mainLanguage = 'ru'; //main lang. not show at URl
+  //  public static $mainLanguage = 'en'; //main lang. not show at URl
 
     public static $languages = ['en', 'ru', 'pl'];
 
@@ -36,7 +36,8 @@ class LocaleMiddleware
             return $segmentsURI[0];
 
         } else {
-            return  self::$mainLanguage;
+            return self::getLocaleUserLang();
+            //return  self::$mainLanguage;
         }
     }
 
@@ -55,4 +56,35 @@ class LocaleMiddleware
 
         return $next($request);
     }
+
+    /**
+     * Get Locale User Language
+     * @return string
+     */
+    public static function getLocaleUserLang(){
+        $userLang =  $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+        $mainLanguage = 'en';
+
+        $langs = explode(',',$userLang);
+
+        foreach($langs as $lang)
+        {
+            $s = explode("-", $lang);
+
+            //if it is Ukraine or Belarus
+            if($s[0] === 'be' || $s[0] === 'uk')
+            {
+                $mainLanguage = 'ru';
+                break;
+            }
+            if(in_array($s[0], self::$languages))
+            {
+                // Set the page locale to the first supported language found
+                $mainLanguage = $s[0];
+                break;
+            }
+        }
+        return $mainLanguage;
+    }
+
 }
