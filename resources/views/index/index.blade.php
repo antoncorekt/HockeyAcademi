@@ -69,8 +69,7 @@
     
         <div class="flex-content flex-link-1">
             <div class="flex-text">
-                Сильный регулярный европейский чемпионат Словакии в группе
-                'Кадетты'. Гарантированное участие минимум в 23 играх;
+                {{ trans('messages.main_cadets') }}
             </div>
             <div class="flext-link">
                 <div class="arrow right"></div>
@@ -81,14 +80,12 @@
                 <div class="arrow left"></div>
             </div>
             <div class="flex-text">
-                ЕВРОПЕЙСКОЕ образования в лучших школах и университетах
-                с возможностью получение диплома американского образца;
+                {{ trans('messages.main_educ') }}
             </div>
         </div>
         <div class="flex-content flex-link-3">
             <div class="flex-text">
-                Продвинутый тренировочный процесс и уникальные методики  
-                под руководством ведущих специалистов Европы и СНГ. 
+                {{ trans('messages.main_coah') }}
             </div>
             <div class="flext-link">
                 <div class="arrow right"></div>
@@ -99,15 +96,13 @@
                 <div class="arrow left"></div>
             </div>
             <div class="flex-text">
-            Участие (по отдельному протоколу) в программе LEGASY GLOBAL SPORTS
-            - "чемпионат мира" среди лучших юниорских хоккейных команд.
+                {{ trans('messages.main_LGS') }}
             </div>
         </div>
         
         <div class="flex-content flex-link-5">
             <div class="flex-text">
-             Уникальное расположение в самом сердце Европы - круглогодичный 
-             горный (горнолыжный) курорт с динамическим развитием.
+                {{ trans('messages.main_place') }}
              </div>
             <div class="flext-link flex-link-1">
                 <div class="arrow right"></div>

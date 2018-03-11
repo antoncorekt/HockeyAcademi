@@ -23,6 +23,17 @@ return [
     'care1' => 'idealne warunki europejskie przyczynią się do rozwoju gwiazdy hokeja światowego klasy',
     'know_more1' => 'DLACZEGO JESTEŚMY NAJLEPSI?',
 
+    'main_cadets' => 'Silne regularne Mistrzostwa Słowacji w grupie
+                \'Кадетты\'. Gwarantowany udział w co najmniej 23 grach;',
+    'main_educ' => 'EUROPEJSKA edukacja w najlepszych szkołach i uniwersytetach,
+                oraz możliwość uzyskania amerykańskiego dyplomu;',
+    'main_coah' => 'Zaawansowany proces szkolenia i unikatowe techniki  
+                pod kierownictwem najlepszych ekspertów w Europie i WNP.',
+    'main_LGS' => 'Udział (zgodnie z odrębnym protokołem) w programie LEGASY GLOBAL SPORTS
+            - "Mistrzostwa Świata" wśród najlepszych zespołów hokeja juniorów.',
+    'main_place' => 'Wyjątkowa lokalizacja w sercu Europy - całoroczny 
+             kurort górski (ośrodek narciarski) z dynamicznym rozwojem.',
+
 
     'enrolment' => 'REKRUTACJA2018',
     'your_chance' => 'TWOJASZANSA',

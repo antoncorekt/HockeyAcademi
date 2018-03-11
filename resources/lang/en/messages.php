@@ -24,6 +24,17 @@ return [
     'care1' => 'ideal European conditions will help to grow a world-class hockey star',
     'know_more1' => 'WHY WE ARE THE BEST',
 
+    'main_cadets' => 'Strong regular the European Slovak Championship in the group
+                \'Cadets\'. Guaranteed participation in at least 23 games;',
+    'main_educ' => 'EUROPEAN education in the best schools and universities,
+                plus the opportunity to receive an American diploma;',
+    'main_coah' => 'Advanced training process and unique techniques  
+                under the leadership of leading experts in Europe and the CIS.',
+    'main_LGS' => 'Participation (according to a separate protocol) in the program LEGASY GLOBAL SPORTS
+            -"World Championship" among the best junior hockey teams.',
+    'main_place' => 'Unique location in the heart of Europe - year-round 
+             mountain (ski) resort with dynamic development.',
+
     'enrolment' => 'ENROLMENT2018',
     'your_chance' => 'YOURCHANCE',
     'new_enrolment' => 'EEHL ANNOUNCES A NEW ENROLMENT TO THE ACADEMY',
