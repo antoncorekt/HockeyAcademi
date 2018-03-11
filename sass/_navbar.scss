@@ -260,9 +260,11 @@
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+    color: #BEBEBE;
+}
+.lang:focus, .lang:hover{
     color: #ffeb3c;
 }
-
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: transparent;
 }
