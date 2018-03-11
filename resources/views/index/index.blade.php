@@ -2,14 +2,23 @@
 @section('title', 'Hockey Academy')
 
 @section('header')
-<link rel="stylesheet" href="{{asset('public/css/main.css')}}">
-<script type="text/javascript" src="{{asset('js/VideoManager.js')}}"></script>
+<link rel="stylesheet" href="{{asset('public/css/main.css')}}" media="all">
+<script async  type="text/javascript" src="{{asset('js/VideoManager.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/ThreeCanvas.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/SnowManaged.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/Snow.js')}}"></script>
+<script  type="text/javascript" src="{{asset('js/SnowManaged.js')}}"></script>
+<script  type="text/javascript" src="{{asset('js/Snow.js')}}"></script>
+<script  type="text/javascript" src="{{asset('public/js/preloader.js')}}"></script>
 <style>
-        
 
+    div#preloader {
+        position: fixed;
+        left: 0; top: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center;
+    }
 
 
 </style>
@@ -55,6 +64,8 @@
 @endsection
 
 @section('before-nav')
+<div id="preloader"></div>
+
 <!-- <div id="video">
 
 <button class="video-skip">Skip video</button>

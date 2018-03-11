@@ -1208,6 +1208,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
 .list-know{
   font-family: "OpenSans-Bold", sans-serif;
   list-style: none;
+  cursor: pointer;
 
   @include respond-to($large-desktop) {
     font-size: 20px;
