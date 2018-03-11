@@ -1,0 +1,16 @@
+User-agent: *
+
+Allow: /
+Disallow: /sass/
+Disallow: /database/
+Disallow: /css/
+Disallow: /config/
+Disallow: /bootstrap/
+Disallow: /storage/
+Disallow: /*.env
+Disallow: /*.gitignore
+Disallow: /env_settings.txt
+Disallow: /artisan
+
+Sitemap: http://ehlab.org/sitemap.xml
+Host: ehlab.org
