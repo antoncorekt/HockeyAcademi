@@ -3,7 +3,7 @@
 
 @section('header')
 
-<link rel="stylesheet" href="{{asset('public/css/main.css')}}" media="all">
+<link rel="stylesheet" href="{{asset('public/css/main.css')}}" >
 <script type="text/javascript" src="{{asset('js/VideoManager.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/ThreeCanvas.js')}}"></script>
 <script  type="text/javascript" src="{{asset('js/SnowManaged.js')}}"></script>
