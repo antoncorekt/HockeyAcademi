@@ -1,4 +1,4 @@
-<p id="team-text-p">The place for the Academy was not chosen by chance: 
+<p class="team-text-p">The place for the Academy was not chosen by chance: 
 Material and technical base, natural landscape, medicinal waters. 
 All this corresponds to even such grandees and Russian hockey stars as SKA Saint Petersburg. 
 Well, what else makes our Academy very attractive is territorial proximity

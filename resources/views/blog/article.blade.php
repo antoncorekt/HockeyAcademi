@@ -13,7 +13,7 @@
     <div class="col-lg-4 col-sm-6 col-xs-9">
         <p class="blog-date">{{$post->create_date}}</p>
         <h3 class="h1-team-page" id="h3-team">{{$post->title}}</h3>
-        <p id="team-text-p">
+        <p class="team-text-p">
         <?php
             $article = iconv('CP1251', 'UTF-8', file_get_contents($post->text));
             echo $article;

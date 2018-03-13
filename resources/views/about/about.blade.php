@@ -162,7 +162,7 @@
             </div>
         </div>
         <div class="sldr">
-            <div class="row team euro team-text">
+            <div class="row team euro" id="team-text">
 
 
                     <div class="col-lg-6 col-md-5 col-sm-9 col-xs-9">
@@ -193,7 +193,7 @@
                         </a>
                     </div>
             </div>
-            <div class="row team team-text">
+            <div class="row team" id="team-text-1">
 
 
                     <div class="col-lg-6 col-md-5 col-sm-9 col-xs-9">
@@ -300,45 +300,45 @@
                             <div id="caption"></div>
                         </div>
                         <div class = "yellow-back">
-                            <img id="img-where" src="{{asset('images/gal/yell.jpg')}}" alt="yellow square"/>
+                            <img class="img-where" src="{{asset('images/gal/yell.jpg')}}" alt="yellow square"/>
                         </div>
                         <a class="prev arr-gal" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next arr-gal" onclick="plusSlides(1)">&#10095;</a>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/2.jpg')}}" alt="EEHL school"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/2.jpg')}}" alt="EEHL school"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/1.jpg')}}" alt="EEHL school in Krynica-Zdrój"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/1.jpg')}}" alt="EEHL school in Krynica-Zdrój"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/3.jpg')}}" alt="Painting mountains"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/3.jpg')}}" alt="Painting mountains"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/4.jpg')}}" alt="Polish Switzerland"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/4.jpg')}}" alt="Polish Switzerland"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/5.jpg')}}" alt="Excellent mountain climate"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/5.jpg')}}" alt="Excellent mountain climate"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/6.jpg')}}" alt="Modern infrastructure"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/6.jpg')}}" alt="Modern infrastructure"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/7.jpg')}}" alt="SPACIOUS STADIUMS"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/7.jpg')}}" alt="SPACIOUS STADIUMS"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/8.jpg')}}" alt="room at the school"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/8.jpg')}}" alt="room at the school"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/9.jpg')}}" alt="rest at the school"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/9.jpg')}}" alt="rest at the school"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/10.jpg')}}" alt="the hockey stadium"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/10.jpg')}}" alt="the hockey stadium"/>
                         </div>
                     </div>  
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-9">
                     <h3 class="h1-team-page kryn" id="h3-team">{{ trans('messages.climate') }}</h3>
-                    <p id="team-text-p">
+                    <p class="team-text-p">
                         {{ trans('messages.about_town') }}
                     </p>
                     <p>
@@ -352,7 +352,7 @@
             <div class="row where-text-1 edu"  id="where-photos1">
                 <div class="col-lg-4 col-sm-6 edu">
                     <h3 class="h1-team-page">{{ trans('messages.hockey_educ') }}!</h3>
-                    <p id="team-text-p">
+                    <p class="team-text-p">
                         {{ trans('messages.hockey_educ1') }}
 
                     </p>
@@ -364,7 +364,7 @@
                 <div class="col-lg-5 col-md-5 col-sm-6  col-xs-9">
                     <img src="/../../design/first_page/res/photo-3.jpg" id="img-where" class="photo-kryn" alt="Krynica-Zdrój"/>
                     <div class="video-kryn">
-                        <iframe src="https://www.youtube.com/embed/lQsFMf2Fl5I"  id="img-where" height="300"  style="border: 1px;" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/lQsFMf2Fl5I"  id="img-where-1" height="300px" frameborder="1" allowfullscreen></iframe>
                     </div>
                 </div>
                

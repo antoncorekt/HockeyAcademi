@@ -1,4 +1,4 @@
-<p id="team-text-p">The Academy will participate in the enrolment SELECTS, 
+<p class="team-text-p">The Academy will participate in the enrolment SELECTS, 
 which will take place in SAN SEBASTIAN (Spain) in May 2018. 
 For more detailed information, please contact our coaches.
 Learn everything about the enrolment.</p>
