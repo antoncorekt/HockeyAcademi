@@ -1532,7 +1532,8 @@ body {
 
 .list-know {
   font-family: "OpenSans-Bold", sans-serif;
-  list-style: none; }
+  list-style: none;
+  cursor: pointer; }
   @media only screen and (min-width: 1024px) {
     .list-know {
       font-size: 20px; } }
