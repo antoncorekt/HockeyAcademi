@@ -6,7 +6,7 @@
                 @if(is_null($article->video_title))
                     <img id="img-where" src="{{$article->img_title}}" alt="{{$article->title}}"/>
                 @else
-                    <iframe  class="video-blog" src="{{$article->video_title}}" frameborder="0" allowfullscreen></iframe>
+                    <iframe  class="video-blog" src="{{$article->video_title}}" style="border: 0;" allowfullscreen></iframe>
                 @endif
 
             </div>

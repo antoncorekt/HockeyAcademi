@@ -1,19 +1,20 @@
 @extends('layouts.main')
 @section('header')
-    <meta name="description" content="{{ trans('messages.description_about') }}">
-
+    <meta name="description" content="{{ trans('messages.description_about') }}" />
     <title>East EHL - About</title>
+
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
     <link rel="stylesheet" href="{{asset('public/css/animate.css')}}">
 
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick-theme.css')}}"/>
 
-    <script type="text/javascript" src="{{asset('public/slick/slick.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('public/js/SliderManaged.js')}}"></script>
-    <script type="text/javascript" src="{{asset('public/js/imgGalManaged.js')}}"></script>
-    <script type="text/javascript" src="{{asset('public/js/preloader.js')}}"></script>
-    <script type="text/javascript" src="{{asset('public/js/wow.min.js')}}"></script>
+    <script src="{{asset('public/slick/slick.min.js')}}"></script>
+    <script src="{{asset('public/js/SliderManaged.js')}}"></script>
+    <script src="{{asset('public/js/imgGalManaged.js')}}"></script>
+    <script src="{{asset('public/js/preloader.js')}}"></script>
+    <script src="{{asset('public/js/wow.min.js')}}"></script>
+    <script src="{{asset('js/modalWindow.js')}}"></script>
 
     <style>
         body {
@@ -30,9 +31,8 @@
         }
 
     </style>
-    <script src="{{asset('js/modalWindow.js')}}"></script>
 
-    <script>
+    <script type="text/javascript">
     $(document).ready(function () {
         new WOW().init();
 
@@ -91,10 +91,6 @@
     });
 
     </script>
-
-@endsection
-@section('content')
-
     <style>
         .video-kryn{
             display: none;
@@ -112,6 +108,9 @@
 
 
     </style>
+
+@endsection
+@section('content')
     <div id="preloader"></div>
 
     <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
@@ -163,7 +162,7 @@
             </div>
         </div>
         <div class="sldr">
-            <div class="row team euro" id="team-text">
+            <div class="row team euro team-text">
 
 
                     <div class="col-lg-6 col-md-5 col-sm-9 col-xs-9">
@@ -185,16 +184,16 @@
 
                         </p>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-details') }}"
-                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-3rst-banner">
                             {{ trans('messages.details') }}
                         </a>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-living') }}"
-                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-4rst-banner">
                             {{ trans('messages.concept_acc') }}
                         </a>
                     </div>
             </div>
-            <div class="row team" id="team-text">
+            <div class="row team team-text">
 
 
                     <div class="col-lg-6 col-md-5 col-sm-9 col-xs-9">
@@ -214,11 +213,11 @@
                         </ul>
                         <p></p>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-selects') }}"
-                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-5rst-banner">
                             {{ trans('messages.about_selects') }}?
                         </a>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-slovac') }}"
-                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-6rst-banner">
                            {{ trans('messages.Slovakia_tour') }}
                         </a>
                     </div>
@@ -301,7 +300,7 @@
                             <div id="caption"></div>
                         </div>
                         <div class = "yellow-back">
-                            <img id="img-where" id="img-yell" src="{{asset('images/gal/yell.jpg')}}" alt="yellow square"/>
+                            <img id="img-where" src="{{asset('images/gal/yell.jpg')}}" alt="yellow square"/>
                         </div>
                         <a class="prev arr-gal" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next arr-gal" onclick="plusSlides(1)">&#10095;</a>
@@ -341,7 +340,8 @@
                     <h3 class="h1-team-page kryn" id="h3-team">{{ trans('messages.climate') }}</h3>
                     <p id="team-text-p">
                         {{ trans('messages.about_town') }}
-                    <p></p>
+                    </p>
+                    <p>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-krynica') }}"
                        data-toggle="modal" data-target="#modalArt" class="btn btn-about btn-main "  id="btn-1rst-banner">
                         {{ trans('messages.see_where') }}
@@ -357,14 +357,14 @@
 
                     </p>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-education') }}"
-                       data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                       data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-2rst-banner">
                         {{ trans('messages.more_about_educ') }}
                     </a>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-6  col-xs-9">
                     <img src="/../../design/first_page/res/photo-3.jpg" id="img-where" class="photo-kryn" alt="Krynica-Zdrój"/>
                     <div class="video-kryn">
-                        <iframe src="https://www.youtube.com/embed/lQsFMf2Fl5I"  id="img-where" height="300px" frameborder="1" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/lQsFMf2Fl5I"  id="img-where" height="300"  style="border: 1px;" allowfullscreen></iframe>
                     </div>
                 </div>
                

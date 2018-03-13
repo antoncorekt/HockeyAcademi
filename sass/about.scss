@@ -368,7 +368,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   }
   
-  #team-text{
+  .team-text{
     @include  respond-to($large-desktop){
       margin-top: 4%;
       margin-left: 6%;
@@ -488,7 +488,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   }
 
- #form-text, #team-text  {
+ #form-text, .team-text  {
   margin: 0;
   transform: translateY(-50%);
   position: absolute;
