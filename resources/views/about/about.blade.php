@@ -376,25 +376,25 @@
         <div class="row"  id="form-text">
             <h4>{{ trans('messages.imp_to_know') }}</h4>
             <div class="col-lg-6 col-md-6 col-xs-9 col-list">
-                <ul class="list-know">
-                    <li>{{ trans('messages.tours') }}</li>
-                    <li>{{ trans('messages.summer_camp') }}</li>
-                    <li>{{ trans('messages.introduce') }}</li>
-                    <li>{{ trans('messages.permit') }}</li>
-                    <li>{{ trans('messages.doc_help') }}</li>
-                    <li>{{ trans('messages.three_Selects') }}</li>
+                <ul class="list-know" itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+                    <li itemprop="name">{{ trans('messages.tours') }}</li>
+                    <li itemprop="name">{{ trans('messages.summer_camp') }}</li>
+                    <li itemprop="name">{{ trans('messages.introduce') }}</li>
+                    <li itemprop="name">{{ trans('messages.permit') }}</li>
+                    <li itemprop="name">{{ trans('messages.doc_help') }}</li>
+                    <li itemprop="name">{{ trans('messages.three_Selects') }}</li>
                 </ul>
             </div>
             <div class="col-lg-6 col-md-6 col-xs-9  col-list">
 
-                <ul class="list-know">
+                <ul class="list-know" itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
 
-                    <li>{{ trans('messages.class_room') }}</li>
-                    <li>{{ trans('messages.help_admis') }}</li>
-                    <li>{{ trans('messages.help_living') }}</li>
-                    <li>{{ trans('messages.help_lang') }}</li>
-                    <li>{{ trans('messages.rus_lang_coach') }}</li>
-                    <li>{{ trans('messages.system_offer') }}</li>
+                    <li itemprop="name">{{ trans('messages.class_room') }}</li>
+                    <li itemprop="name">{{ trans('messages.help_admis') }}</li>
+                    <li itemprop="name">{{ trans('messages.help_living') }}</li>
+                    <li itemprop="name">{{ trans('messages.help_lang') }}</li>
+                    <li itemprop="name">{{ trans('messages.rus_lang_coach') }}</li>
+                    <li itemprop="name">{{ trans('messages.system_offer') }}</li>
                 </ul>
             </div>
 
