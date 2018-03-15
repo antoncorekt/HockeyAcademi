@@ -82,6 +82,16 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     content: url("../../design/first_page/res/about_2.png");
   }
 }
+
+#texture{
+
+  @include respond-to($tablet-portrait) {
+    height: 420px;
+  }
+  @include respond-to($phone) {
+    height: 230px;
+  }
+}
   
   #about-2, #about-3, #about-4, #about-5, #about-6{
     z-index: 1;

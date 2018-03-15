@@ -225,7 +225,7 @@
         </div>
     </div>
     <div class="container-fluid bg-3" id="about-3">
-        <img src="/../../design/first_page/res/textur.png" alt="texture" />
+        <img src="/../../design/first_page/res/textur.png" alt="texture" id="texture" />
         <div class="row coach-text">
             <h5 class="h5-coach-text">{{ trans('messages.learn') }}?</h5>
             <h3 class="h3-coach-text">{{ trans('messages.coach') }}
@@ -292,7 +292,7 @@
                 <br>{{ trans('messages.where2') }}
             </h3>
             <div class="row where-text-1" id="where-photos">
-                <div class="col-lg-5 col-md-5 col-sm-4 col-xs-9">
+                <div class="col-lg-5 col-md-5 col-sm-6  col-xs-9">
                     <div class="img-container">
                         <div id="myModal" class="modal">
                             <span class="close">&times;</span>

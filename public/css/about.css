@@ -600,6 +600,14 @@ body {
   #about-1 img {
     content: url("../../design/first_page/res/about_2.png"); } }
 
+@media only screen and (max-width: 767px) {
+  #texture {
+    height: 420px; } }
+
+@media only screen and (max-width: 480px) {
+  #texture {
+    height: 230px; } }
+
 #about-2, #about-3, #about-4, #about-5, #about-6 {
   z-index: 1; }
 
