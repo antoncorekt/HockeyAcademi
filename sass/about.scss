@@ -175,7 +175,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   
   }
-#h3-team{
+.h3-team{
  @include respond-to($phone) {
     margin-top: 10px;
   }
@@ -544,7 +544,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   }
 }
   
-  #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1{
+  #coach-photos, #coach-btn, #where-photos, .where-photos1, #cost-btn, #cost-photos1{
     top: 35%;
     text-align: center;
     display: flex;
@@ -560,11 +560,11 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
   
   }
   
-  #where-photos, #where-photos1, #cost-photos1{
+  #where-photos, .where-photos1, #cost-photos1{
     align-items: center;
   }
 
-#where-photos, #where-photos1{
+#where-photos, .where-photos1{
   @include  respond-to($tablet-portrait){
     display: block;
   }

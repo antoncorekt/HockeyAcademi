@@ -1,7 +1,7 @@
 <div id="load" style="position: relative;">
 
     @foreach($articles as $article)
-        <div class="row where-text-1" id="where-photos1">
+        <div class="row where-photos1 where-text-1">
             <div class="col-lg-5 col-md-6 col-sm-5 col-xs-9">
                 @if(is_null($article->video_title))
                     <img id="img-where" src="{{$article->img_title}}" alt="{{$article->title}}"/>
@@ -12,7 +12,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 col-xs-9">
                 <p class="blog-date">{{$article->create_date}}</p>
-                <h3 class="h1-team-page" id="h3-team">{{$article->title}}</h3>
+                <h3 class="h3-team h1-team-page">{{$article->title}}</h3>
                 <p class="team-text-p">
                 <?php
                 echo \App\ListOfBlog::getShortText($article);

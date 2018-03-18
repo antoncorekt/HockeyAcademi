@@ -677,7 +677,7 @@ body {
       margin-bottom: 5px; } }
 
 @media only screen and (max-width: 480px) {
-  #h3-team {
+  .h3-team {
     margin-top: 10px; } }
 
 .h1-team-page {
@@ -992,24 +992,24 @@ body {
     padding-left: 10px;
     padding-right: 10px; } }
 
-#coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1 {
+#coach-photos, #coach-btn, #where-photos, .where-photos1, #cost-btn, #cost-photos1 {
   top: 35%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: baseline; }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
-    #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1 {
+    #coach-photos, #coach-btn, #where-photos, .where-photos1, #cost-btn, #cost-photos1 {
       top: 30%; } }
   @media only screen and (max-width: 767px) {
-    #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1 {
+    #coach-photos, #coach-btn, #where-photos, .where-photos1, #cost-btn, #cost-photos1 {
       top: 30%; } }
 
-#where-photos, #where-photos1, #cost-photos1 {
+#where-photos, .where-photos1, #cost-photos1 {
   align-items: center; }
 
 @media only screen and (max-width: 767px) {
-  #where-photos, #where-photos1 {
+  #where-photos, .where-photos1 {
     display: block; } }
 
 #coach-photos h5 {

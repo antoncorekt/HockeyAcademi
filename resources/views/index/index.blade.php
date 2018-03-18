@@ -21,7 +21,7 @@
         background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center;
     }
 </style>
-<script type="text/javascript">
+<script>
     $(document).ready(function () {
         
         $('.btn').click(function (){
@@ -56,9 +56,7 @@
       
     });
 </script>
-
 @endsection
-
 @section('before-nav')
 <div id="preloader"></div>
 
@@ -120,11 +118,9 @@
     </div>
     
 </div>
-
 <div class="cont" >
 <div id="snow"></div>
 @endsection
-
 @section('content')
 
         <div class="row" id="main-text">
@@ -145,7 +141,7 @@
                         <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" style="color: white; z-index:10 !important;">{{ trans('messages.events') }}</a>
                     </h5>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[0]->idPText) }}">
-                        <img src="{{$posts[0]->img_title}}" class="img-events" alt="{{$posts[0]->idPText}}">
+                        <img src="{{$posts[0]->img_title}}" class="img-events" alt="{{$posts[0]->title}}">
                     </a>
                     <p class="text-events">
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[0]->idPText) }}" style="color: white; z-index:10 !important;">
@@ -158,7 +154,7 @@
                         <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" style="color: white; z-index:10 !important;">{{ trans('messages.events') }}</a>
                     </h5>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[1]->idPText) }}">
-                        <img src="{{$posts[1]->img_title}}" class="img-events" alt="{{$posts[1]->idPText}}">
+                        <img src="{{$posts[1]->img_title}}" class="img-events" alt="{{$posts[1]->title}}">
                     </a>
                     <p class="text-events">
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[1]->idPText) }} " style="color: white; z-index:10 !important;">
