@@ -82,6 +82,16 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     content: url("../../design/first_page/res/about_2.png");
   }
 }
+
+#texture{
+
+  @include respond-to($tablet-portrait) {
+    height: 420px;
+  }
+  @include respond-to($phone) {
+    height: 230px;
+  }
+}
   
   #about-2, #about-3, #about-4, #about-5, #about-6{
     z-index: 1;
@@ -176,7 +186,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     margin-top: auto;
   }
   
-  #team-text-p{
+  .team-text-p{
     font-family: "OpenSans-Regular", sans-serif;
     color: #191d72;
     line-height: 2;
@@ -368,7 +378,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   }
   
-  #team-text{
+  #team-text, #team-text-1{
     @include  respond-to($large-desktop){
       margin-top: 4%;
       margin-left: 6%;
@@ -488,7 +498,7 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     }
   }
 
- #form-text, #team-text  {
+ #form-text, #team-text, #team-text-1  {
   margin: 0;
   transform: translateY(-50%);
   position: absolute;
@@ -657,14 +667,14 @@ $background-image-offer_cost: url(../images/about/offer_cost.jpg);
     margin-top: 5%;
   }
   
-  #img-where{
+  #img-where, .img-where, #img-where-1{
     width: 100%;
   }
   .h3-where-text{
     color: #191d72;
   }
   
-  .h1-team-page, #team-text-p{
+  .h1-team-page, .team-text-p{
     text-align: left;
   }
   
@@ -1372,4 +1382,17 @@ Article page
  */
 .article{
   margin-bottom: 50px;
+}
+
+.loading-ic {
+  position: absolute;
+  left: 40%;
+  top: 0;
+  z-index: 100000;
+  @include respond-to($tablet-portrait) {
+    left: 10%;
+  }
+  @include respond-to($phone) {
+    left: 10%;
+  }
 }

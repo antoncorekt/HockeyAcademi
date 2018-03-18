@@ -270,8 +270,9 @@ body {
     .lang {
       font-size: 20px; } }
 
-.lang:focus, .lang:hover {
-  color: #BEBEBE; }
+.lang:focus, .lang:hover, #selected:hover, #selected:focus {
+  color: #ffeb3c;
+  background-color: transparent; }
 
 @media only screen and (max-width: 480px) {
   .navbar-nav .open .dropdown-menu {
@@ -281,15 +282,8 @@ body {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
   color: #BEBEBE; }
 
-.lang:focus, .lang:hover {
-  color: #ffeb3c; }
-
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: transparent; }
-
-#selected:hover {
-  color: #333;
-  background-color: rgba(88, 46, 99, 0.9); }
 
 .dropdown-menu {
   background-color: transparent; }

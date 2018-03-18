@@ -2,13 +2,14 @@
 
 
 @section('header')
-
+<meta name="description" content="{{ trans('messages.description_index') }}"/>
+<title>East Euro Hockey Lab</title>
 <link rel="stylesheet" href="{{asset('public/css/main.css')}}" >
-<script type="text/javascript" src="{{asset('js/VideoManager.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/ThreeCanvas.js')}}"></script>
-<script  type="text/javascript" src="{{asset('js/SnowManaged.js')}}"></script>
-<script  type="text/javascript" src="{{asset('js/Snow.js')}}"></script>
-<script  type="text/javascript" src="{{asset('js/preloader.js')}}"></script>
+<script src="{{asset('js/VideoManager.js')}}"></script>
+<script src="{{asset('js/ThreeCanvas.js')}}"></script>
+<script src="{{asset('js/SnowManaged.js')}}"></script>
+<script src="{{asset('js/Snow.js')}}"></script>
+<script src="{{asset('js/preloader.js')}}"></script>
 <style>
     div#preloader {
         position: fixed;
@@ -20,10 +21,7 @@
         background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center;
     }
 </style>
-
-<title>East Euro Hockey Lab</title>
-
-<script>
+<script type="text/javascript">
     $(document).ready(function () {
         
         $('.btn').click(function (){
@@ -57,8 +55,6 @@
 
       
     });
-
-
 </script>
 
 @endsection
