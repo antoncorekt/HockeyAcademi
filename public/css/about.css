@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ф@charset "UTF-8";
 body {
   font: 100% Montserrat;
   color: #FFFFFF;
@@ -1671,6 +1671,9 @@ Article page
  */
 .article {
   margin-bottom: 50px; }
+
+.article-text {
+  text-align: justify; }
 
 .loading-ic {
   position: absolute;
