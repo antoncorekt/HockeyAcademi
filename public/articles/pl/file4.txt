@@ -1,0 +1,42 @@
+﻿<p class="article-text team-text-p">Wszyscy wiemy o hokeju z pierwszej ręki. Pamiętamy tamte czasy, kiedy zebraliśmy całe podwórze, trzymaliśmy się kijów i goniliśmy piłkę tenisową na boisku do piłki nożnej. Obecni chłopcy rozumieją, że jest to dość trudne, ponieważ technologia i Internet posuwają się szybko do przodu. Nie muszą szukać kija, ani błagać brata o kij dla zabawy. Słowo "hokej" przyszło do nas od starego francuskiego słowa "hoke", które oznacza "zakrzywiona sztabka pasterska". Hokej z krążkiem to sport drużynowy na lodzie, oparty na opozycji rywali na łyżwach, którzy rywalizują o wygraną w meczu. Zwycięzca jest zdeterminowany liczbą goli strzelonych w bramce przeciwnika.
+</p>
+<h4 class="h3-team h1-team-page kryn"> Historia hokeja </h4> 
+
+<p class="article-text team-text-p">Według jednej z wersji, Kanada jest miejscem narodzin gry z krążkiem. 
+Na potwierdzenie tego, na niektórych obrazach z XVI wieku, przedstawiono masy ludzi bawiących się na zamarzniętej 
+rzece w czymś w rodzaju hokeja. Pierwszym miejscem meczu był Montreal. Drużyna składała się z dziewięciu osób, 
+które bawiły się drewnianą podkładką, a z równie słynnego meczu - baseballu - wzięto strój ochronny. 
+Pierwsze zasady gry w hokeja wynaleźli studenci McGill University w 1877 roku. A dwa lata później kanadyjski 
+Robertson zaproponował użycie gumowej tarczy zamiast drewnianej podkładki, która została natychmiast wyprodukowana. 
+Gra została zaprezentowana w 1883 roku na Zimowym Karnawale Montrealskim, ze względu na wzrost jej popularności. 
+A w 1886 r. zasady hokeja zostały całkowicie zmodernizowane i wydrukowane. </p>
+
+<p class="article-text team-text-p">Dziś ich przyszli laureaci są szkoleni
+ w <b> rosyjskich szkołach hokejowych </b>. W zajęciach mogą uczestniczyć dzieci i dorośli, 
+którzy chcą się uczyć lub już dobrze się bawią. Rozpoczynają się od ćwiczeń przygotowawczych 
+do poprawy umiejętności łyżwiarskich, posiadania krążka i podania. Następny jest mecz w drużynie, 
+gdzie należy wykazać się wszystkimi umiejętnościami uzyskanymi podczas <b>treningu w szkole hokejowej</b>. 
+Z bramkarzami prowadzone są oddzielne zajęcia. Dzięki nim najlepsi trenerzy są zaangażowani w
+ warunki jak najbardziej zbliżone do prawdziwego meczu. Głównym zadaniem zawodnika przy bramce jest zareagowanie
+ na czas, aby rzucić krążkiem pod dowolnym kątem, zachowując równowagę. Nauczają tego <b>bramkarze szkoły hokejowej</b>.</p>
+
+<h4 class="h3-team h1-team-page kryn"> Ciekawostki o hokeju </h4>
+
+<p class="article-text team-text-p">Dość ciekawy, żeby to wiedzieć:</p>
+
+<ul class="article-text team-text-p">
+
+<li> prędkość, z jaką może rozwinąć się krążek przy silnym uderzeniu, wynosi w przybliżeniu 193 km/h; </li>
+
+<li> istnieją tylko dwie szkoły bramkarskie: "Stand-up" i "Butterfly"; </li>
+
+<li> przed grą krążek jest zamrożony, tak że nie sprężynuje; </li>
+
+<li> Pierwszy krążek hokejowy był kwadratowy; </li>
+
+<li> żeby nie kłócić się, nie uderzyć w cel czy nie, rybak Francis Nelly wymyślił specjalną sieć. </li> 
+
+</ul>.
+
+<p class="article-text team-text-p">Od czasów starożytnych sport jest integralną częścią naszego życia. Wierzy się, że hokej nie uspokaja charakteru, ale objawia się ego. Świadczą o tym liczne zwycięstwa i osiągnięcia w tym fascynującym sporcie. Do tej pory Rosja i Kanada zdobywały nagrody we wszystkich
+mistrzostwach. Miliony kibiców płacą dużo pieniędzy, wyjeżdżają z innych krajów, aby obejrzeć grę swojej ulubionej drużyny. Niewielu wie jednak, że obecny mistrz Rosji nie był w stanie wygrać ani jednego turnieju przez 15 lat. Ale tylko pragnienie zwycięstwa, wysiłku, treningu i ducha walki uczyniło go mistrzem. Trening jest jednym z najważniejszych elementów życia zawodnika. Po pierwsze, bardzo ważne jest, aby trenować ciało fizyczne, a jeszcze ważniejsze jest, aby trenować ducha. Bez duchowego treningu nie wygrasz. Wszystkie te elementy sprawiają, że zawodnicy są mistrzami. Wszakże w zdrowym ciele, jak wiecie, zdrowy umysł. </p>
