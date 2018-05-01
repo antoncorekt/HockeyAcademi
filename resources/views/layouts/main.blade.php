@@ -27,7 +27,7 @@
             });
         });
     </script>
-    @yield('header')
+
     <!-- Yandex.Metrika counter -->
     <script>
         (function (d, w, c) {
@@ -63,6 +63,7 @@
 
         gtag('config', 'UA-114787633-1');
     </script>
+@yield('header')
         <!-- /Yandex.Metrika counter -->
 </head>
 <body>
