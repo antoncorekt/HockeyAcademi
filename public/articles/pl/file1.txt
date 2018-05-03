@@ -1,4 +1,5 @@
-<p id="team-text-p">Akademia wezmie udzial w rekrutacji SELECTS, 
+﻿<p class="article-text team-text-p">Akademia wezmie udzial w rekrutacji SELECTS, 
 ktora odbedzie sie w maju 2018 w SAN SEBASTIAN (Hiszpania). 
 W celu otrzymania wiecej informacji prosimy o kontakt z naszymi trenerami.
-Dowiedz sie wszystkiego na temat rekrutacji.</p>
+<a href="http://ehlab.org/ru/contacts">Dowiedz sie wszystkiego na temat rekrutacji.</a>
+</p>

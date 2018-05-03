@@ -1,19 +1,20 @@
 @extends('layouts.main')
 @section('header')
-    <meta name="description" content="{{ trans('messages.description_about') }}">
-
+    <meta name="description" content="{{ trans('messages.description_about') }}" />
     <title>East EHL - About</title>
+
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
     <link rel="stylesheet" href="{{asset('public/css/animate.css')}}">
 
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('public/slick/slick-theme.css')}}"/>
 
-    <script type="text/javascript" src="{{asset('public/slick/slick.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('public/js/SliderManaged.js')}}"></script>
-    <script type="text/javascript" src="{{asset('public/js/imgGalManaged.js')}}"></script>
-    <script type="text/javascript" src="{{asset('public/js/preloader.js')}}"></script>
-    <script type="text/javascript" src="{{asset('public/js/wow.min.js')}}"></script>
+    <script src="{{asset('public/slick/slick.min.js')}}"></script>
+    <script src="{{asset('public/js/SliderManaged.js')}}"></script>
+    <script src="{{asset('public/js/imgGalManaged.js')}}"></script>
+    <script src="{{asset('public/js/preloader.js')}}"></script>
+    <script src="{{asset('public/js/wow.min.js')}}"></script>
+    <script src="{{asset('js/modalWindow.js')}}"></script>
 
     <style>
         body {
@@ -30,7 +31,6 @@
         }
 
     </style>
-    <script src="{{asset('js/modalWindow.js')}}"></script>
 
     <script>
     $(document).ready(function () {
@@ -91,10 +91,6 @@
     });
 
     </script>
-
-@endsection
-@section('content')
-
     <style>
         .video-kryn{
             display: none;
@@ -109,13 +105,10 @@
             overflow: visible;
             background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center;
         }
-
-
     </style>
+@endsection
+@section('content')
     <div id="preloader"></div>
-
-    <script type="text/javascript" src="{{asset('js/modalWindow.js')}}"></script>
-
     <div class="container-fluid bg-1" id="about-1">
         <img src="/../../design/first_page/res/about_main.png" alt="Hockey Player About"/>
         <div class="row" id="main-text">
@@ -173,7 +166,7 @@
                         <h5 class="h4-main-page selects">#{{ trans('messages.enrolment') }} #{{ trans('messages.your_chance') }}</h5>
                         <h3 class="h1-team-page">{{ trans('messages.new_enrolment') }}</h3>
 
-                        <p class="text-style-1rst-banner">
+                        <div class="text-style-1rst-banner">
                             <div class="text-style-1rst-banner text-style-1rst-banner-if_you">{{ trans('messages.if_you') }} </div>
                             <ul class="text-style-1rst-banner">
                                 <li>{{ trans('messages.years_old') }};</li>
@@ -183,18 +176,18 @@
                                 <li>{{ trans('messages.dream_leagues') }};</li>
                             </ul>
 
-                        </p>
+                        </div>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-details') }}"
-                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-3rst-banner">
                             {{ trans('messages.details') }}
                         </a>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-living') }}"
-                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-4rst-banner">
                             {{ trans('messages.concept_acc') }}
                         </a>
                     </div>
             </div>
-            <div class="row team" id="team-text">
+            <div class="row team" id="team-text-1">
 
 
                     <div class="col-lg-6 col-md-5 col-sm-9 col-xs-9">
@@ -214,11 +207,11 @@
                         </ul>
                         <p></p>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-selects') }}"
-                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-5rst-banner">
                             {{ trans('messages.about_selects') }}?
                         </a>
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-slovac') }}"
-                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                           data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-6rst-banner">
                            {{ trans('messages.Slovakia_tour') }}
                         </a>
                     </div>
@@ -226,7 +219,7 @@
         </div>
     </div>
     <div class="container-fluid bg-3" id="about-3">
-        <img src="/../../design/first_page/res/textur.png" alt="texture" />
+        <img src="/../../design/first_page/res/textur.png" alt="texture" id="texture" />
         <div class="row coach-text">
             <h5 class="h5-coach-text">{{ trans('messages.learn') }}?</h5>
             <h3 class="h3-coach-text">{{ trans('messages.coach') }}
@@ -293,55 +286,56 @@
                 <br>{{ trans('messages.where2') }}
             </h3>
             <div class="row where-text-1" id="where-photos">
-                <div class="col-lg-5 col-md-5 col-sm-4 col-xs-9">
+                <div class="col-lg-5 col-md-5 col-sm-6  col-xs-9">
                     <div class="img-container">
                         <div id="myModal" class="modal">
                             <span class="close">&times;</span>
-                            <img class="modal-content" id="img01" alt="modal-content">
+                            <img class="modal-content" id="img01" alt="modal-content"  src="bla">
                             <div id="caption"></div>
                         </div>
                         <div class = "yellow-back">
-                            <img id="img-where" id="img-yell" src="{{asset('images/gal/yell.jpg')}}" alt="yellow square"/>
+                            <img class="img-where" src="{{asset('images/gal/yell.jpg')}}" alt="yellow square"/>
                         </div>
                         <a class="prev arr-gal" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next arr-gal" onclick="plusSlides(1)">&#10095;</a>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/2.jpg')}}" alt="EEHL school"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/2.jpg')}}" alt="EEHL school"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/1.jpg')}}" alt="EEHL school in Krynica-Zdrój"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/1.jpg')}}" alt="EEHL school in Krynica-Zdrój"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/3.jpg')}}" alt="Painting mountains"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/3.jpg')}}" alt="Painting mountains"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/4.jpg')}}" alt="Polish Switzerland"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/4.jpg')}}" alt="Polish Switzerland"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/5.jpg')}}" alt="Excellent mountain climate"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/5.jpg')}}" alt="Excellent mountain climate"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/6.jpg')}}" alt="Modern infrastructure"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/6.jpg')}}" alt="Modern infrastructure"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/7.jpg')}}" alt="SPACIOUS STADIUMS"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/7.jpg')}}" alt="SPACIOUS STADIUMS"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/8.jpg')}}" alt="room at the school"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/8.jpg')}}" alt="room at the school"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/9.jpg')}}" alt="rest at the school"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/9.jpg')}}" alt="rest at the school"/>
                         </div>
                         <div class="img-galary">
-                            <img id="img-where" class="img-mod" src="{{asset('images/gal/10.jpg')}}" alt="the hockey stadium"/>
+                            <img class="img-where img-mod" src="{{asset('images/gal/10.jpg')}}" alt="the hockey stadium"/>
                         </div>
                     </div>  
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-9">
-                    <h3 class="h1-team-page kryn" id="h3-team">{{ trans('messages.climate') }}</h3>
-                    <p id="team-text-p">
+                    <h3 class="h3-team h1-team-page kryn">{{ trans('messages.climate') }}</h3>
+                    <p class="team-text-p">
                         {{ trans('messages.about_town') }}
-                    <p></p>
+                    </p>
+                    <p>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-krynica') }}"
                        data-toggle="modal" data-target="#modalArt" class="btn btn-about btn-main "  id="btn-1rst-banner">
                         {{ trans('messages.see_where') }}
@@ -349,22 +343,22 @@
                     </p>
                 </div>
             </div>
-            <div class="row where-text-1 edu"  id="where-photos1">
+            <div class="row where-photos1 where-text-1 edu">
                 <div class="col-lg-4 col-sm-6 edu">
                     <h3 class="h1-team-page">{{ trans('messages.hockey_educ') }}!</h3>
-                    <p id="team-text-p">
+                    <p class="team-text-p">
                         {{ trans('messages.hockey_educ1') }}
 
                     </p>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/modal-education') }}"
-                       data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-1rst-banner">
+                       data-toggle="modal" data-target="#modalArt" class="btn btn-main btn-about"  id="btn-2rst-banner">
                         {{ trans('messages.more_about_educ') }}
                     </a>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-6  col-xs-9">
                     <img src="/../../design/first_page/res/photo-3.jpg" id="img-where" class="photo-kryn" alt="Krynica-Zdrój"/>
                     <div class="video-kryn">
-                        <iframe src="https://www.youtube.com/embed/lQsFMf2Fl5I"  id="img-where" height="300px" frameborder="1" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/lQsFMf2Fl5I"  id="img-where-1" height="300" style="border:1px;" allowfullscreen></iframe>
                     </div>
                 </div>
                
@@ -376,25 +370,25 @@
         <div class="row"  id="form-text">
             <h4>{{ trans('messages.imp_to_know') }}</h4>
             <div class="col-lg-6 col-md-6 col-xs-9 col-list">
-                <ul class="list-know">
-                    <li>{{ trans('messages.tours') }}</li>
-                    <li>{{ trans('messages.summer_camp') }}</li>
-                    <li>{{ trans('messages.introduce') }}</li>
-                    <li>{{ trans('messages.permit') }}</li>
-                    <li>{{ trans('messages.doc_help') }}</li>
-                    <li>{{ trans('messages.three_Selects') }}</li>
+                <ul class="list-know" itemscope itemtype="http://schema.org/Service">
+                    <li itemprop="name">{{ trans('messages.tours') }}</li>
+                    <li itemprop="name">{{ trans('messages.summer_camp') }}</li>
+                    <li itemprop="name">{{ trans('messages.introduce') }}</li>
+                    <li itemprop="name">{{ trans('messages.permit') }}</li>
+                    <li itemprop="name">{{ trans('messages.doc_help') }}</li>
+                    <li itemprop="name">{{ trans('messages.three_Selects') }}</li>
                 </ul>
             </div>
             <div class="col-lg-6 col-md-6 col-xs-9  col-list">
 
-                <ul class="list-know">
+                <ul class="list-know" itemscope itemtype="http://schema.org/Service">
 
-                    <li>{{ trans('messages.class_room') }}</li>
-                    <li>{{ trans('messages.help_admis') }}</li>
-                    <li>{{ trans('messages.help_living') }}</li>
-                    <li>{{ trans('messages.help_lang') }}</li>
-                    <li>{{ trans('messages.rus_lang_coach') }}</li>
-                    <li>{{ trans('messages.system_offer') }}</li>
+                    <li itemprop="name">{{ trans('messages.class_room') }}</li>
+                    <li itemprop="name">{{ trans('messages.help_admis') }}</li>
+                    <li itemprop="name">{{ trans('messages.help_living') }}</li>
+                    <li itemprop="name">{{ trans('messages.help_lang') }}</li>
+                    <li itemprop="name">{{ trans('messages.rus_lang_coach') }}</li>
+                    <li itemprop="name">{{ trans('messages.system_offer') }}</li>
                 </ul>
             </div>
 

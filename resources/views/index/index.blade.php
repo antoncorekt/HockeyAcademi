@@ -2,13 +2,14 @@
 
 
 @section('header')
-
+<meta name="description" content="{{ trans('messages.description_index') }}"/>
+<title>East Euro Hockey Lab</title>
 <link rel="stylesheet" href="{{asset('public/css/main.css')}}" >
-<script type="text/javascript" src="{{asset('js/VideoManager.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/ThreeCanvas.js')}}"></script>
-<script  type="text/javascript" src="{{asset('js/SnowManaged.js')}}"></script>
-<script  type="text/javascript" src="{{asset('js/Snow.js')}}"></script>
-<script  type="text/javascript" src="{{asset('js/preloader.js')}}"></script>
+<script src="{{asset('js/VideoManager.js')}}"></script>
+<script src="{{asset('js/ThreeCanvas.js')}}"></script>
+<script src="{{asset('js/SnowManaged.js')}}"></script>
+<script src="{{asset('js/Snow.js')}}"></script>
+<script src="{{asset('js/preloader.js')}}"></script>
 <style>
     div#preloader {
         position: fixed;
@@ -20,9 +21,6 @@
         background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center;
     }
 </style>
-
-<title>East Euro Hockey Lab</title>
-
 <script>
     $(document).ready(function () {
         
@@ -57,12 +55,8 @@
 
       
     });
-
-
 </script>
-
 @endsection
-
 @section('before-nav')
 <div id="preloader"></div>
 
@@ -124,11 +118,9 @@
     </div>
     
 </div>
-
 <div class="cont" >
 <div id="snow"></div>
 @endsection
-
 @section('content')
 
         <div class="row" id="main-text">
@@ -149,7 +141,7 @@
                         <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" style="color: white; z-index:10 !important;">{{ trans('messages.events') }}</a>
                     </h5>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[0]->idPText) }}">
-                        <img src="{{$posts[0]->img_title}}" class="img-events" alt="{{$posts[0]->idPText}}">
+                        <img src="{{$posts[0]->img_title}}" class="img-events" alt="{{$posts[0]->title}}">
                     </a>
                     <p class="text-events">
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[0]->idPText) }}" style="color: white; z-index:10 !important;">
@@ -162,7 +154,7 @@
                         <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" style="color: white; z-index:10 !important;">{{ trans('messages.events') }}</a>
                     </h5>
                     <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[1]->idPText) }}">
-                        <img src="{{$posts[1]->img_title}}" class="img-events" alt="{{$posts[1]->idPText}}">
+                        <img src="{{$posts[1]->img_title}}" class="img-events" alt="{{$posts[1]->title}}">
                     </a>
                     <p class="text-events">
                         <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[1]->idPText) }} " style="color: white; z-index:10 !important;">

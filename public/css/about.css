@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ф@charset "UTF-8";
 body {
   font: 100% Montserrat;
   color: #FFFFFF;
@@ -271,8 +271,9 @@ body {
     .lang {
       font-size: 20px; } }
 
-.lang:focus, .lang:hover {
-  color: #BEBEBE; }
+.lang:focus, .lang:hover, #selected:hover, #selected:focus {
+  color: #ffeb3c;
+  background-color: transparent; }
 
 @media only screen and (max-width: 480px) {
   .navbar-nav .open .dropdown-menu {
@@ -282,15 +283,8 @@ body {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
   color: #BEBEBE; }
 
-.lang:focus, .lang:hover {
-  color: #ffeb3c; }
-
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: transparent; }
-
-#selected:hover {
-  color: #333;
-  background-color: rgba(88, 46, 99, 0.9); }
 
 .dropdown-menu {
   background-color: transparent; }
@@ -606,6 +600,14 @@ body {
   #about-1 img {
     content: url("../../design/first_page/res/about_2.png"); } }
 
+@media only screen and (max-width: 767px) {
+  #texture {
+    height: 420px; } }
+
+@media only screen and (max-width: 480px) {
+  #texture {
+    height: 230px; } }
+
 #about-2, #about-3, #about-4, #about-5, #about-6 {
   z-index: 1; }
 
@@ -675,31 +677,31 @@ body {
       margin-bottom: 5px; } }
 
 @media only screen and (max-width: 480px) {
-  #h3-team {
+  .h3-team {
     margin-top: 10px; } }
 
 .h1-team-page {
   color: #2a2a2a;
   margin-top: auto; }
 
-#team-text-p {
+.team-text-p {
   font-family: "OpenSans-Regular", sans-serif;
   color: #191d72;
   line-height: 2; }
   @media only screen and (min-width: 1024px) {
-    #team-text-p {
+    .team-text-p {
       font-size: 14px; } }
   @media only screen and (min-width: 980px) and (max-width: 1024px) {
-    #team-text-p {
+    .team-text-p {
       font-size: 12px; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
-    #team-text-p {
+    .team-text-p {
       font-size: 12px; } }
   @media only screen and (max-width: 767px) {
-    #team-text-p {
+    .team-text-p {
       font-size: 14px; } }
   @media only screen and (max-width: 480px) {
-    #team-text-p {
+    .team-text-p {
       font-size: 14px; } }
 
 .sq-text {
@@ -848,25 +850,25 @@ body {
     width: 32%; } }
 
 @media only screen and (min-width: 1024px) {
-  #team-text {
+  #team-text, #team-text-1 {
     margin-top: 4%;
     margin-left: 6%; } }
 
 @media only screen and (min-width: 980px) and (max-width: 1024px) {
-  #team-text {
+  #team-text, #team-text-1 {
     margin-left: 6%; } }
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-  #team-text {
+  #team-text, #team-text-1 {
     margin-top: 4%; } }
 
 @media only screen and (max-width: 767px) {
-  #team-text {
+  #team-text, #team-text-1 {
     position: relative;
     margin-top: 9%; } }
 
 @media only screen and (max-width: 480px) {
-  #team-text {
+  #team-text, #team-text-1 {
     transform: translateY(-30%);
     position: relative;
     margin-right: 10px;
@@ -946,22 +948,22 @@ body {
       font-size: 16px;
       margin-bottom: 5px; } }
 
-#form-text, #team-text {
+#form-text, #team-text, #team-text-1 {
   margin: 0;
   transform: translateY(-50%);
   position: absolute;
   top: 50%;
   left: 5%; }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
-    #form-text, #team-text {
+    #form-text, #team-text, #team-text-1 {
       left: 2%;
       top: 45%; } }
   @media only screen and (max-width: 767px) {
-    #form-text, #team-text {
+    #form-text, #team-text, #team-text-1 {
       left: 2%;
       top: 45%; } }
   @media only screen and (max-width: 480px) {
-    #form-text, #team-text {
+    #form-text, #team-text, #team-text-1 {
       top: 45%; } }
 
 @media only screen and (min-width: 1024px) {
@@ -990,24 +992,24 @@ body {
     padding-left: 10px;
     padding-right: 10px; } }
 
-#coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1 {
+#coach-photos, #coach-btn, #where-photos, .where-photos1, #cost-btn, #cost-photos1 {
   top: 35%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: baseline; }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
-    #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1 {
+    #coach-photos, #coach-btn, #where-photos, .where-photos1, #cost-btn, #cost-photos1 {
       top: 30%; } }
   @media only screen and (max-width: 767px) {
-    #coach-photos, #coach-btn, #where-photos, #where-photos1, #cost-btn, #cost-photos1 {
+    #coach-photos, #coach-btn, #where-photos, .where-photos1, #cost-btn, #cost-photos1 {
       top: 30%; } }
 
-#where-photos, #where-photos1, #cost-photos1 {
+#where-photos, .where-photos1, #cost-photos1 {
   align-items: center; }
 
 @media only screen and (max-width: 767px) {
-  #where-photos, #where-photos1 {
+  #where-photos, .where-photos1 {
     display: block; } }
 
 #coach-photos h5 {
@@ -1090,13 +1092,13 @@ body {
   margin-left: 10px;
   margin-top: 5%; }
 
-#img-where {
+#img-where, .img-where, #img-where-1 {
   width: 100%; }
 
 .h3-where-text {
   color: #191d72; }
 
-.h1-team-page, #team-text-p {
+.h1-team-page, .team-text-p {
   text-align: left; }
 
 #about-5 {
@@ -1669,3 +1671,18 @@ Article page
  */
 .article {
   margin-bottom: 50px; }
+
+.article-text {
+  text-align: justify; }
+
+.loading-ic {
+  position: absolute;
+  left: 40%;
+  top: 0;
+  z-index: 100000; }
+  @media only screen and (max-width: 767px) {
+    .loading-ic {
+      left: 10%; } }
+  @media only screen and (max-width: 480px) {
+    .loading-ic {
+      left: 10%; } }

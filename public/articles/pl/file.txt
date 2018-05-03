@@ -1,4 +1,4 @@
-<p id="team-text-p">Miejsce dla Akademii nie zostało wybrane przypadkowo: 
+﻿<p class="article-text team-text-p">Miejsce dla Akademii nie zostało wybrane przypadkowo: 
 Baza materiałowa i techniczna, krajobraz naturalny, wody lecznicze. 
 Odpowiada to nawet tak wielkim rosyjskim gwiazdom hokeja jak SKA Sankt Petersburg. 
 To, co dodatkowo czyni naszą Akademię bardzo atrakcyjną, to bliskość terytorialna.

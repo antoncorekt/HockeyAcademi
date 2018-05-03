@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="yandex-verification" content="d016d5a75b4d8148" />
+    <meta name="google-site-verification" content="cKvkfXewbPJQvro-OrgNGP9dw-1CRdVsHKIwCKqeS9w" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="{{asset('js/getLang.js')}}"></script>
-    <script>
-    $(document).ready(function () {
-        getLang();
-        });
-    </script>
-
-
     <script>
         $(document).ready(function () {
             getLang();
@@ -32,9 +27,9 @@
             });
         });
     </script>
-    <meta name="yandex-verification" content="d016d5a75b4d8148" />
+
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
+    <script>
         (function (d, w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {
@@ -59,8 +54,6 @@
             } else { f(); }
         })(document, window, "yandex_metrika_callbacks");
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/47835631" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <meta name="google-site-verification" content="cKvkfXewbPJQvro-OrgNGP9dw-1CRdVsHKIwCKqeS9w" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114787633-1"></script>
     <script>
@@ -70,16 +63,13 @@
 
         gtag('config', 'UA-114787633-1');
     </script>
-
+@yield('header')
         <!-- /Yandex.Metrika counter -->
-    @yield('header')
 </head>
-
 <body>
 @yield('before-nav')
-
 <div class="container-fluid" id="body-main">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default">
         <div class="navbar-header">
             <img src="/../images/log.gif" id="logo-navheader" alt="eehl-logo-2018">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" id="navbar-btn">
@@ -102,7 +92,7 @@
                 <li class="nav-el men-lang">
                     <div class="dropdown">
                         <button class="dropdown-toggle lang" type="button" data-toggle="dropdown">
-                            <span class="flag"><img src="" class="flag-ico" id="flag" alt="flag"></span>
+                            <span class="flag"><img src="/../../public/images/en.ico" class="flag-ico" id="flag" alt="flag"></span>
                             <span class="drop-text"><span id="selected"></span>
                             <span class="caret"></span></span>
                         </button>
@@ -134,10 +124,7 @@
             </ul>
         </div>
     </nav>
-
 </div>
-
 @yield('content')
-
 </body>
 </html>

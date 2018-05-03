@@ -18,13 +18,13 @@ class ListOfBlog extends Model
             ->join('lang', 'post_text.fkLang', '=', 'lang.idLang')
             ->join('post', 'post_text.fkPost', '=', 'post.idPost')
             ->where('lang.name', '=', LocaleMiddleware::getLocale())
-            ->orderBy('post.create_date', 'ASC')
+            ->orderBy('post.create_date', 'DESC')
            ;
         return $posts;
     }
 
     public static function getShortText($post){
-        $string = iconv('CP1251', 'UTF-8', file_get_contents($post->text));
+        $string = file_get_contents($post->text);
         return "<p>" . strstr($string, '</p>', true) . "</p>";
     }
 
@@ -33,7 +33,7 @@ class ListOfBlog extends Model
             ->join('lang', 'post_text.fkLang', '=', 'lang.idLang')
             ->join('post', 'post_text.fkPost', '=', 'post.idPost')
             ->where('lang.name', '=', LocaleMiddleware::getLocale())
-            ->orderBy('post.create_date', 'ASC')
+            ->orderBy('post.create_date', 'DESC')
             ->take(2)
             ->get();
         return $posts;
