@@ -3,8 +3,9 @@
 @section('header')
     <meta name="description" content="{{ trans('messages.description_blog') }}">
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
+    
     <script src="{{asset('js/modalWindow.js')}}"></script>
-    <script src="{{asset('js/paginateAjax.js')}}"></script>
+
     <title>East EHL - Blog</title>
     <style>
         body {
