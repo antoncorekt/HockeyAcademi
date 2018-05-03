@@ -1,7 +1,8 @@
 @extends('layouts.main')
 @section('header')
-    <meta name="description" content="{{ trans('messages.description_about') }}" />
-    <title>East EHL - About</title>
+   <!-- <meta name="description" content="{{ trans('messages.description_about') }}" /> -->
+    <meta name="description" content="Хоккейная академия в Европе осуществляет набор детей в спортивную школу по хоккею! Тренировочные занятия только с профессионалами! Ваш ребенок будет чемпионом!"/>
+    <title>Набор детей в хоккейную школу EEHL</title>
 
     <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
     <link rel="stylesheet" href="{{asset('public/css/animate.css')}}">
@@ -129,7 +130,7 @@
 
             <div class="col-md-2 col-sm-2 sq-text " id="sq-text-1">
                 <div class="wow slideInLeft">
-                <h1>21</h1>
+                <h1 style="color: #f2a904">15</h1>
                 <p>
                     {{ trans('messages.70text') }}
                     <br>{{ trans('messages.70text1') }}
@@ -371,7 +372,8 @@
             <h4>{{ trans('messages.imp_to_know') }}</h4>
             <div class="col-lg-6 col-md-6 col-xs-9 col-list">
                 <ul class="list-know" itemscope itemtype="http://schema.org/Service">
-                    <li itemprop="name">{{ trans('messages.tours') }}</li>
+                    <li itemprop="name" class="list-know-ready">{{ trans('messages.tours') }}</li>
+                    <li itemprop="name">{{ trans('messages.review') }}</li>
                     <li itemprop="name">{{ trans('messages.summer_camp') }}</li>
                     <li itemprop="name">{{ trans('messages.introduce') }}</li>
                     <li itemprop="name">{{ trans('messages.permit') }}</li>

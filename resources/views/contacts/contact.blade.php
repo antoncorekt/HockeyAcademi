@@ -15,6 +15,7 @@
 @section('content')
     <div class="contacts"  itemscope itemtype="http://schema.org/Organization">
     <div class="col-lg-4 col-md-5 col-xs-9 contact-inf">
+        <div class="mynone" itemprop="name">East EHL</div>
         <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <h2 class="h1-main-page">{{ trans('messages.Location') }}</h2>
             <span itemprop="streetAddress">{{ trans('messages.ul') }}</span>

@@ -1,10 +1,7 @@
 $(function() {
-    console.log($('.pagination a'));
     $('body').on('click', '.pagination a', function(e) {
        var url =  byClickAjax(e);
        getArticles(url);
-       console.log("click");
-       console.log(url);
        window.history.pushState("", "", url);
     });
 

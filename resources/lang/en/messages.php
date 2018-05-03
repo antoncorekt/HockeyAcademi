@@ -89,7 +89,7 @@ return [
     'team6' => 'academy, and then to a professional club. Also – ',
     'team7' => 'the Academy has a contract with the European University, which',
     'team8' => 'will allow to get a diploma',
-    '70text' => 'LEARNING PLACES',
+    '70text' => 'PLACES LEFT (Total 21)',
     '70text1' => 'IN THE ACADEMY',
     '10text' => 'COACHES',
     '10text1' => 'IN THE ACADEMY',
@@ -145,7 +145,8 @@ return [
     'month' =>'mon',
 
     'imp_to_know' => 'IMPORTANT TO KNOW',
-    'tours' => 'Study tours during the spring holidays 24.03-25.03.2018 and 31.03-01.04.2018 year',
+    'tours' => '[Already happened] Study tours during the spring holidays 24.03-25.03.2018 and 31.03-01.04.2018 year',
+    'review' => 'View at the academy in late July, early August. More exact terms are expected on the site later',
     'summer_camp' => 'The full summer camp in July 2018',
     'introduce' => 'Familiarization with the school and training program',
     'permit' => 'Possibility to obtain a residence permit for you and your child',

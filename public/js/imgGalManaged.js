@@ -70,8 +70,19 @@ $(document).ready(function(){
 
 
     for(var i=0; i<img.length; i++){
-        $(".img-galary").css("margin-top",document.getElementsByClassName("yellow-back")[0].getBoundingClientRect().height * -1 + 10);
+
+        var magic = document.getElementsByClassName("yellow-back")[0].getBoundingClientRect().height * -1 + 10;
+        console.log("MAGIC",magic);
+        if ((magic < -1 && magic > -8) || magic === NaN || magic === undefined) {
+
+            console.log("document.getElementsByClassName(\"yellow-back\")[0]",document.getElementsByClassName("yellow-back")[0]);
+            console.log("document.getElementsByClassName(\"yellow-back\")[0].getBoundingClientRect()",document.getElementsByClassName("yellow-back")[0].getBoundingClientRect())
+
+            break;
+        }
+
+        $(".img-galary").css("margin-top",magic);
 
     }
 
-})
+});
