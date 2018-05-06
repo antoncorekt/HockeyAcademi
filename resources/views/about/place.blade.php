@@ -18,5 +18,8 @@
         <p>
             {{ trans('messages.school8') }}
         </p>
+        <div>
+            <img class="img-where img-mod" src="{{asset('images/300x100_1.gif')}}" alt="banner"/>
+        </div>
     </div>
 @endsection
