@@ -2,6 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8"/>
+    <link rel="icon" href="/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="yandex-verification" content="d016d5a75b4d8148" />
@@ -11,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="{{asset('js/getLang.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('public/css/corrections.css')}}" >
     <script>
         $(document).ready(function () {
             getLang();
@@ -27,7 +29,7 @@
             });
         });
     </script>
-
+    @yield('header')
     <!-- Yandex.Metrika counter -->
     <script>
         (function (d, w, c) {
@@ -63,7 +65,6 @@
 
         gtag('config', 'UA-114787633-1');
     </script>
-@yield('header')
         <!-- /Yandex.Metrika counter -->
 </head>
 <body>

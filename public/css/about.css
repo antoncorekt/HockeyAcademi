@@ -1,4 +1,4 @@
-ф@charset "UTF-8";
+@charset "UTF-8";
 body {
   font: 100% Montserrat;
   color: #FFFFFF;
@@ -16,24 +16,24 @@ body {
       display: none; } }
   @media only screen and (min-width: 980px) and (max-width: 1024px) {
     body .menu-logo {
-      background-image: url(../images/log.gif);
+      background-image: url(../images/log.png);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
       background-size: cover;
       -webkit-background-size: cover;
       background-attachment: initial;
-      width: 100px; } }
+      } }
   @media only screen and (min-width: 1024px) {
     body .menu-logo {
-      background-image: url(../images/log.gif);
+      background-image: url(../images/log.png);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
       background-size: cover;
       -webkit-background-size: cover;
       background-attachment: initial;
-      width: 100px; } }
+      } }
 
 @font-face {
   font-family: "Montserrat-Medium";
@@ -1567,9 +1567,21 @@ body {
   margin: -9px 0 0 0;
   padding-right: 5px;
   vertical-align: middle;
-  display: inline-block;
   content: "■";
   color: #ffeb3c; }
+
+  .list-know-ready {
+    color: #878686 !important;
+  }
+
+  .list-know-ready:hover {
+    color: white !important;
+  }
+
+  .list-know-ready::before {
+    content: "🗸" !important;
+    color: #00da55 !important;
+  }
 
 .img-faq {
   background-image: url("../../design/first_page/res/img-faq.jpg");
@@ -1672,9 +1684,6 @@ Article page
 .article {
   margin-bottom: 50px; }
 
-.article-text {
-  text-align: justify; }
-
 .loading-ic {
   position: absolute;
   left: 40%;
@@ -1686,3 +1695,10 @@ Article page
   @media only screen and (max-width: 480px) {
     .loading-ic {
       left: 10%; } }
+
+.my-404{
+  min-height: 450px;
+  color: #000 !important;
+}
+.article-text {
+  text-align: justify; }

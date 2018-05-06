@@ -1,0 +1,70 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/index.php$
+RewriteCond %{QUERY_STRING} ^\z
+RewriteRule ^(.*)$ http://ehlab.org/? [R=301,L]
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.jpg|\.gif|robots\.txt|sitemap\.xml)$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(css|js|images)/(.*)$ public/$1/$2 [L,NC]
+
+
+RewriteCond %{HTTP_HOST} ^www.ehlab.org$ [NC]
+RewriteRule ^(.*)$ http://ehlab.org/$1 [R=301,L]
+
+FileETag MTime Size
+<ifmodule mod_expires.c>
+<filesmatch ".(jpg|jpeg|gif|png|ico|css|js)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 month"
+</filesmatch>
+</ifmodule>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/javascript text/css application/x-javascript
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4.0[678] no-gzip
+BrowserMatch bMSIE !no-gzip !gzip-only-text/html
+<ifmodule mod_gzip.c>
+mod_gzip_on Yes
+mod_gzip_item_include file \.js$
+mod_gzip_item_include file \.css$ </ifmodule>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType text/javascript "access plus 7 days"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType image/gif "access plus 7 days"
+  ExpiresByType image/jpeg "access plus 7 days"
+  ExpiresByType application/x-font-woff   "access plus 1 year"
+  ExpiresByType image/png "access plus 7 days"
+</IfModule>
+
+## INCREASE PAGE SPEED HTACCESS MODIFICATION ##
+<ifModule mod_headers.c>
+    Header set Connection keep-alive
+</ifModule>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/x-javascript
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+<ifModule mod_headers.c>
+    Header append Vary User-Agent
+</ifModule>
+## END INCREASE PAGE SPEED HTACCESS MODIFICATION ##
+
+AddType text/css .css .cssgz
+AddEncoding x-gzip .cssgz 

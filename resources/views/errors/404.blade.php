@@ -8,36 +8,44 @@
 
 ?>
 @extends('layouts.main')
-<title>East EHL - 404</title>
 
-<style>
-    .navbar{
-        display: none;
-    }
-    body { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMC8yOS8xMiKqq3kAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABHklEQVRIib2Vyw6EIAxFW5idr///Qx9sfG3pLEyJ3tAwi5EmBqRo7vHawiEEERHS6x7MTMxMVv6+z3tPMUYSkfTM/R0fEaG2bbMv+Gc4nZzn+dN4HAcREa3r+hi3bcuu68jLskhVIlW073tWaYlQ9+F9IpqmSfq+fwskhdO/AwmUTJXrOuaRQNeRkOd5lq7rXmS5InmERKoER/QMvUAPlZDHcZRhGN4CSeGY+aHMqgcks5RrHv/eeh455x5KrMq2yHQdibDO6ncG/KZWL7M8xDyS1/MIO0NJqdULLS81X6/X6aR0nqBSJcPeZnlZrzN477NKURn2Nus8sjzmEII0TfMiyxUuxphVWjpJkbx0btUnshRihVv70Bv8ItXq6Asoi/ZiCbU6YgAAAABJRU5ErkJggg==);}
-    .error-template {padding: 40px 15px;text-align: center;}
-    .error-actions {margin-top:15px;margin-bottom:15px;}
-    .error-actions .btn { margin-right:10px; }
-</style>
+@section('header')
+    <meta name="description" content="{{ trans('messages.description_blog') }}">
+    <link rel="stylesheet" href="{{asset('public/css/about.css')}}">
+    <script src="{{asset('js/modalWindow.js')}}"></script>
+    <script src="{{asset('js/paginateAjax.js')}}"></script>
+    <title>East EHL - 404</title>
+    <style>
+        body {
+            background-image: none;
+            background-color: white !important;
+        }
+    </style>
+
+@endsection
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid bg-1 blog-1">
+        <img src="/../public/images/blog_img.png" alt="hockey-player-blog"/>
+        <div class="row" id="blog-text">
+            <h1 class="h1-main-page h1-about" >404</h1>
+        </div>
+    </div>
+     <div class="container my-404">
         <div class="row">
             <div class="col-md-12">
                 <div class="error-template">
-                    <h1>
-                        Oops!</h1>
-                    <h2>
-                        404 Not Found</h2>
+                    <h3 class="h1-main-page h1-about">Oops!</h3>
+                        </h1>
+                    <h3 class="h1-main-page h1-about">
+                        404 Not Found</h3>
                     <div class="error-details">
                         Sorry, an error has occured, Requested page not found!
-                    </div>
-                    <div class="error-actions">
-                        <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/")}}" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
-                            Take Me Home </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    @include('layouts.footer')
 @endsection
+

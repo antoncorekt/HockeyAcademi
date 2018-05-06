@@ -2,14 +2,16 @@
 
 
 @section('header')
-<meta name="description" content="{{ trans('messages.description_index') }}"/>
-<title>East Euro Hockey Lab</title>
+<!-- <meta name="description" content="{{ trans('messages.description_index') }}"/> -->
+<meta name="description" content="Одна из лучших ХОККЕЙНАЯ АКАДМИЯ В ЕВРОПЕ ✮EEHL✮ Профессиональные тренеры! Запись по ☎ +48 53 739 49 69, +48 79 445 20 36"/>
+<title>Школа хоккея для детей: ЕВРОПЕЙСКИЙ ХОККЕЙНЫЙ КЛУБ EEHL</title>
 <link rel="stylesheet" href="{{asset('public/css/main.css')}}" >
-<script src="{{asset('js/VideoManager.js')}}"></script>
+<link rel="stylesheet" href="{{asset('public/css/corrections.css')}}" >
+<script async src="{{asset('js/VideoManager.js')}}"></script>
 <script src="{{asset('js/ThreeCanvas.js')}}"></script>
 <script src="{{asset('js/SnowManaged.js')}}"></script>
 <script src="{{asset('js/Snow.js')}}"></script>
-<script src="{{asset('js/preloader.js')}}"></script>
+<script async src="{{asset('js/preloader.js')}}"></script>
 <style>
     div#preloader {
         position: fixed;
