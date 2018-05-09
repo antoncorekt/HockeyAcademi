@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use DB;
 
 class User extends Authenticatable
 {
@@ -29,4 +30,13 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
     protected $primaryKey = 'idUser';
+
+    //for insert entry to main page from different url
+    public static function insertEntry($ip, $date, $url){
+        $insert = DB::table('entry_to_site')->insert([
+            ['ip' => $ip, 'date' => $date, 'link' => $url]
+        ]);
+        return $insert;
+
+    }
 }

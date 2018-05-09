@@ -6,15 +6,20 @@ use App\Article;
 use App\Http\Requests\MailFormRequest;
 use App\ListOfBlog;
 use App\MailSend;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+
 
 class MainController extends Controller
 {
 
 
     public function index()
-    {
+    {   $ip = $_SERVER['REMOTE_ADDR'];
+        $date =   date('Y-m-d H:i:s');
+        $url = \URL::full();
+        User::insertEntry($ip, $date, $url);
         return view('index/index',
             array('title' => 'index','description' => '',
                 'posts' => ListOfBlog::getLastTwoPosts()));
