@@ -142,12 +142,12 @@
                     <h5 class="h5-events" id="h5-events-1">
                         <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" style="color: white; z-index:10 !important;">{{ trans('messages.events') }}</a>
                     </h5>
-                    <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[0]->idPText) }}">
-                        <img src="{{$posts[0]->img_title}}" class="img-events" alt="{{$posts[0]->title}}">
+                    <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[1]->idPText) }}">
+                        <img src="{{$posts[1]->img_title}}" class="img-events" alt="{{$posts[1]->title}}">
                     </a>
                     <p class="text-events">
-                        <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[0]->idPText) }}" style="color: white; z-index:10 !important;">
-                            {{$posts[0]->title}}
+                        <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[1]->idPText) }}" style="color: white; z-index:10 !important;">
+                            {{$posts[1]->title}}
                         </a>
                     </p>
                 </div>
@@ -155,12 +155,12 @@
                     <h5 class="h5-events" id="h5-events-2">
                         <a href="{{url(App\Http\Middleware\LocaleMiddleware::getLocale()."/blog")}}" style="color: white; z-index:10 !important;">{{ trans('messages.events') }}</a>
                     </h5>
-                    <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[1]->idPText) }}">
-                        <img src="{{$posts[1]->img_title}}" class="img-events" alt="{{$posts[1]->title}}">
+                    <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[0]->idPText) }}">
+                        <img src="{{$posts[0]->img_title}}" class="img-events" alt="{{$posts[0]->title}}">
                     </a>
                     <p class="text-events">
-                        <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[1]->idPText) }} " style="color: white; z-index:10 !important;">
-                            {{$posts[1]->title}}
+                        <a href="{{ url(App\Http\Middleware\LocaleMiddleware::getLocale().'/post/'.$posts[0]->idPText) }} " style="color: white; z-index:10 !important;">
+                            {{$posts[0]->title}}
                         </a>
                     </p>
                 </div>
